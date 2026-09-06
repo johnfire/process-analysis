@@ -1,0 +1,1572 @@
+[
+  {
+    "id": "thomas-vogel-001",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q1",
+    "verbatim": "These requisitions come in from Katrin's checklist",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "the requisition",
+        "type": "artifact",
+        "role": "artifact"
+      },
+      {
+        "text": "finance queue",
+        "type": "system",
+        "role": "to"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Katrin",
+      "to": "Thomas Vogel (finance queue)",
+      "artifact": "the requisition",
+      "mechanism": "email",
+      "chased": false
+    }
+  },
+  {
+    "id": "thomas-vogel-002",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q1",
+    "verbatim": "sit in my finance queue overnight",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "finance queue",
+        "type": "system",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "being cleared by me in the morning",
+      "owner": "internal",
+      "current": false,
+      "duration": {
+        "low": 8,
+        "high": 12,
+        "unit": "hour"
+      }
+    }
+  },
+  {
+    "id": "thomas-vogel-003",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q1",
+    "verbatim": "and I clear them in the morning",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "clearing the requisitions in the morning",
+      "performed_by": "Thomas Vogel",
+      "frequency": "every morning"
+    }
+  },
+  {
+    "id": "thomas-vogel-004",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q1",
+    "verbatim": "Then Markus has it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "to"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Thomas Vogel",
+      "to": "Markus",
+      "artifact": "the requisition",
+      "mechanism": "system",
+      "chased": false
+    }
+  },
+  {
+    "id": "thomas-vogel-005",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q1",
+    "verbatim": "IT is usually where things take ages",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "IT",
+        "type": "actor",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "IT",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "thomas-vogel-006",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q2",
+    "verbatim": "It is a budget-line check, then approve or return it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "the budget-line check, then approve or return the requisition",
+      "performed_by": "Thomas Vogel",
+      "frequency": null
+    }
+  },
+  {
+    "id": "thomas-vogel-007",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q2",
+    "verbatim": "I cannot remember returning one",
+    "hedging": "guessed",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "approver"
+      }
+    ],
+    "kind": "approval",
+    "payload": {
+      "approver": "Thomas Vogel",
+      "what_is_checked": "the budget line",
+      "ever_rejected": "cant_recall",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "thomas-vogel-008",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q2",
+    "verbatim": "The last two were ordinary",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "a requisition going weird",
+      "path_taken": null,
+      "recalled_instances": 0
+    }
+  },
+  {
+    "id": "thomas-vogel-009",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q2",
+    "verbatim": "I saw the request in the morning, approved it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "saw the request in the morning and approved it",
+      "performed_by": "Thomas Vogel",
+      "frequency": null
+    }
+  },
+  {
+    "id": "thomas-vogel-010",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q2",
+    "verbatim": "and it went through to Markus",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "the request",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Thomas Vogel",
+      "to": "Markus",
+      "artifact": "the request",
+      "mechanism": "system",
+      "chased": false
+    }
+  },
+  {
+    "id": "thomas-vogel-011",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q3",
+    "verbatim": "I do not chase anyone for this part",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "from"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Thomas Vogel",
+      "to": "upstream",
+      "artifact": "the requisition",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "thomas-vogel-012",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q3",
+    "verbatim": "If something is missing, it has usually not reached me yet, so Katrin would know",
+    "hedging": "deferred",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "owner"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the missing requisition",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "thomas-vogel-013",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q3",
+    "verbatim": "Nobody really chases me either",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "somebody",
+      "to": "Thomas Vogel",
+      "artifact": "the requisition",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "thomas-vogel-014",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q3",
+    "verbatim": "I do the approvals in the morning",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "doing the approvals in the morning",
+      "performed_by": "Thomas Vogel",
+      "frequency": "every morning"
+    }
+  },
+  {
+    "id": "thomas-vogel-015",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q3",
+    "verbatim": "Occasionally someone asks whether IT has received it, as though I am sitting there with their laptops",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "IT",
+        "type": "actor",
+        "role": "target"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "being asked whether IT has received the requisition",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "thomas-vogel-016",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q4",
+    "verbatim": "Five minutes, maybe ten if the finance system is being itself",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "finance system",
+        "type": "system",
+        "role": "subject"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 5,
+        "high": 10,
+        "unit": "minute"
+      },
+      "subject": "the approval",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "thomas-vogel-017",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q4",
+    "verbatim": "Most of it is waiting for the morning run",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "morning run",
+        "type": "system",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the morning run",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "thomas-vogel-018",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q4",
+    "verbatim": "I have a whole approval queue",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "approval queue",
+        "type": "system",
+        "role": "name"
+      }
+    ],
+    "kind": "schedule",
+    "payload": {
+      "cadence": "the morning run",
+      "batching": true,
+      "driver": null
+    }
+  },
+  {
+    "id": "thomas-vogel-019",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q5",
+    "verbatim": "Nothing normally",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "the requisition coming back to me",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": null
+    }
+  },
+  {
+    "id": "thomas-vogel-020",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q5",
+    "verbatim": "If it were outside the headcount budget, I would return it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the requisition is outside the headcount budget",
+      "action": "return it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "thomas-vogel-021",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q5",
+    "verbatim": "but that has not happened",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "returning a requisition outside the headcount budget",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": "Katrin's checklist"
+    }
+  },
+  {
+    "id": "thomas-vogel-022",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q5",
+    "verbatim": "it disappears into the system",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "finance system",
+        "type": "system",
+        "role": "name"
+      }
+    ],
+    "kind": "system",
+    "payload": {
+      "name": "the finance system",
+      "used_for": "holding the approved requisition",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "thomas-vogel-023",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q5",
+    "verbatim": "Markus handles the equipment side",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "name"
+      }
+    ],
+    "kind": "actor",
+    "payload": {
+      "name": "Markus",
+      "role": "handles the equipment side",
+      "team": null,
+      "discovered_by": "named"
+    }
+  },
+  {
+    "id": "thomas-vogel-024",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q6",
+    "verbatim": "Check that the spend is within the approved headcount budget line",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "check that the spend is within the approved headcount budget line",
+      "performed_by": "Thomas Vogel",
+      "frequency": "every requisition"
+    }
+  },
+  {
+    "id": "thomas-vogel-025",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q6",
+    "verbatim": "If it is, approve it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the spend is within the approved headcount budget line",
+      "action": "approve it",
+      "written_down": true,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "thomas-vogel-026",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q6",
+    "verbatim": "If it is not, send it back",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the spend is not within the approved headcount budget line",
+      "action": "send it back",
+      "written_down": true,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "thomas-vogel-027",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q6",
+    "verbatim": "Do not invent a committee around a headset and a laptop",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "it is just a headset and a laptop",
+      "action": "do not invent a committee",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "thomas-vogel-028",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q7",
+    "verbatim": "Katrin sends the starter checklist by email",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "starter checklist",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Katrin",
+      "to": "Thomas Vogel",
+      "artifact": "the starter checklist",
+      "mechanism": "email",
+      "chased": false
+    }
+  },
+  {
+    "id": "thomas-vogel-029",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q7",
+    "verbatim": "the requisition is in the finance system",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "finance system",
+        "type": "system",
+        "role": "name"
+      },
+      {
+        "text": "the requisition",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "system",
+    "payload": {
+      "name": "the finance system",
+      "used_for": "holding the requisition",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "thomas-vogel-030",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q7",
+    "verbatim": "The systems talk to each other enough for my purposes",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "the systems (finance system and Katrin's checklist)",
+      "used_for": "they integrate enough that no manual copy is needed",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "thomas-vogel-031",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q7",
+    "verbatim": "Whether somebody upstream has copied things around, I could not tell you",
+    "hedging": "deferred",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "system",
+    "payload": {
+      "name": "the systems upstream",
+      "used_for": "copying things around (unknown to me)",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "thomas-vogel-032",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q7",
+    "verbatim": "Nothing deliberately",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "the systems",
+      "used_for": null,
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "thomas-vogel-033",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q8",
+    "verbatim": "reading the checklist in the email",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "reading the checklist in the email",
+      "performed_by": "Thomas Vogel",
+      "frequency": null
+    }
+  },
+  {
+    "id": "thomas-vogel-034",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q8",
+    "verbatim": "Nothing, apart from reading the checklist in the email",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the checklist",
+        "type": "artifact",
+        "role": "name"
+      }
+    ],
+    "kind": "artifact",
+    "payload": {
+      "name": "the checklist",
+      "format": "email",
+      "reformatted": false
+    }
+  },
+  {
+    "id": "thomas-vogel-035",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q8",
+    "verbatim": "It is usually fine",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the checklist",
+        "type": "artifact",
+        "role": "name"
+      }
+    ],
+    "kind": "artifact",
+    "payload": {
+      "name": "the checklist",
+      "format": "email",
+      "reformatted": false
+    }
+  },
+  {
+    "id": "thomas-vogel-036",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q8",
+    "verbatim": "Sometimes people use odd descriptions for hardware, which is irritating",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "hardware",
+        "type": "artifact",
+        "role": "target"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "people using odd descriptions for hardware",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "thomas-vogel-037",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q8",
+    "verbatim": "it does not stop me approving the budget",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the hardware description is odd",
+      "action": "still approve the budget",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "thomas-vogel-038",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q9",
+    "verbatim": "The budget line",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "looking up the budget line",
+      "performed_by": "Thomas Vogel",
+      "frequency": "every time"
+    }
+  },
+  {
+    "id": "thomas-vogel-039",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q9",
+    "verbatim": "You have to check it, even when it is obvious",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "even when it is obvious",
+      "action": "check the budget line",
+      "written_down": true,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "thomas-vogel-040",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q9",
+    "verbatim": "It is the same question every time: is this person covered by the approved headcount spend?",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "asking if the person is covered by the approved headcount spend",
+      "performed_by": "Thomas Vogel",
+      "frequency": "every time"
+    }
+  },
+  {
+    "id": "thomas-vogel-041",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q9",
+    "verbatim": "I do not re-explain much",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "re-explaining",
+      "performed_by": "Thomas Vogel",
+      "frequency": null
+    }
+  },
+  {
+    "id": "thomas-vogel-042",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q9",
+    "verbatim": "the rule is written down",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "approving a requisition",
+      "action": "follow the written-down rule",
+      "written_down": true,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "thomas-vogel-043",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q10",
+    "verbatim": "For this step, mine is the sign-off",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "approver"
+      }
+    ],
+    "kind": "approval",
+    "payload": {
+      "approver": "Thomas Vogel",
+      "what_is_checked": "the budget line",
+      "ever_rejected": "cant_recall",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "thomas-vogel-044",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q10",
+    "verbatim": "The headcount budget has already been approved somewhere before it reaches me",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "approval",
+    "payload": {
+      "approver": "someone (upstream)",
+      "what_is_checked": "the headcount budget",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "thomas-vogel-045",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q10",
+    "verbatim": "I am not involved in that bit",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "approving the headcount budget",
+      "performed_by": "Thomas Vogel",
+      "frequency": null
+    }
+  },
+  {
+    "id": "thomas-vogel-046",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q10",
+    "verbatim": "I have not sent one back, at least not that I remember",
+    "hedging": "approximate",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "approver"
+      }
+    ],
+    "kind": "approval",
+    "payload": {
+      "approver": "Thomas Vogel",
+      "what_is_checked": "the budget line",
+      "ever_rejected": "cant_recall",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "thomas-vogel-047",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q11",
+    "verbatim": "Nothing for this",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "keeping a shadow spreadsheet/list for the approvals",
+      "compensates_for": null,
+      "private": false
+    }
+  },
+  {
+    "id": "thomas-vogel-048",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q11",
+    "verbatim": "Finance has the requisition and its approval",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "finance system",
+        "type": "system",
+        "role": "name"
+      }
+    ],
+    "kind": "system",
+    "payload": {
+      "name": "Finance (the finance system)",
+      "used_for": "holding the requisition and its approval",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "thomas-vogel-049",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q11",
+    "verbatim": "I am not keeping a shadow list of new starters; that would be Katrin's world, if anyone's",
+    "hedging": "deferred",
+    "polarity": "denied",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "owner"
+      }
+    ],
+    "kind": "workaround",
+    "payload": {
+      "what": "a shadow list of new starters",
+      "compensates_for": null,
+      "private": false
+    }
+  },
+  {
+    "id": "thomas-vogel-050",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q12",
+    "verbatim": "There is no dramatic deadline on my side",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "no dramatic deadline",
+      "batching": null,
+      "driver": null
+    }
+  },
+  {
+    "id": "thomas-vogel-051",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q12",
+    "verbatim": "New starters want everything ready on day one, naturally",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "consequence",
+    "payload": {
+      "subject": "a new starter's equipment on day one",
+      "if_wrong": "not ready on day one",
+      "reversible": "unknown",
+      "blast_radius": "individual",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "thomas-vogel-052",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q12",
+    "verbatim": "the approval takes no time",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the approval",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 0,
+        "high": 5,
+        "unit": "minute"
+      },
+      "subject": "the approval",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "thomas-vogel-053",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q12",
+    "verbatim": "It becomes tight when the request turns up late or when IT has a backlog",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "the deadline",
+      "if_wrong": "when the request turns up late or IT has a backlog",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "finance"
+    }
+  },
+  {
+    "id": "thomas-vogel-054",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q12",
+    "verbatim": "Then suddenly everyone is asking finance why a device is not there",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "finance being asked why a device is not there",
+      "if_wrong": "a device is not there",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "finance"
+    }
+  },
+  {
+    "id": "thomas-vogel-055",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q13",
+    "verbatim": "Not in my approval step",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "things going wrong in my approval step",
+      "path_taken": null,
+      "recalled_instances": 0
+    }
+  },
+  {
+    "id": "thomas-vogel-056",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q13",
+    "verbatim": "I have not had one go wrong",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "a requisition going wrong in my approval step",
+      "path_taken": null,
+      "recalled_instances": 0
+    }
+  },
+  {
+    "id": "thomas-vogel-057",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q13",
+    "verbatim": "If hardware arrives late, that is frustrating for the department, of course",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "hardware",
+        "type": "artifact",
+        "role": "target"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "hardware arriving late",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "thomas-vogel-058",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q13",
+    "verbatim": "If hardware arrives late, that is frustrating for the department",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "hardware",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "hardware",
+      "if_wrong": "arrives late",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "thomas-vogel-059",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q13",
+    "verbatim": "you would need to ask Markus or Petra what actually happened",
+    "hedging": "deferred",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "deferred_to"
+      },
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "deferred_to"
+      }
+    ],
+    "kind": "exception",
+    "payload": {
+      "trigger": "hardware arriving late",
+      "path_taken": null,
+      "recalled_instances": 0
+    }
+  },
+  {
+    "id": "thomas-vogel-060",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q14",
+    "verbatim": "The finance approvals would stack up, obviously",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "finance approvals",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the finance approvals",
+      "if_wrong": "stack up if I'm away",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "finance"
+    }
+  },
+  {
+    "id": "thomas-vogel-061",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q14",
+    "verbatim": "A couple of days' worth at most",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the approval backlog",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "day"
+      },
+      "subject": "the approval backlog",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "thomas-vogel-062",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q14",
+    "verbatim": "well, two weeks is two weeks, so there would be a queue",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the approval queue",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 14,
+        "high": 14,
+        "unit": "day"
+      },
+      "subject": "the approval queue",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "thomas-vogel-063",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q14",
+    "verbatim": "Someone would need authority to clear it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "approval",
+    "payload": {
+      "approver": "someone (a deputy)",
+      "what_is_checked": "the approvals",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "thomas-vogel-064",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q14",
+    "verbatim": "But the check itself is straightforward",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "the budget check is straightforward",
+      "performed_by": "Thomas Vogel",
+      "frequency": null
+    }
+  },
+  {
+    "id": "thomas-vogel-065",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q15",
+    "verbatim": "Opening an email checklist only to confirm that the requisition exists in the system",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Thomas Vogel",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "opening an email checklist only to confirm the requisition exists in the system",
+      "performed_by": "Thomas Vogel",
+      "frequency": "each requisition"
+    }
+  },
+  {
+    "id": "thomas-vogel-066",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q15",
+    "verbatim": "is not exactly the highest use of anyone's time",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "opening the email checklist only to confirm the requisition exists",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "thomas-vogel-067",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q15",
+    "verbatim": "But that is how Katrin sends it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "the checklist",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Katrin",
+      "to": "Thomas Vogel",
+      "artifact": "the checklist",
+      "mechanism": "email",
+      "chased": false
+    }
+  },
+  {
+    "id": "thomas-vogel-068",
+    "respondent_id": "thomas-vogel",
+    "session_id": "s-thomas-vogel",
+    "captured_at": "2026-09-06T13:42:29Z",
+    "question_id": "q15",
+    "verbatim": "at least it gives you a name to attach to the request",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the email checklist",
+        "type": "artifact",
+        "role": "name"
+      }
+    ],
+    "kind": "artifact",
+    "payload": {
+      "name": "the email checklist",
+      "format": "email",
+      "reformatted": null
+    }
+  }
+]

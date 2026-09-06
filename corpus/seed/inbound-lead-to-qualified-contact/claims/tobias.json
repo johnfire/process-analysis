@@ -1,0 +1,1289 @@
+[
+  {
+    "id": "tobias-001",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q1",
+    "verbatim": "Once Rainer\u2019s approved quotation lands in SAP, it\u2019s with me to decide whether the account is worth treating strategically or whether it\u2019s a one-off.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Rainer",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "approved quotation",
+        "type": "artifact",
+        "role": "artifact"
+      },
+      {
+        "text": "SAP",
+        "type": "system",
+        "role": "system"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "Rainer",
+      "to": "me",
+      "artifact": "approved quotation",
+      "mechanism": "system",
+      "chased": false
+    }
+  },
+  {
+    "id": "tobias-002",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q1",
+    "verbatim": "Once Rainer\u2019s approved quotation lands in SAP",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system",
+        "role": "system"
+      }
+    ],
+    "supersedes": null,
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "holds the approved quotation",
+      "copied_to": null,
+      "wins_conflict": true
+    }
+  },
+  {
+    "id": "tobias-003",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q1",
+    "verbatim": "Once Rainer\u2019s approved quotation lands in SAP",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "Rainer",
+        "type": "actor",
+        "role": "actor"
+      }
+    ],
+    "supersedes": null,
+    "kind": "actor",
+    "payload": {
+      "name": "Rainer",
+      "role": "approves the quotation",
+      "team": null,
+      "discovered_by": "named"
+    }
+  },
+  {
+    "id": "tobias-004",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q1",
+    "verbatim": "it\u2019s with me to decide whether the account is worth treating strategically or whether it\u2019s a one-off",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "account",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "Decide whether the account is worth treating strategically or whether it is a one-off",
+      "performed_by": "me",
+      "frequency": "each approved quotation"
+    }
+  },
+  {
+    "id": "tobias-005",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q1",
+    "verbatim": "Once Rainer\u2019s approved quotation lands in SAP",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Rainer\u2019s approved quotation",
+        "type": "artifact",
+        "role": "waiting_on"
+      }
+    ],
+    "supersedes": null,
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Rainer\u2019s approved quotation",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "tobias-006",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q1",
+    "verbatim": "The difficulty is having the account context in your head, not waiting for a document.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "account context",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "complaint",
+    "payload": {
+      "target": "having the account context in your head",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "tobias-007",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q2",
+    "verbatim": "The last one, I had to revisit it because the customer looked like a one-off on paper but had enough history to make me hesitate.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the customer",
+        "type": "actor",
+        "role": "returned_by"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rework",
+    "payload": {
+      "what": "the account classification/disposition",
+      "returned_by": "me",
+      "reason": "the customer looked like a one-off on paper but had enough history to make me hesitate",
+      "loops_to": "the classification step"
+    }
+  },
+  {
+    "id": "tobias-008",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q2",
+    "verbatim": "You can\u2019t just look at one order and call it.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "account",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "when only a single order is in front of me",
+      "action": "don\u2019t classify the account based on one order alone",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-009",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q2",
+    "verbatim": "The one before was similar, actually\u2014something in the account picture didn\u2019t quite fit, so I went back over it.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the account",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rework",
+    "payload": {
+      "what": "the account classification",
+      "returned_by": "me",
+      "reason": "something in the account picture didn\u2019t quite fit",
+      "loops_to": "the classification step"
+    }
+  },
+  {
+    "id": "tobias-010",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q2",
+    "verbatim": "something in the account picture didn\u2019t quite fit, so I went back over it.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the account",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "exception",
+    "payload": {
+      "trigger": "something in the account picture didn\u2019t quite fit",
+      "path_taken": "went back over it",
+      "pulls_in": [],
+      "recalled_instances": 2
+    }
+  },
+  {
+    "id": "tobias-011",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q2",
+    "verbatim": "It\u2019s not usually dramatic.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "revisiting a misclassified account",
+      "if_wrong": "not usually dramatic",
+      "reversible": "yes",
+      "blast_radius": "individual",
+      "borne_by": "me"
+    }
+  },
+  {
+    "id": "tobias-012",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q3",
+    "verbatim": "I\u2019ll speak with Rainer if something isn\u2019t clear in the approved quote.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Rainer",
+        "type": "actor",
+        "role": "to"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "if something isn\u2019t clear in the approved quote",
+      "action": "I speak with Rainer",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-013",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q3",
+    "verbatim": "Lukas will chase me occasionally because he wants to know how to approach the customer.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "Lukas",
+        "type": "actor",
+        "role": "from"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "Lukas",
+      "to": "me",
+      "artifact": "how to approach the customer",
+      "mechanism": "verbal",
+      "chased": true
+    }
+  },
+  {
+    "id": "tobias-014",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q3",
+    "verbatim": "if I\u2019ve got the quote and the SAP history, I can make the call.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system",
+        "role": "system"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "if I\u2019ve got the quote and the SAP history",
+      "action": "I can make the call",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-015",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q3",
+    "verbatim": "Lukas will chase me occasionally",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "Lukas",
+        "type": "actor",
+        "role": "actor"
+      }
+    ],
+    "supersedes": null,
+    "kind": "actor",
+    "payload": {
+      "name": "Lukas",
+      "role": "approaches the customer",
+      "team": null,
+      "discovered_by": "named"
+    }
+  },
+  {
+    "id": "tobias-016",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q4",
+    "verbatim": "Fifteen minutes, perhaps.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the decision",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 10,
+        "high": 20,
+        "unit": "minute"
+      },
+      "subject": "deciding strategic versus one-off",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "tobias-017",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q4",
+    "verbatim": "I tend to let it sit until Tuesday, when I do the management side of things, because deciding strategic versus one-off deserves proper thought.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the decision",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "schedule",
+    "payload": {
+      "cadence": "Tuesdays",
+      "batching": true,
+      "driver": "I do the management side of things; deciding strategic versus one-off deserves proper thought"
+    }
+  },
+  {
+    "id": "tobias-018",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q4",
+    "verbatim": "You need to look at what the customer has been doing, whether there\u2019s a broader opportunity, that sort of thing.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the customer",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "Look at what the customer has been doing and whether there\u2019s a broader opportunity",
+      "performed_by": "me",
+      "frequency": "when deciding strategic versus one-off"
+    }
+  },
+  {
+    "id": "tobias-019",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q5",
+    "verbatim": "Sometimes the qualification comes back because we need to reconsider it.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the qualification",
+        "type": "artifact",
+        "role": "what"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rework",
+    "payload": {
+      "what": "the qualification",
+      "returned_by": "we",
+      "reason": "we need to reconsider it",
+      "loops_to": "the qualification/disposition step"
+    }
+  },
+  {
+    "id": "tobias-020",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q5",
+    "verbatim": "Maybe I\u2019ve called it one-off and then the account context points the other way.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "account context",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "exception",
+    "payload": {
+      "trigger": "I\u2019ve called it one-off and then the account context points the other way",
+      "path_taken": "the qualification comes back to be reconsidered",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "tobias-021",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q5",
+    "verbatim": "It\u2019s easier to correct early than send Lukas in with the wrong framing.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Lukas",
+        "type": "actor",
+        "role": "to"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "when I\u2019ve made a call that looks wrong",
+      "action": "correct it early rather than send Lukas in with the wrong framing",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-022",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q6",
+    "verbatim": "Don\u2019t classify the quote; classify the account.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the account",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "when classifying an opportunity",
+      "action": "classify the account, not the quote",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-023",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q6",
+    "verbatim": "A big quote is not automatically strategic, and a modest one can be the door into a serious customer relationship.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "quotation",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "when assessing a quote\u2019s size",
+      "action": "a big quote is not automatically strategic; a modest one can be the door into a serious customer relationship",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-024",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q6",
+    "verbatim": "Use judgment. There isn\u2019t a rulebook that will do that for you.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "when classifying an account",
+      "action": "use judgment; there is no rulebook that will do this for you",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-025",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q7",
+    "verbatim": "The approved quotation is in SAP, and I record the disposition there.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system",
+        "role": "system"
+      }
+    ],
+    "supersedes": null,
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "holds the approved quotation and the disposition",
+      "copied_to": null,
+      "wins_conflict": true
+    }
+  },
+  {
+    "id": "tobias-026",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q7",
+    "verbatim": "I record the disposition there.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "disposition",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "Record the disposition in SAP",
+      "performed_by": "me",
+      "frequency": "each qualification"
+    }
+  },
+  {
+    "id": "tobias-027",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q7",
+    "verbatim": "Then I discuss it with Lukas.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Lukas",
+        "type": "actor",
+        "role": "to"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "me",
+      "to": "Lukas",
+      "artifact": "the disposition",
+      "mechanism": "verbal",
+      "chased": false
+    }
+  },
+  {
+    "id": "tobias-028",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q7",
+    "verbatim": "I\u2019m not doing data-entry gymnastics all day\u2014that\u2019s not where the value is.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "for the quotation and disposition",
+      "action": "I don\u2019t do data-entry gymnastics; that\u2019s not where the value is",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-029",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q8",
+    "verbatim": "Sometimes the account information needs interpreting rather than reformatting, which is a different thing entirely.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "account information",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "supersedes": null,
+    "kind": "artifact",
+    "payload": {
+      "name": "account information",
+      "format": "SAP",
+      "reformatted": false
+    }
+  },
+  {
+    "id": "tobias-030",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q8",
+    "verbatim": "Sometimes the account information needs interpreting rather than reformatting, which is a different thing entirely.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "account information",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "Interpret the account information",
+      "performed_by": "me",
+      "frequency": "sometimes"
+    }
+  },
+  {
+    "id": "tobias-031",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q8",
+    "verbatim": "Nothing that stands out.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "artifact",
+    "payload": {
+      "name": "the approved quotation",
+      "format": "SAP",
+      "reformatted": false
+    }
+  },
+  {
+    "id": "tobias-032",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q9",
+    "verbatim": "Account history, mainly: what they\u2019ve bought, whether there\u2019s a relationship beyond this quote, whether it fits the region\u2019s direction.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "account history",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "Look up account history: what they\u2019ve bought, whether there\u2019s a relationship beyond this quote, whether it fits the region\u2019s direction",
+      "performed_by": "me",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "tobias-033",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q9",
+    "verbatim": "Account history, mainly",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "account history",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "artifact",
+    "payload": {
+      "name": "account history",
+      "format": "SAP",
+      "reformatted": false
+    }
+  },
+  {
+    "id": "tobias-034",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q9",
+    "verbatim": "And then I explain to Lukas why I\u2019ve made the call, especially if it\u2019s a customer where the obvious answer is wrong.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Lukas",
+        "type": "actor",
+        "role": "to"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "me",
+      "to": "Lukas",
+      "artifact": "why I\u2019ve made the call",
+      "mechanism": "verbal",
+      "chased": false
+    }
+  },
+  {
+    "id": "tobias-035",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q10",
+    "verbatim": "The quotation has already been approved by Rainer before it reaches me.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "Rainer",
+        "type": "actor",
+        "role": "approver"
+      },
+      {
+        "text": "the quotation",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "supersedes": null,
+    "kind": "approval",
+    "payload": {
+      "approver": "Rainer",
+      "what_is_checked": "the quotation",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "tobias-036",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q10",
+    "verbatim": "I can send my own disposition back around for reconsideration if the picture changes, but it isn\u2019t a formal approval chain.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the disposition",
+        "type": "artifact",
+        "role": "what"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rework",
+    "payload": {
+      "what": "the disposition",
+      "returned_by": "me",
+      "reason": "if the picture changes",
+      "loops_to": "the disposition/classification step"
+    }
+  },
+  {
+    "id": "tobias-037",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q10",
+    "verbatim": "For my qualification, nobody signs it off.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "my qualification",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "for my qualification",
+      "action": "nobody signs it off; it is not a formal approval chain",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-038",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q11",
+    "verbatim": "The meaningful decision belongs in SAP.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system",
+        "role": "system"
+      }
+    ],
+    "supersedes": null,
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "the meaningful decision",
+      "copied_to": null,
+      "wins_conflict": true
+    }
+  },
+  {
+    "id": "tobias-039",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q11",
+    "verbatim": "If I have a thought while I\u2019m considering an account, it\u2019s just working context until I make the disposition.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the account",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "Hold a thought as working context until I make the disposition",
+      "performed_by": "me",
+      "frequency": "while considering an account"
+    }
+  },
+  {
+    "id": "tobias-040",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q11",
+    "verbatim": "I don\u2019t keep a separate spreadsheet for this.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "for the account qualification",
+      "action": "I don\u2019t keep a separate spreadsheet; the meaningful decision belongs in SAP",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-041",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q12",
+    "verbatim": "Once a quotation is approved, nobody wants it hanging around.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the quotation",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "once a quotation is approved",
+      "action": "nobody wants it hanging around; handle it promptly",
+      "written_down": false,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "tobias-042",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q12",
+    "verbatim": "Tuesdays can get crowded because that\u2019s when I work through these decisions",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "these decisions",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "schedule",
+    "payload": {
+      "cadence": "Tuesdays",
+      "batching": true,
+      "driver": "that\u2019s when I work through these decisions"
+    }
+  },
+  {
+    "id": "tobias-043",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q12",
+    "verbatim": "but it\u2019s normally only a couple of days.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the decision",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "duration",
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "day"
+      },
+      "subject": "handling a qualification from landing to done",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "tobias-044",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q13",
+    "verbatim": "The real risk is treating a strategically useful customer like a transaction, or putting disproportionate field-sales effort into a genuine one-off.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the customer",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "treating a strategically useful customer like a transaction, or putting disproportionate field-sales effort into a genuine one-off",
+      "if_wrong": "the wrong classification drives the wrong effort",
+      "reversible": "costly",
+      "blast_radius": "customer",
+      "borne_by": "me and Lukas"
+    }
+  },
+  {
+    "id": "tobias-045",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q13",
+    "verbatim": "You can recover, but it\u2019s costly in customer terms.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the customer",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "recovery from a misclassification",
+      "if_wrong": "costly in customer terms",
+      "reversible": "yes",
+      "blast_radius": "customer",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "tobias-046",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q14",
+    "verbatim": "The strategic-versus-one-off calls would pile up, and Lukas would lack direction on how to handle those accounts.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the strategic-versus-one-off calls",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "the strategic-versus-one-off calls",
+      "if_wrong": "they would pile up",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "me"
+    }
+  },
+  {
+    "id": "tobias-047",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q14",
+    "verbatim": "and Lukas would lack direction on how to handle those accounts.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Lukas",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "Lukas\u2019s handling of those accounts",
+      "if_wrong": "Lukas would lack direction on how to handle them",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "Lukas"
+    }
+  },
+  {
+    "id": "tobias-048",
+    "respondent_id": "tobias",
+    "session_id": "s-tobias",
+    "captured_at": "2026-09-06T14:22:02Z",
+    "question_id": "q14",
+    "verbatim": "Some would be obvious, but the awkward ones are awkward precisely because they need someone who knows the commercial context.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the awkward accounts",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "the awkward accounts",
+      "if_wrong": "they are awkward precisely because they need someone who knows the commercial context",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "me"
+    }
+  }
+]

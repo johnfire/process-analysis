@@ -1,0 +1,1156 @@
+[
+  {
+    "id": "lukas-001",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q1",
+    "kind": "rule",
+    "verbatim": "Once Tobias has said an account is qualified, I pick it up for the next calling block and get the introduction out",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "Tobias has said an account is qualified",
+      "action": "I pick it up for the next calling block and get the introduction out",
+      "written_down": false
+    }
+  },
+  {
+    "id": "lukas-002",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q1",
+    "kind": "handoff",
+    "verbatim": "Once Tobias has said an account is qualified, I pick it up",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "from": "Tobias",
+      "to": "me",
+      "artifact": "qualification",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "lukas-003",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q1",
+    "kind": "step",
+    "verbatim": "get the introduction out",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "get the introduction out",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-004",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q1",
+    "kind": "duration",
+    "verbatim": "It's usually just a couple of days",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "day"
+      },
+      "subject": "qualified accounts",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "lukas-005",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q2",
+    "kind": "rework",
+    "verbatim": "One came back to me and I had to do the first contact again",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "what": "the first contact",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": "first contact"
+    }
+  },
+  {
+    "id": "lukas-006",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q2",
+    "kind": "complaint",
+    "verbatim": "which is annoying because it feels like I'd already done it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "target": "having to do the first contact again",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "lukas-007",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q2",
+    "kind": "step",
+    "verbatim": "Tobias brought the disposition into the meeting",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "payload": {
+      "description": "bring the disposition into the meeting",
+      "performed_by": "Tobias",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-008",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q2",
+    "kind": "handoff",
+    "verbatim": "Tobias brought the disposition into the meeting",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "payload": {
+      "from": "Tobias",
+      "to": "me",
+      "artifact": "disposition",
+      "mechanism": "meeting",
+      "chased": false
+    }
+  },
+  {
+    "id": "lukas-009",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q2",
+    "kind": "step",
+    "verbatim": "I checked it in SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "check the account in SAP",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-010",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q2",
+    "kind": "step",
+    "verbatim": "sent the intro mail",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "send the intro mail",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-011",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q2",
+    "kind": "step",
+    "verbatim": "then followed up by phone",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "follow up by phone",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-012",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q3",
+    "kind": "step",
+    "verbatim": "I don't really chase anyone in this bit",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "payload": {
+      "description": "chase anyone in this bit",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-013",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q3",
+    "kind": "handoff",
+    "verbatim": "Tobias is the person I need the qualification from",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "from": "Tobias",
+      "to": "me",
+      "artifact": "qualification",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "lukas-014",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q3",
+    "kind": "step",
+    "verbatim": "Sabine will notice if she has not got the intro and follow-up from me",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "payload": {
+      "description": "notice if the intro and follow-up have not been received",
+      "performed_by": "Sabine",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-015",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q3",
+    "kind": "handoff",
+    "verbatim": "if she has not got the intro and follow-up from me",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "from": "me",
+      "to": "Sabine",
+      "artifact": "intro and follow-up",
+      "mechanism": "email",
+      "chased": false
+    }
+  },
+  {
+    "id": "lukas-016",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q3",
+    "kind": "step",
+    "verbatim": "nobody is standing over me about it",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "payload": {
+      "description": "have anybody standing over me about it",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-017",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q4",
+    "kind": "duration",
+    "verbatim": "Maybe ten, twenty minutes",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 10,
+        "high": 20,
+        "unit": "minute"
+      },
+      "subject": "the whole thing from landing on me to being done",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "lukas-018",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q4",
+    "kind": "step",
+    "verbatim": "The actual mail is quick",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "the actual mail (the intro)",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-019",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q4",
+    "kind": "step",
+    "verbatim": "then the call",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "the call",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-020",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q4",
+    "kind": "duration",
+    "verbatim": "if I'm looking at the account in SAP and trying a couple of times to reach somebody, it can eat up a decent chunk of the afternoon",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 2,
+        "high": 4,
+        "unit": "hour"
+      },
+      "subject": "trying to reach somebody",
+      "basis": "worst_case"
+    }
+  },
+  {
+    "id": "lukas-021",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q4",
+    "kind": "step",
+    "verbatim": "if I'm looking at the account in SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "look at the account in SAP",
+      "performed_by": "me",
+      "frequency": "when trying to reach somebody"
+    }
+  },
+  {
+    "id": "lukas-022",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q4",
+    "kind": "step",
+    "verbatim": "trying a couple of times to reach somebody",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "try to reach somebody by phone",
+      "performed_by": "me",
+      "frequency": "a couple of times"
+    }
+  },
+  {
+    "id": "lukas-023",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q5",
+    "kind": "rework",
+    "verbatim": "Sometimes the first-contact work comes back around and I redo it",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "what": "the first-contact work",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": "first contact"
+    }
+  },
+  {
+    "id": "lukas-024",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q5",
+    "kind": "step",
+    "verbatim": "Not constantly, but enough that you remember it",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "the first-contact work comes back around",
+      "performed_by": "me",
+      "frequency": "not constantly, but enough that you remember it"
+    }
+  },
+  {
+    "id": "lukas-025",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q5",
+    "kind": "consequence",
+    "verbatim": "Usually it is just another pass rather than some enormous problem",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "subject": "the reworked first contact",
+      "if_wrong": "it is just another pass rather than some enormous problem",
+      "reversible": "yes",
+      "blast_radius": "individual"
+    }
+  },
+  {
+    "id": "lukas-026",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q6",
+    "kind": "rule",
+    "verbatim": "Don't treat \"qualified\" as meaning you can fire off a generic mail and forget it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "an account is qualified",
+      "action": "don't fire off a generic mail and forget it",
+      "written_down": false
+    }
+  },
+  {
+    "id": "lukas-027",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q6",
+    "kind": "step",
+    "verbatim": "Check the account in SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "check the account in SAP",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-028",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q6",
+    "kind": "step",
+    "verbatim": "make the introduction feel like it is actually for them",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "make the introduction feel like it is actually for them",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-029",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q6",
+    "kind": "step",
+    "verbatim": "and follow up",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "follow up",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-030",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q6",
+    "kind": "rule",
+    "verbatim": "Enthusiasm matters a lot there",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "making the introduction",
+      "action": "enthusiasm matters a lot",
+      "written_down": false
+    }
+  },
+  {
+    "id": "lukas-031",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q7",
+    "kind": "system",
+    "verbatim": "I'm in SAP and Outlook",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "name": "SAP",
+      "used_for": "the account data",
+      "copied_to": "Outlook",
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "lukas-032",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q7",
+    "kind": "system",
+    "verbatim": "I'm in SAP and Outlook",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "name": "Outlook",
+      "used_for": "the intro email",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "lukas-033",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q7",
+    "kind": "step",
+    "verbatim": "I use what I need from the account to put together the intro email",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "use what I need from the account to put together the intro email",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-034",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q7",
+    "kind": "system",
+    "verbatim": "It's not like I maintain some massive sheet of it",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "payload": {
+      "name": "a massive sheet of it",
+      "used_for": null,
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "lukas-035",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q8",
+    "kind": "step",
+    "verbatim": "Not much, really",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "payload": {
+      "description": "reformat anything before use",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-036",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q8",
+    "kind": "handoff",
+    "verbatim": "The qualification comes through in the meeting",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "payload": {
+      "from": "Tobias",
+      "to": "me",
+      "artifact": "qualification",
+      "mechanism": "meeting",
+      "chased": false
+    }
+  },
+  {
+    "id": "lukas-037",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q8",
+    "kind": "step",
+    "verbatim": "I work from SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "work from SAP",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-038",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q8",
+    "kind": "rule",
+    "verbatim": "If someone wants a different format from me, that is normally just how I write the email",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "someone wants a different format from me",
+      "action": "I write the email that way",
+      "written_down": false
+    }
+  },
+  {
+    "id": "lukas-039",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q9",
+    "kind": "rule",
+    "verbatim": "I look at the account before I contact them",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "before I contact them",
+      "action": "I look at the account",
+      "written_down": false
+    }
+  },
+  {
+    "id": "lukas-040",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q9",
+    "kind": "step",
+    "verbatim": "I would not say I re-explain the same thing every time",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "payload": {
+      "description": "re-explain the same thing every time",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-041",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q9",
+    "kind": "rule",
+    "verbatim": "it depends on who I am calling and what Tobias has said",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "who I am calling and what Tobias has said",
+      "action": "what I say depends on it",
+      "written_down": false
+    }
+  },
+  {
+    "id": "lukas-042",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q9",
+    "kind": "rule",
+    "verbatim": "You need a sensible opening, though",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "you are contacting them",
+      "action": "need a sensible opening",
+      "written_down": false
+    }
+  },
+  {
+    "id": "lukas-043",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q9",
+    "kind": "consequence",
+    "verbatim": "otherwise it sounds like cold outreach",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "subject": "the opening/contact",
+      "if_wrong": "it sounds like cold outreach",
+      "reversible": "yes",
+      "blast_radius": "customer"
+    }
+  },
+  {
+    "id": "lukas-044",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q10",
+    "kind": "approval",
+    "verbatim": "Tobias's qualification is effectively the go-ahead",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "approver": "Tobias",
+      "what_is_checked": "the qualification",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "lukas-045",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q10",
+    "kind": "approval",
+    "verbatim": "I don't know whether he has \"sent something back\" in the formal sense",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "approver": "Tobias",
+      "what_is_checked": "the qualification",
+      "ever_rejected": "cant_recall",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "lukas-046",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q10",
+    "kind": "step",
+    "verbatim": "we discuss it in the meeting",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "discuss the qualification in the meeting",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-047",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q10",
+    "kind": "step",
+    "verbatim": "it is pretty straightforward from my side",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "description": "the qualification go-ahead is pretty straightforward from my side",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-048",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q11",
+    "kind": "workaround",
+    "verbatim": "I don't keep a separate spreadsheet for this",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "payload": {
+      "what": "a separate spreadsheet",
+      "compensates_for": null,
+      "private": null
+    }
+  },
+  {
+    "id": "lukas-049",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q11",
+    "kind": "workaround",
+    "verbatim": "I might have my own working notes while I am doing calls",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "what": "my own working notes",
+      "compensates_for": null,
+      "private": true
+    }
+  },
+  {
+    "id": "lukas-050",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q11",
+    "kind": "system",
+    "verbatim": "nothing I would call a parallel system",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "payload": {
+      "name": "a parallel system",
+      "used_for": null,
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "lukas-051",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q12",
+    "kind": "schedule",
+    "verbatim": "My Tuesday and Thursday outreach blocks",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "cadence": "Tuesday and Thursday",
+      "batching": true,
+      "driver": null
+    }
+  },
+  {
+    "id": "lukas-052",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q12",
+    "kind": "wait",
+    "verbatim": "If something clears just after one, it waits for the next one",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "waiting_on": "the next outreach block",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "lukas-053",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q12",
+    "kind": "complaint",
+    "verbatim": "which can feel like ages from the other side",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "payload": {
+      "target": "the wait for the next outreach block",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "lukas-054",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q12",
+    "kind": "rule",
+    "verbatim": "once I have it in the block, I move quite fast",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "I have it in the block",
+      "action": "I move quite fast",
+      "written_down": false
+    }
+  },
+  {
+    "id": "lukas-055",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q13",
+    "kind": "consequence",
+    "verbatim": "I honestly do not know the wider consequence",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "subject": "the wider consequence",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "unknown"
+    }
+  },
+  {
+    "id": "lukas-056",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q13",
+    "kind": "consequence",
+    "verbatim": "the bad version is that an introduction has to be redone or the contact happens later than it should",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "subject": "the introduction/contact",
+      "if_wrong": "has to be redone or the contact happens later than it should",
+      "reversible": "yes",
+      "blast_radius": "individual",
+      "borne_by": "me"
+    }
+  },
+  {
+    "id": "lukas-057",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q13",
+    "kind": "consequence",
+    "verbatim": "Sabine or Tobias would know if it caused something bigger downstream",
+    "hedging": "deferred",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "payload": {
+      "subject": "something bigger downstream",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "unknown"
+    }
+  },
+  {
+    "id": "lukas-058",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q14",
+    "kind": "wait",
+    "verbatim": "There would be qualified accounts waiting for first contact, definitely",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "waiting_on": "first contact from me",
+      "owner": "internal",
+      "current": false,
+      "duration": {
+        "low": 2,
+        "high": 2,
+        "unit": "week"
+      }
+    }
+  },
+  {
+    "id": "lukas-059",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q14",
+    "kind": "schedule",
+    "verbatim": "The Tuesday and Thursday rhythm would be gone",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "cadence": "Tuesday and Thursday",
+      "batching": true,
+      "driver": "outreach blocks"
+    }
+  },
+  {
+    "id": "lukas-060",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q14",
+    "kind": "consequence",
+    "verbatim": "so I would have a pile to work through when I returned",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "subject": "the qualified accounts waiting",
+      "if_wrong": "a pile to work through",
+      "reversible": "yes",
+      "blast_radius": "individual",
+      "borne_by": "me"
+    }
+  },
+  {
+    "id": "lukas-061",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q14",
+    "kind": "consequence",
+    "verbatim": "I can't really say what happens after Sabine gets my email",
+    "hedging": "deferred",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "payload": {
+      "subject": "what happens after Sabine gets my email",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "unknown"
+    }
+  },
+  {
+    "id": "lukas-062",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q15",
+    "kind": "complaint",
+    "verbatim": "I would not call any of it pointless",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "payload": {
+      "target": "any of my work",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "lukas-063",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q15",
+    "kind": "complaint",
+    "verbatim": "Maybe the repeat first contacts are frustrating when they come back",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "target": "the repeat first contacts",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "lukas-064",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q15",
+    "kind": "rework",
+    "verbatim": "when they come back",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "what": "the repeat first contacts",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": "first contact"
+    }
+  },
+  {
+    "id": "lukas-065",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-06T13:54:18Z",
+    "question_id": "q15",
+    "kind": "rule",
+    "verbatim": "making the contact properly is the job",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "condition": "making the contact",
+      "action": "make the contact properly (it is the job)",
+      "written_down": false
+    }
+  }
+]

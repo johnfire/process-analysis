@@ -1,0 +1,1501 @@
+[
+  {
+    "id": "petra-lang-001",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q1",
+    "verbatim": "Andrea's clinical-access session, as usual.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Andrea",
+        "type": "actor",
+        "role": "waiting_on"
+      },
+      {
+        "text": "Andrea's clinical-access session",
+        "type": "artifact",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Andrea's clinical-access session",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-002",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q1",
+    "verbatim": "Until that clears I can't put the new nurse on supervised patient contact properly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the new nurse",
+        "type": "actor"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "the clinical-access session has not cleared",
+      "action": "I cannot put the new nurse on supervised patient contact properly",
+      "written_down": null
+    }
+  },
+  {
+    "id": "petra-lang-003",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q1",
+    "verbatim": "it can sit there for ages",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Andrea's clinical-access session",
+        "type": "artifact",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Andrea's clinical-access session",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-004",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q2",
+    "verbatim": "The last one was held up because the access training hadn't been cleared",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "the access training",
+        "type": "artifact",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the access training",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-005",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q2",
+    "verbatim": "so the mentor rota had to be moved around",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the mentor rota",
+        "type": "artifact"
+      }
+    ],
+    "kind": "rework",
+    "payload": {
+      "what": "the mentor rota",
+      "returned_by": null,
+      "reason": "the access training hadn't been cleared",
+      "loops_to": "the mentor rota scheduling"
+    }
+  },
+  {
+    "id": "petra-lang-006",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q2",
+    "verbatim": "Markus's account and card were late, I think.",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "waiting_on"
+      },
+      {
+        "text": "Markus's account and card",
+        "type": "artifact",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Markus's account and card",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-007",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q2",
+    "verbatim": "it all arrives in bits",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "the account and card",
+        "type": "artifact"
+      }
+    ],
+    "kind": "exception",
+    "payload": {
+      "trigger": "the account and card arriving separately",
+      "path_taken": "it all arrives in bits",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "petra-lang-008",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q2",
+    "verbatim": "Then everyone asks why the person is not on the ward yet.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "everyone",
+        "type": "team"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the person is not on the ward yet",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "the new nurse's onboarding"
+    }
+  },
+  {
+    "id": "petra-lang-009",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q3",
+    "verbatim": "Mostly Andrea.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Andrea",
+        "type": "actor",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Andrea's clinical-access session",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-010",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q3",
+    "verbatim": "Sometimes Markus, if the account and card are not showing up.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "waiting_on"
+      },
+      {
+        "text": "the account and card",
+        "type": "artifact"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "the account and card are not showing up",
+      "action": "I chase Markus",
+      "written_down": null
+    }
+  },
+  {
+    "id": "petra-lang-011",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q3",
+    "verbatim": "Katrin will chase me for the supervision schedule",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "the supervision schedule",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "Katrin",
+      "artifact": "the supervision schedule",
+      "mechanism": "verbal",
+      "chased": true
+    }
+  },
+  {
+    "id": "petra-lang-012",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q3",
+    "verbatim": "I can't make a sensible one before the clinical session is done.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rule",
+    "payload": {
+      "condition": "the clinical session is done",
+      "action": "I can make a sensible supervision schedule",
+      "written_down": null
+    }
+  },
+  {
+    "id": "petra-lang-013",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q4",
+    "verbatim": "Orientation is an hour, perhaps",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "orientation",
+        "type": "step"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 45,
+        "high": 75,
+        "unit": "minute"
+      },
+      "subject": "orientation",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "petra-lang-014",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q4",
+    "verbatim": "the roster change takes ten minutes",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the roster change",
+        "type": "step"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 10,
+        "high": 10,
+        "unit": "minute"
+      },
+      "subject": "the roster change",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "petra-lang-015",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q4",
+    "verbatim": "The difficulty is finding a gap between handover, rounds, staffing problems, and getting the mentor and new person together.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the mentor",
+        "type": "actor"
+      },
+      {
+        "text": "the new person",
+        "type": "actor"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "a gap between handover, rounds, staffing problems, and getting the mentor and new person together",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-016",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q4",
+    "verbatim": "So it can take a couple of days",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "duration",
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "day"
+      },
+      "subject": "the onboarding from it landing on me to done",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "petra-lang-017",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q5",
+    "verbatim": "The training record comes through Andrea",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "Andrea",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "the training record",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Andrea",
+      "to": "Petra",
+      "artifact": "the training record",
+      "mechanism": "system",
+      "chased": false
+    }
+  },
+  {
+    "id": "petra-lang-018",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q5",
+    "verbatim": "then I can arrange the supervised work",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rule",
+    "payload": {
+      "condition": "the training record has come through",
+      "action": "I can arrange the supervised work",
+      "written_down": null
+    }
+  },
+  {
+    "id": "petra-lang-019",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q5",
+    "verbatim": "Later Katrin brings the probation goals into the conversation.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "the probation goals",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Katrin",
+      "to": "Petra",
+      "artifact": "the probation goals",
+      "mechanism": "meeting",
+      "chased": false
+    }
+  },
+  {
+    "id": "petra-lang-020",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q5",
+    "verbatim": "Nothing really comes back for correction",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rework",
+    "payload": {
+      "what": "work coming back for correction",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": null
+    }
+  },
+  {
+    "id": "petra-lang-021",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q5",
+    "verbatim": "if something is wrong it is normally because something upstream has not been completed",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "a downstream error",
+      "if_wrong": "something upstream has not been completed",
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-lang-022",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q6",
+    "verbatim": "Do not roster someone for patient contact without a named mentor and an actual shadowing plan.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a named mentor",
+        "type": "actor"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "rostering someone for patient contact",
+      "action": "require a named mentor and an actual shadowing plan",
+      "written_down": true
+    }
+  },
+  {
+    "id": "petra-lang-023",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q6",
+    "verbatim": "do not promise the ward they can start clinical work just because HR says they have started.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "HR",
+        "type": "external_party"
+      },
+      {
+        "text": "the ward",
+        "type": "team"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "HR says they have started",
+      "action": "do not promise the ward they can start clinical work",
+      "written_down": null
+    }
+  },
+  {
+    "id": "petra-lang-024",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q7",
+    "verbatim": "I put the mentor and shadowing arrangement into the rota",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the rota",
+        "type": "system",
+        "role": "copied_to"
+      },
+      {
+        "text": "the mentor and shadowing arrangement",
+        "type": "artifact"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "put the mentor and shadowing arrangement into the rota",
+      "performed_by": "Petra"
+    }
+  },
+  {
+    "id": "petra-lang-025",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q7",
+    "verbatim": "the rota",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the rota",
+        "type": "system"
+      }
+    ],
+    "kind": "system",
+    "payload": {
+      "name": "the rota",
+      "used_for": "mentor and shadowing arrangement",
+      "copied_to": "the supervision schedule",
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "petra-lang-026",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q7",
+    "verbatim": "and then tell Katrin the supervision schedule",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "the supervision schedule",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "Katrin",
+      "artifact": "the supervision schedule",
+      "mechanism": "verbal",
+      "chased": false
+    }
+  },
+  {
+    "id": "petra-lang-027",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q7",
+    "verbatim": "it is just making sure everyone has the same information",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "everyone",
+        "type": "team"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "making sure everyone has the same information",
+      "performed_by": "Petra"
+    }
+  },
+  {
+    "id": "petra-lang-028",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q7",
+    "verbatim": "Though naturally they all want it in their own format.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "they",
+        "type": "team"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "everyone wanting the information in their own format",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-lang-029",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q8",
+    "verbatim": "Andrea's training record is usable once it is there.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Andrea",
+        "type": "actor"
+      },
+      {
+        "text": "Andrea's training record",
+        "type": "artifact"
+      }
+    ],
+    "kind": "artifact",
+    "payload": {
+      "name": "Andrea's training record",
+      "format": null,
+      "reformatted": false
+    }
+  },
+  {
+    "id": "petra-lang-030",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q8",
+    "verbatim": "translating it into an actual ward plan: who is free, which shifts work, which mentor knows that specialty",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "an actual ward plan",
+        "type": "artifact"
+      },
+      {
+        "text": "the mentor",
+        "type": "actor"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "translating the training record into an actual ward plan (who is free, which shifts work, which mentor knows that specialty)",
+      "performed_by": "Petra"
+    }
+  },
+  {
+    "id": "petra-lang-031",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q8",
+    "verbatim": "The irritating part is translating it into an actual ward plan",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "an actual ward plan",
+        "type": "artifact"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "translating the record into an actual ward plan",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-lang-032",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q8",
+    "verbatim": "A record does not staff a ward.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a record",
+        "type": "artifact"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "a training record",
+      "if_wrong": "a record does not staff a ward",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-lang-033",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q9",
+    "verbatim": "The mentor availability, mostly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the mentor availability",
+        "type": "artifact"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "look up the mentor availability",
+      "performed_by": "Petra",
+      "frequency": "every time"
+    }
+  },
+  {
+    "id": "petra-lang-035",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q9",
+    "verbatim": "You would think that would be obvious, but apparently not.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the new hire",
+        "type": "actor"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "the fact that started employment does not mean clinical readiness, needing re-explanation",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-lang-036",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q10",
+    "verbatim": "For probation I sign the start record after the HRIS check-in has been filed",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the start record",
+        "type": "artifact"
+      },
+      {
+        "text": "HRIS",
+        "type": "system",
+        "role": "prerequisite"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "the HRIS check-in has been filed",
+      "action": "I sign the start record",
+      "written_down": null
+    }
+  },
+  {
+    "id": "petra-lang-037",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q10",
+    "verbatim": "then I email the employee confirmation",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the employee confirmation",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "the employee",
+      "artifact": "the employee confirmation",
+      "mechanism": "email",
+      "chased": false
+    }
+  },
+  {
+    "id": "petra-lang-038",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q10",
+    "verbatim": "Nobody sends that back, no.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the employee confirmation",
+        "type": "artifact"
+      }
+    ],
+    "kind": "approval",
+    "payload": {
+      "approver": "the employee",
+      "what_is_checked": "the start record / employee confirmation",
+      "ever_rejected": "no",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "petra-lang-039",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q10",
+    "verbatim": "Andrea's clearance is the practical sign-off before supervised clinical work",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Andrea",
+        "type": "actor",
+        "role": "approver"
+      }
+    ],
+    "kind": "approval",
+    "payload": {
+      "approver": "Andrea",
+      "what_is_checked": "clearance before supervised clinical work",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "petra-lang-040",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q11",
+    "verbatim": "I keep the practical bits in my ward notes",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "my ward notes",
+        "type": "system"
+      }
+    ],
+    "kind": "workaround",
+    "payload": {
+      "what": "ward notes holding the practical bits (who is buddied with whom, which shifts they are shadowing)",
+      "compensates_for": "the systems",
+      "private": true
+    }
+  },
+  {
+    "id": "petra-lang-041",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q11",
+    "verbatim": "The systems have their records",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the systems",
+        "type": "system"
+      }
+    ],
+    "kind": "system",
+    "payload": {
+      "name": "the systems",
+      "used_for": "holding records",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "petra-lang-042",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q11",
+    "verbatim": "they do not tell me whether the Tuesday early shift is suddenly short-staffed",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the systems",
+        "type": "system"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "the systems",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-lang-043",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q12",
+    "verbatim": "The first days on the ward.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the ward",
+        "type": "team"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "orientation and supervised work for the new person's first days on the ward",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-044",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q12",
+    "verbatim": "Everyone expects orientation and supervised work immediately",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "everyone",
+        "type": "team"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "orientation and supervised work being ready immediately",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-045",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q12",
+    "verbatim": "we have handovers, ward rounds, and staffing to cover",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "cover handovers, ward rounds, and staffing",
+      "performed_by": "Petra"
+    }
+  },
+  {
+    "id": "petra-lang-046",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q12",
+    "verbatim": "Then Andrea's session has to clear.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Andrea",
+        "type": "actor"
+      },
+      {
+        "text": "Andrea's session",
+        "type": "artifact"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Andrea's clinical-access session",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-047",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q12",
+    "verbatim": "when usually it has been a day or two",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "duration",
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 1,
+        "high": 2,
+        "unit": "day"
+      },
+      "subject": "time she actually has had before the first days on the ward",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "petra-lang-048",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q12",
+    "verbatim": "It is always presented as though I have had weeks",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "the unrealistic expectation that she had weeks to prepare",
+      "affect": "stressful",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-lang-049",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q13",
+    "verbatim": "We had to reshuffle the mentor arrangement at short notice",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the mentor arrangement",
+        "type": "artifact"
+      }
+    ],
+    "kind": "rework",
+    "payload": {
+      "what": "the mentor arrangement",
+      "returned_by": null,
+      "reason": "at short notice",
+      "loops_to": "the mentor arrangement"
+    }
+  },
+  {
+    "id": "petra-lang-050",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q13",
+    "verbatim": "which put pressure on the shift",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the shift",
+        "type": "team"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the shift",
+      "if_wrong": "put pressure on the shift",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-lang-051",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q13",
+    "verbatim": "we do not let people loose without supervision",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rule",
+    "payload": {
+      "condition": "people are not yet under supervision",
+      "action": "we do not let them loose",
+      "written_down": null
+    }
+  },
+  {
+    "id": "petra-lang-052",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q13",
+    "verbatim": "Nothing catastrophic happened",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "a catastrophic outcome",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-lang-053",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q13",
+    "verbatim": "but it creates unnecessary disruption",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the reshuffle",
+      "if_wrong": "creates unnecessary disruption",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-lang-054",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q13",
+    "verbatim": "makes the new person feel they have done something wrong",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the new person",
+        "type": "actor"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the new person",
+      "if_wrong": "feels they have done something wrong",
+      "reversible": "unknown",
+      "blast_radius": "individual",
+      "borne_by": "the new person"
+    }
+  },
+  {
+    "id": "petra-lang-055",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q14",
+    "verbatim": "The ward-specific orientation and buddy arrangements would be messy.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the ward-specific orientation and buddy arrangements",
+        "type": "artifact"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the ward-specific orientation and buddy arrangements",
+      "if_wrong": "would be messy",
+      "reversible": "costly",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-lang-056",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q14",
+    "verbatim": "Someone else could enter a roster, obviously",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "someone else",
+        "type": "actor"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "enter a roster",
+      "performed_by": "someone else"
+    }
+  },
+  {
+    "id": "petra-lang-057",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q14",
+    "verbatim": "they would not know who fits with whom or what is happening on the floor",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "someone else",
+        "type": "actor"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "someone else entering a roster",
+      "if_wrong": "they would not know who fits with whom or what is happening on the floor",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-lang-058",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q14",
+    "verbatim": "Probation paperwork would wait for me once the HRIS check-in was there.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the probation paperwork",
+        "type": "artifact"
+      },
+      {
+        "text": "HRIS",
+        "type": "system"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the probation paperwork once the HRIS check-in is there",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-lang-059",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q15",
+    "verbatim": "Repeating the status of access training to people who cannot change it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the access training",
+        "type": "artifact"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "repeat the status of access training to people who cannot change it",
+      "performed_by": "Petra"
+    }
+  },
+  {
+    "id": "petra-lang-060",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q15",
+    "verbatim": "Repeating the status of access training to people who cannot change it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the access training",
+        "type": "artifact"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "repeating the status of access training to people who cannot change it",
+      "affect": "pointless",
+      "intensity": "emphatic"
+    }
+  },
+  {
+    "id": "petra-lang-061",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q15",
+    "verbatim": "The ward asks, HR asks, sometimes the new hire asks twice in the same day.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the ward",
+        "type": "team"
+      },
+      {
+        "text": "HR",
+        "type": "external_party"
+      },
+      {
+        "text": "the new hire",
+        "type": "actor"
+      }
+    ],
+    "kind": "schedule",
+    "payload": {
+      "cadence": "sometimes the new hire asks twice in the same day",
+      "batching": null,
+      "driver": "the ward, HR, and the new hire asking"
+    }
+  },
+  {
+    "id": "petra-lang-062",
+    "respondent_id": "petra-lang",
+    "session_id": "s-petra-lang",
+    "captured_at": "2026-09-06T13:36:40Z",
+    "question_id": "q15",
+    "verbatim": "I cannot clear Andrea's session for her.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Andrea",
+        "type": "actor"
+      }
+    ],
+    "kind": "exception",
+    "payload": {
+      "trigger": "Andrea's session needing to be cleared",
+      "path_taken": "I cannot clear it for her",
+      "pulls_in": [
+        "Andrea"
+      ],
+      "recalled_instances": null
+    }
+  }
+]

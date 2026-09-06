@@ -1,0 +1,1951 @@
+[
+  {
+    "id": "andrea-hoffmann-001",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q1",
+    "verbatim": "The next starters, really",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the next starters",
+        "type": "actor",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the next starters",
+      "owner": "external",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-002",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q1",
+    "verbatim": "I run the Orbis induction on the first Thursday",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the Orbis induction",
+        "type": "step",
+        "role": "subject"
+      },
+      {
+        "text": "the first Thursday",
+        "type": "step",
+        "role": "cadence"
+      }
+    ],
+    "kind": "schedule",
+    "payload": {
+      "cadence": "first Thursday (monthly)",
+      "batching": true,
+      "driver": "monthly induction session"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-003",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q1",
+    "verbatim": "I run the Orbis induction",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the Orbis induction",
+        "type": "step"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "run the Orbis induction",
+      "performed_by": "me",
+      "frequency": "monthly / first Thursday"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-004",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q1",
+    "verbatim": "if somebody starts just after that, they wait until the next one",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "somebody",
+        "type": "actor",
+        "role": "waiting_on"
+      },
+      {
+        "text": "the next one",
+        "type": "step",
+        "role": "waiting_for"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the next induction session",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-005",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q1",
+    "verbatim": "Petra normally tells me verbally who is coming",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "me",
+        "type": "actor",
+        "role": "to"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "me",
+      "artifact": null,
+      "mechanism": "verbal",
+      "chased": false
+    }
+  },
+  {
+    "id": "andrea-hoffmann-006",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q1",
+    "verbatim": "but it can be a bit last-minute",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "who is coming",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "the notice of who is coming",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-007",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q1",
+    "verbatim": "I can\u2019t give patient-record access without the training and sign-off",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "patient-record access",
+        "type": "artifact",
+        "role": "subject"
+      },
+      {
+        "text": "the training",
+        "type": "step"
+      },
+      {
+        "text": "sign-off",
+        "type": "step"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "someone has not completed the training and sign-off",
+      "action": "I won\u2019t give patient-record access",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-008",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "The last one was someone who couldn\u2019t make the group session, so we had to do them one-to-one",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the group session",
+        "type": "step",
+        "role": "trigger"
+      },
+      {
+        "text": "one-to-one",
+        "type": "step",
+        "role": "path_taken"
+      }
+    ],
+    "kind": "exception",
+    "payload": {
+      "trigger": "someone couldn\u2019t make the group session",
+      "path_taken": "do them one-to-one",
+      "pulls_in": [
+        "me"
+      ],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "andrea-hoffmann-009",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "That sounds simple\u2014ten minutes, people think\u2014",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the one-to-one",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 10,
+        "high": 10,
+        "unit": "minute"
+      },
+      "subject": "the one-to-one session",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-010",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "it means arranging a room",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a room",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "arranging a room",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-011",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "getting them into Orbis",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Orbis",
+        "type": "system",
+        "role": "target"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "getting them into Orbis",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-012",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "going through the safe-use bits properly",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the safe-use bits",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "going through the safe-use bits properly",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-013",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "making sure they actually understand what they\u2019re signing",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "they",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "making sure they actually understand what they\u2019re signing",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-014",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "Petra mentioned a new nurse in passing",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "me",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "a new nurse",
+        "type": "actor",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "me",
+      "artifact": "a new nurse",
+      "mechanism": "verbal",
+      "chased": false
+    }
+  },
+  {
+    "id": "andrea-hoffmann-015",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "I only got the checklist close to the session",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the checklist",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "receiving the checklist close to the session",
+      "affect": "stressful",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-016",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "the checklist close to the session",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the checklist",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "artifact",
+    "payload": {
+      "name": "the orientation checklist",
+      "format": null,
+      "reformatted": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-017",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q2",
+    "verbatim": "you\u2019re constantly catching things that should have been clear earlier",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "things",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "things that should have been clear earlier arriving late",
+      "affect": "confusing",
+      "intensity": "repeated"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-018",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q3",
+    "verbatim": "Mostly Petra, for the orientation checklist and confirmation of who actually needs to attend",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "me",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "the orientation checklist",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "me",
+      "artifact": "the orientation checklist and confirmation of who needs to attend",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "andrea-hoffmann-019",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q3",
+    "verbatim": "She\u2019ll say she\u2019s sent someone over, but I need the paperwork to match",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "the paperwork",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "Petra says she has sent someone over",
+      "action": "I need the paperwork to match before proceeding",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-020",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q3",
+    "verbatim": "Petra chases me when someone is standing on the ward without access",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "me",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "someone",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "me",
+      "artifact": null,
+      "mechanism": "verbal",
+      "chased": false
+    }
+  },
+  {
+    "id": "andrea-hoffmann-021",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q3",
+    "verbatim": "they may have been waiting around on the ward for ages before anyone tells me",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "someone",
+        "type": "actor",
+        "role": "waiting_on"
+      },
+      {
+        "text": "the ward",
+        "type": "system",
+        "role": "location"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "someone being told / ward access",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-022",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q4",
+    "verbatim": "The session itself is two hours",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the session",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 2,
+        "high": 2,
+        "unit": "hour"
+      },
+      "subject": "the induction session",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-023",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q4",
+    "verbatim": "the record afterwards is straightforward",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the record",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "complete the record afterwards",
+      "performed_by": "me",
+      "frequency": "after each session"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-024",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q4",
+    "verbatim": "But it sits until the next Thursday",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "it",
+        "type": "artifact",
+        "role": "waiting_on"
+      },
+      {
+        "text": "the next Thursday",
+        "type": "step",
+        "role": "waiting_for"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the next Thursday session",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-025",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q4",
+    "verbatim": "which people don\u2019t seem to understand",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "people",
+        "type": "actor"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "people not understanding the wait until next Thursday",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-026",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q4",
+    "verbatim": "it can take most of a morning by the time they arrive late, ask questions, forget a password",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "an individual case",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "duration",
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 3,
+        "high": 4,
+        "unit": "hour"
+      },
+      "subject": "the individual (one-to-one) case",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-027",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q5",
+    "verbatim": "once the clinical training record has gone to Petra",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "me",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "the clinical training record",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "me",
+      "to": "Petra",
+      "artifact": "the clinical training record",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "andrea-hoffmann-028",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q5",
+    "verbatim": "Nothing much comes back",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the clinical training record",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "rework",
+    "payload": {
+      "what": "returns/feedback on the clinical training record",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-029",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q5",
+    "verbatim": "Sometimes someone says they still can\u2019t get into Orbis",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "someone",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "me",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "Orbis",
+        "type": "system",
+        "role": "subject"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "someone",
+      "to": "me",
+      "artifact": null,
+      "mechanism": "verbal",
+      "chased": false
+    }
+  },
+  {
+    "id": "andrea-hoffmann-030",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q5",
+    "verbatim": "that\u2019s usually an access issue somewhere else, not the training",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "an access issue",
+        "type": "artifact",
+        "role": "subject"
+      },
+      {
+        "text": "the training",
+        "type": "step",
+        "role": "comparison"
+      }
+    ],
+    "kind": "exception",
+    "payload": {
+      "trigger": "someone says they still can\u2019t get into Orbis",
+      "path_taken": "it\u2019s usually an access issue somewhere else, not the training",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-031",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q5",
+    "verbatim": "People tend to bundle all of it together as \u201cAndrea hasn\u2019t sorted it,\u201d",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "people",
+        "type": "actor"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "people bundling access issues as Andrea\u2019s fault",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-032",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q6",
+    "verbatim": "Do not sign anyone off because they seem experienced",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "anyone",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "someone seems experienced",
+      "action": "do not sign them off (without proper induction)",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-033",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q6",
+    "verbatim": "They still need the two-hour induction",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the two-hour induction",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "regardless of experience",
+      "action": "they still need the two-hour induction",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-034",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q6",
+    "verbatim": "You have to listen for the little gaps",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the little gaps",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "when assessing someone\u2019s understanding during induction",
+      "action": "listen for the little gaps",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-035",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q6",
+    "verbatim": "Someone can have worked in a hospital for twenty years and still make assumptions that are wrong here",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "assumptions",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "assumptions by experienced staff",
+      "if_wrong": "wrong assumptions about this organisation",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-036",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q7",
+    "verbatim": "I take the names from Petra\u2019s orientation checklist and put them into my training record",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Petra\u2019s orientation checklist",
+        "type": "artifact",
+        "role": "from"
+      },
+      {
+        "text": "my training record",
+        "type": "artifact",
+        "role": "to"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "transfer the names from the orientation checklist into the training record",
+      "performed_by": "me",
+      "frequency": "per session"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-037",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q7",
+    "verbatim": "then confirm the sign-off back at the meeting",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the meeting",
+        "type": "step",
+        "role": "location"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "confirm the sign-off back at the meeting",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-038",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q7",
+    "verbatim": "names get spelled differently, people use shortened names",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "names",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "name inconsistencies (spelling/shortening)",
+      "affect": "annoying",
+      "intensity": "repeated"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-039",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q7",
+    "verbatim": "and then someone says the record is missing",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "someone",
+        "type": "actor",
+        "role": "returned_by"
+      },
+      {
+        "text": "the record",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "rework",
+    "payload": {
+      "what": "the record is reported missing",
+      "returned_by": "someone",
+      "reason": "names spelled differently / people use shortened names",
+      "loops_to": "transcribing names into the training record"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-040",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q8",
+    "verbatim": "The checklist isn\u2019t really formatted for me; it\u2019s more a ward orientation thing",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the checklist",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "artifact",
+    "payload": {
+      "name": "the checklist",
+      "format": null,
+      "reformatted": true
+    }
+  },
+  {
+    "id": "andrea-hoffmann-041",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q8",
+    "verbatim": "Usually I just make it usable for the session\u2014who is attending, what role they have, whether they need the clinical-system part",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the checklist",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "reformat the checklist for the session (who attends, role, whether they need the clinical-system part)",
+      "performed_by": "me",
+      "frequency": "per session"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-042",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q8",
+    "verbatim": "It\u2019s verbal half the time anyway, which is worse",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the information",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "the information arriving verbally half the time",
+      "affect": "confusing",
+      "intensity": "repeated"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-043",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q8",
+    "verbatim": "\u201cAndrea, there\u2019s another one starting.\u201d",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "another one",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "the vague verbal notice of a new starter (missing who exactly)",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-044",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q9",
+    "verbatim": "The same Orbis basics: patient-record access, what people may and may not do, the sign-off expectations",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Orbis",
+        "type": "system",
+        "role": "subject"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "re-explain Orbis basics (patient-record access, what people may/may not do, sign-off expectations)",
+      "performed_by": "me",
+      "frequency": "every session"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-045",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q9",
+    "verbatim": "It doesn\u2019t, not on its own",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "previous system experience",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "someone has previous system experience",
+      "action": "it doesn\u2019t count on its own (they still need the induction)",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-046",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q9",
+    "verbatim": "I re-explain it because it\u2019s safer than assuming they understood a slide",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a slide",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "risk they didn\u2019t understand a slide",
+      "action": "re-explain it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-047",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q10",
+    "verbatim": "Mine, effectively, after they complete the induction",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "mine",
+        "type": "actor",
+        "role": "approver"
+      }
+    ],
+    "kind": "approval",
+    "payload": {
+      "approver": "me (Andrea)",
+      "what_is_checked": "completion of the induction",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-048",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q10",
+    "verbatim": "I pass the clinical training record to Petra",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "me",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "the clinical training record",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "me",
+      "to": "Petra",
+      "artifact": "the clinical training record",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "andrea-hoffmann-049",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q10",
+    "verbatim": "She hasn\u2019t really sent it back as such",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "approver"
+      },
+      {
+        "text": "the clinical training record",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "approval",
+    "payload": {
+      "approver": "Petra",
+      "what_is_checked": "the clinical training record",
+      "ever_rejected": "no",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-050",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q10",
+    "verbatim": "If there\u2019s a question about whether a person attended, she\u2019ll ask",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "actor"
+      },
+      {
+        "text": "a person",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "exception",
+    "payload": {
+      "trigger": "a question about whether a person attended",
+      "path_taken": "Petra asks",
+      "pulls_in": [
+        "Petra"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-051",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q10",
+    "verbatim": "but that\u2019s usually when somebody needs access immediately and suddenly everyone is looking for the record",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "somebody",
+        "type": "actor",
+        "role": "subject"
+      },
+      {
+        "text": "the record",
+        "type": "artifact"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "somebody needing access immediately and everyone looking for the record",
+      "affect": "stressful",
+      "intensity": "repeated"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-052",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q11",
+    "verbatim": "I keep my session list and notes on who attended, who needs a one-to-one",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "session list and notes",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "workaround",
+    "payload": {
+      "what": "my own session list and notes on who attended, who needs a one-to-one",
+      "compensates_for": "Orbis doesn\u2019t manage training logistics",
+      "private": true
+    }
+  },
+  {
+    "id": "andrea-hoffmann-053",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q11",
+    "verbatim": "Orbis isn\u2019t where I manage the training logistics",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Orbis",
+        "type": "system",
+        "role": "subject"
+      }
+    ],
+    "kind": "system",
+    "payload": {
+      "name": "Orbis",
+      "used_for": "clinical/patient records, not training logistics",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-054",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q11",
+    "verbatim": "it\u2019s just enough to keep the monthly session from becoming chaos",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the monthly session",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "the monthly session becoming chaos without her notes",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-055",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q12",
+    "verbatim": "The starter needing ward access",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the starter",
+        "type": "actor",
+        "role": "subject"
+      },
+      {
+        "text": "ward access",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the starter needing ward access",
+      "if_wrong": "ward expects them to function on day one",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-056",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q12",
+    "verbatim": "but the training session is monthly",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the training session",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "schedule",
+    "payload": {
+      "cadence": "monthly",
+      "batching": true,
+      "driver": "the induction timetable"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-057",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q12",
+    "verbatim": "People expect it on day one, which is fair enough",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "people",
+        "type": "actor"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "the expectation of ward access on day one vs a monthly session",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-058",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q12",
+    "verbatim": "If they miss it by a day, it can feel like ages",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the next session",
+        "type": "step",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the next monthly session",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-059",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q12",
+    "verbatim": "Then the pressure comes from the ward, even though the induction timetable has been the same for years",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the ward",
+        "type": "team",
+        "role": "source"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "pressure from the ward",
+      "affect": "stressful",
+      "intensity": "repeated"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-060",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q13",
+    "verbatim": "Nothing catastrophic from my training, thankfully",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "my training",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "catastrophic outcomes from my training",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-061",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q13",
+    "verbatim": "The worst is a new clinical person being unable to access the patient record when the ward expects them to function normally",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a new clinical person",
+        "type": "actor",
+        "role": "subject"
+      },
+      {
+        "text": "the patient record",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "a new clinical person unable to access the patient record",
+      "if_wrong": "the ward expects them to function normally",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-062",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q13",
+    "verbatim": "That puts pressure on colleagues and it looks dreadful",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "colleagues",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "the access failure putting pressure on colleagues and looking dreadful",
+      "affect": "demoralising",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-063",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q13",
+    "verbatim": "But I\u2019d rather have that than sign off somebody who hasn\u2019t had the proper induction",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "somebody",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "rule",
+    "payload": {
+      "condition": "someone hasn\u2019t had the proper induction",
+      "action": "don\u2019t sign them off (rather accept the access failure)",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-064",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q14",
+    "verbatim": "If the first Thursday fell in those two weeks, the whole clinical induction session would be a problem",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the whole clinical induction session",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the whole clinical induction session",
+      "if_wrong": "it would be a problem",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-065",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q14",
+    "verbatim": "Someone could perhaps cover the presentation",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the presentation",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "cover the presentation",
+      "performed_by": "someone",
+      "frequency": "only if she's absent"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-066",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q14",
+    "verbatim": "the judgment around sign-off is not just reading slides",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "sign-off",
+        "type": "step",
+        "role": "subject"
+      },
+      {
+        "text": "slides",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "the judgment around sign-off",
+      "if_wrong": "it\u2019s not just reading slides \u2014 requires knowing what to ask",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-067",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q14",
+    "verbatim": "I know what questions to ask and what tends to get missed",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "questions",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "kind": "step",
+    "payload": {
+      "description": "ask the questions that tend to get missed",
+      "performed_by": "me",
+      "frequency": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-068",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q14",
+    "verbatim": "There would be a queue of people waiting for access",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a queue of people",
+        "type": "actor",
+        "role": "waiting_on"
+      },
+      {
+        "text": "access",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "ward access",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-069",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q14",
+    "verbatim": "and Petra would be understandably unhappy",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "Petra",
+      "if_wrong": "she would be understandably unhappy",
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "andrea-hoffmann-070",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q15",
+    "verbatim": "Chasing down whether someone is definitely attending when they then don\u2019t turn up",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "someone",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "chasing attendance confirmation that then doesn\u2019t materialise",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-071",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q15",
+    "verbatim": "The irritating bit is repeatedly confirming names and roles because the checklist and the verbal message don\u2019t line up",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the checklist",
+        "type": "artifact"
+      },
+      {
+        "text": "the verbal message",
+        "type": "artifact"
+      }
+    ],
+    "kind": "complaint",
+    "payload": {
+      "target": "repeatedly confirming names and roles due to a mismatch between the checklist and the verbal message",
+      "affect": "annoying",
+      "intensity": "repeated"
+    }
+  },
+  {
+    "id": "andrea-hoffmann-072",
+    "respondent_id": "andrea-hoffmann",
+    "session_id": "s-andrea-hoffmann",
+    "captured_at": "2026-09-06T13:09:29Z",
+    "question_id": "q15",
+    "verbatim": "but if I get that wrong, everyone notices",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "everyone",
+        "type": "actor",
+        "role": "subject"
+      }
+    ],
+    "kind": "consequence",
+    "payload": {
+      "subject": "getting the names/roles wrong",
+      "if_wrong": "everyone notices",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "me"
+    }
+  }
+]

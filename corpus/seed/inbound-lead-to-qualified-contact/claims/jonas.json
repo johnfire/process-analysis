@@ -1,0 +1,1763 @@
+[
+  {
+    "id": "jonas-001",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q1",
+    "verbatim": "Mostly customer specs, honestly.",
+    "verbatim_span": [
+      70,
+      102
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "customer specs",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-002",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q1",
+    "verbatim": "the reference could mean three different things",
+    "verbatim_span": [
+      124,
+      171
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "the reference could mean three different things (ambiguous)",
+      "path_taken": "sent the template to the customer's engineering people",
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "jonas-003",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q1",
+    "verbatim": "I've sent the template",
+    "verbatim_span": [
+      176,
+      198
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "sent the template to the customer's engineering people",
+      "performed_by": "Jonas",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-004",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q1",
+    "verbatim": "the template",
+    "verbatim_span": [
+      186,
+      198
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "the template",
+      "format": "Outlook",
+      "reformatted": null
+    }
+  },
+  {
+    "id": "jonas-005",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q1",
+    "verbatim": "now it's with their engineering people",
+    "verbatim_span": [
+      203,
+      241
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Jonas",
+      "to": "their engineering people",
+      "artifact": "the template",
+      "mechanism": "email",
+      "chased": true
+    },
+    "entity_refs": [
+      {
+        "text": "their engineering people",
+        "type": "external_party",
+        "role": "to"
+      }
+    ]
+  },
+  {
+    "id": "jonas-006",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q1",
+    "verbatim": "That can take ages.",
+    "verbatim_span": [
+      243,
+      262
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "their engineering people",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-007",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q1",
+    "verbatim": "the normal batch of tickets in my list",
+    "verbatim_span": [
+      277,
+      315
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "ticket list",
+      "used_for": "normal batch of tickets",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "jonas-008",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q1",
+    "verbatim": "those are fine once I get into them",
+    "verbatim_span": [
+      321,
+      356
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "get into the tickets",
+      "performed_by": "Jonas",
+      "frequency": "normal batch"
+    }
+  },
+  {
+    "id": "jonas-009",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "TechFinder",
+    "verbatim_span": [
+      520,
+      530
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "TechFinder",
+      "used_for": "finding replacement parts",
+      "copied_to": "SAP",
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "jonas-010",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "TechFinder gave me several possible replacements",
+    "verbatim_span": [
+      520,
+      568
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "TechFinder search returned several possible replacements",
+      "performed_by": "TechFinder",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-011",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "an old machine reference and TechFinder gave me several possible replacements",
+    "verbatim_span": [
+      491,
+      568
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "old machine reference produced several possible replacements",
+      "path_taken": "asked the customer for dimensions and a photo of the label",
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "jonas-012",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "I asked the customer for dimensions and a photo of the label",
+    "verbatim_span": [
+      570,
+      630
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "asked the customer for dimensions and a photo of the label",
+      "performed_by": "Jonas",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-013",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "they eventually sent something incomplete, so I had to ask again",
+    "verbatim_span": [
+      632,
+      696
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "ask the customer again for the spec",
+      "returned_by": "customer",
+      "reason": "they sent something incomplete",
+      "loops_to": "asking the customer for the spec"
+    },
+    "entity_refs": [
+      {
+        "text": "customer",
+        "type": "external_party",
+        "role": "returned_by"
+      }
+    ]
+  },
+  {
+    "id": "jonas-014",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "there was simply no match at all",
+    "verbatim_span": [
+      711,
+      743
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "no match at all in TechFinder",
+      "path_taken": "ask the customer what they actually have",
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "jonas-015",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "Those are annoying",
+    "verbatim_span": [
+      745,
+      763
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "ambiguous or no-match references needing the customer to clarify",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-016",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "you can spend ten minutes searching",
+    "verbatim_span": [
+      772,
+      807
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 8,
+        "high": 15,
+        "unit": "minute"
+      },
+      "subject": "searching TechFinder",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "jonas-017",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q2",
+    "verbatim": "we need the customer to tell us what they actually have",
+    "verbatim_span": [
+      835,
+      890
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "no unique match / ambiguous reference",
+      "action": "we need the customer to tell us what they actually have",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-018",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q3",
+    "verbatim": "I chase customers, usually purchasing or their engineering contact",
+    "verbatim_span": [
+      970,
+      1036
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "chase customers (purchasing or their engineering contact)",
+      "performed_by": "Jonas",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-019",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q3",
+    "verbatim": "After five working days I give them one phone chase",
+    "verbatim_span": [
+      1038,
+      1089
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "after five working days without response",
+      "action": "give them one phone chase",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-020",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q3",
+    "verbatim": "After five working days",
+    "verbatim_span": [
+      1038,
+      1061
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "customer response",
+      "owner": "external",
+      "current": false,
+      "duration": {
+        "low": 5,
+        "high": 5,
+        "unit": "day"
+      }
+    }
+  },
+  {
+    "id": "jonas-021",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q3",
+    "verbatim": "Petra will occasionally ask where the part note is",
+    "verbatim_span": [
+      1091,
+      1141
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "Jonas",
+      "artifact": "the part note",
+      "mechanism": "chat",
+      "chased": true
+    },
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "from"
+      }
+    ]
+  },
+  {
+    "id": "jonas-022",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q3",
+    "verbatim": "especially if it is a customer who is already calling in",
+    "verbatim_span": [
+      1143,
+      1199
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "rule",
+    "payload": {
+      "condition": "a customer is already calling in",
+      "action": "Petra asks where the part note is",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-023",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q3",
+    "verbatim": "Sabine sometimes flags something as urgent too",
+    "verbatim_span": [
+      1201,
+      1247
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "step",
+    "payload": {
+      "description": "flags something as urgent",
+      "performed_by": "Sabine",
+      "frequency": "sometimes"
+    },
+    "entity_refs": [
+      {
+        "text": "Sabine",
+        "type": "actor",
+        "role": "performed_by"
+      }
+    ]
+  },
+  {
+    "id": "jonas-024",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q4",
+    "verbatim": "A normal part is maybe 15 or 20 minutes in SAP and TechFinder",
+    "verbatim_span": [
+      1402,
+      1463
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 15,
+        "high": 20,
+        "unit": "minute"
+      },
+      "subject": "a normal part (identification in SAP and TechFinder)",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "jonas-025",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q4",
+    "verbatim": "SAP",
+    "verbatim_span": [
+      1445,
+      1448
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "identification / part data",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "jonas-026",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q4",
+    "verbatim": "The waiting is mostly outside us",
+    "verbatim_span": [
+      1465,
+      1497
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "customers",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-027",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q4",
+    "verbatim": "customers take a few days to come back",
+    "verbatim_span": [
+      1498,
+      1536
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "customer response",
+      "owner": "external",
+      "current": false,
+      "duration": {
+        "low": 2,
+        "high": 4,
+        "unit": "day"
+      }
+    }
+  },
+  {
+    "id": "jonas-028",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q4",
+    "verbatim": "if it is one of those ancient references",
+    "verbatim_span": [
+      1549,
+      1589
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "ancient / legacy reference",
+      "path_taken": "comparing descriptions and checking alternatives",
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "jonas-029",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q4",
+    "verbatim": "I might be comparing descriptions and checking alternatives for quite a while",
+    "verbatim_span": [
+      1591,
+      1668
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "comparing descriptions and checking alternatives",
+      "performed_by": "Jonas",
+      "frequency": "when it is an ancient reference"
+    }
+  },
+  {
+    "id": "jonas-030",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q5",
+    "verbatim": "Customer clarifications mostly: measurements, photos, machine type",
+    "verbatim_span": [
+      1730,
+      1796
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "handoff",
+    "payload": {
+      "from": "customer",
+      "to": "Jonas",
+      "artifact": "customer clarifications",
+      "mechanism": "email",
+      "chased": false
+    }
+  },
+  {
+    "id": "jonas-031",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q5",
+    "verbatim": "Customer clarifications mostly: measurements, photos, machine type",
+    "verbatim_span": [
+      1730,
+      1796
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "artifact",
+    "payload": {
+      "name": "customer clarifications (measurements, photos, machine type)",
+      "format": "email",
+      "reformatted": null
+    }
+  },
+  {
+    "id": "jonas-032",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q5",
+    "verbatim": "they somehow did not include in the first email",
+    "verbatim_span": [
+      1834,
+      1881
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "complaint",
+    "payload": {
+      "target": "the customer not including the part number in the first email",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-033",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q5",
+    "verbatim": "occasionally I reopen something",
+    "verbatim_span": [
+      1887,
+      1918
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "reopen something (a ticket / assignment)",
+      "performed_by": "Jonas",
+      "frequency": "occasionally"
+    }
+  },
+  {
+    "id": "jonas-034",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q5",
+    "verbatim": "the first assignment was not quite right once more information turns up",
+    "verbatim_span": [
+      1927,
+      1998
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "reopen the assignment",
+      "returned_by": null,
+      "reason": "first assignment was not quite right once more information turns up",
+      "loops_to": "the assignment step"
+    }
+  },
+  {
+    "id": "jonas-035",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q6",
+    "verbatim": "Don't force a match.",
+    "verbatim_span": [
+      2126,
+      2146
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the reference is ambiguous or unclear",
+      "action": "don't force a match",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-036",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q6",
+    "verbatim": "If the reference gives exactly one current catalogue item, assign it",
+    "verbatim_span": [
+      2147,
+      2215
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the reference gives exactly one current catalogue item",
+      "action": "assign it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-037",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q6",
+    "verbatim": "If there are several possibilities\u2014or none\u2014ask for the specification",
+    "verbatim_span": [
+      2217,
+      2285
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "there are several possibilities or none",
+      "action": "ask for the specification",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-038",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q6",
+    "verbatim": "It is much easier to correct a clarification request than to send Petra the wrong item",
+    "verbatim_span": [
+      2287,
+      2373
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "sending Petra the wrong item",
+      "if_wrong": "a clarification request is much easier to correct",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "Jonas"
+    }
+  },
+  {
+    "id": "jonas-039",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q7",
+    "verbatim": "I pull the ticket details into SAP",
+    "verbatim_span": [
+      2457,
+      2491
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "pull the ticket details into SAP",
+      "performed_by": "Jonas",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-040",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q7",
+    "verbatim": "write the useful bit into the part-spec note for Petra",
+    "verbatim_span": [
+      2501,
+      2555
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "write the useful bit into the part-spec note for Petra",
+      "performed_by": "Jonas",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-041",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q7",
+    "verbatim": "the part-spec note",
+    "verbatim_span": [
+      2527,
+      2545
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "part-spec note (customer reference, identified item, technical caveat)",
+      "format": null,
+      "reformatted": null
+    }
+  },
+  {
+    "id": "jonas-042",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q7",
+    "verbatim": "the part-spec note for Petra",
+    "verbatim_span": [
+      2527,
+      2555
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Jonas",
+      "to": "Petra",
+      "artifact": "part-spec note",
+      "mechanism": "system",
+      "chased": false
+    }
+  },
+  {
+    "id": "jonas-043",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q7",
+    "verbatim": "For spec requests, I use the standard Outlook template and add the ticket context",
+    "verbatim_span": [
+      2616,
+      2697
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "use the standard Outlook template and add the ticket context",
+      "performed_by": "Jonas",
+      "frequency": "for spec requests"
+    }
+  },
+  {
+    "id": "jonas-044",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q7",
+    "verbatim": "the standard Outlook template",
+    "verbatim_span": [
+      2641,
+      2670
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "standard Outlook template",
+      "format": "Outlook",
+      "reformatted": null
+    }
+  },
+  {
+    "id": "jonas-045",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q7",
+    "verbatim": "you do end up repeating the machine reference everywhere",
+    "verbatim_span": [
+      2721,
+      2777
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "repeating the machine reference across places",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-046",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q8",
+    "verbatim": "Customer information can be pretty rough\u2014screenshots, old PDF scans, descriptions like \"the blue hydraulic thing.\"",
+    "verbatim_span": [
+      2867,
+      2981
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "artifact",
+    "payload": {
+      "name": "customer information",
+      "format": "screenshots, old PDF scans, descriptions",
+      "reformatted": true
+    }
+  },
+  {
+    "id": "jonas-047",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q8",
+    "verbatim": "I turn that into something TechFinder can actually search, usually a part reference or dimensions",
+    "verbatim_span": [
+      2982,
+      3079
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "turn customer information into something TechFinder can search (part reference or dimensions)",
+      "performed_by": "Jonas",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-048",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q8",
+    "verbatim": "The template is straightforward; it is the inputs that are messy",
+    "verbatim_span": [
+      3081,
+      3145
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "the customer inputs",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-049",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q9",
+    "verbatim": "The legacy references.",
+    "verbatim_span": [
+      3236,
+      3258
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "look up the legacy references",
+      "performed_by": "Jonas",
+      "frequency": "every time"
+    }
+  },
+  {
+    "id": "jonas-050",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q9",
+    "verbatim": "You cannot assume an old number maps neatly to the current catalogue",
+    "verbatim_span": [
+      3259,
+      3327
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "an old / legacy reference number",
+      "action": "cannot assume it maps neatly to the current catalogue",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-051",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q9",
+    "verbatim": "I explain to customers that we need the actual spec when there is no unique match",
+    "verbatim_span": [
+      3333,
+      3414
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "explain to customers that we need the actual spec when there is no unique match",
+      "performed_by": "Jonas",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-052",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q9",
+    "verbatim": "people think the old number should be enough, but often it isn't",
+    "verbatim_span": [
+      3415,
+      3479
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "complaint",
+    "payload": {
+      "target": "customers thinking the old number should be enough",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-053",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q10",
+    "verbatim": "If I have a single clear result, I assign it and pass the note on",
+    "verbatim_span": [
+      3728,
+      3793
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "assign it and pass the note on",
+      "performed_by": "Jonas",
+      "frequency": "when there is a single clear result"
+    }
+  },
+  {
+    "id": "jonas-054",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q10",
+    "verbatim": "The customer effectively confirms it when they provide the missing spec",
+    "verbatim_span": [
+      3655,
+      3726
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "handoff",
+    "payload": {
+      "from": "customer",
+      "to": "Jonas",
+      "artifact": "the missing spec",
+      "mechanism": "email",
+      "chased": false
+    }
+  },
+  {
+    "id": "jonas-055",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q10",
+    "verbatim": "when they provide the missing spec",
+    "verbatim_span": [
+      3692,
+      3726
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "customer providing the missing spec",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-056",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q10",
+    "verbatim": "Petra might query something later, but that is not an approval step as far as I'm concerned",
+    "verbatim_span": [
+      3795,
+      3886
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "step",
+    "payload": {
+      "description": "queries something later (not an approval step)",
+      "performed_by": "Petra",
+      "frequency": "later / occasionally"
+    }
+  },
+  {
+    "id": "jonas-057",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q11",
+    "verbatim": "The part-spec note is in the ticket flow",
+    "verbatim_span": [
+      4040,
+      4080
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "the ticket flow",
+      "used_for": "holding the part-spec note",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "jonas-058",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q11",
+    "verbatim": "the searches are in SAP and TechFinder",
+    "verbatim_span": [
+      4086,
+      4124
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "SAP and TechFinder",
+      "used_for": "searches",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "jonas-059",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q11",
+    "verbatim": "I may keep a quick working note while I am comparing references",
+    "verbatim_span": [
+      4126,
+      4189
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "keep a quick working note while comparing references",
+      "compensates_for": "comparing / ambiguous references",
+      "private": true
+    }
+  },
+  {
+    "id": "jonas-060",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q11",
+    "verbatim": "once it is resolved, the relevant conclusion goes into the note for Petra",
+    "verbatim_span": [
+      4195,
+      4268
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Jonas",
+      "to": "Petra",
+      "artifact": "the note for Petra (part-spec note)",
+      "mechanism": "system",
+      "chased": false
+    }
+  },
+  {
+    "id": "jonas-061",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q12",
+    "verbatim": "The customer is usually waiting for an answer, particularly if they are on the phone",
+    "verbatim_span": [
+      4372,
+      4456
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the answer (from Jonas)",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-062",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q12",
+    "verbatim": "Those jump the queue",
+    "verbatim_span": [
+      4458,
+      4478
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the customer is on the phone",
+      "action": "they jump the queue",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-063",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q12",
+    "verbatim": "I clear the identification list around midweek and Friday morning",
+    "verbatim_span": [
+      4491,
+      4556
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "midweek and Friday morning",
+      "batching": true,
+      "driver": null
+    }
+  },
+  {
+    "id": "jonas-064",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q12",
+    "verbatim": "I clear the identification list around midweek and Friday morning",
+    "verbatim_span": [
+      4491,
+      4556
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "clear the identification list",
+      "performed_by": "Jonas",
+      "frequency": "midweek and Friday morning"
+    }
+  },
+  {
+    "id": "jonas-065",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q12",
+    "verbatim": "so it can look tight when several odd legacy parts arrive together",
+    "verbatim_span": [
+      4558,
+      4624
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "identification list looking tight when several odd legacy parts arrive together",
+      "affect": "stressful",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-066",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q12",
+    "verbatim": "But the real hold-up is normally the customer reply",
+    "verbatim_span": [
+      4626,
+      4677
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the customer reply",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-067",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q13",
+    "verbatim": "The worst outcome would be identifying the wrong replacement from an ambiguous reference",
+    "verbatim_span": [
+      4774,
+      4862
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "identifying the wrong replacement from an ambiguous reference",
+      "if_wrong": "worst outcome",
+      "reversible": "yes",
+      "blast_radius": "customer",
+      "borne_by": "Jonas"
+    }
+  },
+  {
+    "id": "jonas-068",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q13",
+    "verbatim": "I stop and ask for a spec rather than guessing",
+    "verbatim_span": [
+      4876,
+      4922
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the reference is ambiguous / no unique match",
+      "action": "stop and ask for a spec rather than guessing",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-069",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q13",
+    "verbatim": "Usually the issue is not catastrophic; it just loops back because the customer's first answer is incomplete",
+    "verbatim_span": [
+      4924,
+      5031
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "the identification loops back",
+      "returned_by": "customer",
+      "reason": "the customer's first answer is incomplete",
+      "loops_to": "asking the customer for the specification"
+    }
+  },
+  {
+    "id": "jonas-070",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q14",
+    "verbatim": "The unclear-reference queue would pile up, especially the old machine parts",
+    "verbatim_span": [
+      5155,
+      5230
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the unclear-reference queue (old machine parts)",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-071",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q14",
+    "verbatim": "Customers needing clarification would still be waiting",
+    "verbatim_span": [
+      5232,
+      5286
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "clarification",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-072",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q14",
+    "verbatim": "Petra would be missing the identification notes for those tickets",
+    "verbatim_span": [
+      5292,
+      5357
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "consequence",
+    "payload": {
+      "subject": "the identification notes for those tickets",
+      "if_wrong": "Petra would be missing them",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "Jonas"
+    }
+  },
+  {
+    "id": "jonas-073",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q14",
+    "verbatim": "The clean, standard catalogue items are much less of a problem",
+    "verbatim_span": [
+      5359,
+      5421
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "clean, standard catalogue items",
+      "if_wrong": "much less of a problem",
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "jonas-074",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q15",
+    "verbatim": "Chasing someone for a spec and getting the same vague description again can feel pointless",
+    "verbatim_span": [
+      5512,
+      5602
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "chasing for a spec and getting the same vague description again",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-075",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q15",
+    "verbatim": "Chasing someone for a spec and getting the same vague description again",
+    "verbatim_span": [
+      5512,
+      5583
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "chasing for a spec (getting the same vague description)",
+      "returned_by": "customer",
+      "reason": "getting the same vague description again",
+      "loops_to": "chasing / sending for the spec"
+    },
+    "entity_refs": [
+      {
+        "text": "customer",
+        "type": "external_party",
+        "role": "returned_by"
+      }
+    ]
+  },
+  {
+    "id": "jonas-076",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q15",
+    "verbatim": "The standard template is useful, but people often do not fill in the bits we actually need",
+    "verbatim_span": [
+      5604,
+      5694
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "complaint",
+    "payload": {
+      "target": "people not filling in the bits we need in the template",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-077",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q15",
+    "verbatim": "Then you send another email",
+    "verbatim_span": [
+      5696,
+      5723
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "send another email (for the spec)",
+      "performed_by": "Jonas",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-078",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q15",
+    "verbatim": "which is mildly irritating, because the answer is still with them",
+    "verbatim_span": [
+      5725,
+      5790
+    ],
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "sending another email because the answer is still with them",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "jonas-079",
+    "respondent_id": "jonas",
+    "session_id": "s-jonas",
+    "captured_at": "2026-09-06T13:48:50Z",
+    "question_id": "q15",
+    "verbatim": "the answer is still with them",
+    "verbatim_span": [
+      5761,
+      5790
+    ],
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the customer's answer",
+      "owner": "external",
+      "current": true,
+      "duration": null
+    }
+  }
+]
