@@ -33,6 +33,10 @@ yet designed.
   process from friction rather than from description. The framing rule, the question bank, the
   two moves only software can make (queue-gap calculation, contradiction detection), and the
   known 70% plateau.
+- [`docs/EVAL.md`](docs/EVAL.md) — how the analyzer gets tested before a real subject exists:
+  two-stage synthetic generation (hidden ground truth, then biased testimony from it), planted
+  decoys, deterministic scoring, and strict information barriers between generator, cast,
+  analyzer and scorer.
 
 ## Open questions
 

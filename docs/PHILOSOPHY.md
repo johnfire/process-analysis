@@ -226,7 +226,10 @@ by evidence about why each fossil is there.
    eight-week single-workflow perfection exercise gated by a sister process upstream nets zero.
 2. **Recast as a decision graph** — decisions + evidence + consequence + reversibility, per §2.
 3. **Constraint archaeology** — name the constraint behind every step, per §1. Mark each as
-   *still binding* / *collapsed* / *unknown*.
+   *still binding* / *collapsed* / *unknown*. Separately mark every queue as **internal** or
+   **external**: a prospect taking three weeks to reply, or a bank's settlement window, is a real
+   wait that no redesign collapses. Conflating the two produces an analysis that correctly finds
+   the largest delay in a process and then has nothing to propose about it.
 4. **Allocate** — five criteria per decision, five AI shapes per placement, per §3 and §4.
 5. **Redesign** — Eliminate → Collapse → Reorder → Automate → Instrument, per §5.
    Sequence the build by **handoff count, not volume**. The workflow with the most handoffs is
