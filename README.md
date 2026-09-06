@@ -41,6 +41,8 @@ recovers a planted bottleneck from six biased accounts and resists the planted d
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — how it gets built: claims → entities → graph
   with the graph derived rather than authored, the deterministic/model split, a headless v0
   scored in CI, and the phase plan.
+- [`docs/CLAIM-SCHEMA.md`](docs/CLAIM-SCHEMA.md) — the claim schema and the decisions it encodes.
+  Normative form: [`schema/claim.schema.json`](schema/claim.schema.json).
 
 ## Open questions
 

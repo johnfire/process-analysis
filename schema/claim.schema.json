@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/johnfire/process-analysis/schema/claim.schema.json",
+  "title": "Claim",
+  "description": "One typed assertion made by one respondent about a process. Claims are append-only and are the only thing ever written; entities and the process graph are derived from them. Claims never store resolved entity IDs - only raw mention strings - so that re-resolving never requires rewriting a claim.",
+  "type": "object",
+  "required": ["id", "respondent_id", "session_id", "captured_at", "kind", "verbatim", "hedging", "polarity", "subject_scope", "payload"],
+  "additionalProperties": false,
+
+  "properties": {
+    "id":            { "type": "string", "description": "Stable claim identifier." },
+    "respondent_id": { "type": "string", "description": "Who made the assertion." },
+    "session_id":    { "type": "string", "description": "Which interview session." },
+    "captured_at":   { "type": "string", "format": "date-time" },
+
+    "question_id": {
+      "type": ["string", "null"],
+      "description": "Which probe from the question bank elicited this. Null for volunteered claims. Enables scoring which questions actually yield, so the bank becomes empirically tuned rather than designed once."
+    },
+
+    "verbatim": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The exact span the claim was extracted from. Every downstream number must be traceable to a sentence somebody actually said."
+    },
+    "verbatim_span": {
+      "type": ["array", "null"],
+      "items": { "type": "integer", "minimum": 0 },
+      "minItems": 2, "maxItems": 2,
+      "description": "[start, end] character offsets in the source transcript."
+    },
+
+    "hedging": {
+      "enum": ["firm", "approximate", "guessed", "deferred", "refused"],
+      "description": "How firmly it was said. Signal, not metadata: 'about two days, I think' and 'two days' are different observations. 'deferred' = pointed at someone else ('ask Sabine'). 'refused' = declined to answer, which is itself data."
+    },
+
+    "polarity": {
+      "enum": ["asserted", "denied"],
+      "description": "Denials are first-class. 'No, an approver has never rejected one' is the single most valuable answer in the ritual-approval probe and cannot be represented as an assertion."
+    },
+
+    "subject_scope": {
+      "enum": ["self", "direct_observation", "hearsay"],
+      "description": "Implements the triangulation rule: a claim about someone else is a hypothesis, promoted to a finding only when that side's own account confirms it. Hearsay claims must never be scored as fact."
+    },
+
+    "entity_refs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/mention" },
+      "default": [],
+      "description": "Raw mention strings awaiting resolution. Resolution lives in a separate revisable layer."
+    },
+
+    "supersedes": {
+      "type": ["string", "null"],
+      "description": "Claims are append-only. A correction is a new claim superseding an old one, never an edit."
+    },
+
+    "kind": {
+      "enum": [
+        "step", "handoff", "artifact", "system", "actor",
+        "duration", "wait", "schedule",
+        "rule", "approval", "exception", "consequence",
+        "complaint", "rework", "workaround"
+      ]
+    },
+
+    "payload": { "type": "object" }
+  },
+
+  "allOf": [
+    { "if": { "properties": { "kind": { "const": "step" } } },        "then": { "properties": { "payload": { "$ref": "#/$defs/step" } } } },
+    { "if": { "properties": { "kind": { "const": "handoff" } } },     "then": { "properties": { "payload": { "$ref": "#/$defs/handoff" } } } },
+    { "if": { "properties": { "kind": { "const": "artifact" } } },    "then": { "properties": { "payload": { "$ref": "#/$defs/artifact" } } } },
+    { "if": { "properties": { "kind": { "const": "system" } } },      "then": { "properties": { "payload": { "$ref": "#/$defs/system" } } } },
+    { "if": { "properties": { "kind": { "const": "actor" } } },       "then": { "properties": { "payload": { "$ref": "#/$defs/actor" } } } },
+    { "if": { "properties": { "kind": { "const": "duration" } } },    "then": { "properties": { "payload": { "$ref": "#/$defs/duration" } } } },
+    { "if": { "properties": { "kind": { "const": "wait" } } },        "then": { "properties": { "payload": { "$ref": "#/$defs/wait" } } } },
+    { "if": { "properties": { "kind": { "const": "schedule" } } },    "then": { "properties": { "payload": { "$ref": "#/$defs/schedule" } } } },
+    { "if": { "properties": { "kind": { "const": "rule" } } },        "then": { "properties": { "payload": { "$ref": "#/$defs/rule" } } } },
+    { "if": { "properties": { "kind": { "const": "approval" } } },    "then": { "properties": { "payload": { "$ref": "#/$defs/approval" } } } },
+    { "if": { "properties": { "kind": { "const": "exception" } } },   "then": { "properties": { "payload": { "$ref": "#/$defs/exception" } } } },
+    { "if": { "properties": { "kind": { "const": "consequence" } } }, "then": { "properties": { "payload": { "$ref": "#/$defs/consequence" } } } },
+    { "if": { "properties": { "kind": { "const": "complaint" } } },   "then": { "properties": { "payload": { "$ref": "#/$defs/complaint" } } } },
+    { "if": { "properties": { "kind": { "const": "rework" } } },      "then": { "properties": { "payload": { "$ref": "#/$defs/rework" } } } },
+    { "if": { "properties": { "kind": { "const": "workaround" } } },  "then": { "properties": { "payload": { "$ref": "#/$defs/workaround" } } } }
+  ],
+
+  "$defs": {
+
+    "mention": {
+      "type": "object",
+      "required": ["text", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string", "description": "Exactly as the respondent named it: 'the intake form', 'that PDF thing'." },
+        "type": { "enum": ["step", "actor", "artifact", "system", "team", "external_party"] },
+        "role": { "type": ["string", "null"], "description": "Role of this mention within the payload, e.g. 'from', 'to', 'waiting_on'." }
+      }
+    },
+
+    "quantity": {
+      "type": "object",
+      "description": "A duration expressed as a range, because people say 'a couple of days'. Forcing a point estimate fabricates precision the respondent did not have.",
+      "required": ["low", "high", "unit"],
+      "additionalProperties": false,
+      "properties": {
+        "low":  { "type": "number", "minimum": 0 },
+        "high": { "type": "number", "minimum": 0 },
+        "unit": { "enum": ["minute", "hour", "day", "week", "month"] }
+      }
+    },
+
+    "step": {
+      "type": "object",
+      "required": ["description"],
+      "additionalProperties": false,
+      "properties": {
+        "description":  { "type": "string" },
+        "performed_by": { "type": ["string", "null"], "description": "Mention text of the actor." },
+        "frequency":    { "type": ["string", "null"], "description": "As stated: 'every invoice', 'monthly', 'only when it's over 10k'." }
+      }
+    },
+
+    "handoff": {
+      "type": "object",
+      "required": ["from", "to"],
+      "additionalProperties": false,
+      "properties": {
+        "from":      { "type": "string" },
+        "to":        { "type": "string" },
+        "artifact":  { "type": ["string", "null"] },
+        "mechanism": { "enum": ["email", "system", "meeting", "chat", "paper", "verbal", "unknown"], "default": "unknown" },
+        "chased":    { "type": ["boolean", "null"], "description": "Whether the respondent has to chase this handoff. Chasing is a direct marker of constraint #1 and #7." }
+      }
+    },
+
+    "artifact": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name":       { "type": "string" },
+        "format":     { "type": ["string", "null"], "description": "'Excel', 'PDF', 'whatever the bank sends'." },
+        "reformatted":{ "type": ["boolean", "null"], "description": "Must be restructured before use - direct marker of constraint #4." }
+      }
+    },
+
+    "system": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name":          { "type": "string" },
+        "used_for":      { "type": ["string", "null"] },
+        "copied_to":     { "type": ["string", "null"], "description": "Re-keying target. Copying between systems is the tell for constraint #8." },
+        "wins_conflict": { "type": ["boolean", "null"], "description": "Whether this system is treated as authoritative when two disagree." }
+      }
+    },
+
+    "actor": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name":         { "type": "string" },
+        "role":         { "type": ["string", "null"] },
+        "team":         { "type": ["string", "null"] },
+        "discovered_by":{ "enum": ["named", "deferred_to", "blamed"], "default": "named", "description": "How this actor entered the record. 'deferred_to' and 'blamed' mark cast members we have not interviewed yet." }
+      }
+    },
+
+    "duration": {
+      "type": "object",
+      "required": ["measure", "value", "basis"],
+      "additionalProperties": false,
+      "properties": {
+        "measure": {
+          "enum": ["touch", "elapsed", "queue"],
+          "description": "touch = hands-on work; elapsed = wall clock start to finish; queue = waiting before work begins. Conflating these is the single most common error in process data."
+        },
+        "value":   { "$ref": "#/$defs/quantity" },
+        "subject": { "type": ["string", "null"], "description": "Mention text of what is being measured." },
+        "basis": {
+          "enum": ["typical", "last_instance", "worst_case", "guess"],
+          "description": "'Usually two days' and 'the last one took three weeks' are different claims. Worst-case anecdotes are often exception-path evidence rather than noise."
+        }
+      }
+    },
+
+    "wait": {
+      "type": "object",
+      "required": ["waiting_on", "owner"],
+      "additionalProperties": false,
+      "properties": {
+        "waiting_on": { "type": "string" },
+        "owner": {
+          "enum": ["internal", "external", "unknown"],
+          "description": "Not all waiting is ours to delete. A prospect taking three weeks to reply is a real queue no redesign collapses."
+        },
+        "current":  { "type": "boolean", "default": false, "description": "True if reported in the present tense ('right now'), which is the highest-reliability wait evidence." },
+        "duration": { "oneOf": [{ "$ref": "#/$defs/quantity" }, { "type": "null" }] }
+      }
+    },
+
+    "schedule": {
+      "type": "object",
+      "required": ["cadence"],
+      "additionalProperties": false,
+      "properties": {
+        "cadence":  { "type": "string", "description": "'Thursdays', 'month end', 'when we have twenty of them'." },
+        "batching": { "type": ["boolean", "null"], "description": "Whether work is accumulated before processing. Direct marker of constraint #1 - a cause of queue rather than a measure of it." },
+        "driver":   { "type": ["string", "null"], "description": "Why this cadence exists, if stated." }
+      }
+    },
+
+    "rule": {
+      "type": "object",
+      "required": ["condition", "action"],
+      "additionalProperties": false,
+      "properties": {
+        "condition":    { "type": "string" },
+        "action":       { "type": "string" },
+        "written_down": { "type": ["boolean", "null"], "description": "The determinism signal. A statable rule is an unautomated lookup, not judgment - and belongs in code, not a model." },
+        "exceptions":   { "type": ["string", "null"] }
+      }
+    },
+
+    "approval": {
+      "type": "object",
+      "required": ["approver", "ever_rejected"],
+      "additionalProperties": false,
+      "properties": {
+        "approver":      { "type": "string" },
+        "what_is_checked": { "type": ["string", "null"] },
+        "ever_rejected": {
+          "enum": ["yes", "no", "cant_recall", "unknown"],
+          "description": "'no' or 'cant_recall' identifies a pure risk ritual and a deletable step. This is the only reliable probe for constraint #3, which emits no pain signal of its own."
+        },
+        "last_rejection": { "type": ["string", "null"] }
+      }
+    },
+
+    "exception": {
+      "type": "object",
+      "required": ["trigger"],
+      "additionalProperties": false,
+      "properties": {
+        "trigger":     { "type": "string" },
+        "path_taken":  { "type": ["string", "null"] },
+        "pulls_in":    { "type": "array", "items": { "type": "string" }, "default": [] },
+        "recalled_instances": {
+          "type": ["integer", "null"], "minimum": 0,
+          "description": "How many distinct instances the respondent produced unprompted. Recall ease is the frequency estimate; it beats a percentage they would have guessed."
+        }
+      }
+    },
+
+    "consequence": {
+      "type": "object",
+      "required": ["subject"],
+      "additionalProperties": false,
+      "properties": {
+        "subject":     { "type": "string" },
+        "if_wrong":    { "type": ["string", "null"] },
+        "reversible":  { "enum": ["yes", "no", "costly", "unknown"], "default": "unknown" },
+        "blast_radius":{ "enum": ["individual", "team", "customer", "company", "regulatory", "unknown"], "default": "unknown" },
+        "borne_by":    { "type": ["string", "null"], "description": "Who is answerable. Accountability is a real function, not a capability gap." }
+      }
+    },
+
+    "complaint": {
+      "type": "object",
+      "description": "Captured deliberately, then deliberately down-weighted. Findings rank by volume x elapsed, never by complaint intensity - and the eval plants a loud cheap step specifically to test that we ignore it. We must record complaints in order to demonstrate we are not ranking on them.",
+      "required": ["target", "affect"],
+      "additionalProperties": false,
+      "properties": {
+        "target":    { "type": "string" },
+        "affect":    { "enum": ["annoying", "pointless", "stressful", "demoralising", "confusing"] },
+        "intensity": { "enum": ["passing", "emphatic", "repeated"], "default": "passing" }
+      }
+    },
+
+    "rework": {
+      "type": "object",
+      "required": ["what"],
+      "additionalProperties": false,
+      "properties": {
+        "what":        { "type": "string" },
+        "returned_by": { "type": ["string", "null"] },
+        "reason":      { "type": ["string", "null"] },
+        "loops_to":    { "type": ["string", "null"], "description": "Which earlier step the work returns to. Rework travels backward; exceptions travel forward on a different path." }
+      }
+    },
+
+    "workaround": {
+      "type": "object",
+      "description": "Every shadow spreadsheet is a documented failure of a system of record, and people volunteer them proudly rather than defensively.",
+      "required": ["what"],
+      "additionalProperties": false,
+      "properties": {
+        "what":             { "type": "string" },
+        "compensates_for":  { "type": ["string", "null"], "description": "Which system or step fails such that this is needed." },
+        "private":          { "type": ["boolean", "null"], "description": "Personal vs team-known. Private workarounds are invisible to management and to every system of record." }
+      }
+    }
+  }
+}

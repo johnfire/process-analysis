@@ -1,0 +1,91 @@
+[
+  {
+    "id": "c-approval-ritual",
+    "_note": "The ritual-approval probe. 'cant_recall' plus polarity=denied is how a deletable step announces itself.",
+    "respondent_id": "r-ap-clerk", "session_id": "s1", "captured_at": "2026-09-06T10:00:00Z",
+    "question_id": "q-approver-ever-said-no",
+    "kind": "approval", "polarity": "denied", "hedging": "approximate", "subject_scope": "self",
+    "verbatim": "Honestly? I can't remember him ever sending one back.",
+    "entity_refs": [{ "text": "Head of Finance", "type": "actor", "role": "approver" }],
+    "payload": { "approver": "Head of Finance", "what_is_checked": "invoices over 5k", "ever_rejected": "cant_recall" }
+  },
+  {
+    "id": "c-queue-upstream",
+    "_note": "Half of a queue-gap pair. Neither half is interesting alone.",
+    "respondent_id": "r-ap-clerk", "session_id": "s1", "captured_at": "2026-09-06T10:02:00Z",
+    "question_id": "q-after-you-send-it",
+    "kind": "duration", "polarity": "asserted", "hedging": "approximate", "subject_scope": "self",
+    "verbatim": "Once I send it over it's picked up the same day, more or less.",
+    "payload": { "measure": "queue", "value": { "low": 0, "high": 1, "unit": "day" }, "subject": "the approval request", "basis": "typical" }
+  },
+  {
+    "id": "c-queue-downstream",
+    "_note": "The other half, from the other side. The gap between these two accounts IS the queue, and nobody in the organisation holds that number.",
+    "respondent_id": "r-approver", "session_id": "s2", "captured_at": "2026-09-06T14:30:00Z",
+    "question_id": "q-after-it-arrives",
+    "kind": "duration", "polarity": "asserted", "hedging": "guessed", "subject_scope": "self",
+    "verbatim": "I do them in a batch on Fridays, so it depends when it lands.",
+    "payload": { "measure": "queue", "value": { "low": 1, "high": 5, "unit": "day" }, "subject": "approval requests", "basis": "typical" }
+  },
+  {
+    "id": "c-batching-cause",
+    "_note": "The cause of the queue above, not a measure of it. Constraint #1.",
+    "respondent_id": "r-approver", "session_id": "s2", "captured_at": "2026-09-06T14:31:00Z",
+    "kind": "schedule", "polarity": "asserted", "hedging": "firm", "subject_scope": "self",
+    "verbatim": "I do them in a batch on Fridays.",
+    "payload": { "cadence": "Fridays", "batching": true, "driver": "it's not worth opening the system for one" }
+  },
+  {
+    "id": "c-hearsay-blame",
+    "_note": "subject_scope=hearsay. A hypothesis about someone else, never scored as fact until legal's own account confirms it. If it doesn't, this is a fracture and the fracture is the finding.",
+    "respondent_id": "r-ap-clerk", "session_id": "s1", "captured_at": "2026-09-06T10:05:00Z",
+    "question_id": "q-waiting-on-right-now",
+    "kind": "wait", "polarity": "asserted", "hedging": "firm", "subject_scope": "hearsay",
+    "verbatim": "Right now I'm sat waiting on legal, as usual.",
+    "entity_refs": [{ "text": "legal", "type": "team", "role": "waiting_on" }],
+    "payload": { "waiting_on": "legal", "owner": "internal", "current": true, "duration": { "low": 3, "high": 10, "unit": "day" } }
+  },
+  {
+    "id": "c-determinism",
+    "_note": "A statable rule is an unautomated lookup, not judgment. written_down=false means it is also tribal knowledge. This belongs in code, not a model.",
+    "respondent_id": "r-ap-clerk", "session_id": "s1", "captured_at": "2026-09-06T10:09:00Z",
+    "question_id": "q-training-your-replacement",
+    "kind": "rule", "polarity": "asserted", "hedging": "firm", "subject_scope": "self",
+    "verbatim": "Under five grand and it matches the PO, just pay it. Nobody wrote that down, you just learn it.",
+    "payload": { "condition": "under 5000 EUR and matches the PO", "action": "pay without approval", "written_down": false, "exceptions": "new suppliers always go up" }
+  },
+  {
+    "id": "c-workaround",
+    "_note": "A documented failure of a system of record, volunteered proudly. private=true means it is invisible to management and to every system.",
+    "respondent_id": "r-ap-clerk", "session_id": "s1", "captured_at": "2026-09-06T10:14:00Z",
+    "question_id": "q-your-own-spreadsheet",
+    "kind": "workaround", "polarity": "asserted", "hedging": "firm", "subject_scope": "self",
+    "verbatim": "I keep my own sheet of who actually approves what, because SAP has half of them wrong.",
+    "payload": { "what": "personal approver spreadsheet", "compensates_for": "SAP", "private": true }
+  },
+  {
+    "id": "c-loud-cheap-decoy",
+    "_note": "The planted decoy from EVAL.md. Captured, then deliberately down-weighted: findings rank by volume x elapsed, never by intensity. We record complaints in order to prove we do not rank on them.",
+    "respondent_id": "r-ap-clerk", "session_id": "s1", "captured_at": "2026-09-06T10:18:00Z",
+    "question_id": "q-fairly-sure-is-pointless",
+    "kind": "complaint", "polarity": "asserted", "hedging": "firm", "subject_scope": "self",
+    "verbatim": "That stupid login screen times out every ten minutes. Drives me up the wall.",
+    "payload": { "target": "SAP session timeout", "affect": "annoying", "intensity": "repeated" }
+  },
+  {
+    "id": "c-external-queue",
+    "_note": "owner=external. A real wait that no redesign collapses. Attributing this to an internal cause would be a scored failure, not partial credit.",
+    "respondent_id": "r-approver", "session_id": "s2", "captured_at": "2026-09-06T14:40:00Z",
+    "kind": "wait", "polarity": "asserted", "hedging": "approximate", "subject_scope": "direct_observation",
+    "verbatim": "The bank statement doesn't land until the third working day, whatever we do.",
+    "payload": { "waiting_on": "bank statement", "owner": "external", "current": false, "duration": { "low": 3, "high": 3, "unit": "day" } }
+  },
+  {
+    "id": "c-deferred-actor",
+    "_note": "hedging=deferred discovers a cast member we have not interviewed. discovered_by=deferred_to drives who to talk to next.",
+    "respondent_id": "r-ap-clerk", "session_id": "s1", "captured_at": "2026-09-06T10:21:00Z",
+    "kind": "actor", "polarity": "asserted", "hedging": "deferred", "subject_scope": "self",
+    "verbatim": "I genuinely don't know what happens after that - you'd have to ask Sabine.",
+    "payload": { "name": "Sabine", "role": null, "team": null, "discovered_by": "deferred_to" }
+  }
+]
