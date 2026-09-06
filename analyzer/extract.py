@@ -22,19 +22,21 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 PROMPTS = Path(__file__).resolve().parent / "prompts"
 CLAIM_SCHEMA = REPO_ROOT / "schema" / "claim.schema.json"
 
-# TRANSPORT IS UNRESOLVED. `claude -p` does not invoke a model - it starts an agent session
-# that inherits the operator's global CLAUDE.md, hooks and skills. On the first extraction run
-# a Stop hook fired inside the subprocess and its message was returned as the extraction result;
-# all fourteen calls failed identically. `--bare` skips hooks but also disables the credential
-# helper, and `--settings '{"hooks":{}}'` does not suppress global hooks at all.
-#
-# Beyond being broken, it is the wrong shape: this stage is a pure text-to-JSON transform and has
-# no business carrying an agent harness. Worse, output would depend on the operator's local
-# configuration, so a hook change on one machine could silently move eval scores - disqualifying
-# for a component whose entire purpose is reproducible measurement.
-#
-# Pending: replace with a direct Anthropic API client and an explicitly pinned model.
-ANALYZER_ARGV = ("claude", "-p")
+# Transports. `claude -p` is deliberately absent: it does not invoke a model but starts an agent
+# session inheriting the operator's global CLAUDE.md, hooks and skills. On the first extraction
+# run a Stop hook fired inside the subprocess and its message was returned as the result; all
+# fourteen calls failed identically. `--bare` skips hooks but disables the credential helper, and
+# `--settings '{"hooks":{}}'` does not suppress global hooks. Beyond being broken it is the wrong
+# shape - output would depend on the operator's local configuration, so a hook change on one
+# machine could silently move eval scores.
+TRANSPORTS = {
+    # Unblocks the pipeline today. NOT independent: DeepSeek is also the corpus architect, so a
+    # run on a DeepSeek-authored process shares blind spots with its own ground truth and any
+    # resulting number is an upper bound, not a score. Adequate for a smoke test, which asks
+    # whether extraction works at all rather than how well it does.
+    "hermes": ("hermes", "-z"),
+}
+DEFAULT_TRANSPORT = "hermes"
 ANALYZER_TIMEOUT_SECONDS = 1800
 
 # Speech is transcribed with typographic punctuation; quoting it back through a model
@@ -93,9 +95,11 @@ def extract_json_array(raw_output: str) -> list[dict]:
     return json.loads(raw_output[opening : closing + 1])
 
 
-def run_analyzer(prompt: str) -> str:
+def run_analyzer(prompt: str, transport: str = DEFAULT_TRANSPORT) -> str:
+    if transport not in TRANSPORTS:
+        raise ValueError(f"unknown transport {transport!r}; have {sorted(TRANSPORTS)}")
     completed = subprocess.run(
-        [*ANALYZER_ARGV, prompt],
+        [*TRANSPORTS[transport], prompt],
         capture_output=True,
         text=True,
         stdin=subprocess.DEVNULL,
@@ -125,7 +129,10 @@ def validate_claims(candidates: list[dict]) -> tuple[list[dict], list[tuple[dict
 
 
 def extract_from_transcript(
-    transcript: str, respondent: Respondent, session_id: str
+    transcript: str,
+    respondent: Respondent,
+    session_id: str,
+    transport: str = DEFAULT_TRANSPORT,
 ) -> ExtractionResult:
     prompt = render(
         "extract-claims.md",
@@ -139,14 +146,14 @@ def extract_from_transcript(
             "TRANSCRIPT": transcript,
         },
     )
-    candidates = extract_json_array(run_analyzer(prompt))
+    candidates = extract_json_array(run_analyzer(prompt, transport))
     grounded = [claim for claim in candidates if is_grounded(claim.get("verbatim", ""), transcript)]
     ungrounded = [claim for claim in candidates if claim not in grounded]
     valid, invalid = validate_claims(grounded)
     return ExtractionResult(valid, ungrounded, invalid)
 
 
-def extract_process(process_dir: Path) -> Path:
+def extract_process(process_dir: Path, transport: str = DEFAULT_TRANSPORT) -> Path:
     """Extract claims for every respondent in one generated process."""
     ground_truth = json.loads((process_dir / "ground_truth.json").read_text())
     cast_by_id = {member["person_id"]: member for member in ground_truth["cast"]}
@@ -162,7 +169,7 @@ def extract_process(process_dir: Path) -> Path:
         respondent = Respondent(person_id, member["name"], member["role"])
         print(f"[extract] {member['name']} ...")
         result = extract_from_transcript(
-            transcript_path.read_text(), respondent, f"s-{person_id}"
+            transcript_path.read_text(), respondent, f"s-{person_id}", transport
         )
         (claims_dir / f"{person_id}.json").write_text(json.dumps(result.claims, indent=2) + "\n")
         print(
@@ -179,8 +186,9 @@ def extract_process(process_dir: Path) -> Path:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("process_dir", type=Path, help="corpus/seed/<process-id>")
+    parser.add_argument("--transport", default=DEFAULT_TRANSPORT, choices=sorted(TRANSPORTS))
     arguments = parser.parse_args()
-    claims_dir = extract_process(arguments.process_dir)
+    claims_dir = extract_process(arguments.process_dir, arguments.transport)
     print(f"\nwrote {claims_dir}")
     return 0
 

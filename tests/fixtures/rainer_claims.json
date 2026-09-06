@@ -1,0 +1,1277 @@
+[
+  {
+    "id": "rainer-001",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q1",
+    "verbatim": "Petra, mainly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Petra",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "rainer-002",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q1",
+    "verbatim": "Availability, OEM lead times, whether the supposedly equivalent item is actually there.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Availability, OEM lead times, whether the supposedly equivalent item is actually there",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "rainer-003",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q1",
+    "verbatim": "Everyone acts like I'm holding things up",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "Everyone",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "rainer-004",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q1",
+    "verbatim": "I can't make a customer decision without something credible to offer.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rule",
+    "payload": {
+      "condition": "there is nothing credible to offer",
+      "action": "I can't make a customer decision",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "rainer-005",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q2",
+    "verbatim": "Last one was an old machine part with an OEM delivery date that was ridiculous\u2014months, basically.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "duration",
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 2,
+        "high": 12,
+        "unit": "month"
+      },
+      "subject": "OEM delivery date",
+      "basis": "last_instance"
+    }
+  },
+  {
+    "id": "rainer-006",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q2",
+    "verbatim": "Petra's information kept changing",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rework",
+    "payload": {
+      "what": "the substitution case",
+      "returned_by": "Petra",
+      "reason": "Petra's information kept changing",
+      "loops_to": "deciding whether the approved alternative is acceptable"
+    }
+  },
+  {
+    "id": "rainer-007",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q2",
+    "verbatim": "I had to decide whether an approved alternative was acceptable for that account.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "decide whether an approved alternative was acceptable for that account",
+      "performed_by": "Rainer",
+      "frequency": null
+    }
+  },
+  {
+    "id": "rainer-008",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q2",
+    "verbatim": "Marta sent a quote through",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "handoff",
+    "payload": {
+      "from": "Marta",
+      "to": "Rainer",
+      "artifact": "a quote",
+      "mechanism": "system",
+      "chased": false
+    }
+  },
+  {
+    "id": "rainer-009",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q2",
+    "verbatim": "it needed my approval",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "approval",
+    "payload": {
+      "approver": "Rainer",
+      "what_is_checked": "a quote",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "rainer-010",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q2",
+    "verbatim": "which took five minutes.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 5,
+        "high": 5,
+        "unit": "minute"
+      },
+      "subject": "a quote approval",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "rainer-011",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q2",
+    "verbatim": "Except I had to check the customer history, margin, what we'd promised before",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "check the customer history, margin, and what we'd promised before",
+      "performed_by": "Rainer",
+      "frequency": "before approving a quote"
+    }
+  },
+  {
+    "id": "rainer-012",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q2",
+    "verbatim": "so it's not really \"five minutes,\" is it?",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "the 'five minutes' figure",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "rainer-013",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q3",
+    "verbatim": "Petra gets chased, yes.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "handoff",
+    "payload": {
+      "from": "Rainer",
+      "to": "Petra",
+      "artifact": null,
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "rainer-014",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q3",
+    "verbatim": "Sometimes Marta, if a draft has disappeared into the system somewhere.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "handoff",
+    "payload": {
+      "from": "Rainer",
+      "to": "Marta",
+      "artifact": "a draft",
+      "mechanism": "system",
+      "chased": true
+    }
+  },
+  {
+    "id": "rainer-015",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q3",
+    "verbatim": "if a draft has disappeared into the system somewhere",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "exception",
+    "payload": {
+      "trigger": "a draft has disappeared into the system",
+      "path_taken": "chase Marta for a replacement draft",
+      "pulls_in": [
+        "Marta"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "rainer-016",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q3",
+    "verbatim": "People chase me for decisions",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "handoff",
+    "payload": {
+      "from": "People",
+      "to": "Rainer",
+      "artifact": "decisions",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "rainer-017",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q3",
+    "verbatim": "I'm with customers most of the week",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "schedule",
+    "payload": {
+      "cadence": "most of the week",
+      "batching": null,
+      "driver": "That's the job"
+    }
+  },
+  {
+    "id": "rainer-018",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q3",
+    "verbatim": "You cannot run a region from a chair staring at SAP.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rule",
+    "payload": {
+      "condition": "to run a region",
+      "action": "you cannot do it from a chair staring at SAP",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "rainer-019",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q4",
+    "verbatim": "Ten minutes for a substitute decision, perhaps.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 8,
+        "high": 15,
+        "unit": "minute"
+      },
+      "subject": "a substitute decision",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "rainer-020",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q4",
+    "verbatim": "A quote approval is even less.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 1,
+        "high": 10,
+        "unit": "minute"
+      },
+      "subject": "a quote approval",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "rainer-021",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q4",
+    "verbatim": "But it has to wait until I'm in the office and can look at it properly",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "I'm in the office and can look at it properly",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "rainer-022",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q4",
+    "verbatim": "usually end of week or Monday.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "schedule",
+    "payload": {
+      "cadence": "end of week or Monday",
+      "batching": true,
+      "driver": null
+    }
+  },
+  {
+    "id": "rainer-023",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q4",
+    "verbatim": "It's not as though I'm ignoring it.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "the notion that I'm ignoring it",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "rainer-024",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q5",
+    "verbatim": "Occasionally the substitute case comes back if the information changes",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rework",
+    "payload": {
+      "what": "the substitute case",
+      "returned_by": null,
+      "reason": "the information changes",
+      "loops_to": "the substitution decision"
+    }
+  },
+  {
+    "id": "rainer-025",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q5",
+    "verbatim": "or if someone has found another option",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rework",
+    "payload": {
+      "what": "the substitute case",
+      "returned_by": null,
+      "reason": "someone has found another option",
+      "loops_to": "the substitution decision"
+    }
+  },
+  {
+    "id": "rainer-026",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q5",
+    "verbatim": "Quotes can come back from Marta if something in the pricing needs correcting.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [],
+    "kind": "rework",
+    "payload": {
+      "what": "quotes",
+      "returned_by": "Marta",
+      "reason": "something in the pricing needs correcting",
+      "loops_to": "quote pricing/approval"
+    }
+  },
+  {
+    "id": "rainer-027",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q5",
+    "verbatim": "Not often.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "schedule",
+    "payload": {
+      "cadence": "not often",
+      "batching": null,
+      "driver": null
+    }
+  },
+  {
+    "id": "rainer-028",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q5",
+    "verbatim": "I catch most issues before that.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "catch most issues before the rework happens",
+      "performed_by": "Rainer",
+      "frequency": null
+    }
+  },
+  {
+    "id": "rainer-029",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q6",
+    "verbatim": "Don't treat form-fit-function as a box-ticking exercise.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rule",
+    "payload": {
+      "condition": "when evaluating form-fit-function",
+      "action": "don't treat it as a box-ticking exercise",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "rainer-030",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q6",
+    "verbatim": "If OEM lead time is hurting the customer, offer the approved substitute when it's a repeat customer who values speed\u2014but use your judgment.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rule",
+    "payload": {
+      "condition": "OEM lead time is hurting the customer and it's a repeat customer who values speed",
+      "action": "offer the approved substitute",
+      "written_down": null,
+      "exceptions": "use your judgment"
+    }
+  },
+  {
+    "id": "rainer-031",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q6",
+    "verbatim": "Relationship, margin, what the customer can tolerate.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "weigh relationship, margin, and what the customer can tolerate",
+      "performed_by": "Rainer",
+      "frequency": null
+    }
+  },
+  {
+    "id": "rainer-032",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q6",
+    "verbatim": "There isn't a magic rule written in SAP.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "SAP",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "rainer-033",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q7",
+    "verbatim": "I put my decision note onto the bid in SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "put my decision note onto the bid in SAP",
+      "performed_by": "Rainer",
+      "frequency": "when I make a substitute decision"
+    }
+  },
+  {
+    "id": "rainer-034",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q7",
+    "verbatim": "so Marta can act on it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "handoff",
+    "payload": {
+      "from": "Rainer",
+      "to": "Marta",
+      "artifact": "my decision note",
+      "mechanism": "system",
+      "chased": false
+    }
+  },
+  {
+    "id": "rainer-035",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q7",
+    "verbatim": "Sometimes I'm looking between the bid, the customer record, and the margin figure.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "look between the bid, the customer record, and the margin figure",
+      "performed_by": "Rainer",
+      "frequency": "sometimes"
+    }
+  },
+  {
+    "id": "rainer-036",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q7",
+    "verbatim": "It's not copying novels",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rework",
+    "payload": {
+      "what": "copying large volumes",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": null
+    }
+  },
+  {
+    "id": "rainer-037",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q7",
+    "verbatim": "if the basic information isn't clear, you end up restating the same thing",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rework",
+    "payload": {
+      "what": "restating the same thing",
+      "returned_by": null,
+      "reason": "the basic information isn't clear",
+      "loops_to": "the source (bid/notes)"
+    }
+  },
+  {
+    "id": "rainer-038",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q8",
+    "verbatim": "Nothing major.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "rework",
+    "payload": {
+      "what": "major reformatting",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": null
+    }
+  },
+  {
+    "id": "rainer-039",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q8",
+    "verbatim": "The information should already be in the bid.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "artifact",
+    "payload": {
+      "name": "the bid",
+      "format": null,
+      "reformatted": false
+    }
+  },
+  {
+    "id": "rainer-040",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q8",
+    "verbatim": "which is not terribly useful",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "the notes written as if the reader was in the room when the call happened",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "rainer-041",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q8",
+    "verbatim": "Then I have to piece it together.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "piece the notes together",
+      "performed_by": "Rainer",
+      "frequency": "sometimes"
+    }
+  },
+  {
+    "id": "rainer-042",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q9",
+    "verbatim": "The account relationship, previous expectations, and whether the substitute makes commercial sense",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "look up the account relationship, previous expectations, and whether the substitute makes commercial sense",
+      "performed_by": "Rainer",
+      "frequency": "every time"
+    }
+  },
+  {
+    "id": "rainer-043",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q9",
+    "verbatim": "I also check the gross margin and whether the customer is on the do-not-serve list for approvals",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "check the gross margin and whether the customer is on the do-not-serve list for approvals",
+      "performed_by": "Rainer",
+      "frequency": "every time for approvals"
+    }
+  },
+  {
+    "id": "rainer-044",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q9",
+    "verbatim": "People think it is mechanical because there's a number in a column. It isn't always.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "the view that it's mechanical because there's a number in a column",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "rainer-045",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q10",
+    "verbatim": "For quotes over ten thousand euros, mine is the signature.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "approval",
+    "payload": {
+      "approver": "Rainer",
+      "what_is_checked": "quotes over ten thousand euros",
+      "ever_rejected": "no",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "rainer-046",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q10",
+    "verbatim": "Have I sent one back? No, not formally.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "approval",
+    "payload": {
+      "approver": "Rainer",
+      "what_is_checked": null,
+      "ever_rejected": "no",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "rainer-047",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q10",
+    "verbatim": "If it reaches me, the margin is usually already dealt with.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "the margin is usually already dealt with when a quote reaches me",
+      "performed_by": "Rainer",
+      "frequency": "usually"
+    }
+  },
+  {
+    "id": "rainer-048",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q10",
+    "verbatim": "I skim it, sign it, and move on.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "skim it, sign it, and move on",
+      "performed_by": "Rainer",
+      "frequency": "for routine quotes"
+    }
+  },
+  {
+    "id": "rainer-049",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q11",
+    "verbatim": "The bid note is where the decision belongs.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "artifact",
+    "payload": {
+      "name": "the bid note",
+      "format": null,
+      "reformatted": null
+    }
+  },
+  {
+    "id": "rainer-050",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q11",
+    "verbatim": "I may keep mental notes about an account and what matters to them, obviously.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "workaround",
+    "payload": {
+      "what": "keep mental notes about an account and what matters to them",
+      "compensates_for": "the system (can't hold customer knowledge)",
+      "private": true
+    }
+  },
+  {
+    "id": "rainer-051",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q11",
+    "verbatim": "You cannot reduce fourteen years of customer knowledge to fields in a system.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "the system's fields for customer knowledge",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "rainer-052",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q12",
+    "verbatim": "The customer wants an answer immediately, especially where an OEM part is unavailable.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "an answer from Rainer",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "rainer-053",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q12",
+    "verbatim": "But the real pressure comes from waiting for availability information.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "availability information",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "rainer-054",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q12",
+    "verbatim": "they have often been waiting ages already",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "answers/availability",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "rainer-055",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q12",
+    "verbatim": "and then everyone suddenly wants my decision that afternoon",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "schedule",
+    "payload": {
+      "cadence": "suddenly, that afternoon",
+      "batching": null,
+      "driver": "after the customer has waited a long time"
+    }
+  },
+  {
+    "id": "rainer-056",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q13",
+    "verbatim": "I can't point to one dramatic case.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "one dramatic failure case",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "rainer-057",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q13",
+    "verbatim": "The risk is offering the wrong substitute to a customer who cannot afford downtime",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "offering the wrong substitute",
+      "if_wrong": "a customer who cannot afford downtime",
+      "reversible": "costly",
+      "blast_radius": "customer",
+      "borne_by": "Rainer"
+    }
+  },
+  {
+    "id": "rainer-058",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q13",
+    "verbatim": "or making them wait for an OEM part when they would have accepted the alternative",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "making them wait for an OEM part",
+      "if_wrong": "they would have accepted the alternative",
+      "reversible": "costly",
+      "blast_radius": "customer",
+      "borne_by": "Rainer"
+    }
+  },
+  {
+    "id": "rainer-059",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q13",
+    "verbatim": "That is why it needs someone who knows the account\u2014not just a workflow.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "someone who knows the account",
+      "if_wrong": "just a workflow",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "Rainer"
+    }
+  },
+  {
+    "id": "rainer-060",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q14",
+    "verbatim": "Substitute decisions would pile up, and larger quotes would be waiting for my approval.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "substitute decisions and larger quotes",
+      "if_wrong": "would pile up / wait for my approval",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "Rainer"
+    }
+  },
+  {
+    "id": "rainer-061",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q14",
+    "verbatim": "perhaps Tobias",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [],
+    "kind": "actor",
+    "payload": {
+      "name": "Tobias",
+      "role": null,
+      "team": null,
+      "discovered_by": "named"
+    }
+  },
+  {
+    "id": "rainer-062",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q14",
+    "verbatim": "but they would not know every customer relationship in the region",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "someone covering (Tobias)",
+      "if_wrong": "they would not know every customer relationship in the region",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "Rainer"
+    }
+  },
+  {
+    "id": "rainer-063",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q14",
+    "verbatim": "And then I would come back to a mess people would somehow describe as my backlog.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "people describing the mess as my backlog",
+      "affect": "demoralising",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "rainer-064",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q15",
+    "verbatim": "The formal approval on routine higher-value quotes is probably more ceremony than control.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "complaint",
+    "payload": {
+      "target": "the formal approval on routine higher-value quotes",
+      "affect": "pointless",
+      "intensity": "emphatic"
+    }
+  },
+  {
+    "id": "rainer-065",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q15",
+    "verbatim": "I check the margin and the do-not-serve list",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "step",
+    "payload": {
+      "description": "check the margin and the do-not-serve list",
+      "performed_by": "Rainer",
+      "frequency": "on routine higher-value quotes"
+    }
+  },
+  {
+    "id": "rainer-066",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q15",
+    "verbatim": "but nobody has ever sent one back through that route",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "approval",
+    "payload": {
+      "approver": "Rainer",
+      "what_is_checked": null,
+      "ever_rejected": "no",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "rainer-067",
+    "respondent_id": "rainer",
+    "session_id": "s-p3-rainer",
+    "captured_at": "2026-09-06T12:56:53Z",
+    "question_id": "q15",
+    "verbatim": "Still, if it goes wrong, everyone will ask why I signed it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "kind": "consequence",
+    "payload": {
+      "subject": "a wrong signed quote",
+      "if_wrong": "everyone will ask why I signed it",
+      "reversible": "unknown",
+      "blast_radius": "company",
+      "borne_by": "Rainer"
+    }
+  }
+]

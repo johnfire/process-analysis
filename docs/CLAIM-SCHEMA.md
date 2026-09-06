@@ -127,6 +127,35 @@ conclusion.
 
 ---
 
+## Amendment: `subject_scope` is a hint, not the triangulation mechanism
+
+Found while extracting the false-blame holder's transcript from the first corpus. Rainer
+sincerely believes Petra is blocking him. Extraction captured that belief correctly — `wait`
+with `waiting_on: "Petra"`, `handoff` "Petra gets chased", `rework` "Petra's information kept
+changing" — and scoped every one of them `self`.
+
+That scoping is defensible, which is the problem. "I'm waiting on Petra" asserts two things with
+different epistemic status: *I am waiting*, which he knows directly, and *Petra is the cause*,
+which he is inferring. `subject_scope` is a single label over a whole claim and cannot express
+the split, so an extractor choosing `self` is not making an error — it is answering an ambiguous
+question, and a different model would answer it differently on a different day.
+
+Triangulation therefore does **not** depend on `subject_scope`. It derives from whether the
+payload names a party other than the respondent — a rule, evaluated in code, in
+`analyzer/triangulation.py`. `subject_scope` remains a useful signal about the respondent's own
+stance; it is simply not what the fracture detector keys off.
+
+This is the deterministic-first principle catching a design error rather than an implementation
+one: we had made the most important structural decision in the pipeline contingent on a model's
+judgment about a genuinely ambiguous question, when a rule was available. Had we shipped it, the
+fracture detector would have failed silently and intermittently, which is the worst possible
+failure mode for a measurement instrument.
+
+Note the returned counterparties are *candidates*, not resolved actors — `waiting_on` names a
+thing ("an answer", "availability information") as readily as a person, and separating them is
+entity resolution's job. Guessing at that boundary here would bury an unreviewable judgment
+inside a function whose entire value is being a rule.
+
 ## Open
 
 - **Do we score claim extraction independently, or only end to end?** Ground truth in EVAL.md is a
