@@ -68,19 +68,19 @@ proceeds without it, unvalidated, with a warning).
 Generated processes are committed. Regeneration is a separate deliberate act, so that a change in
 analyzer score means a change in the analyzer rather than a change in the weather.
 
-## Known gap in the first seed
+## Seed processes
 
-`kessler-inbound-lead-qualification` was generated before the `false_blame.step_id` guard
-existed. Its answer key describes the misapprehension as being about trade-show badge scans
-uploaded to a CRM endpoint that silently fails — but no step in the process is "upload badge
-scans", so that specific narrative reached neither person's slice.
+| Process | Organisation | Steps | People | Cycle efficiency |
+|---|---|---|---|---|
+| `inbound-lead-to-qualified-contact` | Krauss Industriebedarf GmbH, 180 | 11 | 7 | 0.58% |
+| `hospital-onboarding` | Sudmark Kliniken, 400 | 12 | 7 | 0.49% |
 
-A fracture did still emerge in the testimony, in different words: Anna describes capture as
-automatic and reliable ("the whole point is that it creates itself"), Sabine describes it as
-unreliable and invisible to her ("if the capture has done something odd then I'm the last to
-know"). Two honest, incompatible accounts of the same handoff. So the corpus is usable, but a
-scorer matching against the answer key's *wording* would mark a correct finding wrong.
+Two domains deliberately: a mostly-sequential sales pipeline and a fan-out onboarding process
+where several departments act in parallel. One office's vocabulary is not a corpus, and an entity
+resolver tuned to a single generated company would be tuned to nothing.
 
-The guard now prevents this: `false_blame` must name a real `step_id`, and that step must be
-performed by the person being blamed. Regenerating this process under the fixed prompt is a
-cheap follow-up and worth doing before the scorer is written.
+An earlier seed (`kessler-inbound-lead-qualification`) was removed once the `false_blame.step_id`
+guard existed. Its answer key described the misapprehension as being about trade-show badge scans,
+but no step in that process was "upload badge scans", so the narrative reached neither person's
+slice and the planted fracture could not materialise as the key described it. It remains in git
+history. Both current seeds satisfy the guard.

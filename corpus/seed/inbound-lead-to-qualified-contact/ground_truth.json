@@ -1,0 +1,424 @@
+{
+  "process_id": "inbound-lead-to-qualified-contact",
+  "domain": "Inbound sales lead to first qualified contact",
+  "organisation": {
+    "name": "Krauss Industriebedarf GmbH",
+    "headcount": 180,
+    "sector": "Industrial equipment distribution",
+    "context": "Distributor of hydraulic, pneumatic and drive components plus a large legacy catalogue of superseded machine parts. Sells to German Mittelstand manufacturers. Sales runs two regions off a shared sales-office inbox and an SAP Business One back end; behind it sits a legacy parts database, TechFinder. Roughly a third of incoming leads name parts from 1980s-era machines or competitor references, so identifying the exact item is a real part of the job."
+  },
+  "cast": [
+    {
+      "person_id": "sabine",
+      "name": "Sabine Kessler",
+      "role": "Sales Office Coordinator (lead intake)",
+      "tenure_years": 11,
+      "disposition": "bored",
+      "job_security_anxiety": "low"
+    },
+    {
+      "person_id": "jonas",
+      "name": "Jonas Weber",
+      "role": "Inside Sales Engineer",
+      "tenure_years": 6,
+      "disposition": "enthusiastic",
+      "job_security_anxiety": "none"
+    },
+    {
+      "person_id": "petra",
+      "name": "Petra Lindqvist",
+      "role": "Materials & Availability Planner",
+      "tenure_years": 4,
+      "disposition": "forthcoming",
+      "job_security_anxiety": "none"
+    },
+    {
+      "person_id": "marta",
+      "name": "Marta Falck",
+      "role": "Quotation & Pricing",
+      "tenure_years": 9,
+      "disposition": "guarded",
+      "job_security_anxiety": "moderate"
+    },
+    {
+      "person_id": "rainer",
+      "name": "Rainer Hoffmann",
+      "role": "Regional Sales Manager",
+      "tenure_years": 14,
+      "disposition": "defensive",
+      "job_security_anxiety": "high"
+    },
+    {
+      "person_id": "tobias",
+      "name": "Tobias Brandt",
+      "role": "Head of Sales",
+      "tenure_years": 12,
+      "disposition": "forthcoming",
+      "job_security_anxiety": "low"
+    },
+    {
+      "person_id": "lukas",
+      "name": "Lukas Gehrig",
+      "role": "Field Sales Representative",
+      "tenure_years": 0.5,
+      "disposition": "enthusiastic",
+      "job_security_anxiety": "none"
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "s1",
+      "name": "Log inbound lead into ERP",
+      "performed_by": "sabine",
+      "position": 1,
+      "touch_minutes": 3,
+      "queue_before_minutes": 35,
+      "queue_owner": "internal",
+      "queue_cause": "Batching \u2014 the shared sales inbox is cleared twice a day (09:00 and 15:00) and the desk is on the phone in between. Separately, SAP Business One drops the session after roughly 20 minutes of idle time, so every entry starts with a re-login; the re-login is a company-wide gripe that costs almost nothing.",
+      "hands_to": "s2",
+      "mechanism": "system",
+      "artifact": "Lead record",
+      "systems": [
+        "SAP Business One"
+      ],
+      "decision": {
+        "statable_rule": "A message with a product reference and a company name is a lead; known customer IDs are flagged automatically, unknown senders go to manual dedupe.",
+        "written_down": false,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "approval": null,
+      "exception_rate": 0.05,
+      "exception_path": null,
+      "rework_rate": 0.02,
+      "rework_loops_to": "s1",
+      "true_classification": "deterministic",
+      "irritation_level": "high",
+      "normalised": false
+    },
+    {
+      "step_id": "s2",
+      "name": "Route lead to regional inside sales",
+      "performed_by": "sabine",
+      "position": 2,
+      "touch_minutes": 5,
+      "queue_before_minutes": 45,
+      "queue_owner": "internal",
+      "queue_cause": "Batching with the morning clearout: Sabine assigns the day's leads in one run. One desk covers both regions, so a lead arriving mid-afternoon is not touched until the next morning.",
+      "hands_to": "s3",
+      "mechanism": "system",
+      "artifact": "CRM ticket with region and segment",
+      "systems": [
+        "SAP Business One"
+      ],
+      "decision": {
+        "statable_rule": "Region by the customer's postal code; segment by the industry recorded on the existing account record.",
+        "written_down": false,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "approval": null,
+      "exception_rate": 0.05,
+      "exception_path": null,
+      "rework_rate": 0.03,
+      "rework_loops_to": "s2",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "s3",
+      "name": "Identify part and check technical feasibility",
+      "performed_by": "jonas",
+      "position": 3,
+      "touch_minutes": 20,
+      "queue_before_minutes": 2100,
+      "queue_owner": "internal",
+      "queue_cause": "Jonas clears the part-identification queue in a Friday-morning batch and again around midweek, giving priority to customers already on the phone; a standard catalogue item routinely sits a day and a half in his worklist before he opens it.",
+      "hands_to": "s5",
+      "mechanism": "system",
+      "artifact": "Part-specification note",
+      "systems": [
+        "SAP Business One",
+        "TechFinder"
+      ],
+      "decision": {
+        "statable_rule": "If the reference resolves to exactly one current catalogue item, assign it; if it resolves to several or none, flag for spec clarification with the customer.",
+        "written_down": false,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "approval": null,
+      "exception_rate": 0.4,
+      "exception_path": "s4",
+      "rework_rate": 0.08,
+      "rework_loops_to": "s3",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "s4",
+      "name": "Request customer specification and wait",
+      "performed_by": "jonas",
+      "position": 4,
+      "touch_minutes": 10,
+      "queue_before_minutes": 5800,
+      "queue_owner": "external",
+      "queue_cause": "The customer's own engineering or purchasing reviews the request on their own timetable; a single follow-up is sent at five working days, but the reply is theirs to give. The four-day average has never budged and there is nothing on the distributor side that changes it.",
+      "hands_to": "s5",
+      "mechanism": "email",
+      "artifact": "Specification request (email plus a blank spec template)",
+      "systems": [
+        "MS Outlook"
+      ],
+      "decision": {
+        "statable_rule": "Send the standard spec template; if no reply within five working days, place one phone chase.",
+        "written_down": false,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "approval": null,
+      "exception_rate": 0.05,
+      "exception_path": null,
+      "rework_rate": 0.15,
+      "rework_loops_to": "s4",
+      "true_classification": "deterministic",
+      "irritation_level": "mild",
+      "normalised": false
+    },
+    {
+      "step_id": "s5",
+      "name": "Confirm availability and lead time",
+      "performed_by": "petra",
+      "position": 5,
+      "touch_minutes": 12,
+      "queue_before_minutes": 1440,
+      "queue_owner": "internal",
+      "queue_cause": "Petra works the availability queue in a single morning run against ERP stock and the supplier portal, and the warehouse count confirmations only land at end of day; anything raised after lunch waits until the next morning.",
+      "hands_to": "s7",
+      "mechanism": "system",
+      "artifact": "Availability confirmation on the bid",
+      "systems": [
+        "SAP Business One",
+        "Supplier web portal"
+      ],
+      "decision": {
+        "statable_rule": "If ERP stock meets the requested quantity, confirm it; otherwise take the supplier portal lead time; if neither holds, raise a stock / lead-time flag.",
+        "written_down": false,
+        "reversible": "yes",
+        "blast_radius": "customer",
+        "borne_by": null
+      },
+      "approval": null,
+      "exception_rate": 0.2,
+      "exception_path": "s6",
+      "rework_rate": 0.08,
+      "rework_loops_to": "s5",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "s6",
+      "name": "Decide substitute vs wait for OEM part",
+      "performed_by": "rainer",
+      "position": 6,
+      "touch_minutes": 12,
+      "queue_before_minutes": 1600,
+      "queue_owner": "internal",
+      "queue_cause": "Rainer reviews substitute / alternative-brand cases only when he is back at the office, typically end of week; by design nothing about it is urgent, because the customer is already waiting on the OEM part either way.",
+      "hands_to": "s7",
+      "mechanism": "system",
+      "artifact": "Substitute-decision note on the bid",
+      "systems": [
+        "SAP Business One"
+      ],
+      "decision": {
+        "statable_rule": "Roughly: offer the approved form-fit-function substitute when the OEM lead time bites and the account is a repeat buyer who values speed. There is no clean rule \u2014 it genuinely depends on the relationship, the margin, and how much longer the customer will wait.",
+        "written_down": false,
+        "reversible": "yes",
+        "blast_radius": "customer",
+        "borne_by": "rainer"
+      },
+      "approval": null,
+      "exception_rate": 0.3,
+      "exception_path": "s5",
+      "rework_rate": 0.15,
+      "rework_loops_to": "s6",
+      "true_classification": "model",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "s7",
+      "name": "Build the quotation",
+      "performed_by": "marta",
+      "position": 7,
+      "touch_minutes": 25,
+      "queue_before_minutes": 5000,
+      "queue_owner": "internal",
+      "queue_cause": "Marta runs the quotation batch on her Thursday administration day and again briefly on Tuesday; a quote that is ready on Monday simply waits until Thursday. This cadence has been in place for years, everybody plans on it, and nobody experiences it as a delay \u2014 it is just when the quote appears.",
+      "hands_to": "s8",
+      "mechanism": "system",
+      "artifact": "Quotation draft",
+      "systems": [
+        "SAP Business One"
+      ],
+      "decision": {
+        "statable_rule": "Price at the customer's list price minus the standard margin band for that product family; add freight per the rate table.",
+        "written_down": false,
+        "reversible": "yes",
+        "blast_radius": "customer",
+        "borne_by": null
+      },
+      "approval": null,
+      "exception_rate": 0.15,
+      "exception_path": null,
+      "rework_rate": 0.08,
+      "rework_loops_to": "s7",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": true
+    },
+    {
+      "step_id": "s8",
+      "name": "Approve quotation over threshold",
+      "performed_by": "rainer",
+      "position": 8,
+      "touch_minutes": 8,
+      "queue_before_minutes": 2300,
+      "queue_owner": "internal",
+      "queue_cause": "Rainer signs off the week's quotes in a single Monday-morning review; during the week he is out with customers, so a quote that clears pricing on Friday sits until Monday.",
+      "hands_to": "s9",
+      "mechanism": "system",
+      "artifact": "Approved quotation",
+      "systems": [
+        "SAP Business One"
+      ],
+      "decision": {
+        "statable_rule": "Sign off when the gross margin is within the band and the customer is not on the do-not-serve list; quotes above EUR 10,000 require the Regional Sales Manager's signature.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "customer",
+        "borne_by": null
+      },
+      "approval": {
+        "approver": "rainer",
+        "has_ever_rejected": false,
+        "what_is_checked": "The gross-margin column and whether the customer appears on the do-not-serve list. In practice he skims the margin figure and signs; nothing has been sent back in the process's entire history, and nobody has noticed."
+      },
+      "exception_rate": 0.1,
+      "exception_path": null,
+      "rework_rate": 0.05,
+      "rework_loops_to": "s7",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "s9",
+      "name": "Qualify account: strategic vs one-off",
+      "performed_by": "tobias",
+      "position": 9,
+      "touch_minutes": 15,
+      "queue_before_minutes": 2800,
+      "queue_owner": "internal",
+      "queue_cause": "Tobias takes a couple of days to sit with the account context before calling it \u2014 he works through strategic-vs-one-off on his Tuesday management day, so a lead that clears approval on Monday is not judged until Tuesday.",
+      "hands_to": "s10",
+      "mechanism": "meeting",
+      "artifact": "Qualification disposition",
+      "systems": [
+        "SAP Business One"
+      ],
+      "decision": {
+        "statable_rule": null,
+        "written_down": false,
+        "reversible": "costly",
+        "blast_radius": "customer",
+        "borne_by": "tobias"
+      },
+      "approval": null,
+      "exception_rate": 0.1,
+      "exception_path": null,
+      "rework_rate": 0.1,
+      "rework_loops_to": "s9",
+      "true_classification": "human",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "s10",
+      "name": "First qualified contact",
+      "performed_by": "lukas",
+      "position": 10,
+      "touch_minutes": 20,
+      "queue_before_minutes": 1100,
+      "queue_owner": "internal",
+      "queue_cause": "Lukas batches new-account outreach into his Tuesday and Thursday calling blocks; a lead that clears qualification on a Wednesday waits until Thursday for its first contact.",
+      "hands_to": "s11",
+      "mechanism": "email",
+      "artifact": "Introductory email and follow-up call",
+      "systems": [
+        "MS Outlook",
+        "SAP Business One"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.2,
+      "exception_path": null,
+      "rework_rate": 0.2,
+      "rework_loops_to": "s10",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "s11",
+      "name": "Record qualified disposition in ERP",
+      "performed_by": "sabine",
+      "position": 11,
+      "touch_minutes": 4,
+      "queue_before_minutes": 800,
+      "queue_owner": "internal",
+      "queue_cause": "Sabine logs the outcome in her end-of-day CRM run, so a contact that happens late in the day is not recorded until the next morning.",
+      "hands_to": null,
+      "mechanism": "system",
+      "artifact": "Qualified-lead disposition",
+      "systems": [
+        "SAP Business One"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.02,
+      "exception_path": null,
+      "rework_rate": 0.02,
+      "rework_loops_to": "s11",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    }
+  ],
+  "planted": {
+    "loud_cheap_step": "s1",
+    "silent_expensive_wait": "s7",
+    "false_blame": {
+      "claimed_by": "rainer",
+      "blames": "petra",
+      "step_id": "s5",
+      "truth": "Rainer drafts his availability confirmations by email to the shared materials alias, an old distribution-list address that has not been read by anyone on Petra's side for years. Petra never receives them; she works exclusively from the SAP ticket queue, where there is genuinely nothing for those jobs. Rainer is convinced she is sitting on his requests, and Petra is equally sure she was never given them. Neither is lying \u2014 the requests land in an address that silently absorbs them, and both are describing work they do every day."
+    },
+    "ritual_approval": "s8",
+    "non_technological_fix": {
+      "step_id": "s7",
+      "fix": "Move Marta's quotation run from the once-a-week Thursday batch to a standing daily slot (e.g. 10:00 each day). The actual work is ~25 minutes a day of calendar management \u2014 it is pure scheduling, no software and no intelligence, and it cuts the average 3.5-day wait to under a day. It needs nothing more than a manager saying 'do quotes daily'."
+    },
+    "external_queue": "s4",
+    "genuine_judgment_step": "s9"
+  },
+  "notes": "Synthetic ground truth for the inbound-lead-to-first-qualified-contact process. The critical path is dominated by batch/calendar waits rather than work; the customer-specification wait (s4) is the longest single elapsed stretch but is external and unchangeable, while the quote-build batch (s7) is the longest internal wait and has been normalised for years. The only genuinely human judgement is the strategic-vs-one-off qualification call (s9); vendor substitution (s6) is a model call."
+}

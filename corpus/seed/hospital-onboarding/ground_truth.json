@@ -1,0 +1,456 @@
+{
+  "process_id": "hospital-onboarding",
+  "domain": "employee onboarding, from signed contract to a productive first week",
+  "organisation": {
+    "name": "S\u00fcdmark Kliniken",
+    "headcount": 400,
+    "sector": "healthcare",
+    "context": "A regional hospital group in southern Germany: two acute hospitals plus a community nursing service. Roughly 400 staff across nursing, medical, IT, finance, HR and support services. Onboarding a new clinical employee is run centrally by HR, with IT, payroll, occupational health and the relevant department manager each taking a slice."
+  },
+  "cast": [
+    {
+      "person_id": "katrin-weber",
+      "name": "Katrin Weber",
+      "role": "HR & Onboarding Coordinator",
+      "tenure_years": 6,
+      "disposition": "forthcoming",
+      "job_security_anxiety": "moderate"
+    },
+    {
+      "person_id": "markus-brandt",
+      "name": "Markus Brandt",
+      "role": "Team Lead, IT Operations",
+      "tenure_years": 11,
+      "disposition": "guarded",
+      "job_security_anxiety": "low"
+    },
+    {
+      "person_id": "petra-lang",
+      "name": "Petra Lang",
+      "role": "Department Manager, Inpatient Nursing",
+      "tenure_years": 8,
+      "disposition": "defensive",
+      "job_security_anxiety": "low"
+    },
+    {
+      "person_id": "jonas-schubert",
+      "name": "Jonas Schubert",
+      "role": "Payroll Specialist",
+      "tenure_years": 14,
+      "disposition": "bored",
+      "job_security_anxiety": "low"
+    },
+    {
+      "person_id": "andrea-hoffmann",
+      "name": "Andrea Hoffmann",
+      "role": "Clinical Education & Training Coordinator",
+      "tenure_years": 9,
+      "disposition": "resigned",
+      "job_security_anxiety": "moderate"
+    },
+    {
+      "person_id": "thomas-vogel",
+      "name": "Thomas Vogel",
+      "role": "Head of Finance",
+      "tenure_years": 21,
+      "disposition": "resigned",
+      "job_security_anxiety": "none"
+    },
+    {
+      "person_id": "elena-vidal",
+      "name": "Dr. Elena Vidal",
+      "role": "Occupational Health Physician",
+      "tenure_years": 12,
+      "disposition": "guarded",
+      "job_security_anxiety": "low"
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "register-in-hris",
+      "name": "Register starter in HRIS and upload signed contract",
+      "performed_by": "katrin-weber",
+      "position": 0,
+      "touch_minutes": 5,
+      "queue_before_minutes": 240,
+      "queue_owner": "internal",
+      "queue_cause": "Katrin batches all HRIS registration into two afternoon blocks (Tue/Thu); the portal session expires after 12 idle minutes and forces a fresh 2FA login each time.",
+      "hands_to": "verify-documents",
+      "mechanism": "system",
+      "artifact": "HRIS employee record",
+      "systems": [
+        "HRIS",
+        "single-sign-on"
+      ],
+      "decision": {
+        "statable_rule": "Enter the fields from the signed contract (name, date of birth, role, department, start date) and attach the scanned contract; the record is created by the system.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "high",
+      "normalised": false
+    },
+    {
+      "step_id": "verify-documents",
+      "name": "Collect and verify starter documents",
+      "performed_by": "katrin-weber",
+      "position": 1,
+      "touch_minutes": 15,
+      "queue_before_minutes": 2880,
+      "queue_owner": "internal",
+      "queue_cause": "Waiting for the new hire to email bank details, an ID copy and the tax-ID request; HR chases once, then waits for the reply.",
+      "hands_to": "approve-budget",
+      "mechanism": "email",
+      "artifact": "starter document checklist",
+      "systems": [
+        "HRIS"
+      ],
+      "decision": {
+        "statable_rule": "All six listed documents present, legible and matching the contract, else chase the new hire and log the gap.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.3,
+      "exception_path": "chase-documents",
+      "rework_rate": 0.15,
+      "rework_loops_to": "verify-documents",
+      "true_classification": "deterministic",
+      "irritation_level": "mild",
+      "normalised": false
+    },
+    {
+      "step_id": "approve-budget",
+      "name": "Approve onboarding budget and hardware requisition",
+      "performed_by": "thomas-vogel",
+      "position": 2,
+      "touch_minutes": 6,
+      "queue_before_minutes": 720,
+      "queue_owner": "internal",
+      "queue_cause": "Thomas clears all finance approvals in one block each morning; the requisition sits in his queue overnight.",
+      "hands_to": "equip-provision",
+      "mechanism": "system",
+      "artifact": "approved requisition",
+      "systems": [
+        "finance-system"
+      ],
+      "decision": {
+        "statable_rule": "Approve if the requested spend is within the approved headcount budget line, else return.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "team",
+        "borne_by": null
+      },
+      "approval": {
+        "approver": "thomas-vogel",
+        "has_ever_rejected": false,
+        "what_is_checked": null
+      },
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "equip-provision",
+      "name": "Order laptop, phone and ID badge; issue loaner",
+      "performed_by": "markus-brandt",
+      "position": 3,
+      "touch_minutes": 45,
+      "queue_before_minutes": 30240,
+      "queue_owner": "internal",
+      "queue_cause": "Procurement order sits in the IT shared queue behind a laptop backorder; a loaner machine is standard, so the three-week wait is never treated as a blocker.",
+      "hands_to": "ssr-notify",
+      "mechanism": "system",
+      "artifact": "provisioned workstation and badge",
+      "systems": [
+        "asset-inventory",
+        "badge-system"
+      ],
+      "decision": {
+        "statable_rule": "Order the standard bundle for the role, provision a loaner if the order is not yet delivered, and hand out the badge.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.1,
+      "exception_path": "special-hardware-request",
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": true
+    },
+    {
+      "step_id": "ssr-notify",
+      "name": "Notify health insurer and confirm social insurance status",
+      "performed_by": "jonas-schubert",
+      "position": 4,
+      "touch_minutes": 20,
+      "queue_before_minutes": 20160,
+      "queue_owner": "external",
+      "queue_cause": "The Krankenkasse takes about two weeks to respond to the Anmeldung; payroll waits for the confirmation before the first payslip.",
+      "hands_to": "fitness-assessment",
+      "mechanism": "system",
+      "artifact": "insurer confirmation",
+      "systems": [
+        "payroll-system",
+        "sv-meldeportal"
+      ],
+      "decision": {
+        "statable_rule": "File the social insurance notification and post the insurer's confirmation; the first payslip is withheld until it arrives.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.05,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "fitness-assessment",
+      "name": "Occupational-health fitness-for-duty assessment",
+      "performed_by": "elena-vidal",
+      "position": 5,
+      "touch_minutes": 40,
+      "queue_before_minutes": 4320,
+      "queue_owner": "internal",
+      "queue_cause": "The occupational-health service books one assessment slot per week per department; the new hire is fitted in at the next slot.",
+      "hands_to": "it-accounts",
+      "mechanism": "meeting",
+      "artifact": "fitness-for-duty certificate",
+      "systems": [
+        "occupational-health-record"
+      ],
+      "decision": {
+        "statable_rule": null,
+        "written_down": false,
+        "reversible": "no",
+        "blast_radius": "customer",
+        "borne_by": "patient & employee"
+      },
+      "exception_rate": 0.2,
+      "exception_path": "further-examinations",
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "human",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "it-accounts",
+      "name": "Create IT login accounts and access card",
+      "performed_by": "markus-brandt",
+      "position": 6,
+      "touch_minutes": 40,
+      "queue_before_minutes": 1440,
+      "queue_owner": "internal",
+      "queue_cause": "The service desk processes account tickets in a morning batch; badge printing waits on a facilities sign-off.",
+      "hands_to": "unit-orientation",
+      "mechanism": "system",
+      "artifact": "AD account and card",
+      "systems": [
+        "active-directory",
+        "badge-system",
+        "email"
+      ],
+      "decision": {
+        "statable_rule": "Create the standard profile set for the role, set the badge to the department's zone, and email the credentials to the manager.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.05,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "unit-orientation",
+      "name": "Ward orientation and buddy assignment",
+      "performed_by": "petra-lang",
+      "position": 7,
+      "touch_minutes": 60,
+      "queue_before_minutes": 720,
+      "queue_owner": "internal",
+      "queue_cause": "Petra runs orientation in the gaps between ward rounds and team handovers.",
+      "hands_to": "clinical-access-training",
+      "mechanism": "verbal",
+      "artifact": "orientation checklist",
+      "systems": [],
+      "decision": {
+        "statable_rule": null,
+        "written_down": false,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.05,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "model",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "clinical-access-training",
+      "name": "Clinical-system access and ward-floor induction training",
+      "performed_by": "andrea-hoffmann",
+      "position": 8,
+      "touch_minutes": 120,
+      "queue_before_minutes": 20160,
+      "queue_owner": "internal",
+      "queue_cause": "Andrea runs clinical-IT induction on the first Thursday of each month; new starters wait for the next session before access can be granted.",
+      "hands_to": "supervised-clinical",
+      "mechanism": "meeting",
+      "artifact": "clinical training record",
+      "systems": [
+        "Orbis"
+      ],
+      "decision": {
+        "statable_rule": "Complete the two-hour induction and pass the sign-off to grant patient-record access.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "team",
+        "borne_by": null
+      },
+      "exception_rate": 0.1,
+      "exception_path": "one-to-one-access",
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "mild",
+      "normalised": false
+    },
+    {
+      "step_id": "supervised-clinical",
+      "name": "Supervised clinical work with mentor",
+      "performed_by": "petra-lang",
+      "position": 9,
+      "touch_minutes": 20,
+      "queue_before_minutes": 1800,
+      "queue_owner": "internal",
+      "queue_cause": "Waiting for the clinical-access session to clear before the new hire can be rostered for supervised patient contact.",
+      "hands_to": "first-week-checkin",
+      "mechanism": "verbal",
+      "artifact": "supervision schedule",
+      "systems": [
+        "rostering"
+      ],
+      "decision": {
+        "statable_rule": "Roster the new hire against a named mentor and confirm the shadowing plan.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.05,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "first-week-checkin",
+      "name": "First-week check-in and goal-setting",
+      "performed_by": "katrin-weber",
+      "position": 10,
+      "touch_minutes": 25,
+      "queue_before_minutes": 2880,
+      "queue_owner": "internal",
+      "queue_cause": "The check-in is slotted a few days after the first full week, and often slips a day or two because the ward is short-staffed.",
+      "hands_to": "probation-kickoff",
+      "mechanism": "meeting",
+      "artifact": "probation goals",
+      "systems": [
+        "HRIS"
+      ],
+      "decision": {
+        "statable_rule": "Record the line manager's feedback and set the probation objectives from the standard template.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.05,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "probation-kickoff",
+      "name": "Probation period kick-off",
+      "performed_by": "petra-lang",
+      "position": 11,
+      "touch_minutes": 30,
+      "queue_before_minutes": 1440,
+      "queue_owner": "internal",
+      "queue_cause": "Petra signs the probation start note after the check-in has been filed in HRIS.",
+      "hands_to": null,
+      "mechanism": "system",
+      "artifact": "probation start record",
+      "systems": [
+        "HRIS"
+      ],
+      "decision": {
+        "statable_rule": "Confirm probation start date and email the confirmation to the employee.",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "individual",
+        "borne_by": null
+      },
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    }
+  ],
+  "planted": {
+    "loud_cheap_step": "register-in-hris",
+    "silent_expensive_wait": "equip-provision",
+    "false_blame": {
+      "claimed_by": "petra-lang",
+      "blames": "andrea-hoffmann",
+      "step_id": "clinical-access-training",
+      "truth": "Petra emailed the new hire's clinical-access request to the shared clinical-access mailbox. Andrea stopped reading that mailbox two years ago when requests moved to the ticket portal, so she never saw it. Andrea works off the ticket queue and runs the monthly induction \u2014 she genuinely has no request to act on. The request sits unread; nobody is deliberately slow."
+    },
+    "ritual_approval": "approve-budget",
+    "non_technological_fix": {
+      "step_id": "verify-documents",
+      "fix": "Attach the two-page starter-document checklist (bank details form, ID copy request, tax-ID request) to the contract email \u2014 the template already exists in the group's shared drive \u2014 so the documents come back with the signed contract instead of HR chasing them for two to four days. Pure arrangement; no software or AI involved."
+    },
+    "external_queue": "ssr-notify",
+    "genuine_judgment_step": "fitness-assessment"
+  },
+  "notes": "Two waits dominate the calendar: the equipment backorder (loaner-laptop culture, normalised, never raised) and the monthly clinical-IT induction. The loud, cheap irritation sits in the HRIS session timeout. Petra's complaint about Andrea is a broken channel, not a slow colleague."
+}
