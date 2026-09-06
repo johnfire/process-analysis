@@ -20,8 +20,9 @@ Make every step twice as fast and you have saved eight and a half minutes.
 
 ## Status
 
-Pre-implementation. The thinking is settled enough to build against; the application is not
-yet designed.
+Pre-implementation, designed. v0 is a headless analyzer scored against synthetic processes with
+hidden ground truth — no UI, no real respondents, no interview surface. It is done when it
+recovers a planted bottleneck from six biased accounts and resists the planted decoys.
 
 ## Docs
 
@@ -37,6 +38,9 @@ yet designed.
   two-stage synthetic generation (hidden ground truth, then biased testimony from it), planted
   decoys, deterministic scoring, and strict information barriers between generator, cast,
   analyzer and scorer.
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — how it gets built: claims → entities → graph
+  with the graph derived rather than authored, the deterministic/model split, a headless v0
+  scored in CI, and the phase plan.
 
 ## Open questions
 
