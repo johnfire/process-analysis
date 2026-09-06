@@ -29,6 +29,10 @@ yet designed.
   decisions-not-steps decomposition, human/AI allocation criteria, the five shapes AI takes in a
   process, the replacement lever ladder, failure modes (technical and political), and the one
   genuinely unsolved problem: honest capture of the real as-is.
+- [`docs/CAPTURE.md`](docs/CAPTURE.md) — how we intend to solve that problem: reconstructing a
+  process from friction rather than from description. The framing rule, the question bank, the
+  two moves only software can make (queue-gap calculation, contradiction detection), and the
+  known 70% plateau.
 
 ## Open questions
 
@@ -36,7 +40,5 @@ yet designed.
    variance handling?
 2. Does the accountability human survive contact with real organisations, or degrade into a
    rubber stamp?
-3. Is process capture automatable at all — or is any tool built here necessarily a consultant's
-   instrument rather than a self-serve product?
-
-Question 3 is the fork that decides what gets built.
+3. ~~Is process capture automatable at all?~~ **Answered:** yes, via friction rather than
+   description — see `docs/CAPTURE.md`. This decides the product: self-serve, no surveillance.
