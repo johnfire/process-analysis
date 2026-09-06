@@ -1,0 +1,15 @@
+# Stray attachment dumps that predate this repo — not project content
+*.zip
+
+# Editor / OS
+*~
+.DS_Store
+.idea/
+.vscode/
+
+# Local toolchain pinning (per philips3 convention)
+mise.local.toml
+
+# Scratch
+scratch/
+*.tmp
