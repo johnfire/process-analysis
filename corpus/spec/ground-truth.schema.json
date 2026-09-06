@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/johnfire/process-analysis/corpus/spec/ground-truth.schema.json",
+  "title": "GroundTruth",
+  "description": "The hidden, true state of a synthetic process. Produced by the architect role; never shown to the analyzer. This is the answer key.",
+  "type": "object",
+  "required": ["process_id", "domain", "organisation", "cast", "steps", "planted"],
+  "additionalProperties": false,
+  "properties": {
+    "process_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "domain":     { "type": "string" },
+    "organisation": {
+      "type": "object",
+      "required": ["name", "headcount", "sector"],
+      "additionalProperties": false,
+      "properties": {
+        "name":      { "type": "string" },
+        "headcount": { "type": "integer", "minimum": 1 },
+        "sector":    { "type": "string" },
+        "context":   { "type": "string" }
+      }
+    },
+    "cast": {
+      "type": "array", "minItems": 3, "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["person_id", "name", "role", "tenure_years", "disposition"],
+        "additionalProperties": false,
+        "properties": {
+          "person_id":    { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name":         { "type": "string" },
+          "role":         { "type": "string" },
+          "tenure_years": { "type": "number", "minimum": 0 },
+          "disposition":  { "enum": ["forthcoming", "guarded", "resigned", "enthusiastic", "defensive", "bored"] },
+          "job_security_anxiety": { "enum": ["none", "low", "moderate", "high"], "default": "low" }
+        }
+      }
+    },
+    "steps": {
+      "type": "array", "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["step_id", "name", "performed_by", "touch_minutes", "queue_before_minutes", "queue_owner"],
+        "additionalProperties": false,
+        "properties": {
+          "step_id":      { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name":         { "type": "string" },
+          "performed_by": { "type": "string", "description": "person_id" },
+          "position":     { "type": "integer", "minimum": 0 },
+
+          "touch_minutes":        { "type": "number", "minimum": 0, "description": "Hands-on work only." },
+          "queue_before_minutes": { "type": "number", "minimum": 0, "description": "Wait before work begins." },
+          "queue_owner":          { "enum": ["internal", "external", "none"] },
+          "queue_cause":          { "type": ["string", "null"], "description": "Why the wait exists: batching, absence, prioritisation, an outside party." },
+
+          "hands_to":   { "type": ["string", "null"], "description": "step_id of the next step, or null if terminal." },
+          "mechanism":  { "enum": ["email", "system", "meeting", "chat", "paper", "verbal", "none"], "default": "none" },
+          "artifact":   { "type": ["string", "null"] },
+          "systems":    { "type": "array", "items": { "type": "string" }, "default": [] },
+
+          "decision": {
+            "type": ["object", "null"],
+            "required": ["statable_rule", "reversible", "blast_radius"],
+            "additionalProperties": false,
+            "properties": {
+              "statable_rule": { "type": ["string", "null"], "description": "The rule, if one exists. Null means genuine judgment." },
+              "written_down":  { "type": "boolean", "default": false },
+              "reversible":    { "enum": ["yes", "no", "costly"] },
+              "blast_radius":  { "enum": ["individual", "team", "customer", "company", "regulatory"] },
+              "borne_by":      { "type": ["string", "null"] }
+            }
+          },
+
+          "approval": {
+            "type": ["object", "null"],
+            "required": ["approver", "has_ever_rejected"],
+            "additionalProperties": false,
+            "properties": {
+              "approver":          { "type": "string" },
+              "has_ever_rejected": { "type": "boolean" },
+              "what_is_checked":   { "type": ["string", "null"] }
+            }
+          },
+
+          "exception_rate":  { "type": "number", "minimum": 0, "maximum": 1, "default": 0 },
+          "exception_path":  { "type": ["string", "null"] },
+          "rework_rate":     { "type": "number", "minimum": 0, "maximum": 1, "default": 0 },
+          "rework_loops_to": { "type": ["string", "null"] },
+
+          "true_classification": {
+            "enum": ["deterministic", "model", "human"],
+            "description": "The label the analyzer must recover. Automating a step whose true label is human is weighted far more heavily than the reverse."
+          },
+          "irritation_level": { "enum": ["none", "mild", "high"], "default": "none", "description": "How much the people involved dislike this step, independent of what it costs." },
+          "normalised":       { "type": "boolean", "default": false, "description": "True if the people involved have stopped noticing this step or its wait, and will not mention it unless directly probed." }
+        }
+      }
+    },
+    "planted": {
+      "type": "object",
+      "description": "Which scored structures live where. Read by the scorer, never by the cast.",
+      "required": ["loud_cheap_step", "silent_expensive_wait", "false_blame", "ritual_approval", "non_technological_fix", "external_queue", "genuine_judgment_step"],
+      "additionalProperties": false,
+      "properties": {
+        "loud_cheap_step":       { "type": "string", "description": "step_id: high irritation, negligible cost." },
+        "silent_expensive_wait": { "type": "string", "description": "step_id: very long queue, normalised, unmentioned." },
+        "false_blame": {
+          "type": "object",
+          "required": ["claimed_by", "blames", "step_id", "truth"],
+          "additionalProperties": false,
+          "properties": {
+            "claimed_by": { "type": "string", "description": "person_id who believes they are blocked." },
+            "blames":     { "type": "string", "description": "person_id believed responsible. Must be the performer of step_id." },
+            "step_id":    { "type": "string", "description": "The real step the misapprehension is about. Without this the narrative can describe an activity that appears in nobody's slice, and the fracture never materialises in testimony." },
+            "truth":      { "type": "string", "description": "What is actually happening." }
+          }
+        },
+        "ritual_approval":       { "type": "string", "description": "step_id whose approver has never rejected anything." },
+        "non_technological_fix": {
+          "type": "object",
+          "required": ["step_id", "fix"],
+          "additionalProperties": false,
+          "properties": {
+            "step_id": { "type": "string" },
+            "fix":     { "type": "string", "description": "The largest available improvement, which requires no software or intelligence of any kind." }
+          }
+        },
+        "external_queue":        { "type": "string", "description": "step_id whose wait belongs to an outside party." },
+        "genuine_judgment_step": { "type": "string", "description": "step_id that must stay with a person." }
+      }
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

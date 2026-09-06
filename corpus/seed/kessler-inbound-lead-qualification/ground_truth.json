@@ -1,0 +1,438 @@
+{
+  "process_id": "kessler-inbound-lead-qualification",
+  "domain": "inbound lead to first qualified contact",
+  "organisation": {
+    "name": "Kessler Industriebedarf GmbH",
+    "headcount": 182,
+    "sector": "Industrial equipment distribution",
+    "context": "Distributes bearings, drive elements, hydraulic fittings and machine-tool accessories to Bavarian machine builders and industrial OEMs. ~182 staff: three regional sales teams, a 12-person marketing group, a 40-person parts warehouse, and a small back office. Most leads arrive as cold website/email inquiries or trade-show badge scans; the sales org is conservative and paper-adjacent in the way it works."
+  },
+  "cast": [
+    {
+      "person_id": "anna-schmidt",
+      "name": "Anna Schmidt",
+      "role": "Marketing Coordinator (owns the web form and inbound email capture)",
+      "tenure_years": 3,
+      "disposition": "enthusiastic",
+      "job_security_anxiety": "none"
+    },
+    {
+      "person_id": "sabine-weber",
+      "name": "Sabine Weber",
+      "role": "Inside Sales / Lead Coordinator",
+      "tenure_years": 11,
+      "disposition": "bored",
+      "job_security_anxiety": "low"
+    },
+    {
+      "person_id": "tobias-krause",
+      "name": "Tobias Krause",
+      "role": "IT / CRM Administrator",
+      "tenure_years": 2,
+      "disposition": "resigned",
+      "job_security_anxiety": "high"
+    },
+    {
+      "person_id": "petra-lindner",
+      "name": "Petra Lindner",
+      "role": "Regional Sales Manager, North",
+      "tenure_years": 6,
+      "disposition": "guarded",
+      "job_security_anxiety": "none"
+    },
+    {
+      "person_id": "jonas-keller",
+      "name": "Jonas Keller",
+      "role": "Application / Sales Engineer",
+      "tenure_years": 4,
+      "disposition": "forthcoming",
+      "job_security_anxiety": "none"
+    },
+    {
+      "person_id": "julia-stein",
+      "name": "Julia Stein",
+      "role": "Pricing & Purchasing Assistant (part-time, Tue & Thu)",
+      "tenure_years": 2,
+      "disposition": "guarded",
+      "job_security_anxiety": "moderate"
+    },
+    {
+      "person_id": "markus-bergmann",
+      "name": "Markus Bergmann",
+      "role": "Sales Director / Divisional Head",
+      "tenure_years": 18,
+      "disposition": "defensive",
+      "job_security_anxiety": "none"
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "inquiry-arrives",
+      "name": "Inquiry lands via web form or inbound email",
+      "performed_by": "anna-schmidt",
+      "position": 0,
+      "touch_minutes": 1,
+      "queue_before_minutes": 0,
+      "queue_owner": "none",
+      "queue_cause": null,
+      "hands_to": "inbox-triage",
+      "mechanism": "system",
+      "artifact": "Auto-created CRM lead record",
+      "systems": [
+        "Kessler webforms",
+        "Dynamics 365 CRM"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.05,
+      "exception_path": "manual-callin",
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "inbox-triage",
+      "name": "Review the shared sales inbox and pick out new inquiries",
+      "performed_by": "sabine-weber",
+      "position": 1,
+      "touch_minutes": 15,
+      "queue_before_minutes": 5760,
+      "queue_owner": "internal",
+      "queue_cause": "Sabine clears the shared sales inbox only on Friday mornings; inquiries that arrived Mon\u2013Thu sit because her day-to-day is order processing and the inbox is her lowest-priority queue.",
+      "hands_to": "crm-lead-entry",
+      "mechanism": "system",
+      "artifact": "List of new inquiries",
+      "systems": [
+        "Outlook/Exchange",
+        "Dynamics 365 CRM"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "mild",
+      "normalised": false
+    },
+    {
+      "step_id": "crm-lead-entry",
+      "name": "Enter the lead into CRM (system logs out mid-entry and forces a re-login)",
+      "performed_by": "sabine-weber",
+      "position": 2,
+      "touch_minutes": 3,
+      "queue_before_minutes": 0,
+      "queue_owner": "none",
+      "queue_cause": null,
+      "hands_to": "crm-dedupe-check",
+      "mechanism": "system",
+      "artifact": "CRM lead record",
+      "systems": [
+        "Dynamics 365 CRM"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.15,
+      "rework_loops_to": "crm-lead-entry",
+      "true_classification": "deterministic",
+      "irritation_level": "high",
+      "normalised": false
+    },
+    {
+      "step_id": "crm-dedupe-check",
+      "name": "Check the lead is not a duplicate of an existing account",
+      "performed_by": "tobias-krause",
+      "position": 3,
+      "touch_minutes": 3,
+      "queue_before_minutes": 660,
+      "queue_owner": "internal",
+      "queue_cause": "Tobias runs the dedupe/merge job each morning; a fuzzy-match hit waits overnight for him to resolve it manually before the next batch.",
+      "hands_to": "lead-data-enrichment",
+      "mechanism": "system",
+      "artifact": "Dedupe result flag",
+      "systems": [
+        "Dynamics 365 CRM",
+        "kessler-data-warehouse"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.15,
+      "exception_path": "manual-merge",
+      "rework_rate": 0.05,
+      "rework_loops_to": "crm-dedupe-check",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "lead-data-enrichment",
+      "name": "Enrich the lead with firmographic data (industry, size, existing stock items)",
+      "performed_by": "sabine-weber",
+      "position": 4,
+      "touch_minutes": 7,
+      "queue_before_minutes": 60,
+      "queue_owner": "internal",
+      "queue_cause": "Sabine batches enrichment into the same morning pass as the CRM entry.",
+      "hands_to": "lead-priority-judgment",
+      "mechanism": "system",
+      "artifact": "Enriched CRM lead record",
+      "systems": [
+        "Dynamics 365 CRM",
+        "web-browsing"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "lead-priority-judgment",
+      "name": "Decide whether the lead is a genuine opportunity or a low-value inquiry",
+      "performed_by": "petra-lindner",
+      "position": 5,
+      "touch_minutes": 8,
+      "queue_before_minutes": 2880,
+      "queue_owner": "internal",
+      "queue_cause": "Petra works the qualification queue once a week, on Tuesday; she is only in the office three days and leads wait for her first day back.",
+      "hands_to": "tech-availability-check",
+      "mechanism": "system",
+      "artifact": "Qualification note / priority tag",
+      "systems": [
+        "Dynamics 365 CRM"
+      ],
+      "decision": {
+        "statable_rule": null,
+        "written_down": false,
+        "reversible": "costly",
+        "blast_radius": "customer",
+        "borne_by": "petra-lindner"
+      },
+      "approval": null,
+      "exception_rate": 0.15,
+      "exception_path": "escalate-to-sales-director",
+      "rework_rate": 0.1,
+      "rework_loops_to": "lead-priority-judgment",
+      "true_classification": "human",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "tech-availability-check",
+      "name": "Confirm the requested component is actually in the range or catalogue",
+      "performed_by": "jonas-keller",
+      "position": 6,
+      "touch_minutes": 10,
+      "queue_before_minutes": 1440,
+      "queue_owner": "internal",
+      "queue_cause": "Jonas clears the availability queue first thing each morning before his project-support work; a lead that lands after his check waits until the next day.",
+      "hands_to": "price-reference-check",
+      "mechanism": "system",
+      "artifact": "Availability confirmation",
+      "systems": [
+        "SAP S/4HANA",
+        "product-information-management"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.2,
+      "exception_path": "special-order-escalation",
+      "rework_rate": 0.05,
+      "rework_loops_to": "tech-availability-check",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "price-reference-check",
+      "name": "Confirm the supplier reference / cost price so it can be quoted",
+      "performed_by": "julia-stein",
+      "position": 7,
+      "touch_minutes": 12,
+      "queue_before_minutes": 12960,
+      "queue_owner": "internal",
+      "queue_cause": "Julia is part-time (Tue & Thu) by contract; the reference-price confirmation queues behind her two office days. This rhythm has been in place since before the current sales team joined, so everyone treats the resulting ~9-day gap as normal rather than a delay.",
+      "hands_to": "quote-draft",
+      "mechanism": "system",
+      "artifact": "Confirmed cost/reference price",
+      "systems": [
+        "SAP S/4HANA",
+        "supplier-price-sheets"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.2,
+      "exception_path": "purchasing-escalation",
+      "rework_rate": 0.1,
+      "rework_loops_to": "price-reference-check",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": true
+    },
+    {
+      "step_id": "quote-draft",
+      "name": "Draft an indicative quotation from the confirmed price",
+      "performed_by": "jonas-keller",
+      "position": 8,
+      "touch_minutes": 20,
+      "queue_before_minutes": 2880,
+      "queue_owner": "internal",
+      "queue_cause": "Jonas drafts the batch of indicative quotes each Thursday to fit his week; they sit behind project support.",
+      "hands_to": "key-account-approval",
+      "mechanism": "system",
+      "artifact": "Draft indicative quote",
+      "systems": [
+        "Dynamics 365 CRM",
+        "Microsoft-Office"
+      ],
+      "decision": {
+        "statable_rule": "List price plus a 16\u201318% distributor margin; anything below 14% needs the sales director's input",
+        "written_down": true,
+        "reversible": "yes",
+        "blast_radius": "customer",
+        "borne_by": "jonas-keller"
+      },
+      "approval": null,
+      "exception_rate": 0.25,
+      "exception_path": "discount-approval",
+      "rework_rate": 0.15,
+      "rework_loops_to": "quote-draft",
+      "true_classification": "model",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "key-account-approval",
+      "name": "Sales Director sign-off to classify the prospect as a Key Account",
+      "performed_by": "markus-bergmann",
+      "position": 9,
+      "touch_minutes": 3,
+      "queue_before_minutes": 720,
+      "queue_owner": "internal",
+      "queue_cause": "Markus signs approval in two fixed batches a day (11:00 and 16:00), so a request slides in front of him at the next window.",
+      "hands_to": "quote-issue",
+      "mechanism": "system",
+      "artifact": "Key-account designation flag",
+      "systems": [
+        "Dynamics 365 CRM"
+      ],
+      "decision": null,
+      "approval": {
+        "approver": "markus-bergmann",
+        "has_ever_rejected": false,
+        "what_is_checked": "Confirms the lead clears the \u20ac100k key-account revenue threshold. He signs every one that reaches him and has never once sent one back, even when the threshold clearly was not met, and nobody within the team has noticed."
+      },
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "quote-issue",
+      "name": "Send the issued indicative quote to the lead",
+      "performed_by": "sabine-weber",
+      "position": 10,
+      "touch_minutes": 5,
+      "queue_before_minutes": 2880,
+      "queue_owner": "internal",
+      "queue_cause": "Sabine sends issued quotes in a single weekly run on Friday, alongside her invoicing, so a quote finished mid-week goes out on Friday.",
+      "hands_to": "first-contact-outreach",
+      "mechanism": "email",
+      "artifact": "Sent quote (PDF)",
+      "systems": [
+        "Outlook/Exchange",
+        "Dynamics 365 CRM"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.05,
+      "rework_loops_to": "quote-issue",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "first-contact-outreach",
+      "name": "Place the first contact with the lead",
+      "performed_by": "petra-lindner",
+      "position": 11,
+      "touch_minutes": 12,
+      "queue_before_minutes": 1440,
+      "queue_owner": "internal",
+      "queue_cause": "Petra schedules the first-contact calls into her week and fits them once a lead is qualified; a lead qualified on a Thursday waits until the following week.",
+      "hands_to": "customer-requirements-verification",
+      "mechanism": "meeting",
+      "artifact": "Contact-notes entry",
+      "systems": [
+        "Dynamics 365 CRM",
+        "Outlook/Exchange"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.05,
+      "exception_path": "no-answer-retry",
+      "rework_rate": 0.1,
+      "rework_loops_to": "first-contact-outreach",
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    },
+    {
+      "step_id": "customer-requirements-verification",
+      "name": "Confirm the application and spec with the customer's technical buyer",
+      "performed_by": "petra-lindner",
+      "position": 12,
+      "touch_minutes": 2,
+      "queue_before_minutes": 20160,
+      "queue_owner": "external",
+      "queue_cause": "The customer's technical buyer answers on their own timetable; the distributor has no lever over it and this has always taken two to three weeks, so it is simply accepted as the cost of doing business.",
+      "hands_to": null,
+      "mechanism": "email",
+      "artifact": "Confirmed requirement notes",
+      "systems": [
+        "Outlook/Exchange",
+        "Dynamics 365 CRM"
+      ],
+      "decision": null,
+      "approval": null,
+      "exception_rate": 0.0,
+      "exception_path": null,
+      "rework_rate": 0.0,
+      "rework_loops_to": null,
+      "true_classification": "deterministic",
+      "irritation_level": "none",
+      "normalised": false
+    }
+  ],
+  "planted": {
+    "loud_cheap_step": "crm-lead-entry",
+    "silent_expensive_wait": "price-reference-check",
+    "false_blame": {
+      "claimed_by": "sabine-weber",
+      "blames": "anna-schmidt",
+      "truth": "Sabine is convinced the marketing team (Anna) never forwards the trade-show badge scans to her. In fact Anna uploads them to a CRM import endpoint every Monday after a show, but the upload silently returns success without persisting \u2014 a stale bearer token on the import job causes the API to accept and drop the rows, with no error surfaced. Sabine simply sees no new leads and assumes Anna is not sending them. Both are honest; the request never actually lands."
+    },
+    "ritual_approval": "key-account-approval",
+    "non_technological_fix": {
+      "step_id": "inbox-triage",
+      "fix": "Have Sabine clear the shared sales inbox first thing every morning rather than once a week. This is an ordinary schedule change \u2014 no software, no intelligence, no reorganisation \u2014 and it removes roughly three and a half days of dead time per lead, which is the single largest time saving available anywhere in the process. (The bigger waits \u2014 the customer's 2\u20133 week reply and Julia's part-time backlog \u2014 cannot be fixed by arrangement because one is an outside party and the other is a contractual, not a scheduling, constraint.)"
+    },
+    "external_queue": "customer-requirements-verification",
+    "genuine_judgment_step": "lead-priority-judgment"
+  },
+  "notes": "Elapsed wall-clock per lead is dominated by waits, not work: the 9-day part-time pricing backlog and the 14-day customer requirement confirmation. The process ends once the customer's technical buyer has confirmed the application, which is the first genuinely qualified contact; everything before it is deterministic except the single human priority call, which Petra owns. The CRM session-logout annoyance is real and re-occurs for everyone but costs under a minute each time. The trade-show lead silent-drop is the root of the cross-team friction nobody will voluntarily raise."
+}
