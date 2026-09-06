@@ -1,59 +1,67 @@
 **Interviewer:** What are you waiting on right now?
 
-**Thomas Vogel:** Nothing, really. These requisitions come in from Katrin’s checklist, sit in my finance queue overnight, and I clear them in the morning. Then Markus has it. IT is usually where things take ages.
+**Thomas Vogel:** Nothing from my side, really. The checklist comes from Katrin, usually by email, and I approve the requisition once it is in the finance system. After that it is Markus’s area. Those hardware things can sit with IT for ages, but I cannot do anything about that.
 
 **Interviewer:** Walk me through the last one of these that went weird. And the one before that.
 
-**Thomas Vogel:** Mine do not really go weird. It is a budget-line check, then approve or return it. I cannot remember returning one. The last two were ordinary: I saw the request in the morning, approved it, and it went through to Markus.
+**Thomas Vogel:** I cannot remember a genuinely weird one. They are all within the headcount line, so I approve them. The last one probably landed late in the afternoon and I did it the next morning. The one before was much the same. People make it sound complicated because there are several departments involved, but my part is six, maybe ten minutes.
 
 **Interviewer:** Who do you have to chase? Who chases you?
 
-**Thomas Vogel:** I do not chase anyone for this part. If something is missing, it has usually not reached me yet, so Katrin would know. Nobody really chases me either; I do the approvals in the morning. Occasionally someone asks whether IT has received it, as though I am sitting there with their laptops.
+**Thomas Vogel:** I do not chase anyone for these. If Katrin has not sent the starter checklist, there is nothing to approve. Markus may occasionally ask whether something is released, but it is visible in the system, so that is more habit than necessity. Nobody really chases me; I clear approvals in the morning.
 
 **Interviewer:** From it landing on you to you being done with it — how much of that is you actually working on it?
 
-**Thomas Vogel:** Five minutes, maybe ten if the finance system is being itself. Most of it is waiting for the morning run. People call that a delay, but I have a whole approval queue, not just one nurse starting somewhere.
+**Thomas Vogel:** Very little. I open the requisition, check the budget line, approve it, done. It may take a few minutes. Of course, if I have to find the relevant budget position and make sure the requested kit matches what was planned, then you are looking through the file and the finance screen, perhaps half an hour, but that is not usually necessary.
+
+**Interviewer:** Once you've sent it on, how long before somebody picks it up?
+
+**Thomas Vogel:** Markus’s team should see it straight away in their system. Whether they act on it straight away, I have no visibility. Probably a couple of days. IT always has their own queue, apparently.
+
+**Interviewer:** After something arrives for you, how long does it usually sit before you start it?
+
+**Thomas Vogel:** Not long, really. Overnight, normally, because I do approvals as a block each morning. If it comes in after I have done the block, then naturally it waits until the next day. People call that a delay, but I cannot interrupt everything for a keyboard request.
 
 **Interviewer:** What comes back to you?
 
-**Thomas Vogel:** Nothing normally. If it were outside the headcount budget, I would return it, but that has not happened. Once I approve it, it disappears into the system and Markus handles the equipment side.
+**Thomas Vogel:** Nothing, normally. If it is not within the approved headcount budget line, I return it. But I do not recall having to do that for onboarding. Katrin knows what she is doing.
 
 **Interviewer:** If you were training your replacement and only had a week, what rule would you give them?
 
-**Thomas Vogel:** Check that the spend is within the approved headcount budget line. If it is, approve it. If it is not, send it back. Do not invent a committee around a headset and a laptop.
+**Thomas Vogel:** Approve it if the spend is within the approved headcount budget; return it if it is not. Do not invent a discussion around a routine requisition. Finance has enough discussions already.
 
 **Interviewer:** What do you copy from one place into another?
 
-**Thomas Vogel:** Nothing deliberately. Katrin sends the starter checklist by email and the requisition is in the finance system. The systems talk to each other enough for my purposes. Whether somebody upstream has copied things around, I could not tell you.
+**Thomas Vogel:** For this? Nothing worth mentioning. The checklist arrives by email, then the requisition is in the finance system. I read the details. I am not retyping it all. Sometimes you compare a name or the cost centre against the budget line, but that is just checking.
 
 **Interviewer:** What do you have to reformat before you can use it?
 
-**Thomas Vogel:** Nothing, apart from reading the checklist in the email. It is usually fine. Sometimes people use odd descriptions for hardware, which is irritating, but it does not stop me approving the budget.
+**Thomas Vogel:** Nothing. Katrin’s checklist is readable. It is an email, not some elaborate report. If someone sends odd attachments, that is their problem, but I have not had that here.
 
 **Interviewer:** What do you look up or re-explain every single time?
 
-**Thomas Vogel:** The budget line. You have to check it, even when it is obvious. It is the same question every time: is this person covered by the approved headcount spend? I do not re-explain much; the rule is written down.
+**Thomas Vogel:** The budget line, technically. You have to know which approved headcount it belongs to. But it is not something I re-explain every time; the rule is written down. People are forever asking what finance checks, though, as if it changed from Tuesday to Wednesday.
 
 **Interviewer:** Whose sign-off do you need? Has that person ever actually sent something back — when?
 
-**Thomas Vogel:** For this step, mine is the sign-off. The headcount budget has already been approved somewhere before it reaches me, but I am not involved in that bit. I have not sent one back, at least not that I remember.
+**Thomas Vogel:** No one’s. I am the finance approval. I do not need a second signature for an ordinary onboarding requisition. And no, I have never rejected one of these, not that I can remember.
 
 **Interviewer:** What do you keep in your own spreadsheet or notes because the system won't hold it?
 
-**Thomas Vogel:** Nothing for this. Finance has the requisition and its approval. I am not keeping a shadow list of new starters; that would be Katrin’s world, if anyone’s.
+**Thomas Vogel:** Nothing for this process. The finance system holds the approval and the requisition. I have enough spreadsheets without creating another one for routine starters.
 
 **Interviewer:** What deadline are you always up against, and what makes it tight?
 
-**Thomas Vogel:** There is no dramatic deadline on my side. New starters want everything ready on day one, naturally, but the approval takes no time. It becomes tight when the request turns up late or when IT has a backlog. Then suddenly everyone is asking finance why a device is not there.
+**Thomas Vogel:** There is no particular deadline imposed on me beyond getting it through promptly. Obviously the person needs equipment when they start, so everyone suddenly becomes concerned near a start date. But by the time it gets to me, the approval is the easy bit. The tightness is usually upstream or after it leaves finance.
 
 **Interviewer:** What's the worst thing that happened when this went wrong?
 
-**Thomas Vogel:** Not in my approval step. I have not had one go wrong. If hardware arrives late, that is frustrating for the department, of course, but you would need to ask Markus or Petra what actually happened.
+**Thomas Vogel:** I do not know of a case where my approval went wrong. If equipment was not ready, that would be Markus’s side, or perhaps the request came too late. I am not shown the whole story afterwards.
 
 **Interviewer:** If you vanished for two weeks with no laptop, what would be broken when you got back?
 
-**Thomas Vogel:** The finance approvals would stack up, obviously. A couple of days’ worth at most—well, two weeks is two weeks, so there would be a queue. Someone would need authority to clear it. But the check itself is straightforward.
+**Thomas Vogel:** The finance approvals would pile up, certainly. Not catastrophically—someone could probably cover if they had to—but I am the person who clears that queue. Then everyone would say onboarding was delayed, even though the requisitions had been sitting somewhere else before they reached me.
 
 **Interviewer:** What do you do that you're fairly sure is pointless?
 
-**Thomas Vogel:** Opening an email checklist only to confirm that the requisition exists in the system is not exactly the highest use of anyone’s time. But that is how Katrin sends it, and at least it gives you a name to attach to the request.
+**Thomas Vogel:** Chasing confirmation that the approval is visible. It is in the system; Markus can see it. Occasionally someone emails anyway, “Has finance released this?” That is pointless. The system is there for a reason.

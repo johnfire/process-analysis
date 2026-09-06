@@ -1,59 +1,34 @@
 **Interviewer:** What are you waiting on right now?
-
-**Marta Falck:** Availability, mostly. Petra has to confirm what we can actually offer before I can put sensible prices around it. And sometimes Rainer’s substitute note, if the original part is not possible. It should be straightforward, but those are the things that turn into a couple of days while everyone is “just checking.”
-
+**Marta Falck:** Availability, mostly. Petra has to confirm what can actually be supplied before I can put a proper quote together. And sometimes Rainer’s note if there’s a substitute involved. People think pricing is just typing numbers, but if the item is wrong or the availability is fantasy, the quote is useless.
 **Interviewer:** Walk me through the last one of these that went weird. And the one before that.
-
-**Marta Falck:** The last one had a substitute on it. Rainer had made a note, but it was one of those notes where you still have to read between the lines—whether we are quoting the direct replacement or merely showing an option. I had to make sure the margin band matched the actual product family. The one before was availability: the bid came through eventually, but by then I had other quotes to do, obviously. Neither was a pricing problem once it reached me.
-
+**Marta Falck:** The last one had a substitute decision on it that was not very clear—just enough of a note that I had to work out what they meant. It was for an older machine part, naturally. I got it priced, but then it came back because somebody wanted the wording changed. Before that, there was a quote where the freight table made no sense for the delivery situation, so I had to check it again. Those things take ages because everyone assumes you can just “adjust it.”
 **Interviewer:** Who do you have to chase? Who chases you?
-
-**Marta Falck:** Petra, when availability is missing, and Rainer if he has made a decision but not put it properly on the bid. They chase me occasionally, usually Sales, because a customer is suddenly waiting. But I cannot price an imaginary item, can I? Jonas sometimes gets pulled in before it reaches me, I think, though that is not really my bit.
-
+**Marta Falck:** Petra, if the availability is sitting there, and Rainer if he has made a substitution call without making it usable for the bid. Rainer chases me occasionally, especially if a customer is making noise. Usually it is Sales asking where their quote is, as if I had been sitting on it for fun.
 **Interviewer:** From it landing on you to you being done with it — how much of that is you actually working on it?
-
-**Marta Falck:** Ten, fifteen minutes for an ordinary one. You enter the positions, apply the customer price and the margin, add freight, check it all. If there are several lines or old parts, it can take longer because you have to be alert; one wrong family and you have priced it completely wrongly. But the actual work is not long, really.
-
+**Marta Falck:** Not long, really—maybe ten minutes for an ordinary one. But that assumes the bid is clean. You still have to check the product family, the customer’s list price, the margin band, freight, the text, whether SAP has carried something strange over. By the time you have dealt with all that it can easily be half an hour, more if it is a messy one.
+**Interviewer:** Once you've sent it on, how long before somebody picks it up?
+**Marta Falck:** Rainer normally sees it fairly quickly. Same day, I would say. Unless he is out somewhere, then it can sit. I do not really see what happens after I send the draft on.
+**Interviewer:** After something arrives for you, how long does it usually sit before you start it?
+**Marta Falck:** I do quotes in batches. Thursday is my administration day, and I have a shorter pass on Tuesday. That is just the rhythm. If something arrives Monday, it will normally be handled Thursday unless somebody tells us it is urgent.
 **Interviewer:** What comes back to you?
-
-**Marta Falck:** Drafts can come back if something needs changing—price, freight, a position, that sort of thing. Rainer may want it adjusted. It is not constant, but you do get things back often enough that you cannot just fire them out blindly.
-
+**Marta Falck:** Usually corrections. A customer-specific point, revised freight, an item someone now wants phrased differently, or a price somebody has suddenly decided to question. Sometimes the whole thing comes back because a detail in the bid was not settled properly in the first place.
 **Interviewer:** If you were training your replacement and only had a week, what rule would you give them?
-
-**Marta Falck:** Do not treat pricing as data entry. Use the customer’s list price, apply the standard margin band for that product family, and use the freight table. But check the product family yourself. That is the bit people think a system can do, until somebody has quoted a substitute as though it were the original.
-
+**Marta Falck:** Do not invent a price because somebody is pressing you. Start with the customer’s list price, apply the normal margin band for that product family, add freight from the rate table. And read the bid, properly. The judgment is in noticing when the apparently normal case is not normal.
 **Interviewer:** What do you copy from one place into another?
-
-**Marta Falck:** I work from the bid into SAP—the item positions and the information that supports what we are offering. It is normal quotation work. You have the confirmation or Rainer’s note on the bid, and then you build the quote in SAP. I am not sitting there making a special spreadsheet for every quote.
-
+**Marta Falck:** The availability details and Rainer’s substitute note end up in the quotation draft in SAP. Product references, quantities, delivery information—whatever has been put onto the bid. It is mostly there already, but “mostly” is not the same as correct.
 **Interviewer:** What do you have to reformat before you can use it?
-
-**Marta Falck:** Nothing dramatic. Sometimes the wording in a substitute note is not really quotation wording, so I make it customer-facing. And freight has to be added properly, not just left as somebody’s comment. People put things in a way that makes sense to them, then I have to turn it into something that can actually go on a quote.
-
+**Marta Falck:** The notes can be a nuisance. People write in shorthand, or put something in a way that is fine internally but cannot go straight into a customer quotation. You have to make it sound like an actual offer, not like two people leaving each other reminders.
 **Interviewer:** What do you look up or re-explain every single time?
-
-**Marta Falck:** The pricing basis, really—the customer’s list price, which margin band applies, freight. It sounds repetitive, but it is not something you should do from memory because customers and product families differ. And yes, I explain that to people more than I should have to.
-
+**Marta Falck:** The margin band for the product family and the freight rate, mainly. And I find myself explaining that the price is not simply a number pulled from nowhere. Different families are handled differently. I know the usual ones, obviously, but with the old catalogue items you still check.
 **Interviewer:** Whose sign-off do you need? Has that person ever actually sent something back — when?
-
-**Marta Falck:** Rainer gets the quotation draft after me. He has sent them back, yes—when he wants a change to the offer or something does not match the sales position. I could not tell you dates. It happens when it needs to happen.
-
+**Marta Falck:** Rainer gets the quotation draft from me. Yes, he sends things back—usually when there is a substitute or he wants a different commercial angle. Last week, or perhaps the week before, there was one where he wanted the quote adjusted after I had already built it. That happens.
 **Interviewer:** What do you keep in your own spreadsheet or notes because the system won't hold it?
-
-**Marta Falck:** I do not keep a shadow system. SAP is where the quotation is. I may have working notes while I am dealing with something awkward, but that is just notes, not some secret process. If people start building private spreadsheets, then nobody knows which number is current.
-
+**Marta Falck:** I keep small working notes: things to check, awkward freight cases, reminders about a customer’s previous question. SAP holds the quotation, but it is not where I want to keep every little thought while I am assembling a batch.
 **Interviewer:** What deadline are you always up against, and what makes it tight?
-
-**Marta Falck:** Customers want quotes quickly, of course. Sales will say it is urgent, usually after it has already been waiting with someone else. Once it is ready for pricing, I handle it in the quotation run. That is simply how the work is organised; it is not as though I can stop everything for every request that gets labelled urgent.
-
+**Marta Falck:** The implied customer deadline, really. Sales will say it is urgent once the customer has asked twice. Then we are tight because availability or the substitute decision has arrived late, and suddenly the pricing part is expected immediately. I can only work from what is actually on the bid.
 **Interviewer:** What's the worst thing that happened when this went wrong?
-
-**Marta Falck:** The worst risk is quoting the wrong thing at the wrong margin, especially with a substitute. Then the customer has a document in front of them and someone has to unwind it. I catch a lot of that before it becomes a problem, frankly. I do not know the worst case beyond the quotations I see.
-
+**Marta Falck:** A quote went round with something that had to be corrected afterwards. Nothing dramatic from my side, but it makes everyone look careless and the customer starts asking whether the rest of it is reliable. That is why I check. People do not see the checking when it prevents a problem.
 **Interviewer:** If you vanished for two weeks with no laptop, what would be broken when you got back?
-
-**Marta Falck:** There would be a stack of ready bids needing quotations, unless somebody else took them over. The pricing rules are not complicated on paper, but the judgment is in applying them consistently and spotting when the inputs do not quite line up. Rainer would have drafts later than he expects, certainly.
-
+**Marta Falck:** There would be a pile of quotation drafts waiting, certainly. Someone else could technically enter prices, but they would need to understand the margin bands, freight, and which odd cases need a second look. It would not be impossible. It would just create a lot of cleaning up.
 **Interviewer:** What do you do that you're fairly sure is pointless?
-
-**Marta Falck:** Chasing for information that should already be on the bid, probably. Though it is not pointless when it prevents a bad quote. Maybe some of the back-and-forth wording around substitutes—by the time it reaches me, it ought to be clearer. But then everyone says it is obvious, and somehow I am the one expected to put the number on it.
+**Marta Falck:** Rechecking things that should have been clear on the bid before it reaches me, perhaps. But then, if I do not check and something is wrong, it comes back to me anyway. So it is pointless until it is not.

@@ -1,59 +1,67 @@
 **Interviewer:** What are you waiting on right now?
 
-**Andrea Hoffmann:** The next starters, really. I run the Orbis induction on the first Thursday, so if somebody starts just after that, they wait until the next one. Petra normally tells me verbally who is coming, but it can be a bit last-minute. I can’t give patient-record access without the training and sign-off; that’s not something I’m going to just wave through.
+**Andrea Hoffmann:** Usually the orientation checklist from Petra, really. People assume I can just put someone into the next Orbis session, but I need to know they’re actually coming onto the ward and what the plan is. It’s verbal half the time, which is lovely. “Andrea, can you fit in a new starter?” And then no checklist appears.
 
 **Interviewer:** Walk me through the last one of these that went weird. And the one before that.
 
-**Andrea Hoffmann:** The last one was someone who couldn’t make the group session, so we had to do them one-to-one. That sounds simple—ten minutes, people think—but it means arranging a room, getting them into Orbis, going through the safe-use bits properly, and making sure they actually understand what they’re signing. The one before, Petra mentioned a new nurse in passing and I only got the checklist close to the session. It all worked out, but you’re constantly catching things that should have been clear earlier.
+**Andrea Hoffmann:** The last one needed access sooner than the monthly session. Petra wanted them on the floor, understandably, so we had to do a one-to-one. That sounds simple, but it isn’t just clicking a box; you have to make sure they understand the patient record side and sign them off properly. The one before was similar, honestly—someone came along with incomplete orientation paperwork and we spent time sorting out what they were meant to have done. I catch that stuff. Otherwise people would be handed access when they shouldn’t be.
 
 **Interviewer:** Who do you have to chase? Who chases you?
 
-**Andrea Hoffmann:** Mostly Petra, for the orientation checklist and confirmation of who actually needs to attend. She’ll say she’s sent someone over, but I need the paperwork to match. Petra chases me when someone is standing on the ward without access, obviously. Then it becomes urgent, although they may have been waiting around on the ward for ages before anyone tells me.
+**Andrea Hoffmann:** I chase Petra, mostly, for the checklist or confirmation. She chases me when someone wants access yesterday. Occasionally it’s Katrin as well, through the general onboarding conversations, but Petra is the practical one from my side. And people chase me because they see the training date as somehow negotiable.
 
 **Interviewer:** From it landing on you to you being done with it — how much of that is you actually working on it?
 
-**Andrea Hoffmann:** Not long, really. The session itself is two hours, and the record afterwards is straightforward. But it sits until the next Thursday, which people don’t seem to understand. And if it’s an individual case, it can take most of a morning by the time they arrive late, ask questions, forget a password, all of that.
+**Andrea Hoffmann:** The session itself is two hours. The actual administrative bit is not long, maybe ten minutes around it. But during the induction you’re answering questions, checking people can navigate Orbis, dealing with different levels of experience—so it is two hours of proper attention, not just showing slides.
+
+**Interviewer:** Once you've sent it on, how long before somebody picks it up?
+
+**Andrea Hoffmann:** Petra gets the training record in the meeting, so she has it straight away. Whether she does anything with it immediately, I couldn’t tell you. That is her side of it.
+
+**Interviewer:** After something arrives for you, how long does it usually sit before you start it?
+
+**Andrea Hoffmann:** Not long, really. If it’s a normal starter, they go into the next first-Thursday session. People call that waiting, but it’s just the induction schedule. If it’s urgent, then it becomes this whole special arrangement and suddenly everyone expects me to rearrange the week.
 
 **Interviewer:** What comes back to you?
 
-**Andrea Hoffmann:** Nothing much comes back once the clinical training record has gone to Petra. Sometimes someone says they still can’t get into Orbis, but that’s usually an access issue somewhere else, not the training. People tend to bundle all of it together as “Andrea hasn’t sorted it,” which is irritating.
+**Andrea Hoffmann:** Nothing formally comes back, usually. If there’s a problem, Petra tells me verbally—someone missed the session, or they need that one-to-one access route. There isn’t really a neat loop where a document gets returned.
 
 **Interviewer:** If you were training your replacement and only had a week, what rule would you give them?
 
-**Andrea Hoffmann:** Do not sign anyone off because they seem experienced. They still need the two-hour induction and they need to understand our use of patient records. You have to listen for the little gaps. Someone can have worked in a hospital for twenty years and still make assumptions that are wrong here.
+**Andrea Hoffmann:** Do not grant patient-record access unless they have completed the two-hour induction and you have the sign-off. It’s written down for a reason. You need enough judgment to tell whether they have actually understood what they’re doing, not merely sat in the room.
 
 **Interviewer:** What do you copy from one place into another?
 
-**Andrea Hoffmann:** I take the names from Petra’s orientation checklist and put them into my training record, then confirm the sign-off back at the meeting. It’s not a huge admin job, but names get spelled differently, people use shortened names, and then someone says the record is missing.
+**Andrea Hoffmann:** I don’t really do much copying. I take the orientation checklist information and make the clinical training record, then pass that to Petra. It’s mostly names and confirmation that they attended. People make it sound like there’s some big data exercise; there isn’t.
 
 **Interviewer:** What do you have to reformat before you can use it?
 
-**Andrea Hoffmann:** The checklist isn’t really formatted for me; it’s more a ward orientation thing. Usually I just make it usable for the session—who is attending, what role they have, whether they need the clinical-system part. It’s verbal half the time anyway, which is worse. “Andrea, there’s another one starting.” Fine, but who exactly?
+**Andrea Hoffmann:** The checklist can be a bit inconsistent because it arrives verbally or in whatever form Petra has to hand. So sometimes I have to clarify it before I can use it. But I wouldn’t call that reformatting exactly.
 
 **Interviewer:** What do you look up or re-explain every single time?
 
-**Andrea Hoffmann:** The same Orbis basics: patient-record access, what people may and may not do, the sign-off expectations. Every group has somebody who wants to know whether their previous system experience counts. It doesn’t, not on its own. I re-explain it because it’s safer than assuming they understood a slide.
+**Andrea Hoffmann:** I re-explain the Orbis access rules and the patient-record responsibilities every session. People have wildly different assumptions about what access means. And I have to check the sign-off process—well, not check it from scratch, but make sure it has been properly followed. You cannot be casual with clinical records.
 
 **Interviewer:** Whose sign-off do you need? Has that person ever actually sent something back — when?
 
-**Andrea Hoffmann:** Mine, effectively, after they complete the induction. I pass the clinical training record to Petra. She hasn’t really sent it back as such. If there’s a question about whether a person attended, she’ll ask, but that’s usually when somebody needs access immediately and suddenly everyone is looking for the record.
+**Andrea Hoffmann:** I complete the sign-off as part of the induction, and Petra receives the training record. She hasn’t really sent it back to me. If something is wrong, it’s normally before the session—missing orientation information, that sort of thing.
 
 **Interviewer:** What do you keep in your own spreadsheet or notes because the system won't hold it?
 
-**Andrea Hoffmann:** I keep my session list and notes on who attended, who needs a one-to-one, that sort of thing. I wouldn’t call it a formal spreadsheet system; it’s just enough to keep the monthly session from becoming chaos. Orbis isn’t where I manage the training logistics.
+**Andrea Hoffmann:** Nothing separate, really. The training record is what I use. I may keep the session details to hand so I know who is expected, but it’s not some shadow spreadsheet operation.
 
 **Interviewer:** What deadline are you always up against, and what makes it tight?
 
-**Andrea Hoffmann:** The starter needing ward access. People expect it on day one, which is fair enough, but the training session is monthly. If they miss it by a day, it can feel like ages. Then the pressure comes from the ward, even though the induction timetable has been the same for years.
+**Andrea Hoffmann:** The pressure is getting people ready for ward work, particularly when they start after they have missed the first Thursday. Then it becomes urgent from everyone else’s perspective. The schedule is monthly, and apparently that is a surprise every month.
 
 **Interviewer:** What's the worst thing that happened when this went wrong?
 
-**Andrea Hoffmann:** Nothing catastrophic from my training, thankfully. The worst is a new clinical person being unable to access the patient record when the ward expects them to function normally. That puts pressure on colleagues and it looks dreadful. But I’d rather have that than sign off somebody who hasn’t had the proper induction.
+**Andrea Hoffmann:** The serious risk is someone getting patient-record access without having been trained properly. I haven’t had some dramatic incident myself, but that is why I’m careful. It’s not just a password; it is clinical information.
 
 **Interviewer:** If you vanished for two weeks with no laptop, what would be broken when you got back?
 
-**Andrea Hoffmann:** If the first Thursday fell in those two weeks, the whole clinical induction session would be a problem. Someone could perhaps cover the presentation, but the judgment around sign-off is not just reading slides. I know what questions to ask and what tends to get missed. There would be a queue of people waiting for access, and Petra would be understandably unhappy.
+**Andrea Hoffmann:** Anyone needing clinical-system induction could be stuck, especially if the monthly session fell in those two weeks. Petra would be asking what to do with new starters, and urgent one-to-ones would pile up. Someone could cover the mechanics, perhaps, but they would need to understand the judgment behind the sign-off.
 
 **Interviewer:** What do you do that you're fairly sure is pointless?
 
-**Andrea Hoffmann:** Chasing down whether someone is definitely attending when they then don’t turn up. Although it isn’t pointless when it matters, is it? The irritating bit is repeatedly confirming names and roles because the checklist and the verbal message don’t line up. It feels administrative, but if I get that wrong, everyone notices.
+**Andrea Hoffmann:** Chasing people for basic confirmation when they already know there is a session date. That is probably the pointless part. Then having the same conversation about why someone cannot simply be given Orbis access immediately. I explain it every time, and the answer does not change.

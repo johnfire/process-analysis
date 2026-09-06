@@ -1,59 +1,67 @@
 **Interviewer:** What are you waiting on right now?
 
-**Jonas Schubert:** Krankenkasse confirmations, same as always. I’ve filed the Anmeldung, then it just sits in the portal until they get round to confirming it. A couple of days, supposedly. Sometimes it feels like ages.
+**Jonas Schubert:** Krankenkasse confirmation, as usual. They take ages—couple of weeks, apparently. My bit is already in the portal.
 
 **Interviewer:** Walk me through the last one of these that went weird. And the one before that.
 
-**Jonas Schubert:** Last one wasn’t really weird, it just took forever. The confirmation didn’t appear, so the payslip had to wait. Before that, same thing really. You send it through SV-Meldeportal, check the payroll system, check again, eventually it turns up. Nothing dramatic on my end.
+**Jonas Schubert:** “Weird” is overstating it. One confirmation was late, so the first payslip had to wait. Before that, I think it was normal. Nothing memorable, anyway.
 
 **Interviewer:** Who do you have to chase? Who chases you?
 
-**Jonas Schubert:** I don’t chase the insurers much; there’s not a lot you can do with a Krankenkasse. People ask me about the first payslip, obviously. And I get the workstation-and-badge notice from Markus’s side first, through the system. Once I’ve got the insurer confirmation, it goes on to Elena.
+**Jonas Schubert:** Mostly nobody. You can’t exactly chase a Krankenkasse into answering. Markus’s provisioning comes through the system before I see it. Nobody chases me unless they want to know about the payslip, which is usually because they’re waiting on the insurer too.
 
-**Interviewer:** From it landing on you to you being done with it — how much of that is you actually working on it?
+**Interviewer:** From it landing on you to you being done with it—how much of that is you actually working on it?
 
-**Jonas Schubert:** Ten, twenty minutes. Maybe half an hour if I’m checking something twice. The rest is waiting for the insurer, which can be two weeks or whatever. People tend to treat that as though payroll is holding it up, which is a bit tiresome.
+**Jonas Schubert:** Ten, twenty minutes. It’s just the notification and then posting the confirmation. Obviously you have to check the employee details and use the Meldportal, so it’s not literally one click.
+
+**Interviewer:** Once you've sent it on, how long before somebody picks it up?
+
+**Jonas Schubert:** It goes through the system to Elena. I don’t know when she picks it up; that’s her side.
+
+**Interviewer:** After something arrives for you, how long does it usually sit before you start it?
+
+**Jonas Schubert:** Not long, really. Same day usually. Unless it arrives late and I’m in the middle of payroll work, then it can sit a day or two.
 
 **Interviewer:** What comes back to you?
 
-**Jonas Schubert:** The confirmation comes back from the insurer. That’s the thing I need. If it isn’t there, there isn’t a first payslip. Simple enough.
+**Jonas Schubert:** The insurer confirmation. That’s the thing I need before the first payslip goes out.
 
 **Interviewer:** If you were training your replacement and only had a week, what rule would you give them?
 
-**Jonas Schubert:** File the social-insurance notification properly, post the confirmation when it arrives, and don’t release the first payslip before then. Written rule, not something I invented.
+**Jonas Schubert:** File the social-insurance notification, post the confirmation when it arrives, and do not release the first payslip before that. That’s the rule. It’s written down somewhere as well.
 
 **Interviewer:** What do you copy from one place into another?
 
-**Jonas Schubert:** The status, mainly—portal to payroll. It’s not exactly thrilling. You check SV-Meldeportal, then make sure payroll reflects the confirmation. A few fields, references, that sort of thing.
+**Jonas Schubert:** The relevant employee information goes into payroll and the SV portal. I wouldn’t call it much copying. You still have to make sure it matches, though.
 
 **Interviewer:** What do you have to reformat before you can use it?
 
-**Jonas Schubert:** Nothing especially. The portal is the portal. You sometimes have to make the information line up with the way payroll wants it entered, but it’s not a major production.
+**Jonas Schubert:** Nothing dramatic. The systems each want what they want. Sometimes names or details need checking, but that’s just normal admin.
 
 **Interviewer:** What do you look up or re-explain every single time?
 
-**Jonas Schubert:** Usually whether the confirmation has arrived yet. To people asking about pay, I mean. I explain that the insurer has to confirm the Anmeldung first. They hear “payroll” and assume I’m sitting on it.
+**Jonas Schubert:** The social-insurance status, basically. And people ask why a first payslip is waiting, so then I explain we’re waiting for the confirmation. Again.
 
 **Interviewer:** Whose sign-off do you need? Has that person ever actually sent something back—when?
 
-**Jonas Schubert:** No person’s sign-off. It’s the insurer’s confirmation. They don’t send it “back” with comments; it just arrives, eventually. About five percent of cases have something odd about them, but I couldn’t tell you what happens after that in detail.
+**Jonas Schubert:** It’s not really a sign-off from a person here; it’s the insurer’s confirmation. They do come back late sometimes. I couldn’t tell you a particular case.
 
 **Interviewer:** What do you keep in your own spreadsheet or notes because the system won't hold it?
 
-**Jonas Schubert:** I don’t keep a separate spreadsheet for this. Payroll and the portal have what I need. If someone wants a private tracker for everything across onboarding, that’s probably Katrin’s territory.
+**Jonas Schubert:** I don’t keep a separate spreadsheet for this. Payroll and the portal have it.
 
 **Interviewer:** What deadline are you always up against, and what makes it tight?
 
-**Jonas Schubert:** The first payslip, naturally. It’s tight because you can’t really finish it without the insurer confirmation, and they take their time. My actual entry work is done quickly.
+**Jonas Schubert:** The first payslip. It gets tight because the confirmation can take two weeks and there’s nothing useful I can do about that once the notification is filed.
 
 **Interviewer:** What's the worst thing that happened when this went wrong?
 
-**Jonas Schubert:** The person’s first payslip was withheld until the confirmation came through. That’s the consequence. Not pleasant for them, but it’s the rule; I’m not going to invent a confirmation because somebody is impatient.
+**Jonas Schubert:** A first payslip was delayed. That’s bad enough for the employee, obviously. I don’t know what happened after it left my area.
 
 **Interviewer:** If you vanished for two weeks with no laptop, what would be broken when you got back?
 
-**Jonas Schubert:** Notifications and confirmations would be sitting there, I suppose. Two weeks is about the insurer turnaround anyway, so it would be a pile to post into payroll. Elena would be waiting on the confirmations from my side.
+**Jonas Schubert:** There would be notifications and confirmations waiting to be posted, I suppose. But two weeks is also about how long the Krankenkasse takes, so half of it would still be waiting on them.
 
 **Interviewer:** What do you do that you're fairly sure is pointless?
 
-**Jonas Schubert:** Checking whether the insurer has responded when I know perfectly well they probably haven’t. But people keep asking, so you look. Then you look again the next day.
+**Jonas Schubert:** Honestly? Explaining to people repeatedly that I cannot make a Krankenkasse reply faster. It doesn’t change anything.

@@ -3,392 +3,375 @@
     "id": "sabine-001",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q1",
-    "verbatim": "Leads come into the shared inbox",
+    "kind": "step",
+    "verbatim": "I've got the shared inbox to clear again this afternoon",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "system",
     "payload": {
-      "name": "shared inbox",
-      "used_for": "leads coming in"
-    }
+      "description": "clear the shared inbox",
+      "performed_by": null,
+      "frequency": "twice a day"
+    },
+    "entity_refs": [
+      {
+        "text": "the shared inbox",
+        "type": "system"
+      }
+    ]
   },
   {
     "id": "sabine-002",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q1",
-    "verbatim": "I clear them when I clear them.",
+    "kind": "step",
+    "verbatim": "there are a few leads where the sender is not in the system properly",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "clears the leads from the shared inbox",
-      "performed_by": "me"
+      "description": "handle leads where the sender is not in the system properly",
+      "performed_by": null,
+      "frequency": null
     }
   },
   {
     "id": "sabine-003",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q1",
-    "verbatim": "Usually I\u2019m waiting for the morning run, or the afternoon one.",
-    "hedging": "approximate",
+    "kind": "rule",
+    "verbatim": "Those need the duplicate check",
+    "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "wait",
     "payload": {
-      "waiting_on": "the morning run, or the afternoon one",
-      "owner": "internal",
-      "current": false
+      "condition": "a lead's sender is not in the system properly",
+      "action": "run the duplicate check",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
     "id": "sabine-004",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q1",
-    "verbatim": "the morning run, or the afternoon one",
-    "hedging": "approximate",
+    "kind": "complaint",
+    "verbatim": "It's always the vague ones, of course",
+    "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "schedule",
     "payload": {
-      "cadence": "the morning run, or the afternoon one",
-      "batching": true
+      "target": "leads with vague information",
+      "affect": "annoying",
+      "intensity": "passing"
     }
   },
   {
     "id": "sabine-005",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q1",
-    "verbatim": "Jonas probably has his tickets already.",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "hearsay",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q2",
     "kind": "step",
+    "verbatim": "I logged it as usual",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
     "payload": {
-      "description": "Jonas has his tickets already",
-      "performed_by": "Jonas"
+      "description": "log the lead",
+      "performed_by": null,
+      "frequency": "every lead"
     }
   },
   {
     "id": "sabine-006",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q1",
-    "verbatim": "Jonas",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q2",
+    "kind": "exception",
+    "verbatim": "the company appeared twice under slightly different names",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "kind": "actor",
+    "subject_scope": "self",
     "payload": {
-      "name": "Jonas",
-      "role": "has the lead tickets / queue",
-      "discovered_by": "named"
+      "trigger": "a company appears twice under slightly different names",
+      "path_taken": "sent into manual dedupe",
+      "pulls_in": [],
+      "recalled_instances": 1
     }
   },
   {
     "id": "sabine-007",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q1",
-    "verbatim": "He takes a while with the odd old references, but that\u2019s his side.",
-    "hedging": "approximate",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q2",
+    "kind": "step",
+    "verbatim": "I sent it into manual dedupe",
+    "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "kind": "wait",
+    "subject_scope": "self",
     "payload": {
-      "waiting_on": "Jonas on the odd old references",
-      "owner": "internal",
-      "current": false,
-      "duration": null
+      "description": "send the lead into manual dedupe",
+      "performed_by": null,
+      "frequency": null
     }
   },
   {
     "id": "sabine-008",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q2",
-    "verbatim": "Last one was an unknown sender with a company name that was almost the same as one already in SAP.",
+    "kind": "rule",
+    "verbatim": "I'm not going to guess which account is the real one",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "exception",
     "payload": {
-      "trigger": "unknown sender with a company name almost the same as one already in SAP",
-      "path_taken": "manual dedupe",
-      "recalled_instances": 1
+      "condition": "a company appears twice under slightly different names",
+      "action": "do not guess which account is the real one; send it into manual dedupe",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
     "id": "sabine-009",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q2",
-    "verbatim": "So I put it into manual dedupe rather than making a mess.",
+    "kind": "exception",
+    "verbatim": "The one before was routed to the wrong region because the account record had old details",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "put it into manual dedupe",
-      "performed_by": "me"
+      "trigger": "the account record had old details",
+      "path_taken": "routed to the wrong region",
+      "pulls_in": [],
+      "recalled_instances": 1
     }
   },
   {
     "id": "sabine-010",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q2",
-    "verbatim": "It was probably ten minutes, except you end up opening three account records and checking whether somebody has typed the address differently.",
-    "hedging": "approximate",
+    "kind": "rework",
+    "verbatim": "It came back, I changed it",
+    "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "duration",
     "payload": {
-      "measure": "touch",
-      "value": {
-        "low": 8,
-        "high": 15,
-        "unit": "minute"
-      },
-      "subject": "the manual dedupe",
-      "basis": "last_instance"
+      "what": "a lead routed to the wrong region came back and was corrected",
+      "returned_by": null,
+      "reason": "routed to the wrong region",
+      "loops_to": "routing"
     }
   },
   {
     "id": "sabine-011",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q2",
-    "verbatim": "you end up opening three account records and checking whether somebody has typed the address differently.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q3",
+    "kind": "step",
+    "verbatim": "I chase whoever owns the account details when they're a mess",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "opening three account records and checking whether somebody has typed the address differently",
-      "performed_by": "me"
+      "description": "chase whoever owns the account details",
+      "performed_by": null,
+      "frequency": "when the account details are a mess"
     }
   },
   {
     "id": "sabine-012",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q2",
-    "verbatim": "The one before was routed to the wrong region because the account had an old postcode.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q3",
+    "kind": "wait",
+    "verbatim": "I chase whoever owns the account details when they're a mess",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rework",
     "payload": {
-      "what": "was routed to the wrong region",
-      "returned_by": "the wrong region",
-      "reason": "the account had an old postcode",
-      "loops_to": "routing"
+      "waiting_on": "the account details owner to clean up the details",
+      "owner": "internal",
+      "current": false,
+      "duration": null
     }
   },
   {
     "id": "sabine-013",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q2",
-    "verbatim": "It came back, I changed it, no big thing.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q3",
+    "kind": "exception",
+    "verbatim": "but that is normally because the postcode or industry information in the account is wrong",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "step",
+    "subject_scope": "direct_observation",
     "payload": {
-      "description": "changed the region on the lead that came back",
-      "performed_by": "me"
+      "trigger": "the postcode or industry information in the account is wrong",
+      "path_taken": "ticket routed to the wrong person",
+      "pulls_in": [],
+      "recalled_instances": null
     }
   },
   {
     "id": "sabine-014",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q2",
-    "verbatim": "These things happen when customer data is ancient.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q3",
+    "kind": "exception",
+    "verbatim": "Sometimes Jonas asks why a ticket landed with him",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "kind": "consequence",
+    "subject_scope": "hearsay",
     "payload": {
-      "subject": "customer data",
-      "if_wrong": "duplicates and wrong-region leads",
-      "reversible": "yes",
-      "blast_radius": "customer"
-    }
+      "trigger": "a ticket lands with Jonas that he did not expect",
+      "path_taken": "Jonas asks why it landed with him",
+      "pulls_in": [],
+      "recalled_instances": null
+    },
+    "entity_refs": [
+      {
+        "text": "Jonas",
+        "type": "actor"
+      }
+    ]
   },
   {
     "id": "sabine-015",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q3",
-    "verbatim": "I don\u2019t really chase people.",
-    "hedging": "approximate",
-    "polarity": "denied",
-    "subject_scope": "self",
     "kind": "handoff",
+    "verbatim": "Lukas sends introductions by email and then follows up",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
     "payload": {
-      "from": "me",
-      "to": "people",
-      "mechanism": "unknown",
-      "chased": false
-    }
+      "from": "Lukas",
+      "to": "Sabine Kessler (lead intake)",
+      "artifact": "introductions",
+      "mechanism": "email",
+      "chased": true
+    },
+    "entity_refs": [
+      {
+        "text": "Lukas",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "introductions",
+        "type": "artifact"
+      }
+    ]
   },
   {
     "id": "sabine-016",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q3",
-    "verbatim": "If there\u2019s a duplicate-looking customer, somebody has to sort that out eventually.",
-    "hedging": "approximate",
+    "kind": "step",
+    "verbatim": "Lukas sends introductions by email and then follows up",
+    "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "hearsay",
-    "kind": "step",
     "payload": {
-      "description": "somebody sorts out a duplicate-looking customer",
-      "performed_by": "somebody"
+      "description": "Lukas sends introductions by email and then follows up",
+      "performed_by": "Lukas",
+      "frequency": null
     }
   },
   {
     "id": "sabine-017",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q3",
-    "verbatim": "Jonas sometimes asks why a lead is in his queue",
-    "hedging": "approximate",
+    "kind": "wait",
+    "verbatim": "so he can be quite keen to know whether it is in",
+    "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "kind": "handoff",
+    "subject_scope": "hearsay",
     "payload": {
-      "from": "me",
-      "to": "Jonas",
-      "artifact": "a lead",
-      "mechanism": "system",
-      "chased": false
+      "waiting_on": "confirmation that the introduction has been logged",
+      "owner": "internal",
+      "current": false,
+      "duration": null
     }
   },
   {
     "id": "sabine-018",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q3",
-    "verbatim": "and then I tell him it\u2019s the postcode.",
+    "kind": "step",
+    "verbatim": "He chases, yes",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "step",
+    "subject_scope": "hearsay",
     "payload": {
-      "description": "tell him it\u2019s the postcode",
-      "performed_by": "me"
+      "description": "Lukas chases to find out whether the introduction is in",
+      "performed_by": "Lukas",
+      "frequency": null
     }
   },
   {
     "id": "sabine-019",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q3",
-    "verbatim": "Lukas sends introductions",
-    "hedging": "firm",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q4",
+    "kind": "duration",
+    "verbatim": "A few minutes per lead",
+    "hedging": "approximate",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "handoff",
     "payload": {
-      "from": "Lukas",
-      "to": "me",
-      "artifact": "introductions",
-      "mechanism": "email",
-      "chased": false
+      "measure": "touch",
+      "value": {
+        "low": 2,
+        "high": 5,
+        "unit": "minute"
+      },
+      "subject": "a lead",
+      "basis": "typical"
     }
   },
   {
     "id": "sabine-020",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q3",
-    "verbatim": "and then rings",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "handoff",
-    "payload": {
-      "from": "Lukas",
-      "to": "me",
-      "mechanism": "verbal",
-      "chased": false
-    }
-  },
-  {
-    "id": "sabine-021",
-    "respondent_id": "sabine",
-    "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q3",
-    "verbatim": "occasionally before I\u2019ve even seen the email, which is helpful in theory.",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "complaint",
-    "payload": {
-      "target": "Lukas ringing before I\u2019ve even seen the email",
-      "affect": "confusing",
-      "intensity": "passing"
-    }
-  },
-  {
-    "id": "sabine-022",
-    "respondent_id": "sabine",
-    "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q3",
-    "verbatim": "Lukas",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "kind": "actor",
-    "payload": {
-      "name": "Lukas",
-      "role": "sends introductions",
-      "discovered_by": "named"
-    }
-  },
-  {
-    "id": "sabine-023",
-    "respondent_id": "sabine",
-    "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q4",
-    "verbatim": "Three minutes to enter it",
+    "kind": "duration",
+    "verbatim": "Three minutes to put it in",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "duration",
     "payload": {
       "measure": "touch",
       "value": {
@@ -396,621 +379,755 @@
         "high": 3,
         "unit": "minute"
       },
-      "subject": "a lead",
+      "subject": "putting a lead in",
       "basis": "typical"
+    }
+  },
+  {
+    "id": "sabine-021",
+    "respondent_id": "sabine",
+    "session_id": "s-sabine",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q4",
+    "kind": "duration",
+    "verbatim": "maybe five to route it",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 4,
+        "high": 6,
+        "unit": "minute"
+      },
+      "subject": "routing a lead",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "sabine-022",
+    "respondent_id": "sabine",
+    "session_id": "s-sabine",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q4",
+    "kind": "exception",
+    "verbatim": "if SAP has thrown me out again and the customer is under three names, then you are looking through things for ages",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "trigger": "SAP has thrown me out again and the customer is under three names",
+      "path_taken": "looking through things for ages",
+      "pulls_in": [],
+      "recalled_instances": null
+    },
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system"
+      }
+    ]
+  },
+  {
+    "id": "sabine-023",
+    "respondent_id": "sabine",
+    "session_id": "s-sabine",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q4",
+    "kind": "duration",
+    "verbatim": "then you are looking through things for ages",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 20,
+        "high": 60,
+        "unit": "minute"
+      },
+      "subject": "finding the right customer when SAP kicked me out and there are multiple names",
+      "basis": "guess"
     }
   },
   {
     "id": "sabine-024",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q4",
-    "verbatim": "perhaps five to route it",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q5",
+    "kind": "duration",
+    "verbatim": "Jonas usually gets it fairly quickly, I think",
     "hedging": "approximate",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "duration",
+    "subject_scope": "hearsay",
     "payload": {
-      "measure": "touch",
+      "measure": "queue",
       "value": {
-        "low": 4,
-        "high": 7,
-        "unit": "minute"
+        "low": 1,
+        "high": 3,
+        "unit": "day"
       },
-      "subject": "a lead",
+      "subject": "Jonas picking up a routed lead",
       "basis": "typical"
-    }
+    },
+    "entity_refs": [
+      {
+        "text": "Jonas",
+        "type": "actor"
+      }
+    ]
   },
   {
     "id": "sabine-025",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q4",
-    "verbatim": "Obviously that assumes the mail says what it\u2019s for and who it\u2019s from.",
-    "hedging": "firm",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q5",
+    "kind": "duration",
+    "verbatim": "Same day, perhaps a couple of days if it is busy",
+    "hedging": "approximate",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "rule",
+    "subject_scope": "hearsay",
     "payload": {
-      "condition": "the mail says what it\u2019s for and who it\u2019s from",
-      "action": "it takes three minutes to enter and five to route",
-      "written_down": null
+      "measure": "queue",
+      "value": {
+        "low": 1,
+        "high": 3,
+        "unit": "day"
+      },
+      "subject": "Jonas picking up a routed lead",
+      "basis": "typical"
     }
   },
   {
     "id": "sabine-026",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q4",
-    "verbatim": "The inbox can sit half a day because we\u2019re on the phones, but that\u2019s not me working on it, is it.",
-    "hedging": "approximate",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q5",
+    "kind": "handoff",
+    "verbatim": "You would have to ask him; once it is in his queue, it is his queue",
+    "hedging": "deferred",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "duration",
     "payload": {
-      "measure": "queue",
-      "value": {
-        "low": 0.5,
-        "high": 0.5,
-        "unit": "day"
-      },
-      "subject": "the inbox",
-      "basis": "typical"
-    }
+      "from": "Sabine Kessler (lead intake)",
+      "to": "Jonas",
+      "artifact": "the lead",
+      "mechanism": "system",
+      "chased": false
+    },
+    "entity_refs": [
+      {
+        "text": "Jonas",
+        "type": "actor",
+        "role": "to"
+      }
+    ]
   },
   {
     "id": "sabine-027",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q4",
-    "verbatim": "we\u2019re on the phones",
-    "hedging": "firm",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q6",
+    "kind": "schedule",
+    "verbatim": "We clear the inbox twice a day, around nine and three",
+    "hedging": "approximate",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "wait",
     "payload": {
-      "waiting_on": "the phones",
-      "owner": "internal",
-      "current": false,
-      "duration": null
+      "cadence": "twice a day, around nine and three",
+      "batching": true,
+      "driver": "one desk and we are on the phone in between"
     }
   },
   {
     "id": "sabine-028",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q5",
-    "verbatim": "Qualified outcomes, mainly.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q6",
+    "kind": "wait",
+    "verbatim": "If it arrives after the afternoon run, it waits until morning",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "handoff",
     "payload": {
-      "from": "whoever spoke to the customer",
-      "to": "me",
-      "artifact": "qualified outcomes",
-      "mechanism": "unknown",
-      "chased": false
+      "waiting_on": "the next morning inbox clear",
+      "owner": "internal",
+      "current": false,
+      "duration": {
+        "low": 1,
+        "high": 1,
+        "unit": "day"
+      }
     }
   },
   {
     "id": "sabine-029",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q5",
-    "verbatim": "I record the disposition in SAP",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q7",
+    "kind": "rework",
+    "verbatim": "Mostly a lead that has been sent to the wrong region",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "record the disposition in SAP",
-      "performed_by": "me"
+      "what": "a lead sent to the wrong region comes back to be re-routed",
+      "returned_by": "the regional owner",
+      "reason": "sent to the wrong region",
+      "loops_to": "routing"
     }
   },
   {
     "id": "sabine-030",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q5",
-    "verbatim": "when I do the end-of-day run.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q7",
+    "kind": "rework",
+    "verbatim": "or something needing its outcome recorded",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "schedule",
     "payload": {
-      "cadence": "the end-of-day run",
-      "batching": true
+      "what": "a lead needing its outcome recorded comes back",
+      "returned_by": null,
+      "reason": "outcome not recorded",
+      "loops_to": "outcome recording"
     }
   },
   {
     "id": "sabine-031",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q5",
-    "verbatim": "Or the next morning, depending when the contact happened.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q7",
+    "kind": "step",
+    "verbatim": "I put the qualified disposition into SAP in the end-of-day run",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rule",
     "payload": {
-      "condition": "the contact happened after the end-of-day run",
-      "action": "record the disposition the next morning",
-      "written_down": null
-    }
+      "description": "record the qualified disposition into SAP",
+      "performed_by": null,
+      "frequency": "end-of-day run"
+    },
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system"
+      }
+    ]
   },
   {
     "id": "sabine-032",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q5",
-    "verbatim": "Sometimes something gets rerouted or needs correcting.",
-    "hedging": "approximate",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q7",
+    "kind": "schedule",
+    "verbatim": "in the end-of-day run",
+    "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rework",
     "payload": {
-      "what": "something gets rerouted or needs correcting",
-      "loops_to": "routing"
+      "cadence": "end-of-day run",
+      "batching": true,
+      "driver": null
     }
   },
   {
     "id": "sabine-033",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q6",
-    "verbatim": "Product reference plus a company name: it\u2019s a lead.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q7",
+    "kind": "rework",
+    "verbatim": "Occasionally the original entry needs correcting",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rule",
     "payload": {
-      "condition": "there is a product reference plus a company name",
-      "action": "it is a lead",
-      "written_down": false
+      "what": "the original entry needs correcting",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": "the original entry"
     }
   },
   {
     "id": "sabine-034",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q6",
-    "verbatim": "If SAP knows the customer, flag it;",
-    "hedging": "firm",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q7",
+    "kind": "step",
+    "verbatim": "It happens, but not much",
+    "hedging": "approximate",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rule",
     "payload": {
-      "condition": "SAP knows the customer",
-      "action": "flag it",
-      "written_down": false
+      "description": "correcting the original entry",
+      "performed_by": null,
+      "frequency": "occasionally"
     }
   },
   {
     "id": "sabine-035",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q6",
-    "verbatim": "if it doesn\u2019t, check for duplicates before you create nonsense.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q8",
+    "kind": "rule",
+    "verbatim": "If there is a product reference and a company name, it is a lead",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rule",
     "payload": {
-      "condition": "SAP does not know the customer",
-      "action": "check for duplicates before creating a new record",
-      "written_down": false
+      "condition": "there is a product reference and a company name",
+      "action": "classify it as a lead",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
     "id": "sabine-036",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q6",
-    "verbatim": "route by postcode, not by whoever sounds more convincing in an email.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q8",
+    "kind": "rule",
+    "verbatim": "Known customer ID, flag it",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rule",
     "payload": {
-      "condition": "routing a lead",
-      "action": "route by postcode, not by whoever sounds more convincing in an email",
-      "written_down": false
+      "condition": "the customer ID is known",
+      "action": "flag it",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
     "id": "sabine-037",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q7",
-    "verbatim": "The email details into the lead record",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q8",
+    "kind": "rule",
+    "verbatim": "unknown sender, check for duplicates",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "copy email details into the lead record",
-      "performed_by": "me"
+      "condition": "the sender is unknown",
+      "action": "check for duplicates",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
     "id": "sabine-038",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q7",
-    "verbatim": "then the region and segment into the ticket",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q8",
+    "kind": "rule",
+    "verbatim": "route by postcode, not by what somebody says on the phone about where they are based",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "copy the region and segment into the ticket",
-      "performed_by": "me"
+      "condition": "routing a lead",
+      "action": "route by postcode, not by what somebody says on the phone about where they are based",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
     "id": "sabine-039",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q7",
-    "verbatim": "Company name, contact details, product reference, the usual.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q9",
+    "kind": "step",
+    "verbatim": "The email details into the lead record: company, contact, product reference, whatever they have actually bothered to provide",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "artifact",
     "payload": {
-      "name": "company name, contact details, product reference",
-      "format": "email text"
+      "description": "copy the email details (company, contact, product reference) into the lead record",
+      "performed_by": null,
+      "frequency": "per lead"
     }
   },
   {
     "id": "sabine-040",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q7",
-    "verbatim": "People make it sound terribly complicated.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q9",
+    "kind": "system",
+    "verbatim": "The email details into the lead record",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "kind": "complaint",
+    "subject_scope": "self",
     "payload": {
-      "target": "people",
-      "affect": "confusing",
-      "intensity": "passing"
+      "name": "the lead record",
+      "used_for": "storing lead details",
+      "copied_to": "the email",
+      "wins_conflict": true
     }
   },
   {
     "id": "sabine-041",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q8",
-    "verbatim": "Email text, mostly.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q9",
+    "kind": "handoff",
+    "verbatim": "Then the region and segment go on the ticket",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "artifact",
     "payload": {
-      "name": "Email text",
-      "format": "email",
-      "reformatted": true
+      "from": "Sabine Kessler (lead intake)",
+      "to": "the regional team",
+      "artifact": "the ticket",
+      "mechanism": "system",
+      "chased": false
     }
   },
   {
     "id": "sabine-042",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q8",
-    "verbatim": "Customers paste a signature, then a machine number, then some competitor part number from 1987 with no punctuation.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q9",
+    "kind": "complaint",
+    "verbatim": "It is not exactly exciting work",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "handle customer emails that paste a signature, then a machine number, then a competitor part number with no punctuation",
-      "performed_by": "me"
+      "target": "data entry",
+      "affect": "annoying",
+      "intensity": "passing"
     }
   },
   {
     "id": "sabine-043",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q8",
-    "verbatim": "You have to pull out what is actually the reference and what is just their footer.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q10",
+    "kind": "complaint",
+    "verbatim": "Emails are the main problem",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "pull out what is actually the reference and what is just their footer",
-      "performed_by": "me"
+      "target": "incoming emails",
+      "affect": "annoying",
+      "intensity": "passing"
     }
   },
   {
     "id": "sabine-044",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q8",
-    "verbatim": "German companies are very fond of ten-line signatures.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q10",
+    "kind": "exception",
+    "verbatim": "People paste old part references into a paragraph",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "complaint",
+    "subject_scope": "direct_observation",
     "payload": {
-      "target": "German companies\u2019 ten-line signatures",
-      "affect": "annoying",
-      "intensity": "passing"
+      "trigger": "emails paste old part references into a paragraph",
+      "path_taken": "reformat before use",
+      "pulls_in": [],
+      "recalled_instances": null
     }
   },
   {
     "id": "sabine-045",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q9",
-    "verbatim": "The existing account, if there is one: postcode and recorded industry.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q10",
+    "kind": "exception",
+    "verbatim": "use their own company spelling",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "step",
+    "subject_scope": "direct_observation",
     "payload": {
-      "description": "look up the existing account\u2019s postcode and recorded industry",
-      "performed_by": "me"
+      "trigger": "senders use their own company spelling",
+      "path_taken": "reformat before use",
+      "pulls_in": [],
+      "recalled_instances": null
     }
   },
   {
     "id": "sabine-046",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q9",
-    "verbatim": "That gives me region and segment.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q10",
+    "kind": "exception",
+    "verbatim": "or send a signature longer than the actual enquiry",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "step",
+    "subject_scope": "direct_observation",
     "payload": {
-      "description": "derive region and segment from postcode and recorded industry",
-      "performed_by": "me"
+      "trigger": "emails have a signature longer than the actual enquiry",
+      "path_taken": "reformat before use",
+      "pulls_in": [],
+      "recalled_instances": null
     }
   },
   {
     "id": "sabine-047",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q9",
-    "verbatim": "For unknown senders I look for duplicates.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q10",
+    "kind": "step",
+    "verbatim": "I just pull out what SAP needs",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rule",
     "payload": {
-      "condition": "unknown sender",
-      "action": "look for duplicates",
-      "written_down": false
-    }
+      "description": "pull out what SAP needs from the email",
+      "performed_by": null,
+      "frequency": "per email"
+    },
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system"
+      }
+    ]
   },
   {
     "id": "sabine-048",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q9",
-    "verbatim": "SAP logs me out if I\u2019ve been away from it, which is irritating.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q11",
+    "kind": "step",
+    "verbatim": "For unknown senders, whether they already exist under another name",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "complaint",
     "payload": {
-      "target": "SAP logging me out",
-      "affect": "annoying",
-      "intensity": "emphatic"
+      "description": "look up whether an unknown sender already exists under another name",
+      "performed_by": null,
+      "frequency": "every unknown sender"
     }
   },
   {
     "id": "sabine-049",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q9",
-    "verbatim": "Everyone complains about that.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q11",
+    "kind": "step",
+    "verbatim": "And sometimes the customer's postcode and recorded industry, because that determines the region and segment",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "kind": "complaint",
+    "subject_scope": "self",
     "payload": {
-      "target": "SAP logging out",
-      "affect": "annoying",
-      "intensity": "emphatic"
+      "description": "look up the customer's postcode and recorded industry",
+      "performed_by": null,
+      "frequency": "sometimes"
     }
   },
   {
     "id": "sabine-050",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q10",
-    "verbatim": "I enter it and route it.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q11",
+    "kind": "rule",
+    "verbatim": "because that determines the region and segment",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "enter it and route it",
-      "performed_by": "me"
+      "condition": "determining the region and segment",
+      "action": "use the customer's postcode and recorded industry",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
     "id": "sabine-051",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q10",
-    "verbatim": "If I\u2019ve sent something to the wrong region it can come back, like the postcode one I mentioned.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q11",
+    "kind": "complaint",
+    "verbatim": "People act as though that should be obvious",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "rework",
+    "subject_scope": "hearsay",
     "payload": {
-      "what": "sent something to the wrong region",
-      "returned_by": "the wrong region",
-      "loops_to": "routing"
+      "target": "people's expectations about account data",
+      "affect": "annoying",
+      "intensity": "passing"
     }
   },
   {
     "id": "sabine-052",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q10",
-    "verbatim": "it\u2019s just somebody noticing.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q11",
+    "kind": "system",
+    "verbatim": "but the account record is only as good as whoever last touched it",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "handoff",
     "payload": {
-      "from": "somebody",
-      "to": "me",
-      "artifact": "the lead sent to the wrong region",
-      "mechanism": "unknown",
-      "chased": false
+      "name": "the account record",
+      "used_for": "determining region and segment",
+      "copied_to": null,
+      "wins_conflict": false
     }
   },
   {
     "id": "sabine-053",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q11",
-    "verbatim": "I keep little notes for myself sometimes\u2014who has called, odd duplicate names, that sort of thing",
-    "hedging": "approximate",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q12",
+    "kind": "rule",
+    "verbatim": "If a duplicate needs sorting, it goes to the manual check",
+    "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "workaround",
     "payload": {
-      "what": "little notes for myself: who has called, odd duplicate names",
-      "compensates_for": "the system not holding this",
-      "private": true
+      "condition": "a duplicate needs sorting",
+      "action": "send it to the manual check",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
     "id": "sabine-054",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q11",
-    "verbatim": "SAP is where the lead belongs.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q12",
+    "kind": "handoff",
+    "verbatim": "If a duplicate needs sorting, it goes to the manual check",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "system",
     "payload": {
-      "name": "SAP",
-      "used_for": "where the lead belongs (system of record)",
-      "wins_conflict": true
+      "from": "Sabine Kessler (lead intake)",
+      "to": "the manual check",
+      "artifact": "the duplicate lead",
+      "mechanism": "system",
+      "chased": false
     }
   },
   {
     "id": "sabine-055",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
+    "captured_at": "2026-09-06T16:22:43Z",
     "question_id": "q12",
-    "verbatim": "The inbox clears at nine and three, basically.",
+    "kind": "rework",
+    "verbatim": "Things come back when the account information was wrong, usually after somebody notices the region does not make sense",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "schedule",
     "payload": {
-      "cadence": "at nine and three",
-      "batching": true
+      "what": "a lead comes back when the account information was wrong",
+      "returned_by": "somebody who notices the region does not make sense",
+      "reason": "account information was wrong",
+      "loops_to": "routing"
     }
   },
   {
     "id": "sabine-056",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q12",
-    "verbatim": "it waits until morning",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q13",
+    "kind": "workaround",
+    "verbatim": "I have my usual working notes while I am clearing the inbox, names I need to check",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "wait",
     "payload": {
-      "waiting_on": "the morning batch",
-      "owner": "internal",
-      "current": false,
-      "duration": null
+      "what": "working notes with names I need to check while clearing the inbox",
+      "compensates_for": "tracking which names need checking during inbox clearing",
+      "private": true
     }
   },
   {
     "id": "sabine-057",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q12",
-    "verbatim": "so then suddenly everyone thinks it\u2019s urgent.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q13",
+    "kind": "system",
+    "verbatim": "The record belongs in SAP",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "kind": "consequence",
+    "subject_scope": "self",
     "payload": {
-      "subject": "a lead that waited until morning",
-      "blast_radius": "team"
-    }
+      "name": "SAP",
+      "used_for": "the lead record",
+      "copied_to": null,
+      "wins_conflict": true
+    },
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system"
+      }
+    ]
   },
   {
     "id": "sabine-058",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q12",
-    "verbatim": "We cover both regions from one desk",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q14",
+    "kind": "schedule",
+    "verbatim": "The next inbox clear-out, really. Nine and three.",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "cover both regions from one desk",
-      "performed_by": "we"
+      "cadence": "nine and three (twice a day)",
+      "batching": true,
+      "driver": "the next inbox clear-out"
     }
   },
   {
     "id": "sabine-059",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q12",
-    "verbatim": "the phone does not stop just because there are emails.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q14",
+    "kind": "complaint",
+    "verbatim": "It gets tight because calls interrupt everything",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "complaint",
     "payload": {
-      "target": "the phone",
-      "affect": "annoying",
+      "target": "phone calls interrupting work",
+      "affect": "stressful",
       "intensity": "passing"
     }
   },
@@ -1018,193 +1135,242 @@
     "id": "sabine-060",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q13",
-    "verbatim": "A lead went to the wrong region and had to be moved back.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q14",
+    "kind": "wait",
+    "verbatim": "somebody sends an enquiry at two minutes past three and expects it to be dealt with instantly. It will be there in the morning",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rework",
     "payload": {
-      "what": "a lead went to the wrong region and had to be moved back",
-      "returned_by": "the wrong region",
-      "reason": "the customer had an old account address",
-      "loops_to": "routing"
+      "waiting_on": "the next morning inbox clear",
+      "owner": "internal",
+      "current": false,
+      "duration": null
     }
   },
   {
     "id": "sabine-061",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q13",
-    "verbatim": "It didn\u2019t turn into a disaster as far as I know.",
-    "hedging": "approximate",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q14",
+    "kind": "complaint",
+    "verbatim": "expects it to be dealt with instantly",
+    "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "consequence",
     "payload": {
-      "subject": "the wrong-region lead",
-      "reversible": "yes",
-      "blast_radius": "customer",
-      "borne_by": "me"
+      "target": "customers expecting an enquiry sent after 3pm to be handled instantly",
+      "affect": "annoying",
+      "intensity": "passing"
     }
   },
   {
     "id": "sabine-062",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q13",
-    "verbatim": "You\u2019d have to ask Jonas or Rainer what happened after it left me.",
-    "hedging": "deferred",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q15",
+    "kind": "rework",
+    "verbatim": "A lead went to the wrong regional person and had to be sent back",
+    "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "kind": "consequence",
+    "subject_scope": "self",
     "payload": {
-      "subject": "what happened after it left me",
-      "reversible": "unknown",
-      "blast_radius": "unknown"
+      "what": "a lead went to the wrong regional person and had to be sent back",
+      "returned_by": "the wrong regional person",
+      "reason": "misrouted",
+      "loops_to": "routing"
     }
   },
   {
     "id": "sabine-063",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q13",
-    "verbatim": "Rainer",
-    "hedging": "deferred",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q15",
+    "kind": "exception",
+    "verbatim": "The customer had old account details, as far as I remember",
+    "hedging": "approximate",
     "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "kind": "actor",
+    "subject_scope": "self",
     "payload": {
-      "name": "Rainer",
-      "discovered_by": "deferred_to"
+      "trigger": "the customer had old account details",
+      "path_taken": "lead went to the wrong regional person",
+      "pulls_in": [],
+      "recalled_instances": 1
     }
   },
   {
     "id": "sabine-064",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q14",
-    "verbatim": "The inbox would be a mess, obviously.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q15",
+    "kind": "complaint",
+    "verbatim": "It was annoying because everyone suddenly treats a routing correction as though the world has ended",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "consequence",
     "payload": {
-      "subject": "the inbox",
-      "if_wrong": "a mess",
-      "reversible": "yes",
-      "blast_radius": "team"
+      "target": "routing corrections",
+      "affect": "annoying",
+      "intensity": "emphatic"
     }
   },
   {
     "id": "sabine-065",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q14",
-    "verbatim": "Somebody would need to log the leads and assign them.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q16",
+    "kind": "consequence",
+    "verbatim": "The inbox would be unpleasant",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "step",
     "payload": {
-      "description": "log the leads and assign them",
-      "performed_by": "somebody"
+      "subject": "the inbox",
+      "if_wrong": "unpleasant backlog",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": null
     }
   },
   {
     "id": "sabine-066",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q14",
-    "verbatim": "But there would be duplicates, half-finished records, and people asking why their ticket is with the wrong person.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q16",
+    "kind": "step",
+    "verbatim": "Somebody else can enter and route leads, it is not magic",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "consequence",
+    "subject_scope": "hearsay",
     "payload": {
-      "subject": "the inbox",
-      "if_wrong": "duplicates, half-finished records, and people asking why their ticket is with the wrong person",
-      "reversible": "yes",
-      "blast_radius": "team"
+      "description": "somebody else can enter and route leads",
+      "performed_by": "somebody else",
+      "frequency": null
     }
   },
   {
     "id": "sabine-067",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q14",
-    "verbatim": "A couple of days of cleanup, probably.",
-    "hedging": "approximate",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q16",
+    "kind": "consequence",
+    "verbatim": "but they would need to know the duplicate checks and the regional rules",
+    "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "kind": "duration",
+    "subject_scope": "hearsay",
     "payload": {
-      "measure": "elapsed",
-      "value": {
-        "low": 2,
-        "high": 3,
-        "unit": "day"
-      },
-      "subject": "cleanup",
-      "basis": "guess"
+      "subject": "covering the role",
+      "if_wrong": "they don't know the duplicate checks and the regional rules",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
     }
   },
   {
     "id": "sabine-068",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q15",
-    "verbatim": "Recording the qualified disposition after the fact can feel a bit pointless.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q16",
+    "kind": "consequence",
+    "verbatim": "And there would be outcomes waiting to be recorded, I expect. A pile of them.",
     "hedging": "approximate",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "complaint",
     "payload": {
-      "target": "recording the qualified disposition after the fact",
-      "affect": "pointless",
-      "intensity": "passing"
+      "subject": "outcomes waiting to be recorded",
+      "if_wrong": "a pile of unrecorded outcomes",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": null
     }
   },
   {
     "id": "sabine-069",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q15",
-    "verbatim": "By then whoever spoke to the customer knows what happened.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q17",
+    "kind": "step",
+    "verbatim": "Logging back into SAP every time it decides I have been idle too long",
     "hedging": "firm",
     "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "kind": "step",
+    "subject_scope": "self",
     "payload": {
-      "description": "whoever spoke to the customer knows what happened",
-      "performed_by": "whoever spoke to the customer"
-    }
+      "description": "log back into SAP when it decides I have been idle too long",
+      "performed_by": null,
+      "frequency": "every time SAP decides I have been idle too long"
+    },
+    "entity_refs": [
+      {
+        "text": "SAP",
+        "type": "system"
+      }
+    ]
   },
   {
     "id": "sabine-070",
     "respondent_id": "sabine",
     "session_id": "s-sabine",
-    "captured_at": "2026-09-06T14:15:05Z",
-    "question_id": "q15",
-    "verbatim": "somebody wants it in SAP, so I put it in SAP.",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q17",
+    "kind": "rule",
+    "verbatim": "Logging back into SAP every time it decides I have been idle too long",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "kind": "rule",
     "payload": {
-      "condition": "somebody wants it in SAP",
-      "action": "I put it in SAP",
-      "written_down": false
+      "condition": "SAP decides I have been idle too long",
+      "action": "log back into SAP",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "sabine-071",
+    "respondent_id": "sabine",
+    "session_id": "s-sabine",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q17",
+    "kind": "duration",
+    "verbatim": "It hardly takes any time",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 1,
+        "high": 2,
+        "unit": "minute"
+      },
+      "subject": "logging back into SAP",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "sabine-072",
+    "respondent_id": "sabine",
+    "session_id": "s-sabine",
+    "captured_at": "2026-09-06T16:22:43Z",
+    "question_id": "q17",
+    "kind": "complaint",
+    "verbatim": "but it is ridiculous",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "payload": {
+      "target": "logging back into SAP on every idle timeout",
+      "affect": "pointless",
+      "intensity": "emphatic"
     }
   }
 ]

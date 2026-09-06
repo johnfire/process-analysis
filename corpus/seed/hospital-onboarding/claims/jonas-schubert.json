@@ -3,13 +3,13 @@
     "id": "jonas-schubert-001",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q1",
-    "kind": "wait",
-    "verbatim": "Krankenkasse confirmations, same as always.",
+    "verbatim": "Krankenkasse confirmation, as usual",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "wait",
     "entity_refs": [
       {
         "text": "Krankenkasse",
@@ -18,7 +18,7 @@
       }
     ],
     "payload": {
-      "waiting_on": "Krankenkasse confirmations",
+      "waiting_on": "Krankenkasse confirmation",
       "owner": "external",
       "current": true,
       "duration": null
@@ -28,501 +28,188 @@
     "id": "jonas-schubert-002",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q1",
-    "kind": "step",
-    "verbatim": "I've filed the Anmeldung",
-    "hedging": "firm",
+    "verbatim": "They take ages\u2014couple of weeks, apparently",
+    "hedging": "approximate",
     "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the Anmeldung",
-        "type": "artifact"
-      }
-    ],
+    "subject_scope": "direct_observation",
+    "kind": "duration",
+    "entity_refs": [],
     "payload": {
-      "description": "filed the Anmeldung",
-      "performed_by": "Jonas",
-      "frequency": null
+      "measure": "elapsed",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "week"
+      },
+      "subject": "Krankenkasse confirmation",
+      "basis": "typical"
     }
   },
   {
     "id": "jonas-schubert-003",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q1",
-    "kind": "wait",
-    "verbatim": "then it just sits in the portal until they get round to confirming it.",
+    "verbatim": "My bit is already in the portal",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "step",
     "entity_refs": [
       {
         "text": "the portal",
         "type": "system",
-        "role": "waiting_at"
-      },
-      {
-        "text": "the insurer",
-        "type": "external_party",
-        "role": "waiting_on"
+        "role": null
       }
     ],
     "payload": {
-      "waiting_on": "the insurer confirmation",
-      "owner": "external",
-      "current": true,
-      "duration": null
+      "description": "put his part into the portal",
+      "performed_by": "Jonas Schubert",
+      "frequency": null
     }
   },
   {
     "id": "jonas-schubert-004",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q1",
-    "kind": "system",
-    "verbatim": "it just sits in the portal",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q2",
+    "verbatim": "One confirmation was late",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the portal",
-        "type": "system"
-      }
-    ],
+    "kind": "exception",
+    "entity_refs": [],
     "payload": {
-      "name": "the portal",
-      "used_for": "Anmeldung confirmation",
-      "copied_to": null,
-      "wins_conflict": null
+      "trigger": "One confirmation was late",
+      "path_taken": "the first payslip had to wait",
+      "pulls_in": [],
+      "recalled_instances": 1
     }
   },
   {
     "id": "jonas-schubert-005",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q1",
-    "kind": "duration",
-    "verbatim": "A couple of days, supposedly.",
-    "hedging": "guessed",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "measure": "elapsed",
-      "value": {
-        "low": 2,
-        "high": 3,
-        "unit": "day"
-      },
-      "subject": "the insurer confirmation",
-      "basis": "guess"
-    }
-  },
-  {
-    "id": "jonas-schubert-006",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q1",
-    "kind": "complaint",
-    "verbatim": "Sometimes it feels like ages.",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q2",
+    "verbatim": "so the first payslip had to wait",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "payload": {
-      "target": "waiting for the insurer confirmation",
-      "affect": "annoying",
-      "intensity": "passing"
-    }
-  },
-  {
-    "id": "jonas-schubert-007",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q2",
-    "kind": "complaint",
-    "verbatim": "it just took forever",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "target": "the last confirmation",
-      "affect": "annoying",
-      "intensity": "passing"
-    }
-  },
-  {
-    "id": "jonas-schubert-008",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q2",
-    "kind": "consequence",
-    "verbatim": "The confirmation didn't appear, so the payslip had to wait.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the payslip",
-        "type": "artifact",
-        "role": "subject"
-      }
-    ],
-    "payload": {
-      "subject": "the payslip",
-      "if_wrong": "had to wait",
-      "reversible": "unknown",
-      "blast_radius": "individual",
-      "borne_by": null
-    }
-  },
-  {
-    "id": "jonas-schubert-009",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q2",
-    "kind": "step",
-    "verbatim": "You send it through SV-Meldeportal",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "SV-Meldeportal",
-        "type": "system",
-        "role": "via"
-      }
-    ],
-    "payload": {
-      "description": "send the social-insurance notification through SV-Meldeportal",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-010",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q2",
-    "kind": "system",
-    "verbatim": "SV-Meldeportal",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "SV-Meldeportal",
-        "type": "system"
-      }
-    ],
-    "payload": {
-      "name": "SV-Meldeportal",
-      "used_for": "social-insurance notifications",
-      "copied_to": "payroll",
-      "wins_conflict": null
-    }
-  },
-  {
-    "id": "jonas-schubert-011",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q2",
-    "kind": "step",
-    "verbatim": "check the payroll system",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "description": "check the payroll system",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-012",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q2",
-    "kind": "system",
-    "verbatim": "the payroll system",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the payroll system",
-        "type": "system"
-      }
-    ],
-    "payload": {
-      "name": "the payroll system",
-      "used_for": "payroll processing",
-      "copied_to": null,
-      "wins_conflict": null
-    }
-  },
-  {
-    "id": "jonas-schubert-013",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q2",
-    "kind": "step",
-    "verbatim": "check again",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "description": "check again whether the confirmation arrived",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-014",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q2",
     "kind": "wait",
-    "verbatim": "eventually it turns up",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
+    "entity_refs": [],
     "payload": {
-      "waiting_on": "the confirmation",
+      "waiting_on": "the confirmation that was late",
       "owner": "external",
       "current": false,
       "duration": null
     }
   },
   {
-    "id": "jonas-schubert-015",
+    "id": "jonas-schubert-006",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q3",
-    "kind": "step",
-    "verbatim": "I don't chase the insurers much",
+    "verbatim": "You can't exactly chase a Krankenkasse into answering",
     "hedging": "firm",
     "polarity": "denied",
     "subject_scope": "self",
-    "payload": {
-      "description": "chasing the insurers",
-      "performed_by": "Jonas",
-      "frequency": "much"
-    }
-  },
-  {
-    "id": "jonas-schubert-016",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q3",
-    "kind": "complaint",
-    "verbatim": "there's not a lot you can do with a Krankenkasse",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "target": "a Krankenkasse",
-      "affect": "annoying",
-      "intensity": "passing"
-    }
-  },
-  {
-    "id": "jonas-schubert-017",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q3",
-    "kind": "handoff",
-    "verbatim": "People ask me about the first payslip, obviously.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
+    "kind": "wait",
     "entity_refs": [
       {
-        "text": "the first payslip",
-        "type": "artifact",
-        "role": "artifact"
+        "text": "Krankenkasse",
+        "type": "external_party",
+        "role": "waiting_on"
       }
     ],
     "payload": {
-      "from": "people",
-      "to": "Jonas",
-      "artifact": "the first payslip",
-      "mechanism": "verbal",
-      "chased": false
+      "waiting_on": "a Krankenkasse to answer",
+      "owner": "external",
+      "current": false,
+      "duration": null
     }
   },
   {
-    "id": "jonas-schubert-018",
+    "id": "jonas-schubert-007",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q3",
-    "kind": "handoff",
-    "verbatim": "I get the workstation-and-badge notice from Markus's side first, through the system.",
+    "verbatim": "Markus's provisioning comes through the system before I see it",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "handoff",
     "entity_refs": [
       {
         "text": "Markus",
         "type": "actor",
         "role": "from"
-      },
-      {
-        "text": "the workstation-and-badge notice",
-        "type": "artifact",
-        "role": "artifact"
       }
     ],
     "payload": {
       "from": "Markus",
-      "to": "Jonas",
-      "artifact": "the workstation-and-badge notice",
+      "to": "Jonas Schubert",
+      "artifact": "provisioning",
       "mechanism": "system",
       "chased": false
     }
   },
   {
-    "id": "jonas-schubert-019",
+    "id": "jonas-schubert-008",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q3",
-    "kind": "actor",
-    "verbatim": "Markus",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "payload": {
-      "name": "Markus",
-      "role": null,
-      "team": null,
-      "discovered_by": "named"
-    }
-  },
-  {
-    "id": "jonas-schubert-020",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q3",
-    "kind": "artifact",
-    "verbatim": "the workstation-and-badge notice",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "payload": {
-      "name": "the workstation-and-badge notice",
-      "format": "system",
-      "reformatted": null
-    }
-  },
-  {
-    "id": "jonas-schubert-021",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q3",
-    "kind": "system",
-    "verbatim": "through the system",
+    "verbatim": "Nobody chases me unless they want to know about the payslip",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "rule",
+    "entity_refs": [],
     "payload": {
-      "name": "the system",
-      "used_for": "workstation-and-badge notice",
-      "copied_to": null,
-      "wins_conflict": null
+      "condition": "they want to know about the payslip",
+      "action": "they chase me",
+      "written_down": null,
+      "exceptions": null
     }
   },
   {
-    "id": "jonas-schubert-022",
+    "id": "jonas-schubert-009",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q3",
-    "kind": "step",
-    "verbatim": "Once I've got the insurer confirmation",
-    "hedging": "firm",
+    "verbatim": "which is usually because they're waiting on the insurer too",
+    "hedging": "approximate",
     "polarity": "asserted",
-    "subject_scope": "self",
+    "subject_scope": "hearsay",
+    "kind": "wait",
+    "entity_refs": [],
     "payload": {
-      "description": "got the insurer confirmation",
-      "performed_by": "Jonas",
-      "frequency": null
+      "waiting_on": "the insurer",
+      "owner": "external",
+      "current": false,
+      "duration": null
     }
   },
   {
-    "id": "jonas-schubert-023",
+    "id": "jonas-schubert-010",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q3",
-    "kind": "handoff",
-    "verbatim": "it goes on to Elena.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "Elena",
-        "type": "actor",
-        "role": "to"
-      }
-    ],
-    "payload": {
-      "from": "Jonas",
-      "to": "Elena",
-      "artifact": "the insurer confirmation",
-      "mechanism": "unknown",
-      "chased": false
-    }
-  },
-  {
-    "id": "jonas-schubert-024",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q3",
-    "kind": "actor",
-    "verbatim": "Elena",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "payload": {
-      "name": "Elena",
-      "role": null,
-      "team": null,
-      "discovered_by": "named"
-    }
-  },
-  {
-    "id": "jonas-schubert-025",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q4",
-    "kind": "duration",
-    "verbatim": "Ten, twenty minutes.",
+    "verbatim": "Ten, twenty minutes",
     "hedging": "approximate",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "duration",
+    "entity_refs": [],
     "payload": {
       "measure": "touch",
       "value": {
@@ -530,1014 +217,668 @@
         "high": 20,
         "unit": "minute"
       },
-      "subject": "the case",
+      "subject": "his work on the notification and posting the confirmation",
       "basis": "typical"
     }
   },
   {
-    "id": "jonas-schubert-026",
+    "id": "jonas-schubert-011",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q4",
-    "kind": "duration",
-    "verbatim": "Maybe half an hour if I'm checking something twice.",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "measure": "touch",
-      "value": {
-        "low": 25,
-        "high": 35,
-        "unit": "minute"
-      },
-      "subject": "the case",
-      "basis": "typical"
-    }
-  },
-  {
-    "id": "jonas-schubert-027",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q4",
-    "kind": "wait",
-    "verbatim": "The rest is waiting for the insurer, which can be two weeks or whatever.",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the insurer",
-        "type": "external_party",
-        "role": "waiting_on"
-      }
-    ],
-    "payload": {
-      "waiting_on": "the insurer",
-      "owner": "external",
-      "current": false,
-      "duration": {
-        "low": 2,
-        "high": 2,
-        "unit": "week"
-      }
-    }
-  },
-  {
-    "id": "jonas-schubert-028",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q4",
-    "kind": "duration",
-    "verbatim": "which can be two weeks or whatever.",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "measure": "queue",
-      "value": {
-        "low": 2,
-        "high": 2,
-        "unit": "week"
-      },
-      "subject": "waiting for the insurer",
-      "basis": "typical"
-    }
-  },
-  {
-    "id": "jonas-schubert-029",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q4",
-    "kind": "complaint",
-    "verbatim": "which is a bit tiresome.",
+    "verbatim": "It's just the notification and then posting the confirmation",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "payload": {
-      "target": "people treating it as though payroll is holding it up",
-      "affect": "annoying",
-      "intensity": "passing"
-    }
-  },
-  {
-    "id": "jonas-schubert-030",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q4",
-    "kind": "complaint",
-    "verbatim": "People tend to treat that as though payroll is holding it up",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "entity_refs": [
-      {
-        "text": "payroll",
-        "type": "team",
-        "role": "blamed"
-      }
-    ],
-    "payload": {
-      "target": "people treating it as though payroll is holding it up",
-      "affect": "annoying",
-      "intensity": "passing"
-    }
-  },
-  {
-    "id": "jonas-schubert-031",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q5",
-    "kind": "handoff",
-    "verbatim": "The confirmation comes back from the insurer.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the insurer",
-        "type": "external_party",
-        "role": "from"
-      }
-    ],
-    "payload": {
-      "from": "the insurer",
-      "to": "Jonas",
-      "artifact": "the confirmation",
-      "mechanism": "unknown",
-      "chased": false
-    }
-  },
-  {
-    "id": "jonas-schubert-032",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q5",
-    "kind": "artifact",
-    "verbatim": "That's the thing I need.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "name": "the confirmation",
-      "format": null,
-      "reformatted": null
-    }
-  },
-  {
-    "id": "jonas-schubert-033",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q5",
-    "kind": "rule",
-    "verbatim": "If it isn't there, there isn't a first payslip.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the first payslip",
-        "type": "artifact"
-      }
-    ],
-    "payload": {
-      "condition": "the confirmation isn't there",
-      "action": "release no first payslip",
-      "written_down": true,
-      "exceptions": null
-    }
-  },
-  {
-    "id": "jonas-schubert-034",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q6",
-    "kind": "rule",
-    "verbatim": "File the social-insurance notification properly",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the social-insurance notification",
-        "type": "artifact"
-      }
-    ],
-    "payload": {
-      "condition": "when filing the social-insurance notification",
-      "action": "file it properly",
-      "written_down": true,
-      "exceptions": null
-    }
-  },
-  {
-    "id": "jonas-schubert-035",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q6",
     "kind": "step",
-    "verbatim": "File the social-insurance notification properly",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
+    "entity_refs": [],
     "payload": {
-      "description": "file the social-insurance notification properly",
-      "performed_by": "Jonas",
-      "frequency": "per new hire"
+      "description": "handle the notification then post the confirmation",
+      "performed_by": "Jonas Schubert",
+      "frequency": null
     }
   },
   {
-    "id": "jonas-schubert-036",
+    "id": "jonas-schubert-012",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q6",
-    "kind": "rule",
-    "verbatim": "post the confirmation when it arrives",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q4",
+    "verbatim": "Obviously you have to check the employee details",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "payload": {
-      "condition": "when the confirmation arrives",
-      "action": "post it",
-      "written_down": true,
-      "exceptions": null
-    }
-  },
-  {
-    "id": "jonas-schubert-037",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q6",
     "kind": "step",
-    "verbatim": "post the confirmation when it arrives",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
+    "entity_refs": [],
     "payload": {
-      "description": "post the confirmation when it arrives",
-      "performed_by": "Jonas",
-      "frequency": "when it arrives"
+      "description": "check the employee details",
+      "performed_by": "Jonas Schubert",
+      "frequency": null
     }
   },
   {
-    "id": "jonas-schubert-038",
+    "id": "jonas-schubert-013",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q6",
-    "kind": "rule",
-    "verbatim": "don't release the first payslip before then",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q4",
+    "verbatim": "use the Meldportal",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "step",
     "entity_refs": [
       {
-        "text": "the first payslip",
-        "type": "artifact"
-      }
-    ],
-    "payload": {
-      "condition": "before the confirmation arrives",
-      "action": "do not release the first payslip",
-      "written_down": true,
-      "exceptions": null
-    }
-  },
-  {
-    "id": "jonas-schubert-039",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q7",
-    "kind": "step",
-    "verbatim": "The status, mainly\u2014portal to payroll.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the portal",
+        "text": "Meldportal",
         "type": "system",
-        "role": "from"
-      },
-      {
-        "text": "payroll",
-        "type": "system",
-        "role": "to"
+        "role": null
       }
     ],
     "payload": {
-      "description": "copy the status from the portal into payroll",
-      "performed_by": "Jonas",
+      "description": "use the Meldportal",
+      "performed_by": "Jonas Schubert",
       "frequency": null
     }
   },
   {
-    "id": "jonas-schubert-040",
+    "id": "jonas-schubert-014",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q7",
-    "kind": "artifact",
-    "verbatim": "The status",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "name": "the status",
-      "format": null,
-      "reformatted": null
-    }
-  },
-  {
-    "id": "jonas-schubert-041",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q7",
-    "kind": "step",
-    "verbatim": "You check SV-Meldeportal",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "description": "check SV-Meldeportal",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-042",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q7",
-    "kind": "step",
-    "verbatim": "then make sure payroll reflects the confirmation",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "description": "make sure payroll reflects the confirmation",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-043",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q7",
-    "kind": "system",
-    "verbatim": "payroll reflects the confirmation",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "payroll",
-        "type": "system"
-      }
-    ],
-    "payload": {
-      "name": "payroll",
-      "used_for": "the first payslip",
-      "copied_to": null,
-      "wins_conflict": null
-    }
-  },
-  {
-    "id": "jonas-schubert-044",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q7",
-    "kind": "artifact",
-    "verbatim": "A few fields, references, that sort of thing.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "name": "a few fields and references",
-      "format": "fields",
-      "reformatted": null
-    }
-  },
-  {
-    "id": "jonas-schubert-045",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q8",
-    "kind": "step",
-    "verbatim": "Nothing especially.",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q4",
+    "verbatim": "so it's not literally one click",
     "hedging": "firm",
     "polarity": "denied",
     "subject_scope": "self",
+    "kind": "step",
+    "entity_refs": [],
     "payload": {
-      "description": "reformatting the portal information",
-      "performed_by": "Jonas",
+      "description": "the work is not literally one click",
+      "performed_by": "Jonas Schubert",
       "frequency": null
     }
   },
   {
-    "id": "jonas-schubert-046",
+    "id": "jonas-schubert-015",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q8",
-    "kind": "step",
-    "verbatim": "You sometimes have to make the information line up with the way payroll wants it entered",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q5",
+    "verbatim": "It goes through the system to Elena",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
-    "payload": {
-      "description": "make the information line up with the way payroll wants it entered",
-      "performed_by": "Jonas",
-      "frequency": "sometimes"
-    }
-  },
-  {
-    "id": "jonas-schubert-047",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q8",
-    "kind": "artifact",
-    "verbatim": "the information",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "name": "the information",
-      "format": null,
-      "reformatted": true
-    }
-  },
-  {
-    "id": "jonas-schubert-048",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q9",
-    "kind": "step",
-    "verbatim": "Usually whether the confirmation has arrived yet.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "description": "check whether the confirmation has arrived",
-      "performed_by": "Jonas",
-      "frequency": "every time"
-    }
-  },
-  {
-    "id": "jonas-schubert-049",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q9",
     "kind": "handoff",
-    "verbatim": "To people asking about pay, I mean.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "from": "people",
-      "to": "Jonas",
-      "artifact": "questions about pay",
-      "mechanism": "verbal",
-      "chased": false
-    }
-  },
-  {
-    "id": "jonas-schubert-050",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q9",
-    "kind": "step",
-    "verbatim": "I explain that the insurer has to confirm the Anmeldung first.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the insurer",
-        "type": "external_party",
-        "role": "subject"
-      },
-      {
-        "text": "the Anmeldung",
-        "type": "artifact",
-        "role": "object"
-      }
-    ],
-    "payload": {
-      "description": "explain that the insurer has to confirm the Anmeldung first",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-051",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q9",
-    "kind": "complaint",
-    "verbatim": "They hear \"payroll\" and assume I'm sitting on it.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "entity_refs": [
-      {
-        "text": "payroll",
-        "type": "team",
-        "role": "blamed"
-      }
-    ],
-    "payload": {
-      "target": "people assuming I'm sitting on it",
-      "affect": "annoying",
-      "intensity": "passing"
-    }
-  },
-  {
-    "id": "jonas-schubert-052",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q10",
-    "kind": "step",
-    "verbatim": "No person's sign-off.",
-    "hedging": "firm",
-    "polarity": "denied",
-    "subject_scope": "self",
-    "payload": {
-      "description": "getting a person's sign-off",
-      "performed_by": null,
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-053",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q10",
-    "kind": "artifact",
-    "verbatim": "It's the insurer's confirmation.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "name": "the insurer's confirmation",
-      "format": null,
-      "reformatted": null
-    }
-  },
-  {
-    "id": "jonas-schubert-054",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q10",
-    "kind": "approval",
-    "verbatim": "They don't send it \"back\" with comments; it just arrives, eventually.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the insurer",
-        "type": "external_party",
-        "role": "approver"
-      }
-    ],
-    "payload": {
-      "approver": "the insurer",
-      "what_is_checked": "the Anmeldung confirmation",
-      "ever_rejected": "no",
-      "last_rejection": null
-    }
-  },
-  {
-    "id": "jonas-schubert-055",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q10",
-    "kind": "wait",
-    "verbatim": "it just arrives, eventually.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "waiting_on": "the insurer confirmation",
-      "owner": "external",
-      "current": false,
-      "duration": null
-    }
-  },
-  {
-    "id": "jonas-schubert-056",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q10",
-    "kind": "exception",
-    "verbatim": "About five percent of cases have something odd about them",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "trigger": "about five percent of cases have something odd about them",
-      "path_taken": null,
-      "pulls_in": [],
-      "recalled_instances": null
-    }
-  },
-  {
-    "id": "jonas-schubert-057",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q11",
-    "kind": "step",
-    "verbatim": "I don't keep a separate spreadsheet for this.",
-    "hedging": "firm",
-    "polarity": "denied",
-    "subject_scope": "self",
-    "payload": {
-      "description": "keeping a separate spreadsheet for this",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-058",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q11",
-    "kind": "system",
-    "verbatim": "Payroll and the portal have what I need.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "payroll",
-        "type": "system"
-      },
-      {
-        "text": "the portal",
-        "type": "system"
-      }
-    ],
-    "payload": {
-      "name": "payroll and the portal",
-      "used_for": "social-insurance data",
-      "copied_to": null,
-      "wins_conflict": null
-    }
-  },
-  {
-    "id": "jonas-schubert-059",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q11",
-    "kind": "actor",
-    "verbatim": "Katrin's territory.",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "payload": {
-      "name": "Katrin",
-      "role": null,
-      "team": null,
-      "discovered_by": "deferred_to"
-    }
-  },
-  {
-    "id": "jonas-schubert-060",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q11",
-    "kind": "workaround",
-    "verbatim": "that's probably Katrin's territory.",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "hearsay",
-    "entity_refs": [
-      {
-        "text": "Katrin",
-        "type": "actor",
-        "role": "owner"
-      }
-    ],
-    "payload": {
-      "what": "a private tracker for everything across onboarding",
-      "compensates_for": null,
-      "private": true
-    }
-  },
-  {
-    "id": "jonas-schubert-061",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q12",
-    "kind": "artifact",
-    "verbatim": "The first payslip, naturally.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the first payslip",
-        "type": "artifact"
-      }
-    ],
-    "payload": {
-      "name": "the first payslip",
-      "format": null,
-      "reformatted": null
-    }
-  },
-  {
-    "id": "jonas-schubert-062",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q12",
-    "kind": "rule",
-    "verbatim": "you can't really finish it without the insurer confirmation",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "condition": "without the insurer confirmation",
-      "action": "you can't finish the first payslip",
-      "written_down": true,
-      "exceptions": null
-    }
-  },
-  {
-    "id": "jonas-schubert-063",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q12",
-    "kind": "complaint",
-    "verbatim": "they take their time.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "direct_observation",
-    "entity_refs": [
-      {
-        "text": "the insurer",
-        "type": "external_party",
-        "role": "target"
-      }
-    ],
-    "payload": {
-      "target": "the insurer",
-      "affect": "annoying",
-      "intensity": "passing"
-    }
-  },
-  {
-    "id": "jonas-schubert-064",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q12",
-    "kind": "step",
-    "verbatim": "My actual entry work is done quickly.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "description": "do the actual entry work",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-065",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q13",
-    "kind": "consequence",
-    "verbatim": "The person's first payslip was withheld until the confirmation came through.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the person's first payslip",
-        "type": "artifact",
-        "role": "subject"
-      }
-    ],
-    "payload": {
-      "subject": "the person's first payslip",
-      "if_wrong": "was withheld until the confirmation came through",
-      "reversible": "costly",
-      "blast_radius": "individual",
-      "borne_by": "Jonas"
-    }
-  },
-  {
-    "id": "jonas-schubert-066",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q13",
-    "kind": "rule",
-    "verbatim": "I'm not going to invent a confirmation because somebody is impatient.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "entity_refs": [
-      {
-        "text": "the confirmation",
-        "type": "artifact"
-      }
-    ],
-    "payload": {
-      "condition": "somebody is impatient / the confirmation hasn't arrived",
-      "action": "do not invent a confirmation",
-      "written_down": true,
-      "exceptions": null
-    }
-  },
-  {
-    "id": "jonas-schubert-067",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q14",
-    "kind": "wait",
-    "verbatim": "Notifications and confirmations would be sitting there, I suppose.",
-    "hedging": "guessed",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "waiting_on": "notifications and confirmations",
-      "owner": "external",
-      "current": false,
-      "duration": null
-    }
-  },
-  {
-    "id": "jonas-schubert-068",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q14",
-    "kind": "duration",
-    "verbatim": "Two weeks is about the insurer turnaround anyway",
-    "hedging": "approximate",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "measure": "elapsed",
-      "value": {
-        "low": 2,
-        "high": 2,
-        "unit": "week"
-      },
-      "subject": "the insurer turnaround",
-      "basis": "typical"
-    }
-  },
-  {
-    "id": "jonas-schubert-069",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q14",
-    "kind": "step",
-    "verbatim": "it would be a pile to post into payroll",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "self",
-    "payload": {
-      "description": "post a pile of confirmations into payroll",
-      "performed_by": "Jonas",
-      "frequency": null
-    }
-  },
-  {
-    "id": "jonas-schubert-070",
-    "respondent_id": "jonas-schubert",
-    "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q14",
-    "kind": "wait",
-    "verbatim": "Elena would be waiting on the confirmations from my side.",
-    "hedging": "firm",
-    "polarity": "asserted",
-    "subject_scope": "hearsay",
     "entity_refs": [
       {
         "text": "Elena",
         "type": "actor",
-        "role": "waiting"
+        "role": "to"
       }
     ],
     "payload": {
-      "waiting_on": "the confirmations from my side",
+      "from": "Jonas Schubert",
+      "to": "Elena",
+      "artifact": "the confirmation",
+      "mechanism": "system",
+      "chased": null
+    }
+  },
+  {
+    "id": "jonas-schubert-016",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q5",
+    "verbatim": "I don't know when she picks it up; that's her side",
+    "hedging": "deferred",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "wait",
+    "entity_refs": [],
+    "payload": {
+      "waiting_on": "Elena to pick it up",
       "owner": "internal",
       "current": false,
       "duration": null
     }
   },
   {
-    "id": "jonas-schubert-071",
+    "id": "jonas-schubert-017",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q15",
-    "kind": "step",
-    "verbatim": "Checking whether the insurer has responded when I know perfectly well they probably haven't.",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q6",
+    "verbatim": "Not long, really. Same day usually",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "entity_refs": [],
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 0,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "incoming work before he starts it",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "jonas-schubert-018",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q6",
+    "verbatim": "Unless it arrives late and I'm in the middle of payroll work, then it can sit a day or two",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "entity_refs": [],
+    "payload": {
+      "trigger": "it arrives late and I'm in the middle of payroll work",
+      "path_taken": "it can sit a day or two",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "jonas-schubert-019",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q6",
+    "verbatim": "then it can sit a day or two",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "entity_refs": [],
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 1,
+        "high": 2,
+        "unit": "day"
+      },
+      "subject": "the item",
+      "basis": "worst_case"
+    }
+  },
+  {
+    "id": "jonas-schubert-020",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q7",
+    "verbatim": "The insurer confirmation",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "artifact",
+    "entity_refs": [],
     "payload": {
-      "description": "check whether the insurer has responded",
-      "performed_by": "Jonas",
+      "name": "The insurer confirmation",
+      "format": null,
+      "reformatted": null
+    }
+  },
+  {
+    "id": "jonas-schubert-021",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q7",
+    "verbatim": "That's the thing I need before the first payslip goes out",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "entity_refs": [],
+    "payload": {
+      "condition": "before the first payslip goes out",
+      "action": "I need the insurer confirmation",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-schubert-022",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q8",
+    "verbatim": "File the social-insurance notification",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "entity_refs": [],
+    "payload": {
+      "description": "file the social-insurance notification",
+      "performed_by": "Jonas Schubert",
       "frequency": null
     }
   },
   {
-    "id": "jonas-schubert-072",
+    "id": "jonas-schubert-023",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q15",
-    "kind": "complaint",
-    "verbatim": "Checking whether the insurer has responded when I know perfectly well they probably haven't.",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q8",
+    "verbatim": "post the confirmation when it arrives",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "rule",
+    "entity_refs": [],
     "payload": {
-      "target": "checking whether the insurer has responded",
-      "affect": "pointless",
+      "condition": "when it arrives",
+      "action": "post the confirmation",
+      "written_down": true,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-schubert-024",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q8",
+    "verbatim": "do not release the first payslip before that",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "entity_refs": [],
+    "payload": {
+      "condition": "before the confirmation is posted",
+      "action": "do not release the first payslip",
+      "written_down": true,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "jonas-schubert-025",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q9",
+    "verbatim": "The relevant employee information goes into payroll and the SV portal",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "entity_refs": [],
+    "payload": {
+      "description": "enter the relevant employee information into payroll and the SV portal",
+      "performed_by": "Jonas Schubert",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-schubert-026",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q9",
+    "verbatim": "goes into payroll and the SV portal",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "entity_refs": [],
+    "payload": {
+      "name": "payroll and the SV portal",
+      "used_for": "relevant employee information",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "jonas-schubert-027",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q9",
+    "verbatim": "You still have to make sure it matches, though",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "entity_refs": [],
+    "payload": {
+      "description": "make sure the data matches between the systems",
+      "performed_by": "Jonas Schubert",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-schubert-028",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q10",
+    "verbatim": "The systems each want what they want",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "entity_refs": [],
+    "payload": {
+      "name": "the systems",
+      "used_for": "each require their own format",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "jonas-schubert-029",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q10",
+    "verbatim": "Sometimes names or details need checking, but that's just normal admin",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "entity_refs": [],
+    "payload": {
+      "description": "check names or details",
+      "performed_by": "Jonas Schubert",
+      "frequency": "sometimes"
+    }
+  },
+  {
+    "id": "jonas-schubert-030",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q11",
+    "verbatim": "The social-insurance status, basically",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "entity_refs": [],
+    "payload": {
+      "description": "look up the social-insurance status",
+      "performed_by": "Jonas Schubert",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "jonas-schubert-031",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q11",
+    "verbatim": "And people ask why a first payslip is waiting",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "entity_refs": [],
+    "payload": {
+      "description": "people ask why a first payslip is waiting",
+      "performed_by": "people",
+      "frequency": null
+    }
+  },
+  {
+    "id": "jonas-schubert-032",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q11",
+    "verbatim": "so then I explain we're waiting for the confirmation. Again",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "entity_refs": [],
+    "payload": {
+      "description": "explain that they are waiting for the confirmation",
+      "performed_by": "Jonas Schubert",
+      "frequency": "again"
+    }
+  },
+  {
+    "id": "jonas-schubert-033",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q12",
+    "verbatim": "It's not really a sign-off from a person here; it's the insurer's confirmation",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "approval",
+    "entity_refs": [],
+    "payload": {
+      "approver": "the insurer's confirmation",
+      "what_is_checked": "the social-insurance notification",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "jonas-schubert-034",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q12",
+    "verbatim": "They do come back late sometimes",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "entity_refs": [],
+    "payload": {
+      "trigger": "the insurer's confirmation comes back late",
+      "path_taken": "first payslip delayed",
+      "pulls_in": [],
+      "recalled_instances": 0
+    }
+  },
+  {
+    "id": "jonas-schubert-035",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q13",
+    "verbatim": "I don't keep a separate spreadsheet for this",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "entity_refs": [],
+    "payload": {
+      "what": "a separate spreadsheet",
+      "compensates_for": null,
+      "private": null
+    }
+  },
+  {
+    "id": "jonas-schubert-036",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q13",
+    "verbatim": "Payroll and the portal have it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "entity_refs": [],
+    "payload": {
+      "name": "Payroll and the portal",
+      "used_for": "holds the social-insurance data",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "jonas-schubert-038",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q14",
+    "verbatim": "the confirmation can take two weeks",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "duration",
+    "entity_refs": [],
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 1.5,
+        "high": 2.5,
+        "unit": "week"
+      },
+      "subject": "the confirmation",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "jonas-schubert-039",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q14",
+    "verbatim": "there's nothing useful I can do about that once the notification is filed",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "entity_refs": [],
+    "payload": {
+      "target": "the waiting for the confirmation",
+      "affect": "annoying",
       "intensity": "passing"
     }
   },
   {
-    "id": "jonas-schubert-073",
+    "id": "jonas-schubert-042",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
+    "captured_at": "2026-09-06T15:21:48Z",
     "question_id": "q15",
-    "kind": "step",
-    "verbatim": "But people keep asking, so you look.",
-    "hedging": "firm",
+    "verbatim": "I don't know what happened after it left my area",
+    "hedging": "deferred",
     "polarity": "asserted",
-    "subject_scope": "self",
+    "subject_scope": "hearsay",
+    "kind": "consequence",
+    "entity_refs": [],
     "payload": {
-      "description": "look for the confirmation because people keep asking",
-      "performed_by": "Jonas",
-      "frequency": "when people keep asking"
+      "subject": "what happened after it left my area",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
     }
   },
   {
-    "id": "jonas-schubert-074",
+    "id": "jonas-schubert-043",
     "respondent_id": "jonas-schubert",
     "session_id": "s-jonas-schubert",
-    "captured_at": "2026-09-06T13:20:13Z",
-    "question_id": "q15",
-    "kind": "step",
-    "verbatim": "Then you look again the next day.",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q16",
+    "verbatim": "There would be notifications and confirmations waiting to be posted, I suppose",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "entity_refs": [],
+    "payload": {
+      "waiting_on": "posting of notifications and confirmations",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-schubert-044",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q16",
+    "verbatim": "two weeks is also about how long the Krankenkasse takes",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "duration",
+    "entity_refs": [],
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 1.5,
+        "high": 2.5,
+        "unit": "week"
+      },
+      "subject": "the Krankenkasse",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "jonas-schubert-045",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q16",
+    "verbatim": "so half of it would still be waiting on them",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "entity_refs": [],
+    "payload": {
+      "waiting_on": "the Krankenkasse",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "jonas-schubert-046",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q17",
+    "verbatim": "Explaining to people repeatedly that I cannot make a Krankenkasse reply faster",
     "hedging": "firm",
     "polarity": "asserted",
     "subject_scope": "self",
+    "kind": "complaint",
+    "entity_refs": [],
     "payload": {
-      "description": "look again the next day",
-      "performed_by": "Jonas",
-      "frequency": "the next day"
+      "target": "explaining to people that he cannot make the Krankenkasse reply faster",
+      "affect": "pointless",
+      "intensity": "emphatic"
+    }
+  },
+  {
+    "id": "jonas-schubert-047",
+    "respondent_id": "jonas-schubert",
+    "session_id": "s-jonas-schubert",
+    "captured_at": "2026-09-06T15:21:48Z",
+    "question_id": "q17",
+    "verbatim": "It doesn't change anything",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "entity_refs": [],
+    "payload": {
+      "target": "the repeated explaining",
+      "affect": "pointless",
+      "intensity": "emphatic"
     }
   }
 ]

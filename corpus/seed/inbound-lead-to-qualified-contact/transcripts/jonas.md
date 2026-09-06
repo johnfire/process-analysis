@@ -1,59 +1,67 @@
 **Interviewer:** What are you waiting on right now?
 
-**Jonas Weber:** Mostly customer specs, honestly. I’ve got a few where the reference could mean three different things, so I’ve sent the template and now it’s with their engineering people. That can take ages. I’ve also got the normal batch of tickets in my list, but those are fine once I get into them.
+**Jonas Weber:** Mostly customer specs, honestly. I’ve got a few old-machine references that don’t resolve cleanly in TechFinder, so I’ve sent the template out and I’m waiting for their engineering people to tell us what they actually have. That can take ages.
 
 **Interviewer:** Walk me through the last one of these that went weird. And the one before that.
 
-**Jonas Weber:** The last one had an old machine reference and TechFinder gave me several possible replacements. I asked the customer for dimensions and a photo of the label; they eventually sent something incomplete, so I had to ask again. Before that, there was simply no match at all. Those are annoying because you can spend ten minutes searching and then it’s just, right, we need the customer to tell us what they actually have.
+**Jonas Weber:** The last one was a competitor reference that looked close to three different current items. I couldn’t responsibly pick one, so I asked for dimensions and a photo. The one before was an old machine part with basically no usable reference at all. Same story: send the spec form, chase them after a few days, then see what comes back. It’s not difficult once you have the information; getting it is the difficult bit.
 
 **Interviewer:** Who do you have to chase? Who chases you?
 
-**Jonas Weber:** I chase customers, usually purchasing or their engineering contact. After five working days I give them one phone chase. Petra will occasionally ask where the part note is, especially if it is a customer who is already calling in. Sabine sometimes flags something as urgent too.
+**Jonas Weber:** Customers, mainly — their purchasing or engineering teams. I do one phone chase if they haven’t answered after five working days. Sabine’s tickets come into my queue, and people will chase me if a customer is already on the phone. Those I pick up straight away, obviously.
 
 **Interviewer:** From it landing on you to you being done with it — how much of that is you actually working on it?
 
-**Jonas Weber:** Not long, really. A normal part is maybe 15 or 20 minutes in SAP and TechFinder. The waiting is mostly outside us—customers take a few days to come back. Of course, if it is one of those ancient references, I might be comparing descriptions and checking alternatives for quite a while.
+**Jonas Weber:** Not much, really. A normal identification is ten, maybe twenty minutes: SAP, TechFinder, check the reference, write the note. If it’s a strange legacy reference, you can spend quite a while comparing alternatives and explaining what we need, but then it’s mostly waiting on the customer.
+
+**Interviewer:** Once you've sent it on, how long before somebody picks it up?
+
+**Jonas Weber:** Petra normally gets the part note reasonably quickly through SAP, I think. I don’t really see her worklist, though. If I send the specification request by email, that’s with the customer immediately — whether they read it is another question.
+
+**Interviewer:** After something arrives for you, how long does it usually sit before you start it?
+
+**Jonas Weber:** Usually a day or two. I clear those in batches, Friday morning and usually once around the middle of the week. But if somebody is calling, that jumps the queue. It’s a practical way to work when the normal catalogue stuff is straightforward.
 
 **Interviewer:** What comes back to you?
 
-**Jonas Weber:** Customer clarifications mostly: measurements, photos, machine type, sometimes a proper part number that they somehow did not include in the first email. And occasionally I reopen something because the first assignment was not quite right once more information turns up.
+**Jonas Weber:** Customer clarifications mostly: drawings, dimensions, photos, sometimes just a corrected reference. And occasionally the clarification still isn’t enough, so I have to ask again. That’s mildly annoying — the template is blank for a reason, you know?
 
 **Interviewer:** If you were training your replacement and only had a week, what rule would you give them?
 
-**Jonas Weber:** Don’t force a match. If the reference gives exactly one current catalogue item, assign it. If there are several possibilities—or none—ask for the specification. It is much easier to correct a clarification request than to send Petra the wrong item.
+**Jonas Weber:** Don’t force a match. If TechFinder and the catalogue give you exactly one current item, assign it. If there are several possibilities or none, flag it and get the customer specification. Guessing is how you create a much bigger problem later.
 
 **Interviewer:** What do you copy from one place into another?
 
-**Jonas Weber:** I pull the ticket details into SAP and then write the useful bit into the part-spec note for Petra: customer reference, identified item, any technical caveat. For spec requests, I use the standard Outlook template and add the ticket context. Nothing dramatic, but you do end up repeating the machine reference everywhere.
+**Jonas Weber:** I’m looking at the ticket in SAP and checking the reference in TechFinder, then I put the resolved item and the relevant details into the part note for Petra. For a clarification I pull the customer details into Outlook and attach the standard spec template. Nothing dramatic, just the usual switching about.
 
 **Interviewer:** What do you have to reformat before you can use it?
 
-**Jonas Weber:** Customer information can be pretty rough—screenshots, old PDF scans, descriptions like “the blue hydraulic thing.” I turn that into something TechFinder can actually search, usually a part reference or dimensions. The template is straightforward; it is the inputs that are messy.
+**Jonas Weber:** Customer information is often messy — an old designation, a competitor number, something typed into an email. I have to turn that into something TechFinder can work with, or ask for proper dimensions. There isn’t a magic conversion; sometimes it’s just reading around the spelling mistakes.
 
 **Interviewer:** What do you look up or re-explain every single time?
 
-**Jonas Weber:** The legacy references. You cannot assume an old number maps neatly to the current catalogue. And I explain to customers that we need the actual spec when there is no unique match—people think the old number should be enough, but often it isn’t.
+**Jonas Weber:** The reference itself, first of all. With older machines, the same-looking number can point somewhere different or nowhere useful. And I keep explaining to customers that a competitor reference alone may not identify the part. They tend to think it should.
 
 **Interviewer:** Whose sign-off do you need? Has that person ever actually sent something back — when?
 
-**Jonas Weber:** I do not need a formal sign-off for identification. The customer effectively confirms it when they provide the missing spec. If I have a single clear result, I assign it and pass the note on. Petra might query something later, but that is not an approval step as far as I’m concerned.
+**Jonas Weber:** I don’t need a formal sign-off for my part. It’s my technical call whether there’s one clear match or we need clarification. The customer effectively sends it back when their spec is incomplete, which happens often enough with the older parts.
 
 **Interviewer:** What do you keep in your own spreadsheet or notes because the system won't hold it?
 
-**Jonas Weber:** Nothing major in a spreadsheet. The part-spec note is in the ticket flow, and the searches are in SAP and TechFinder. I may keep a quick working note while I am comparing references, but once it is resolved, the relevant conclusion goes into the note for Petra.
+**Jonas Weber:** I don’t keep a separate spreadsheet. The part-specification note is in SAP, and the email chain is in Outlook. I might jot down a reference while I’m comparing things, but nothing that’s meant to be a second system.
 
 **Interviewer:** What deadline are you always up against, and what makes it tight?
 
-**Jonas Weber:** The customer is usually waiting for an answer, particularly if they are on the phone. Those jump the queue. Otherwise, I clear the identification list around midweek and Friday morning, so it can look tight when several odd legacy parts arrive together. But the real hold-up is normally the customer reply.
+**Jonas Weber:** It’s the expectation that we reply quickly, especially when a customer has someone waiting on a machine issue. The tightness comes from incomplete requests and people replying whenever they feel like it. My actual check is quick once the input is usable.
 
 **Interviewer:** What's the worst thing that happened when this went wrong?
 
-**Jonas Weber:** The worst outcome would be identifying the wrong replacement from an ambiguous reference. That is why I stop and ask for a spec rather than guessing. Usually the issue is not catastrophic; it just loops back because the customer’s first answer is incomplete.
+**Jonas Weber:** I can’t point to a particular worst case. The risk is assigning one of several possible parts and sending the process onward on the wrong basis, which is exactly why I stop and ask. Better to lose a few days waiting than pretend certainty.
 
 **Interviewer:** If you vanished for two weeks with no laptop, what would be broken when you got back?
 
-**Jonas Weber:** The unclear-reference queue would pile up, especially the old machine parts. Customers needing clarification would still be waiting, and Petra would be missing the identification notes for those tickets. The clean, standard catalogue items are much less of a problem.
+**Jonas Weber:** The identification queue would pile up, and any open clarification loops would sit there unless somebody else picked them up. Customers already waiting would be unhappy. The straightforward catalogue requests could probably be covered, but the odd legacy and competitor references need someone who knows how to work through TechFinder.
 
 **Interviewer:** What do you do that you're fairly sure is pointless?
 
-**Jonas Weber:** Chasing someone for a spec and getting the same vague description again can feel pointless. The standard template is useful, but people often do not fill in the bits we actually need. Then you send another email, which is mildly irritating, because the answer is still with them.
+**Jonas Weber:** Repeating the request for basic specification details feels pointless, especially after sending the template. But it’s necessary because otherwise we’re just guessing. The little copy-and-paste between SAP, TechFinder, and Outlook is irritating too, though I wouldn’t say it’s the real problem.

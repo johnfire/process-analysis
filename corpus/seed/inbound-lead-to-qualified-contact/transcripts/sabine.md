@@ -1,61 +1,67 @@
 **Interviewer:** What are you waiting on right now?
 
-**Sabine Kessler:** Nothing dramatic. Leads come into the shared inbox and I clear them when I clear them. Usually I’m waiting for the morning run, or the afternoon one. Jonas probably has his tickets already. He takes a while with the odd old references, but that’s his side.
+**Sabine Kessler:** Nothing dramatic. I’ve got the shared inbox to clear again this afternoon, and there are a few leads where the sender is not in the system properly. Those need the duplicate check. It’s always the vague ones, of course.
 
 **Interviewer:** Walk me through the last one of these that went weird. And the one before that.
 
-**Sabine Kessler:** Last one was an unknown sender with a company name that was almost the same as one already in SAP. So I put it into manual dedupe rather than making a mess. It was probably ten minutes, except you end up opening three account records and checking whether somebody has typed the address differently.
-
-The one before was routed to the wrong region because the account had an old postcode. It came back, I changed it, no big thing. These things happen when customer data is ancient.
+**Sabine Kessler:** Last one had a product reference and a company name, so I logged it as usual, but the company appeared twice under slightly different names. I sent it into manual dedupe because I’m not going to guess which account is the real one. The one before was routed to the wrong region because the account record had old details. It came back, I changed it. Not a major thing.
 
 **Interviewer:** Who do you have to chase? Who chases you?
 
-**Sabine Kessler:** I don’t really chase people. If there’s a duplicate-looking customer, somebody has to sort that out eventually. Jonas sometimes asks why a lead is in his queue, and then I tell him it’s the postcode. Lukas sends introductions and then rings, occasionally before I’ve even seen the email, which is helpful in theory.
+**Sabine Kessler:** I chase whoever owns the account details when they’re a mess, really. Sometimes Jonas asks why a ticket landed with him, but that is normally because the postcode or industry information in the account is wrong. Lukas sends introductions by email and then follows up, so he can be quite keen to know whether it is in. He chases, yes.
 
 **Interviewer:** From it landing on you to you being done with it — how much of that is you actually working on it?
 
-**Sabine Kessler:** Not long, really. Three minutes to enter it, perhaps five to route it. Obviously that assumes the mail says what it’s for and who it’s from. The inbox can sit half a day because we’re on the phones, but that’s not me working on it, is it.
+**Sabine Kessler:** A few minutes per lead. Three minutes to put it in, maybe five to route it. It’s not long, really. Though if SAP has thrown me out again and the customer is under three names, then you are looking through things for ages.
+
+**Interviewer:** Once you've sent it on, how long before somebody picks it up?
+
+**Sabine Kessler:** Jonas usually gets it fairly quickly, I think. Same day, perhaps a couple of days if it is busy. You would have to ask him; once it is in his queue, it is his queue.
+
+**Interviewer:** After something arrives for you, how long does it usually sit before you start it?
+
+**Sabine Kessler:** We clear the inbox twice a day, around nine and three. So not long. If it arrives after the afternoon run, it waits until morning, obviously, because there is one desk and we are on the phone in between.
 
 **Interviewer:** What comes back to you?
 
-**Sabine Kessler:** Qualified outcomes, mainly. I record the disposition in SAP when I do the end-of-day run. Or the next morning, depending when the contact happened. Sometimes something gets rerouted or needs correcting. Not constantly.
+**Sabine Kessler:** Mostly a lead that has been sent to the wrong region, or something needing its outcome recorded. I put the qualified disposition into SAP in the end-of-day run. Occasionally the original entry needs correcting. It happens, but not much.
 
 **Interviewer:** If you were training your replacement and only had a week, what rule would you give them?
 
-**Sabine Kessler:** Product reference plus a company name: it’s a lead. Don’t overthink it. If SAP knows the customer, flag it; if it doesn’t, check for duplicates before you create nonsense. And route by postcode, not by whoever sounds more convincing in an email.
+**Sabine Kessler:** If there is a product reference and a company name, it is a lead. Known customer ID, flag it; unknown sender, check for duplicates. And route by postcode, not by what somebody says on the phone about where they are based. Basic, really.
 
 **Interviewer:** What do you copy from one place into another?
 
-**Sabine Kessler:** The email details into the lead record, then the region and segment into the ticket. Company name, contact details, product reference, the usual. It’s just admin. People make it sound terribly complicated.
+**Sabine Kessler:** The email details into the lead record: company, contact, product reference, whatever they have actually bothered to provide. Then the region and segment go on the ticket. It is not exactly exciting work.
 
 **Interviewer:** What do you have to reformat before you can use it?
 
-**Sabine Kessler:** Email text, mostly. Customers paste a signature, then a machine number, then some competitor part number from 1987 with no punctuation. You have to pull out what is actually the reference and what is just their footer. German companies are very fond of ten-line signatures.
+**Sabine Kessler:** Emails are the main problem. People paste old part references into a paragraph, use their own company spelling, or send a signature longer than the actual enquiry. I just pull out what SAP needs.
 
 **Interviewer:** What do you look up or re-explain every single time?
 
-**Sabine Kessler:** The existing account, if there is one: postcode and recorded industry. That gives me region and segment. For unknown senders I look for duplicates. And yes, SAP logs me out if I’ve been away from it, which is irritating. Everyone complains about that.
+**Sabine Kessler:** For unknown senders, whether they already exist under another name. And sometimes the customer’s postcode and recorded industry, because that determines the region and segment. People act as though that should be obvious, but the account record is only as good as whoever last touched it.
 
 **Interviewer:** Whose sign-off do you need? Has that person ever actually sent something back — when?
 
-**Sabine Kessler:** I don’t need sign-off for my part. I enter it and route it. If I’ve sent something to the wrong region it can come back, like the postcode one I mentioned. That’s not a sign-off; it’s just somebody noticing.
+**Sabine Kessler:** I do not need sign-off to log or route a lead. If a duplicate needs sorting, it goes to the manual check, but nobody is approving each normal ticket. Things come back when the account information was wrong, usually after somebody notices the region does not make sense.
 
 **Interviewer:** What do you keep in your own spreadsheet or notes because the system won't hold it?
 
-**Sabine Kessler:** Nothing important. I keep little notes for myself sometimes—who has called, odd duplicate names, that sort of thing—but SAP is where the lead belongs. I’m not building a shadow system.
+**Sabine Kessler:** Nothing formal. I have my usual working notes while I am clearing the inbox, names I need to check, that sort of thing. The record belongs in SAP. You do not want five different private lists floating about.
 
 **Interviewer:** What deadline are you always up against, and what makes it tight?
 
-**Sabine Kessler:** The inbox clears at nine and three, basically. If something comes in after the afternoon batch, it waits until morning, so then suddenly everyone thinks it’s urgent. We cover both regions from one desk and the phone does not stop just because there are emails.
+**Sabine Kessler:** The next inbox clear-out, really. Nine and three. It gets tight because calls interrupt everything and then somebody sends an enquiry at two minutes past three and expects it to be dealt with instantly. It will be there in the morning; that is how the desk works.
 
 **Interviewer:** What's the worst thing that happened when this went wrong?
 
-**Sabine Kessler:** A lead went to the wrong region and had to be moved back. The customer had an old account address, so it wasn’t exactly my fault. It didn’t turn into a disaster as far as I know. You’d have to ask Jonas or Rainer what happened after it left me.
+**Sabine Kessler:** A lead went to the wrong regional person and had to be sent back. The customer had old account details, as far as I remember. It was annoying because everyone suddenly treats a routing correction as though the world has ended.
 
 **Interviewer:** If you vanished for two weeks with no laptop, what would be broken when you got back?
 
-**Sabine Kessler:** The inbox would be a mess, obviously. Somebody would need to log the leads and assign them. They could do it; it isn’t magic. But there would be duplicates, half-finished records, and people asking why their ticket is with the wrong person. A couple of days of cleanup, probably.
+**Sabine Kessler:** The inbox would be unpleasant. Somebody else can enter and route leads, it is not magic, but they would need to know the duplicate checks and the regional rules. And there would be outcomes waiting to be recorded, I expect. A pile of them.
 
 **Interviewer:** What do you do that you're fairly sure is pointless?
 
-**Sabine Kessler:** Recording the qualified disposition after the fact can feel a bit pointless. By then whoever spoke to the customer knows what happened. But somebody wants it in SAP, so I put it in SAP.
+**Sabine Kessler:** Logging back into SAP every time it decides I have been idle too long. Everyone complains about that. It hardly takes any time, but it is ridiculous.
