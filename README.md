@@ -24,6 +24,35 @@ Pre-implementation, designed. v0 is a headless analyzer scored against synthetic
 hidden ground truth — no UI, no real respondents, no interview surface. It is done when it
 recovers a planted bottleneck from six biased accounts and resists the planted decoys.
 
+## Try it
+
+```bash
+python -m venv .venv && .venv/bin/pip install -e ".[dev]"
+.venv/bin/python -m analyzer list
+.venv/bin/python -m analyzer report corpus/seed/hospital-onboarding
+.venv/bin/python -m analyzer score  corpus/seed/hospital-onboarding
+```
+
+`report` runs the pipeline over an already-extracted process and prints what it found: the
+time-scale picture, where the delay actually is, how that ordering differs from who complains
+loudest, and any fractures between accounts. `score` grades the same analysis against the hidden
+answer key.
+
+Generating a new process, and extracting claims from it, both call external models and take
+several minutes:
+
+```bash
+# invent a hidden process, then interview its cast   (needs `hermes` and `codex` on PATH)
+.venv/bin/python corpus/generate.py --domain "invoice approval" \
+                 --headcount 250 --sector "facilities management"
+
+# transcripts -> claims                              (needs `hermes` on PATH)
+.venv/bin/python analyzer/extract.py corpus/seed/<process-id>
+```
+
+`--ground-truth <path>` re-runs only the interviews against an existing answer key, which is what
+you want after changing the question bank.
+
 ## Docs
 
 - [`docs/PHILOSOPHY.md`](docs/PHILOSOPHY.md) — the working philosophy. Constraint archaeology,
