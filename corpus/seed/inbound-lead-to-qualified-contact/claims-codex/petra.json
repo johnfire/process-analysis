@@ -1,0 +1,1324 @@
+[
+  {
+    "id": "petra-001",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q1",
+    "verbatim": "I\u2019ve got a few bids sitting there until the morning run.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the morning run",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-002",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q1",
+    "verbatim": "The warehouse figures come in at the end of the day",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "at the end of the day",
+      "batching": null,
+      "driver": null
+    }
+  },
+  {
+    "id": "petra-003",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q1",
+    "verbatim": "there\u2019s not much point checking some of them before then.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "before warehouse figures come in at the end of the day",
+      "action": "do not check some bids",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-004",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q1",
+    "verbatim": "one supplier portal is showing no proper date, just \u201con request,\u201d which is useless.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "supplier portal",
+      "used_for": "showing supplier dates",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "petra-005",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q1",
+    "verbatim": "which is useless.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "supplier portal showing \u201con request\u201d",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-006",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q2",
+    "verbatim": "ERP said we had enough, but the count didn\u2019t look right",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "ERP",
+      "used_for": "stock availability",
+      "copied_to": null,
+      "wins_conflict": false
+    }
+  },
+  {
+    "id": "petra-007",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q2",
+    "verbatim": "so I flagged it rather than confirming it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the count does not look right",
+      "action": "flag it rather than confirm it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-008",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q2",
+    "verbatim": "Then it came back round because the quantity had changed anyway.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "the old hydraulic fitting availability check",
+      "returned_by": null,
+      "reason": "the quantity had changed",
+      "loops_to": "availability check"
+    }
+  },
+  {
+    "id": "petra-009",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q2",
+    "verbatim": "no stock",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "no stock",
+      "path_taken": null,
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "petra-010",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q2",
+    "verbatim": "the supplier portal had a lead time that clearly didn\u2019t match the item family.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "supplier portal lead time does not match the item family",
+      "path_taken": "raise the stock/lead-time flag",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "petra-011",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q2",
+    "verbatim": "So I raised the stock/lead-time flag.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Raise the stock/lead-time flag",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-012",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q2",
+    "verbatim": "It\u2019s usually Jonas\u2019s specification that makes those awkward, especially with the old machine parts.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "Jonas\u2019s specification, especially for old machine parts",
+      "path_taken": "stock/lead-time flag",
+      "pulls_in": [
+        "Jonas"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "petra-013",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q3",
+    "verbatim": "I chase the warehouse count, really, although it comes when it comes.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "warehouse",
+      "to": "Petra Lindqvist",
+      "artifact": "warehouse count",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "petra-014",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q3",
+    "verbatim": "Sometimes I\u2019ll ask Jonas if the specification is actually settled",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra Lindqvist",
+      "to": "Jonas",
+      "artifact": "specification",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "petra-015",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q3",
+    "verbatim": "checking availability against a vague part description is a waste of time.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "checking availability against a vague part description",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-016",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q3",
+    "verbatim": "Marta chases me when she wants to price something quickly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra Lindqvist",
+      "to": "Marta",
+      "artifact": "availability confirmation",
+      "mechanism": "system",
+      "chased": true
+    }
+  },
+  {
+    "id": "petra-017",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q3",
+    "verbatim": "sales asks where a bid is",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra Lindqvist",
+      "to": "sales",
+      "artifact": "bid",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "petra-018",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q4",
+    "verbatim": "Ten minutes, maybe.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 8,
+        "high": 15,
+        "unit": "minute"
+      },
+      "subject": "availability work",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "petra-019",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q4",
+    "verbatim": "You look in SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Look in SAP",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-020",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q4",
+    "verbatim": "check the portal if stock is short",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "stock is short",
+      "action": "check the portal",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-021",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q4",
+    "verbatim": "write the confirmation or flag it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Write the confirmation or flag the availability result",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-022",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q4",
+    "verbatim": "if there are substitutions, odd quantities, or an old reference, you can be flicking between SAP and the portal for quite a while",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "substitutions, odd quantities, or an old reference",
+      "path_taken": "flicking between SAP and the portal",
+      "pulls_in": [
+        "SAP",
+        "portal"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "petra-023",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q4",
+    "verbatim": "you need to make sure you have not read the wrong line.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Make sure the wrong line has not been read",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-024",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q5",
+    "verbatim": "Marta normally sees it quickly.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 0,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "Marta picking up the availability result",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "petra-025",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q5",
+    "verbatim": "Same day, I\u2019d think.",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 0,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "Marta picking up the availability result",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "petra-026",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q5",
+    "verbatim": "I don\u2019t really watch what happens after it leaves my queue, though.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Watch what happens after work leaves her queue",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-027",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q6",
+    "verbatim": "Usually until the next morning.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 1,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "incoming availability work",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "petra-028",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q6",
+    "verbatim": "Anything after lunch is effectively tomorrow",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "anything after lunch is effectively tomorrow",
+      "batching": true,
+      "driver": "the availability queue is worked in one go"
+    }
+  },
+  {
+    "id": "petra-029",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q6",
+    "verbatim": "I work the availability queue in one go",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "in one go",
+      "batching": true,
+      "driver": null
+    }
+  },
+  {
+    "id": "petra-030",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q6",
+    "verbatim": "the warehouse confirmation only lands at the end of the day.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "at the end of the day",
+      "batching": null,
+      "driver": null
+    }
+  },
+  {
+    "id": "petra-031",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q6",
+    "verbatim": "It can feel like a couple of days if there\u2019s a lot in there",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "day"
+      },
+      "subject": "incoming availability work",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "petra-032",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q7",
+    "verbatim": "Mostly corrections.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "corrections",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": "availability work"
+    }
+  },
+  {
+    "id": "petra-033",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q7",
+    "verbatim": "A quantity changes",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "availability work",
+      "returned_by": null,
+      "reason": "a quantity changes",
+      "loops_to": "availability check"
+    }
+  },
+  {
+    "id": "petra-034",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q7",
+    "verbatim": "somebody finds a better part number",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "rework",
+    "payload": {
+      "what": "availability work",
+      "returned_by": "somebody",
+      "reason": "a better part number is found",
+      "loops_to": "availability check"
+    }
+  },
+  {
+    "id": "petra-035",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q7",
+    "verbatim": "the supplier date has moved.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "availability work",
+      "returned_by": null,
+      "reason": "the supplier date has moved",
+      "loops_to": "availability check"
+    }
+  },
+  {
+    "id": "petra-036",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q7",
+    "verbatim": "Occasionally I have to recheck something where the stock confirmation and what was put on the bid do not line up.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "availability result",
+      "returned_by": null,
+      "reason": "the stock confirmation and what was put on the bid do not line up",
+      "loops_to": "availability check"
+    }
+  },
+  {
+    "id": "petra-037",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q8",
+    "verbatim": "Don\u2019t promise stock just because a number is sitting in SAP.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "a number is sitting in SAP",
+      "action": "do not promise stock just because of that number",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-038",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q8",
+    "verbatim": "If ERP stock covers the requested quantity, confirm it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "ERP stock covers the requested quantity",
+      "action": "confirm it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-039",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q8",
+    "verbatim": "if not, use the supplier portal lead time.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "ERP stock does not cover the requested quantity",
+      "action": "use the supplier portal lead time",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-040",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q8",
+    "verbatim": "And if neither gives you a clean answer, flag it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "neither ERP stock nor supplier portal lead time gives a clean answer",
+      "action": "flag it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-041",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q8",
+    "verbatim": "Do not invent a delivery date because somebody wants one.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "somebody wants a delivery date",
+      "action": "do not invent a delivery date",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-042",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q9",
+    "verbatim": "Part numbers and quantities, mainly.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "Part numbers and quantities",
+      "format": null,
+      "reformatted": null
+    }
+  },
+  {
+    "id": "petra-043",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q9",
+    "verbatim": "The specification comes through on the bid or in Jonas\u2019s note",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Jonas",
+      "to": "Petra Lindqvist",
+      "artifact": "specification",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "petra-044",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q9",
+    "verbatim": "then I compare that with SAP and the supplier portal",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Compare the specification with SAP and the supplier portal",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-045",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q9",
+    "verbatim": "put the availability result on the bid.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Put the availability result on the bid",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-046",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q9",
+    "verbatim": "Sometimes you have to copy a supplier reference into the portal because their search does not understand our number.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "copy a supplier reference into the portal",
+      "compensates_for": "the portal search does not understand our number",
+      "private": false
+    }
+  },
+  {
+    "id": "petra-047",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q10",
+    "verbatim": "The emailed spec template can be a bit of a mess.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "emailed spec template",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-048",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q10",
+    "verbatim": "Blank fields, old references, inconsistent units",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "emailed spec template",
+      "format": "template with blank fields, old references, and inconsistent units",
+      "reformatted": true
+    }
+  },
+  {
+    "id": "petra-049",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q10",
+    "verbatim": "I usually just work out what the actual requested quantity and item are.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Work out the actual requested quantity and item",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-050",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q11",
+    "verbatim": "Stock position, obviously, and the supplier lead time when we do not have enough.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "we do not have enough stock",
+      "action": "look up the supplier lead time",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-051",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q11",
+    "verbatim": "I also end up checking whether the part number is the exact one Jonas meant",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Check whether the part number is the exact one Jonas meant",
+      "performed_by": "Petra Lindqvist",
+      "frequency": "every time"
+    }
+  },
+  {
+    "id": "petra-052",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q11",
+    "verbatim": "one digit can put you in a completely different product.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "a one-digit part-number error",
+      "if_wrong": "you are put in a completely different product",
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-053",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q11",
+    "verbatim": "I explain to people that availability is not the same as a promise if the count is uncertain.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Explain that availability is not the same as a promise when the count is uncertain",
+      "performed_by": "Petra Lindqvist",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "petra-054",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q12",
+    "verbatim": "I do not need a sign-off for my check.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Obtain sign-off for the availability check",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-055",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q12",
+    "verbatim": "I make the availability confirmation or flag it and send it to Marta in the system.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra Lindqvist",
+      "to": "Marta",
+      "artifact": "availability confirmation or flag",
+      "mechanism": "system",
+      "chased": null
+    }
+  },
+  {
+    "id": "petra-056",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q12",
+    "verbatim": "Things come back when the input changes, not because someone has formally rejected my work.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "approval",
+    "payload": {
+      "approver": "someone",
+      "what_is_checked": "Petra\u2019s work",
+      "ever_rejected": "no",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "petra-057",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q12",
+    "verbatim": "The last time was probably a changed quantity on a bid; I cannot tell you exactly when.",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "availability work",
+      "returned_by": null,
+      "reason": "a changed quantity on a bid",
+      "loops_to": "availability check"
+    }
+  },
+  {
+    "id": "petra-058",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q13",
+    "verbatim": "I might keep a quick note while I am working through a batch, especially if a supplier portal is being unhelpful",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "a quick note while working through a batch",
+      "compensates_for": "a supplier portal being unhelpful",
+      "private": true
+    }
+  },
+  {
+    "id": "petra-059",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q13",
+    "verbatim": "it is not some shadow planning system.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "shadow planning system",
+      "compensates_for": null,
+      "private": null
+    }
+  },
+  {
+    "id": "petra-060",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q14",
+    "verbatim": "The sales side wants the bid moving quickly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "quickly",
+      "batching": null,
+      "driver": "sales side wants the bid moving"
+    }
+  },
+  {
+    "id": "petra-061",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q14",
+    "verbatim": "Their idea of quickly is immediately.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "immediately",
+      "batching": null,
+      "driver": "sales expectation"
+    }
+  },
+  {
+    "id": "petra-062",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q14",
+    "verbatim": "requests arrive all day, but the reliable warehouse numbers arrive at the end of the day, so there is a natural delay.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "reliable warehouse numbers",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-063",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q14",
+    "verbatim": "a supplier portal can take ages to give a useful answer.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "a useful supplier portal answer",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-064",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q15",
+    "verbatim": "The worst thing from my side is confirming something that is not actually there, then having to put a flag on it afterward.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "confirming something that is not actually there",
+      "if_wrong": "having to put a flag on it afterward",
+      "reversible": "costly",
+      "blast_radius": "customer",
+      "borne_by": "Petra Lindqvist"
+    }
+  },
+  {
+    "id": "petra-065",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q15",
+    "verbatim": "That lands with the customer eventually, I suppose",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "consequence",
+    "payload": {
+      "subject": "confirming something that is not actually there",
+      "if_wrong": "it lands with the customer",
+      "reversible": "unknown",
+      "blast_radius": "customer",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-066",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q15",
+    "verbatim": "it is why I would rather flag uncertainty than make a neat-looking answer that is wrong.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "uncertainty exists",
+      "action": "flag uncertainty rather than make a wrong neat-looking answer",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-067",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q16",
+    "verbatim": "The availability queue would pile up, certainly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "Petra being absent for two weeks",
+      "if_wrong": "the availability queue would pile up",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-068",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q16",
+    "verbatim": "Someone else can look in SAP and the portal, it is not magic",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "step",
+    "payload": {
+      "description": "Look in SAP and the portal",
+      "performed_by": "Someone else",
+      "frequency": null
+    }
+  },
+  {
+    "id": "petra-069",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q16",
+    "verbatim": "they would need to know how to handle the unclear cases rather than just taking the first number they see.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "rule",
+    "payload": {
+      "condition": "there are unclear cases",
+      "action": "handle them rather than just take the first number seen",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "petra-070",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q16",
+    "verbatim": "Marta would be waiting for confirmations, I imagine.",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "confirmations",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "petra-071",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q17",
+    "verbatim": "Rechecking a perfectly clear stock line can feel pointless, especially when it is a standard item and the quantity is tiny.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "rechecking a perfectly clear stock line",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "petra-072",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q17",
+    "verbatim": "the one time you do not check is when the stock number is wrong.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "not checking a stock line",
+      "if_wrong": "the stock number is wrong",
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "petra-073",
+    "respondent_id": "petra",
+    "session_id": "s-petra",
+    "captured_at": "2026-09-08T10:22:30Z",
+    "question_id": "q17",
+    "verbatim": "So I complain about it, but I still do it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Recheck a perfectly clear stock line",
+      "performed_by": "Petra Lindqvist",
+      "frequency": null
+    }
+  }
+]

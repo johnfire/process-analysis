@@ -1,0 +1,1283 @@
+[
+  {
+    "id": "marta-001",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q1",
+    "verbatim": "Availability, mostly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Availability",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "marta-002",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q1",
+    "verbatim": "Petra has to confirm what can actually be supplied before I can put a proper quote together.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Petra",
+        "type": "actor",
+        "role": "waiting_on"
+      }
+    ],
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "Marta Falck",
+      "artifact": "confirmation of what can actually be supplied",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "marta-003",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q1",
+    "verbatim": "before I can put a proper quote together.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "put a proper quote together",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-004",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q1",
+    "verbatim": "And sometimes Rainer\u2019s note if there\u2019s a substitute involved.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Rainer\u2019s note",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "marta-005",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q1",
+    "verbatim": "if the item is wrong or the availability is fantasy, the quote is useless.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "the quote",
+      "if_wrong": "the item is wrong or the availability is fantasy",
+      "reversible": "unknown",
+      "blast_radius": "customer",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "marta-006",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q2",
+    "verbatim": "The last one had a substitute decision on it that was not very clear\u2014just enough of a note that I had to work out what they meant.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "a substitute decision that was not very clear",
+      "path_taken": "I had to work out what they meant",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "marta-007",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q2",
+    "verbatim": "It was for an older machine part, naturally.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "an older machine part",
+      "path_taken": null,
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "marta-008",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q2",
+    "verbatim": "I got it priced",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "price the quote",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-009",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q2",
+    "verbatim": "but then it came back because somebody wanted the wording changed.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "rework",
+    "payload": {
+      "what": "the quote",
+      "returned_by": "somebody",
+      "reason": "somebody wanted the wording changed",
+      "loops_to": "pricing the quote"
+    }
+  },
+  {
+    "id": "marta-010",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q2",
+    "verbatim": "there was a quote where the freight table made no sense for the delivery situation",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "the freight table made no sense for the delivery situation",
+      "path_taken": "check it again",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "marta-011",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q2",
+    "verbatim": "so I had to check it again.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "the freight table",
+      "returned_by": null,
+      "reason": "the freight table made no sense for the delivery situation",
+      "loops_to": "checking freight"
+    }
+  },
+  {
+    "id": "marta-012",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q2",
+    "verbatim": "Those things take ages because everyone assumes you can just \u201cadjust it.\u201d",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 1,
+        "high": 1,
+        "unit": "hour"
+      },
+      "subject": "adjusting exception quotes",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "marta-013",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q3",
+    "verbatim": "Petra, if the availability is sitting there",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "Marta Falck",
+      "artifact": "availability",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "marta-014",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q3",
+    "verbatim": "Rainer if he has made a substitution call without making it usable for the bid.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "handoff",
+    "payload": {
+      "from": "Rainer",
+      "to": "Marta Falck",
+      "artifact": "usable substitution call",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "marta-015",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q3",
+    "verbatim": "Rainer chases me occasionally",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Marta Falck",
+      "to": "Rainer",
+      "artifact": "quotation work",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "marta-016",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q3",
+    "verbatim": "especially if a customer is making noise.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "a customer is making noise",
+      "path_taken": "Rainer chases Marta Falck",
+      "pulls_in": [
+        "Rainer"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "marta-017",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q3",
+    "verbatim": "Usually it is Sales asking where their quote is",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Marta Falck",
+      "to": "Sales",
+      "artifact": "their quote",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "marta-018",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q4",
+    "verbatim": "maybe ten minutes for an ordinary one.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 8,
+        "high": 15,
+        "unit": "minute"
+      },
+      "subject": "an ordinary quote",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "marta-019",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q4",
+    "verbatim": "But that assumes the bid is clean.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the bid is clean",
+      "action": "an ordinary quote can be completed in maybe ten minutes",
+      "written_down": null,
+      "exceptions": "a messy bid"
+    }
+  },
+  {
+    "id": "marta-020",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q4",
+    "verbatim": "You still have to check the product family",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "check the product family",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-021",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q4",
+    "verbatim": "the customer\u2019s list price",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "check the customer\u2019s list price",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-022",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q4",
+    "verbatim": "the margin band",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "check the margin band",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-023",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q4",
+    "verbatim": "freight, the text, whether SAP has carried something strange over.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "check freight, the text, and whether SAP has carried something strange over",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-024",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q4",
+    "verbatim": "By the time you have dealt with all that it can easily be half an hour",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 25,
+        "high": 45,
+        "unit": "minute"
+      },
+      "subject": "a quote requiring all checks",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "marta-025",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q4",
+    "verbatim": "more if it is a messy one.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "it is a messy one",
+      "path_taken": "more checking work",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "marta-026",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q5",
+    "verbatim": "Rainer normally sees it fairly quickly.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 1,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "Rainer picking up the draft",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "marta-027",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q5",
+    "verbatim": "Same day, I would say.",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 0,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "Rainer picking up the draft",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "marta-028",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q5",
+    "verbatim": "Unless he is out somewhere, then it can sit.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "Rainer is out somewhere",
+      "path_taken": "the draft sits",
+      "pulls_in": [
+        "Rainer"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "marta-029",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q5",
+    "verbatim": "I do not really see what happens after I send the draft on.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Marta Falck",
+      "to": "Rainer",
+      "artifact": "the draft",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "marta-030",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q6",
+    "verbatim": "I do quotes in batches.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "in batches",
+      "batching": true,
+      "driver": null
+    }
+  },
+  {
+    "id": "marta-031",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q6",
+    "verbatim": "Thursday is my administration day",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "Thursday",
+      "batching": true,
+      "driver": "my administration day"
+    }
+  },
+  {
+    "id": "marta-032",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q6",
+    "verbatim": "I have a shorter pass on Tuesday.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "Tuesday",
+      "batching": true,
+      "driver": "a shorter pass"
+    }
+  },
+  {
+    "id": "marta-033",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q6",
+    "verbatim": "If something arrives Monday, it will normally be handled Thursday unless somebody tells us it is urgent.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "something arrives Monday",
+      "action": "handle it Thursday",
+      "written_down": null,
+      "exceptions": "somebody tells us it is urgent"
+    }
+  },
+  {
+    "id": "marta-034",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q7",
+    "verbatim": "Usually corrections.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "corrections",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": "quotation work"
+    }
+  },
+  {
+    "id": "marta-035",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q7",
+    "verbatim": "A customer-specific point, revised freight, an item someone now wants phrased differently, or a price somebody has suddenly decided to question.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "rework",
+    "payload": {
+      "what": "customer-specific point, revised freight, item phrasing, or price",
+      "returned_by": "somebody",
+      "reason": "a customer-specific point, revised freight, an item someone now wants phrased differently, or a price somebody has suddenly decided to question",
+      "loops_to": "quotation work"
+    }
+  },
+  {
+    "id": "marta-036",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q7",
+    "verbatim": "Sometimes the whole thing comes back because a detail in the bid was not settled properly in the first place.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "the whole thing",
+      "returned_by": null,
+      "reason": "a detail in the bid was not settled properly in the first place",
+      "loops_to": "quotation work"
+    }
+  },
+  {
+    "id": "marta-037",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q8",
+    "verbatim": "Do not invent a price because somebody is pressing you.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "somebody is pressing you",
+      "action": "do not invent a price",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "marta-038",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q8",
+    "verbatim": "Start with the customer\u2019s list price, apply the normal margin band for that product family, add freight from the rate table.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "pricing a quote",
+      "action": "start with the customer\u2019s list price, apply the normal margin band for that product family, add freight from the rate table",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "marta-039",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q8",
+    "verbatim": "And read the bid, properly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "read the bid properly",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-040",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q8",
+    "verbatim": "The judgment is in noticing when the apparently normal case is not normal.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the apparently normal case is not normal",
+      "action": "notice it and apply judgment",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "marta-041",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q9",
+    "verbatim": "The availability details and Rainer\u2019s substitute note end up in the quotation draft in SAP.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "holding the quotation draft with availability details and Rainer\u2019s substitute note",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "marta-042",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q9",
+    "verbatim": "Product references, quantities, delivery information\u2014whatever has been put onto the bid.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "the bid",
+      "format": null,
+      "reformatted": null
+    }
+  },
+  {
+    "id": "marta-043",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q9",
+    "verbatim": "It is mostly there already, but \u201cmostly\u201d is not the same as correct.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "information already on the bid",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "marta-044",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q10",
+    "verbatim": "The notes can be a nuisance.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "The notes",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "marta-045",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q10",
+    "verbatim": "People write in shorthand, or put something in a way that is fine internally but cannot go straight into a customer quotation.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "artifact",
+    "payload": {
+      "name": "The notes",
+      "format": "shorthand or internal wording",
+      "reformatted": true
+    }
+  },
+  {
+    "id": "marta-046",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q10",
+    "verbatim": "You have to make it sound like an actual offer, not like two people leaving each other reminders.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "rewrite notes as an actual customer offer",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-047",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q11",
+    "verbatim": "The margin band for the product family and the freight rate, mainly.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "look up the margin band for the product family and the freight rate",
+      "performed_by": "Marta Falck",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "marta-048",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q11",
+    "verbatim": "I find myself explaining that the price is not simply a number pulled from nowhere.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "explain that the price is not simply a number pulled from nowhere",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-049",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q11",
+    "verbatim": "Different families are handled differently.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the product family differs",
+      "action": "handle the family differently",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "marta-050",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q11",
+    "verbatim": "with the old catalogue items you still check.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the item is from the old catalogue",
+      "action": "check it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "marta-051",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q12",
+    "verbatim": "Rainer gets the quotation draft from me.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Marta Falck",
+      "to": "Rainer",
+      "artifact": "the quotation draft",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "marta-052",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q12",
+    "verbatim": "Yes, he sends things back\u2014usually when there is a substitute or he wants a different commercial angle.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "approval",
+    "payload": {
+      "approver": "Rainer",
+      "what_is_checked": "substitute decisions or commercial angle",
+      "ever_rejected": "yes",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "marta-053",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q12",
+    "verbatim": "Last week, or perhaps the week before, there was one where he wanted the quote adjusted after I had already built it.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "the quote",
+      "returned_by": "Rainer",
+      "reason": "he wanted the quote adjusted",
+      "loops_to": "building the quote"
+    }
+  },
+  {
+    "id": "marta-054",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q13",
+    "verbatim": "I keep small working notes: things to check, awkward freight cases, reminders about a customer\u2019s previous question.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "small working notes",
+      "compensates_for": "SAP not being where she wants to keep every little thought while assembling a batch",
+      "private": true
+    }
+  },
+  {
+    "id": "marta-055",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q13",
+    "verbatim": "SAP holds the quotation",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "holding the quotation",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "marta-056",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q13",
+    "verbatim": "it is not where I want to keep every little thought while I am assembling a batch.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "SAP",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "marta-057",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q14",
+    "verbatim": "The implied customer deadline, really.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the implied customer deadline",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "marta-058",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q14",
+    "verbatim": "Sales will say it is urgent once the customer has asked twice.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "rule",
+    "payload": {
+      "condition": "the customer has asked twice",
+      "action": "Sales will say it is urgent",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "marta-059",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q14",
+    "verbatim": "availability or the substitute decision has arrived late",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "pricing work",
+      "if_wrong": "availability or the substitute decision has arrived late",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "marta-060",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q14",
+    "verbatim": "suddenly the pricing part is expected immediately.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "the pricing part",
+      "if_wrong": "availability or the substitute decision arrives late",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "Marta Falck"
+    }
+  },
+  {
+    "id": "marta-061",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q14",
+    "verbatim": "I can only work from what is actually on the bid.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "working on a quote",
+      "action": "work only from what is actually on the bid",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "marta-062",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q15",
+    "verbatim": "A quote went round with something that had to be corrected afterwards.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "a quote",
+      "returned_by": null,
+      "reason": "something had to be corrected afterwards",
+      "loops_to": "quotation work"
+    }
+  },
+  {
+    "id": "marta-063",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q15",
+    "verbatim": "it makes everyone look careless and the customer starts asking whether the rest of it is reliable.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "consequence",
+    "payload": {
+      "subject": "a quote requiring correction afterwards",
+      "if_wrong": "everyone looks careless and the customer questions whether the rest is reliable",
+      "reversible": "costly",
+      "blast_radius": "customer",
+      "borne_by": "everyone"
+    }
+  },
+  {
+    "id": "marta-064",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q15",
+    "verbatim": "That is why I check.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "check the quote to prevent a correction afterwards",
+      "performed_by": "Marta Falck",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-065",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q16",
+    "verbatim": "There would be a pile of quotation drafts waiting, certainly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "quotation drafts",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "marta-066",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q16",
+    "verbatim": "Someone else could technically enter prices",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "step",
+    "payload": {
+      "description": "enter prices",
+      "performed_by": "Someone else",
+      "frequency": null
+    }
+  },
+  {
+    "id": "marta-067",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q16",
+    "verbatim": "they would need to understand the margin bands, freight, and which odd cases need a second look.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "rule",
+    "payload": {
+      "condition": "someone else enters prices",
+      "action": "understand the margin bands, freight, and which odd cases need a second look",
+      "written_down": null,
+      "exceptions": "odd cases"
+    }
+  },
+  {
+    "id": "marta-068",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q16",
+    "verbatim": "It would just create a lot of cleaning up.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "someone else entering prices",
+      "if_wrong": "it would create a lot of cleaning up",
+      "reversible": "costly",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "marta-069",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q17",
+    "verbatim": "Rechecking things that should have been clear on the bid before it reaches me, perhaps.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "rechecking things that should have been clear on the bid",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "marta-070",
+    "respondent_id": "marta",
+    "session_id": "s-marta",
+    "captured_at": "2026-09-08T10:18:58Z",
+    "question_id": "q17",
+    "verbatim": "if I do not check and something is wrong, it comes back to me anyway.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "I do not check and something is wrong",
+      "action": "the work comes back to me anyway",
+      "written_down": null,
+      "exceptions": null
+    }
+  }
+]

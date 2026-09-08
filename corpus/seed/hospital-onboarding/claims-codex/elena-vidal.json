@@ -1,0 +1,1877 @@
+[
+  {
+    "id": "elena-vidal-001",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q1",
+    "verbatim": "Insurer confirmation, mostly.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Insurer confirmation",
+        "type": "artifact",
+        "role": "waiting_on"
+      }
+    ],
+    "supersedes": null,
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Insurer confirmation",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "elena-vidal-002",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q1",
+    "verbatim": "Jonas\u2019s side.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Jonas",
+        "type": "actor",
+        "role": "owner"
+      }
+    ],
+    "supersedes": null,
+    "kind": "actor",
+    "payload": {
+      "name": "Jonas",
+      "role": null,
+      "team": null,
+      "discovered_by": "named"
+    }
+  },
+  {
+    "id": "elena-vidal-003",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q1",
+    "verbatim": "Until that appears in the record, I cannot really treat the assessment as properly ready.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "that",
+        "type": "artifact",
+        "role": "condition"
+      },
+      {
+        "text": "the record",
+        "type": "system",
+        "role": "location"
+      },
+      {
+        "text": "the assessment",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "the insurer confirmation appears in the record",
+      "action": "I treat the assessment as properly ready",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "elena-vidal-004",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q1",
+    "verbatim": "It is usually just sitting somewhere in the system, of course.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "the system",
+        "type": "system",
+        "role": "location"
+      }
+    ],
+    "supersedes": null,
+    "kind": "system",
+    "payload": {
+      "name": "the system",
+      "used_for": "holding insurer confirmation",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "elena-vidal-005",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q2",
+    "verbatim": "The last one needed further examinations.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "further examinations",
+        "type": "step",
+        "role": "path_taken"
+      }
+    ],
+    "supersedes": null,
+    "kind": "exception",
+    "payload": {
+      "trigger": "needed further examinations",
+      "path_taken": "further examinations",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "elena-vidal-006",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q2",
+    "verbatim": "I could not issue the certificate on the spot",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the certificate",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "issue the certificate on the spot",
+      "performed_by": "I",
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-007",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q2",
+    "verbatim": "it became a string of follow-up appointments and documents.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "follow-up appointments",
+        "type": "step",
+        "role": "path_taken"
+      },
+      {
+        "text": "documents",
+        "type": "artifact",
+        "role": "output"
+      }
+    ],
+    "supersedes": null,
+    "kind": "exception",
+    "payload": {
+      "trigger": "could not issue the certificate on the spot",
+      "path_taken": "a string of follow-up appointments and documents",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "elena-vidal-008",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q2",
+    "verbatim": "the insurer confirmation seemed to take ages.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "the insurer confirmation",
+        "type": "artifact",
+        "role": "waiting_on"
+      }
+    ],
+    "supersedes": null,
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the insurer confirmation",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "elena-vidal-009",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q2",
+    "verbatim": "People call it an onboarding delay as though that is my decision.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "an onboarding delay",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "the insurer confirmation delay",
+      "if_wrong": "People call it an onboarding delay",
+      "reversible": "unknown",
+      "blast_radius": "individual",
+      "borne_by": "Dr. Elena Vidal"
+    }
+  },
+  {
+    "id": "elena-vidal-010",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q3",
+    "verbatim": "I chase Jonas if the confirmation is missing",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Jonas",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "the confirmation",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "I",
+      "to": "Jonas",
+      "artifact": "the confirmation",
+      "mechanism": "verbal",
+      "chased": true
+    }
+  },
+  {
+    "id": "elena-vidal-011",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q3",
+    "verbatim": "Occasionally the new employee needs reminding about a follow-up examination.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the new employee",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "a follow-up examination",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "remind the new employee about a follow-up examination",
+      "performed_by": "I",
+      "frequency": "Occasionally"
+    }
+  },
+  {
+    "id": "elena-vidal-012",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q3",
+    "verbatim": "Markus will ask for the certificate once he is waiting to proceed.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "from"
+      },
+      {
+        "text": "the certificate",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "Markus",
+      "to": "Dr. Elena Vidal",
+      "artifact": "the certificate",
+      "mechanism": "verbal",
+      "chased": true
+    }
+  },
+  {
+    "id": "elena-vidal-013",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q3",
+    "verbatim": "He does not exactly chase me, but he notices quickly.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "He",
+        "type": "actor",
+        "role": "actor"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "Markus",
+      "to": "Dr. Elena Vidal",
+      "artifact": null,
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "elena-vidal-014",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q4",
+    "verbatim": "The assessment itself is perhaps half an hour, forty minutes if we are being formal.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "The assessment itself",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 30,
+        "high": 40,
+        "unit": "minute"
+      },
+      "subject": "The assessment itself",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "elena-vidal-015",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q4",
+    "verbatim": "Then there is reviewing the record",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the record",
+        "type": "system",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "reviewing the record",
+      "performed_by": "I",
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-016",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q4",
+    "verbatim": "speaking to the person",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the person",
+        "type": "actor",
+        "role": "to"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "speaking to the person",
+      "performed_by": "I",
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-017",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q4",
+    "verbatim": "documenting it properly",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "documenting it properly",
+      "performed_by": "I",
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-018",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q4",
+    "verbatim": "issuing the certificate.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the certificate",
+        "type": "artifact",
+        "role": "output"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "issuing the certificate",
+      "performed_by": "I",
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-019",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q4",
+    "verbatim": "unless something needs clarification, in which case it takes as long as it takes.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "exception",
+    "payload": {
+      "trigger": "something needs clarification",
+      "path_taken": null,
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "elena-vidal-020",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q5",
+    "verbatim": "Markus normally gets it promptly because we hand it over in the meeting.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "to"
+      },
+      {
+        "text": "it",
+        "type": "artifact",
+        "role": "artifact"
+      },
+      {
+        "text": "the meeting",
+        "type": "step",
+        "role": "mechanism"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "Dr. Elena Vidal",
+      "to": "Markus",
+      "artifact": "it",
+      "mechanism": "meeting",
+      "chased": false
+    }
+  },
+  {
+    "id": "elena-vidal-021",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q5",
+    "verbatim": "Whether anything happens after that, I could not say.",
+    "verbatim_span": null,
+    "hedging": "refused",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "anything happens after Markus receives it",
+      "performed_by": null,
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-022",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q5",
+    "verbatim": "IT has its own timing.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "IT",
+        "type": "team",
+        "role": "owner"
+      }
+    ],
+    "supersedes": null,
+    "kind": "schedule",
+    "payload": {
+      "cadence": "its own timing",
+      "batching": null,
+      "driver": "IT"
+    }
+  },
+  {
+    "id": "elena-vidal-023",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q6",
+    "verbatim": "It does not sit with me very long.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "work arriving for Dr. Elena Vidal",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "elena-vidal-024",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q6",
+    "verbatim": "A day or two, perhaps.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 1,
+        "high": 2,
+        "unit": "day"
+      },
+      "subject": "work arriving for Dr. Elena Vidal",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "elena-vidal-025",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q6",
+    "verbatim": "The actual appointment is at the next departmental slot",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "The actual appointment",
+        "type": "step",
+        "role": "subject"
+      },
+      {
+        "text": "the next departmental slot",
+        "type": "step",
+        "role": "schedule"
+      }
+    ],
+    "supersedes": null,
+    "kind": "schedule",
+    "payload": {
+      "cadence": "the next departmental slot",
+      "batching": null,
+      "driver": null
+    }
+  },
+  {
+    "id": "elena-vidal-026",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q6",
+    "verbatim": "those are only weekly",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "departmental slot",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "schedule",
+    "payload": {
+      "cadence": "weekly",
+      "batching": false,
+      "driver": "departmental slots"
+    }
+  },
+  {
+    "id": "elena-vidal-027",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q6",
+    "verbatim": "people sometimes interpret that as it sitting in occupational health.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "occupational health",
+        "type": "team",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "weekly assessment scheduling",
+      "if_wrong": "people interpret it as work sitting in occupational health",
+      "reversible": "unknown",
+      "blast_radius": "individual",
+      "borne_by": "occupational health"
+    }
+  },
+  {
+    "id": "elena-vidal-028",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q6",
+    "verbatim": "It is scheduled work.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "schedule",
+    "payload": {
+      "cadence": "scheduled work",
+      "batching": false,
+      "driver": null
+    }
+  },
+  {
+    "id": "elena-vidal-029",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q7",
+    "verbatim": "Further examination results, if I have requested them.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Further examination results",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "unknown",
+      "to": "Dr. Elena Vidal",
+      "artifact": "Further examination results",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "elena-vidal-030",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q7",
+    "verbatim": "Sometimes a missing confirmation or corrected information.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a missing confirmation",
+        "type": "artifact",
+        "role": "artifact"
+      },
+      {
+        "text": "corrected information",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rework",
+    "payload": {
+      "what": "corrected information",
+      "returned_by": null,
+      "reason": "information was incorrect or missing",
+      "loops_to": null
+    }
+  },
+  {
+    "id": "elena-vidal-031",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q7",
+    "verbatim": "Certificates themselves do not come back",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Certificates",
+        "type": "artifact",
+        "role": "artifact"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rework",
+    "payload": {
+      "what": "Certificates",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": null
+    }
+  },
+  {
+    "id": "elena-vidal-032",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q7",
+    "verbatim": "once I make that determination, it is not something to casually reopen.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "that determination",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "once I make that determination",
+      "action": "I do not casually reopen it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "elena-vidal-033",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q8",
+    "verbatim": "Do not certify somebody until you are satisfied they are fit for the actual role.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the actual role",
+        "type": "step",
+        "role": "condition"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "you are satisfied they are fit for the actual role",
+      "action": "certify somebody",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "elena-vidal-034",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q8",
+    "verbatim": "The work environment and the employee both matter",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "The work environment",
+        "type": "step",
+        "role": "input"
+      },
+      {
+        "text": "the employee",
+        "type": "actor",
+        "role": "input"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "consider the work environment and the employee in the fitness determination",
+      "performed_by": "I",
+      "frequency": "every fitness determination"
+    }
+  },
+  {
+    "id": "elena-vidal-035",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q8",
+    "verbatim": "you cannot undo a careless certificate later.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a careless certificate",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "a careless certificate",
+      "if_wrong": "cannot undo it later",
+      "reversible": "no",
+      "blast_radius": "individual",
+      "borne_by": "Dr. Elena Vidal"
+    }
+  },
+  {
+    "id": "elena-vidal-036",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q9",
+    "verbatim": "I bring the relevant confirmation and employee details into our occupational-health record",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the relevant confirmation",
+        "type": "artifact",
+        "role": "input"
+      },
+      {
+        "text": "employee details",
+        "type": "artifact",
+        "role": "input"
+      },
+      {
+        "text": "our occupational-health record",
+        "type": "system",
+        "role": "to"
+      }
+    ],
+    "supersedes": null,
+    "kind": "system",
+    "payload": {
+      "name": "our occupational-health record",
+      "used_for": "holding relevant confirmation and employee details",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "elena-vidal-037",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q9",
+    "verbatim": "the certificate details need to be made clear for Markus.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the certificate details",
+        "type": "artifact",
+        "role": "artifact"
+      },
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "to"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "Dr. Elena Vidal",
+      "to": "Markus",
+      "artifact": "the certificate details",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "elena-vidal-038",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q9",
+    "verbatim": "it has to be accurate.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "confirmation, employee details, and certificate details",
+      "if_wrong": "information is inaccurate",
+      "reversible": "unknown",
+      "blast_radius": "individual",
+      "borne_by": "Dr. Elena Vidal"
+    }
+  },
+  {
+    "id": "elena-vidal-039",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q10",
+    "verbatim": "The insurer confirmation arrives through the system",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "The insurer confirmation",
+        "type": "artifact",
+        "role": "artifact"
+      },
+      {
+        "text": "the system",
+        "type": "system",
+        "role": "mechanism"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "unknown",
+      "to": "Dr. Elena Vidal",
+      "artifact": "The insurer confirmation",
+      "mechanism": "system",
+      "chased": null
+    }
+  },
+  {
+    "id": "elena-vidal-040",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q10",
+    "verbatim": "I use it as it is.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "it",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "artifact",
+    "payload": {
+      "name": "insurer confirmation",
+      "format": null,
+      "reformatted": false
+    }
+  },
+  {
+    "id": "elena-vidal-041",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q10",
+    "verbatim": "If the information is unclear, I clarify it",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the information",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "the information is unclear",
+      "action": "I clarify it",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "elena-vidal-042",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q11",
+    "verbatim": "The role and its actual duties.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "The role",
+        "type": "step",
+        "role": "subject"
+      },
+      {
+        "text": "its actual duties",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "look up the role and its actual duties",
+      "performed_by": "I",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "elena-vidal-043",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q11",
+    "verbatim": "Clinical work is not interchangeable.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Clinical work",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "assessing fitness for a role",
+      "action": "consider the role's actual duties rather than treating clinical work as interchangeable",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "elena-vidal-044",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q11",
+    "verbatim": "I also explain what the assessment covers and what it does not.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the assessment",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "explain what the assessment covers and what it does not",
+      "performed_by": "I",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "elena-vidal-045",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q11",
+    "verbatim": "People are often anxious that occupational health is reporting their private medical information to everyone",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "entity_refs": [
+      {
+        "text": "People",
+        "type": "actor",
+        "role": "affected"
+      },
+      {
+        "text": "occupational health",
+        "type": "team",
+        "role": "subject"
+      },
+      {
+        "text": "their private medical information",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "complaint",
+    "payload": {
+      "target": "belief that occupational health reports private medical information to everyone",
+      "affect": "stressful",
+      "intensity": "repeated"
+    }
+  },
+  {
+    "id": "elena-vidal-046",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q11",
+    "verbatim": "which is not how it works.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "occupational health",
+        "type": "team",
+        "role": "actor"
+      },
+      {
+        "text": "private medical information",
+        "type": "artifact",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "handoff",
+    "payload": {
+      "from": "occupational health",
+      "to": "everyone",
+      "artifact": "private medical information",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "elena-vidal-047",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q12",
+    "verbatim": "I do not need another person\u2019s sign-off for the fitness determination.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the fitness determination",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "make the fitness determination",
+      "performed_by": "I",
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-048",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q12",
+    "verbatim": "It is my clinical judgment.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "actor",
+    "payload": {
+      "name": "Dr. Elena Vidal",
+      "role": "clinical decision-maker for the fitness determination",
+      "team": null,
+      "discovered_by": "named"
+    }
+  },
+  {
+    "id": "elena-vidal-049",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q12",
+    "verbatim": "I have withheld a certificate pending further examinations",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a certificate",
+        "type": "artifact",
+        "role": "subject"
+      },
+      {
+        "text": "further examinations",
+        "type": "step",
+        "role": "waiting_on"
+      }
+    ],
+    "supersedes": null,
+    "kind": "exception",
+    "payload": {
+      "trigger": "further examinations are pending",
+      "path_taken": "withheld a certificate",
+      "pulls_in": [
+        "further examinations"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "elena-vidal-050",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q12",
+    "verbatim": "it happens now and then.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "schedule",
+    "payload": {
+      "cadence": "now and then",
+      "batching": false,
+      "driver": "withholding a certificate pending further examinations"
+    }
+  },
+  {
+    "id": "elena-vidal-051",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q13",
+    "verbatim": "I do not keep a separate spreadsheet for this.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a separate spreadsheet",
+        "type": "system",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "workaround",
+    "payload": {
+      "what": "a separate spreadsheet",
+      "compensates_for": null,
+      "private": true
+    }
+  },
+  {
+    "id": "elena-vidal-052",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q13",
+    "verbatim": "The occupational-health record is where it belongs.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "The occupational-health record",
+        "type": "system",
+        "role": "location"
+      }
+    ],
+    "supersedes": null,
+    "kind": "system",
+    "payload": {
+      "name": "The occupational-health record",
+      "used_for": "this work",
+      "copied_to": null,
+      "wins_conflict": true
+    }
+  },
+  {
+    "id": "elena-vidal-053",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q13",
+    "verbatim": "I may keep working notes while arranging further examinations",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "working notes",
+        "type": "artifact",
+        "role": "output"
+      },
+      {
+        "text": "further examinations",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "keep working notes while arranging further examinations",
+      "performed_by": "I",
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-054",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q14",
+    "verbatim": "The employee\u2019s intended start date, naturally.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "The employee\u2019s intended start date",
+        "type": "step",
+        "role": "driver"
+      }
+    ],
+    "supersedes": null,
+    "kind": "schedule",
+    "payload": {
+      "cadence": "the employee\u2019s intended start date",
+      "batching": false,
+      "driver": "employee start date"
+    }
+  },
+  {
+    "id": "elena-vidal-055",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q14",
+    "verbatim": "It becomes tight when people decide someone must begin immediately but the weekly assessment slot has already gone",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "the weekly assessment slot",
+        "type": "step",
+        "role": "schedule"
+      }
+    ],
+    "supersedes": null,
+    "kind": "exception",
+    "payload": {
+      "trigger": "someone must begin immediately but the weekly assessment slot has already gone",
+      "path_taken": "deadline becomes tight",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "elena-vidal-056",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q14",
+    "verbatim": "or when the confirmation arrives late.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the confirmation",
+        "type": "artifact",
+        "role": "waiting_on"
+      }
+    ],
+    "supersedes": null,
+    "kind": "exception",
+    "payload": {
+      "trigger": "the confirmation arrives late",
+      "path_taken": "deadline becomes tight",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "elena-vidal-057",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q15",
+    "verbatim": "the serious risk is certifying someone without resolving a relevant issue.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a relevant issue",
+        "type": "step",
+        "role": "condition"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "certifying someone without resolving a relevant issue",
+      "if_wrong": "serious risk",
+      "reversible": "unknown",
+      "blast_radius": "regulatory",
+      "borne_by": "Dr. Elena Vidal"
+    }
+  },
+  {
+    "id": "elena-vidal-058",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q15",
+    "verbatim": "That could affect the employee and potentially patients.",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the employee",
+        "type": "actor",
+        "role": "affected"
+      },
+      {
+        "text": "patients",
+        "type": "actor",
+        "role": "affected"
+      }
+    ],
+    "supersedes": null,
+    "kind": "consequence",
+    "payload": {
+      "subject": "certifying someone without resolving a relevant issue",
+      "if_wrong": "could affect the employee and potentially patients",
+      "reversible": "unknown",
+      "blast_radius": "customer",
+      "borne_by": "Dr. Elena Vidal"
+    }
+  },
+  {
+    "id": "elena-vidal-059",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q15",
+    "verbatim": "That is why I do not rush simply because someone in HR or a department is impatient.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "HR",
+        "type": "team",
+        "role": "requester"
+      },
+      {
+        "text": "a department",
+        "type": "team",
+        "role": "requester"
+      }
+    ],
+    "supersedes": null,
+    "kind": "rule",
+    "payload": {
+      "condition": "someone in HR or a department is impatient",
+      "action": "I do not rush",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "elena-vidal-060",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q16",
+    "verbatim": "Assessments and any further-examination decisions would wait.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "Assessments",
+        "type": "step",
+        "role": "waiting_on"
+      },
+      {
+        "text": "further-examination decisions",
+        "type": "step",
+        "role": "waiting_on"
+      }
+    ],
+    "supersedes": null,
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Assessments and any further-examination decisions",
+      "owner": "internal",
+      "current": false,
+      "duration": {
+        "low": 2,
+        "high": 2,
+        "unit": "week"
+      }
+    }
+  },
+  {
+    "id": "elena-vidal-061",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q16",
+    "verbatim": "Someone could cover the appointments administratively, perhaps",
+    "verbatim_span": null,
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Someone",
+        "type": "actor",
+        "role": "performed_by"
+      },
+      {
+        "text": "the appointments",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "cover the appointments administratively",
+      "performed_by": "Someone",
+      "frequency": null
+    }
+  },
+  {
+    "id": "elena-vidal-062",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q16",
+    "verbatim": "the medical judgment is not something Markus or Katrin can simply substitute.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "hearsay",
+    "entity_refs": [
+      {
+        "text": "Markus",
+        "type": "actor",
+        "role": "actor"
+      },
+      {
+        "text": "Katrin",
+        "type": "actor",
+        "role": "actor"
+      },
+      {
+        "text": "the medical judgment",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "actor",
+    "payload": {
+      "name": "Markus or Katrin",
+      "role": "cannot substitute for medical judgment",
+      "team": null,
+      "discovered_by": "named"
+    }
+  },
+  {
+    "id": "elena-vidal-063",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q16",
+    "verbatim": "There would be a queue, certainly.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [],
+    "supersedes": null,
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "assessments and further-examination decisions",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "elena-vidal-064",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q17",
+    "verbatim": "Chasing confirmations that should already be visible in the system feels pointless.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "confirmations",
+        "type": "artifact",
+        "role": "subject"
+      },
+      {
+        "text": "the system",
+        "type": "system",
+        "role": "target"
+      }
+    ],
+    "supersedes": null,
+    "kind": "complaint",
+    "payload": {
+      "target": "Chasing confirmations that should already be visible in the system",
+      "affect": "pointless",
+      "intensity": "emphatic"
+    }
+  },
+  {
+    "id": "elena-vidal-065",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q17",
+    "verbatim": "explaining repeatedly that a delayed assessment is not necessarily an occupational-health delay.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "a delayed assessment",
+        "type": "step",
+        "role": "subject"
+      },
+      {
+        "text": "an occupational-health delay",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "step",
+    "payload": {
+      "description": "explain that a delayed assessment is not necessarily an occupational-health delay",
+      "performed_by": "I",
+      "frequency": "repeatedly"
+    }
+  },
+  {
+    "id": "elena-vidal-066",
+    "respondent_id": "elena-vidal",
+    "session_id": "s-elena-vidal",
+    "captured_at": "2026-09-08T09:48:48Z",
+    "question_id": "q17",
+    "verbatim": "But the assessment and documentation themselves are not pointless.",
+    "verbatim_span": null,
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "entity_refs": [
+      {
+        "text": "the assessment",
+        "type": "step",
+        "role": "subject"
+      },
+      {
+        "text": "documentation",
+        "type": "step",
+        "role": "subject"
+      }
+    ],
+    "supersedes": null,
+    "kind": "complaint",
+    "payload": {
+      "target": "the assessment and documentation themselves",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  }
+]

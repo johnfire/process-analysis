@@ -1,0 +1,1384 @@
+[
+  {
+    "id": "markus-brandt-001",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q1",
+    "verbatim": "Mostly the usual inputs.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the usual inputs",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "markus-brandt-002",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q1",
+    "verbatim": "An approved requisition has to be in the queue before I order anything",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "an approved requisition is in the queue",
+      "action": "I order anything",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "markus-brandt-003",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q1",
+    "verbatim": "I need the fitness certificate before we finish certain bits.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the fitness certificate",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "markus-brandt-004",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q1",
+    "verbatim": "People think IT can just make a person appear in the systems.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "complaint",
+    "payload": {
+      "target": "people thinking IT can just make a person appear in the systems",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "markus-brandt-005",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q1",
+    "verbatim": "We can\u2019t.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "making a person appear in the systems",
+      "if_wrong": null,
+      "reversible": "unknown",
+      "blast_radius": "individual",
+      "borne_by": "IT"
+    }
+  },
+  {
+    "id": "markus-brandt-006",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q1",
+    "verbatim": "Thomas\u2019s approval is the one that tends to matter.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "approval",
+    "payload": {
+      "approver": "Thomas",
+      "what_is_checked": "requisition",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "markus-brandt-007",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q2",
+    "verbatim": "The last one was a special hardware request.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "a special hardware request",
+      "path_taken": null,
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "markus-brandt-008",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q2",
+    "verbatim": "Standard bundle is straightforward",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Process the standard bundle",
+      "performed_by": "IT",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-009",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q2",
+    "verbatim": "then somebody wants something outside it and it stops being straightforward, obviously.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "somebody wants something outside the standard bundle",
+      "path_taken": "the request stops being straightforward",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "markus-brandt-010",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q2",
+    "verbatim": "I remember badge access being held up on a facilities sign-off.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "a facilities sign-off",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "markus-brandt-011",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q2",
+    "verbatim": "it lands in our lap because nobody separates those things.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "facilities",
+      "to": "IT",
+      "artifact": "badge access issue",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "markus-brandt-012",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q3",
+    "verbatim": "Thomas, if the requisition approval is missing.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Thomas",
+      "to": "Markus",
+      "artifact": "requisition approval",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "markus-brandt-013",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q3",
+    "verbatim": "Sometimes the facilities people over badge access.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "facilities people",
+      "to": "Markus",
+      "artifact": "badge access",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "markus-brandt-014",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q3",
+    "verbatim": "Petra chases us for credentials and cards, understandably",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Markus",
+      "to": "Petra",
+      "artifact": "credentials and cards",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "markus-brandt-015",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q3",
+    "verbatim": "although she normally gets them once the ticket is through.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "handoff",
+    "payload": {
+      "from": "IT",
+      "to": "Petra",
+      "artifact": "credentials and cards",
+      "mechanism": "system",
+      "chased": null
+    }
+  },
+  {
+    "id": "markus-brandt-016",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q3",
+    "verbatim": "Jonas gets the workstation and badge information downstream.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "handoff",
+    "payload": {
+      "from": "IT",
+      "to": "Jonas",
+      "artifact": "workstation and badge information",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "markus-brandt-017",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q3",
+    "verbatim": "Katrin will ask where something is if the onboarding is moving.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "handoff",
+    "payload": {
+      "from": "Katrin",
+      "to": "IT",
+      "artifact": "onboarding status request",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "markus-brandt-018",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "Maybe ten minutes for an account",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 8,
+        "high": 15,
+        "unit": "minute"
+      },
+      "subject": "an account",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "markus-brandt-019",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "twenty for equipment.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 20,
+        "high": 20,
+        "unit": "minute"
+      },
+      "subject": "equipment",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "markus-brandt-020",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "checking the role",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Check the role",
+      "performed_by": "Markus",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-021",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "creating the profile",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Create the profile",
+      "performed_by": "Markus",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-022",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "setting the department zone",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Set the department zone",
+      "performed_by": "Markus",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-023",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "entering it in the asset thing",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Enter equipment in the asset system",
+      "performed_by": "Markus",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-024",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "issuing the badge",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Issue the badge",
+      "performed_by": "Markus",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-025",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "emailing the manager",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Markus",
+      "to": "the manager",
+      "artifact": "credentials",
+      "mechanism": "email",
+      "chased": null
+    }
+  },
+  {
+    "id": "markus-brandt-026",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "then it\u2019s more like an hour across the two pieces.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 45,
+        "high": 75,
+        "unit": "minute"
+      },
+      "subject": "the two pieces",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "markus-brandt-027",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q4",
+    "verbatim": "It\u2019s not difficult work; it\u2019s just several systems.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "several systems",
+      "used_for": "account, equipment, badge, and manager-email work",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "markus-brandt-028",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q5",
+    "verbatim": "I don\u2019t really see that part.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "See the downstream pickup after sending work on",
+      "performed_by": "Markus",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-029",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q5",
+    "verbatim": "We send it through the system to Jonas or Petra.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Markus",
+      "to": "Jonas or Petra",
+      "artifact": "it",
+      "mechanism": "system",
+      "chased": null
+    }
+  },
+  {
+    "id": "markus-brandt-030",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q5",
+    "verbatim": "I assume they pick it up reasonably quickly",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 0,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "downstream pickup by Jonas or Petra",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "markus-brandt-031",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q5",
+    "verbatim": "but you\u2019d have to ask them.",
+    "hedging": "deferred",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "actor",
+    "payload": {
+      "name": "Jonas or Petra",
+      "role": "downstream work owner",
+      "team": null,
+      "discovered_by": "deferred_to"
+    }
+  },
+  {
+    "id": "markus-brandt-032",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q5",
+    "verbatim": "Everyone says they\u2019re waiting on IT",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "IT",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "markus-brandt-033",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q6",
+    "verbatim": "Accounts go through the service desk\u2019s morning batch",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "the service desk\u2019s morning batch",
+      "batching": true,
+      "driver": null
+    }
+  },
+  {
+    "id": "markus-brandt-034",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q6",
+    "verbatim": "so usually the next morning.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 0,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "accounts",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "markus-brandt-035",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q6",
+    "verbatim": "Equipment depends on what is already ahead of it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "what is already ahead of equipment",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "markus-brandt-036",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q6",
+    "verbatim": "The queue can look busy, but that is procurement and stock, not me sitting on a ticket.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "procurement and stock",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "markus-brandt-037",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q7",
+    "verbatim": "Sometimes a special-hardware request needs sorting out.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "a special-hardware request",
+      "returned_by": null,
+      "reason": "needs sorting out",
+      "loops_to": "IT"
+    }
+  },
+  {
+    "id": "markus-brandt-038",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q7",
+    "verbatim": "Otherwise nothing really comes back\u2014once the account and card are done, they\u2019re done.",
+    "hedging": "approximate",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "the account and card",
+      "returned_by": null,
+      "reason": null,
+      "loops_to": "IT"
+    }
+  },
+  {
+    "id": "markus-brandt-039",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q7",
+    "verbatim": "If someone has an issue after that, it tends to be a different ticket.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "someone has an issue after the account and card are done",
+      "path_taken": "a different ticket",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "markus-brandt-040",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q8",
+    "verbatim": "Use the standard role bundle.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "processing a request",
+      "action": "use the standard role bundle",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "markus-brandt-041",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q8",
+    "verbatim": "Create the standard profile set, set the badge to the department\u2019s zone, and send the credentials to the manager.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "using the standard role bundle",
+      "action": "create the standard profile set, set the badge to the department\u2019s zone, and send the credentials to the manager",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "markus-brandt-042",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q8",
+    "verbatim": "Don\u2019t start improvising because someone says they need an exception without it being properly requested.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "someone says they need an exception without it being properly requested",
+      "action": "do not start improvising",
+      "written_down": null,
+      "exceptions": "properly requested exceptions"
+    }
+  },
+  {
+    "id": "markus-brandt-043",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q9",
+    "verbatim": "The employee and role information goes from the ticket into Active Directory",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "Active Directory",
+      "used_for": "employee and role information",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "markus-brandt-044",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q9",
+    "verbatim": "then badge details into the badge system",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "the badge system",
+      "used_for": "badge details",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "markus-brandt-045",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q9",
+    "verbatim": "and equipment into asset inventory.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "asset inventory",
+      "used_for": "equipment",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "markus-brandt-046",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q9",
+    "verbatim": "You have to make sure the names match",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "entering employee and role information across systems",
+      "action": "make sure the names match",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "markus-brandt-047",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q9",
+    "verbatim": "otherwise somebody gets a badge that doesn\u2019t line up with their account and then everybody rings IT.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "consequence",
+    "payload": {
+      "subject": "names not matching across systems",
+      "if_wrong": "somebody gets a badge that does not line up with their account and everybody rings IT",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "IT"
+    }
+  },
+  {
+    "id": "markus-brandt-048",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q10",
+    "verbatim": "The request details are not always presented the same way as the fields in AD or the badge system",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "The request details",
+      "format": null,
+      "reformatted": true
+    }
+  },
+  {
+    "id": "markus-brandt-049",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q10",
+    "verbatim": "so you translate them into the standard profile and department zone.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Translate request details into the standard profile and department zone",
+      "performed_by": "Markus",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-050",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q11",
+    "verbatim": "The role profile and which department zone applies, mainly.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Look up the role profile and applicable department zone",
+      "performed_by": "Markus",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "markus-brandt-051",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q11",
+    "verbatim": "People often assume \u201cnursing\u201d is enough detail, but it isn\u2019t always.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "a request specifies only \u201cnursing\u201d",
+      "path_taken": "additional detail is needed",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "markus-brandt-052",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q11",
+    "verbatim": "Then you\u2019re checking the request and explaining why we cannot just give broad access because somebody asked in an email.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "somebody asks in an email for broad access",
+      "action": "check the request and explain why IT cannot just give broad access",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "markus-brandt-053",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q12",
+    "verbatim": "Thomas\u2019s approved requisition is the main one.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "approval",
+    "payload": {
+      "approver": "Thomas",
+      "what_is_checked": "requisition",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "markus-brandt-054",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q12",
+    "verbatim": "facilities sign-off can hold the badge printing.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "approval",
+    "payload": {
+      "approver": "facilities",
+      "what_is_checked": "badge printing",
+      "ever_rejected": "unknown",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "markus-brandt-055",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q12",
+    "verbatim": "Yes, things get sent back when the approval or access details aren\u2019t there",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "rework",
+    "payload": {
+      "what": "things",
+      "returned_by": null,
+      "reason": "the approval or access details are not there",
+      "loops_to": "request"
+    }
+  },
+  {
+    "id": "markus-brandt-056",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q12",
+    "verbatim": "but I couldn\u2019t tell you a particular date.",
+    "hedging": "deferred",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "approval",
+    "payload": {
+      "approver": "Thomas or facilities",
+      "what_is_checked": "approval or access details",
+      "ever_rejected": "cant_recall",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "markus-brandt-057",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q12",
+    "verbatim": "It happens often enough to be annoying.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "things being sent back for missing approval or access details",
+      "affect": "annoying",
+      "intensity": "repeated"
+    }
+  },
+  {
+    "id": "markus-brandt-058",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q13",
+    "verbatim": "I don\u2019t keep a separate spreadsheet for this.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "a separate spreadsheet",
+      "compensates_for": null,
+      "private": true
+    }
+  },
+  {
+    "id": "markus-brandt-059",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q13",
+    "verbatim": "The ticket, asset inventory, and badge system should hold what they need to hold.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "The ticket, asset inventory, and badge system",
+      "used_for": "holding needed process information",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "markus-brandt-060",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q13",
+    "verbatim": "If people are keeping shadow lists, that is usually because they don\u2019t trust the ticket status.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "workaround",
+    "payload": {
+      "what": "shadow lists",
+      "compensates_for": "not trusting the ticket status",
+      "private": null
+    }
+  },
+  {
+    "id": "markus-brandt-061",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q14",
+    "verbatim": "The employee\u2019s start date, naturally.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "the employee\u2019s start date",
+      "batching": false,
+      "driver": "employee onboarding"
+    }
+  },
+  {
+    "id": "markus-brandt-062",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q14",
+    "verbatim": "It gets tight when approval arrives late or someone adds requirements late.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "approval arrives late or someone adds requirements late",
+      "path_taken": "the work gets tight",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "markus-brandt-063",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q14",
+    "verbatim": "Then suddenly it is IT\u2019s emergency, even though the request has been sitting elsewhere for ages.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "consequence",
+    "payload": {
+      "subject": "a request sitting elsewhere for ages",
+      "if_wrong": "it becomes IT\u2019s emergency",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": "IT"
+    }
+  },
+  {
+    "id": "markus-brandt-064",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q15",
+    "verbatim": "The worst practical outcome is someone arrives without the correct account or card and the department manager has to work around it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "direct_observation",
+    "kind": "consequence",
+    "payload": {
+      "subject": "someone arriving without the correct account or card",
+      "if_wrong": "the department manager has to work around it",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "the department manager"
+    }
+  },
+  {
+    "id": "markus-brandt-065",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q15",
+    "verbatim": "It creates a lot of noise for what is usually missing input or a late change.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "missing input or a late change",
+      "if_wrong": "it creates a lot of noise",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "markus-brandt-066",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q15",
+    "verbatim": "We provision what we\u2019re given.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "IT is given request inputs",
+      "action": "provision what IT is given",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "markus-brandt-067",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q16",
+    "verbatim": "The account tickets would stack up",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "IT to process account tickets",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "markus-brandt-068",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q16",
+    "verbatim": "equipment requests would wait for the team.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the team",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "markus-brandt-069",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q16",
+    "verbatim": "The standard process is documented",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "The standard process",
+      "format": "documentation",
+      "reformatted": null
+    }
+  },
+  {
+    "id": "markus-brandt-070",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q16",
+    "verbatim": "so it would not be a catastrophe.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "Markus being absent for two weeks",
+      "if_wrong": "a catastrophe",
+      "reversible": "unknown",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "markus-brandt-071",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q16",
+    "verbatim": "someone would need to pick up Active Directory, asset inventory, and the badge system properly",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "step",
+    "payload": {
+      "description": "Use Active Directory, asset inventory, and the badge system properly",
+      "performed_by": "someone",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-072",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q16",
+    "verbatim": "not just hand out credentials without checking the role.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "hearsay",
+    "kind": "rule",
+    "payload": {
+      "condition": "handing out credentials",
+      "action": "check the role rather than just hand out credentials",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "markus-brandt-073",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q17",
+    "verbatim": "Chasing incomplete approvals and explaining the difference between a request and an approved requisition.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Chase incomplete approvals and explain the difference between a request and an approved requisition",
+      "performed_by": "Markus",
+      "frequency": null
+    }
+  },
+  {
+    "id": "markus-brandt-074",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q17",
+    "verbatim": "It feels pointless because the rule is written down.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "chasing incomplete approvals and explaining the difference between a request and an approved requisition",
+      "affect": "pointless",
+      "intensity": "emphatic"
+    }
+  },
+  {
+    "id": "markus-brandt-075",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q17",
+    "verbatim": "the rule is written down.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "a person needs a requisition",
+      "action": "provide an approved requisition rather than merely a request",
+      "written_down": true,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "markus-brandt-076",
+    "respondent_id": "markus-brandt",
+    "session_id": "s-markus-brandt",
+    "captured_at": "2026-09-08T10:01:43Z",
+    "question_id": "q17",
+    "verbatim": "people asking for an update when the ticket tells them exactly where it is.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "complaint",
+    "payload": {
+      "target": "people asking for an update when the ticket tells them exactly where it is",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  }
+]

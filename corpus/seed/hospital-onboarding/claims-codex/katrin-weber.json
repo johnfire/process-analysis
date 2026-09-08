@@ -1,0 +1,1284 @@
+[
+  {
+    "id": "katrin-weber-001",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q1",
+    "verbatim": "Bank details and ID copies, mostly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Bank details and ID copies",
+      "owner": "external",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "katrin-weber-002",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q1",
+    "verbatim": "the basic documents take ages.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the basic documents",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "katrin-weber-003",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q1",
+    "verbatim": "I send one reminder",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Sends one reminder for missing documents",
+      "performed_by": "Katrin Weber",
+      "frequency": null
+    }
+  },
+  {
+    "id": "katrin-weber-004",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q1",
+    "verbatim": "log what is missing on the checklist",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Logs missing items on the checklist",
+      "performed_by": "Katrin Weber",
+      "frequency": null
+    }
+  },
+  {
+    "id": "katrin-weber-005",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q1",
+    "verbatim": "I\u2019m also waiting for Petra to tell me who is supervising one of the new ward starters.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Petra to tell me who is supervising one of the new ward starters",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "katrin-weber-006",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q2",
+    "verbatim": "an ID copy that was so blurry I couldn\u2019t honestly verify it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "an ID copy that was so blurry I couldn\u2019t honestly verify it",
+      "path_taken": "The ID copy needed further handling",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "katrin-weber-007",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q2",
+    "verbatim": "the bank details came separately without a name on the email.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "the bank details came separately without a name on the email",
+      "path_taken": "Katrin had to identify and match the bank details",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "katrin-weber-008",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q2",
+    "verbatim": "I had to chase and match things back to the contract.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Chases missing information and matches it back to the contract",
+      "performed_by": "Katrin Weber",
+      "frequency": null
+    }
+  },
+  {
+    "id": "katrin-weber-009",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q2",
+    "verbatim": "the tax-ID request was missing",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "the tax-ID request was missing",
+      "path_taken": "The request had to be handled as missing",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "katrin-weber-010",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q2",
+    "verbatim": "I think they thought their tax number was the same thing.",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "They thought their tax number was the same thing as the tax-ID",
+      "path_taken": "The tax-ID request was missing",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "katrin-weber-011",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q3",
+    "verbatim": "New starters, overwhelmingly.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "new starters",
+      "to": "Katrin Weber",
+      "artifact": "requested information and documents",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "katrin-weber-012",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q3",
+    "verbatim": "Sometimes Petra, if I need the supervision schedule",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Petra",
+      "to": "Katrin Weber",
+      "artifact": "the supervision schedule",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "katrin-weber-013",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q3",
+    "verbatim": "Thomas gets the checklist from me.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Katrin Weber",
+      "to": "Thomas",
+      "artifact": "the checklist",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "katrin-weber-014",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q3",
+    "verbatim": "People chase me if they want confirmation that their documents are complete",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "People",
+      "to": "Katrin Weber",
+      "artifact": "request for confirmation that documents are complete",
+      "mechanism": "unknown",
+      "chased": false
+    }
+  },
+  {
+    "id": "katrin-weber-015",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q3",
+    "verbatim": "if their start date is getting close.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "when their start date is getting close",
+      "batching": null,
+      "driver": "People chase confirmation of document completeness"
+    }
+  },
+  {
+    "id": "katrin-weber-016",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q3",
+    "verbatim": "there are two HRIS blocks a week, not an all-day open door.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "two HRIS blocks a week",
+      "batching": true,
+      "driver": "HRIS work is not continuously available"
+    }
+  },
+  {
+    "id": "katrin-weber-017",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q3",
+    "verbatim": "which is irritating",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "people asking why they are not in the system yet",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "katrin-weber-018",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q4",
+    "verbatim": "Registering somebody is five or ten minutes",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 5,
+        "high": 10,
+        "unit": "minute"
+      },
+      "subject": "Registering somebody",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "katrin-weber-019",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q4",
+    "verbatim": "checking a complete set is maybe fifteen.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 12,
+        "high": 20,
+        "unit": "minute"
+      },
+      "subject": "checking a complete set",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "katrin-weber-020",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q4",
+    "verbatim": "reading emails, checking whether the name matches, finding the contract scan, logging gaps, chasing, and doing it again when they send the wrong thing.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Reads emails, checks name matches, finds the contract scan, logs gaps, chases, and repeats work after incorrect documents arrive",
+      "performed_by": "Katrin Weber",
+      "frequency": null
+    }
+  },
+  {
+    "id": "katrin-weber-021",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q4",
+    "verbatim": "It can easily occupy half a morning in bits and pieces.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "hour"
+      },
+      "subject": "handling a registration in bits and pieces",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "katrin-weber-022",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q5",
+    "verbatim": "Thomas usually has it fairly quickly, I think. A day or two?",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 1,
+        "high": 2,
+        "unit": "day"
+      },
+      "subject": "Thomas picking up the checklist",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "katrin-weber-023",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q5",
+    "verbatim": "I send the checklist by email",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Katrin Weber",
+      "to": "Thomas",
+      "artifact": "the checklist",
+      "mechanism": "email",
+      "chased": false
+    }
+  },
+  {
+    "id": "katrin-weber-024",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q5",
+    "verbatim": "after that I don\u2019t really see what happens with it.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "the checklist after it is sent to Thomas",
+      "if_wrong": "Katrin does not have visibility of what happens with it",
+      "reversible": "unknown",
+      "blast_radius": "unknown",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "katrin-weber-025",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q5",
+    "verbatim": "With Petra and the probation goals, we normally cover it in the check-in meeting.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Covers probation goals with Petra in the check-in meeting",
+      "performed_by": "Katrin Weber and Petra",
+      "frequency": "normally"
+    }
+  },
+  {
+    "id": "katrin-weber-026",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q6",
+    "verbatim": "I start looking at documents quite quickly, same day if they are in properly.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 0,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "documents that are in properly",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "katrin-weber-027",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q6",
+    "verbatim": "The HRIS record can wait until the next registration block, though.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the next registration block",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "katrin-weber-028",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q6",
+    "verbatim": "otherwise the session times out and I am doing the login and two-factor again every few minutes.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "working outside HRIS registration blocks",
+      "if_wrong": "the session times out and Katrin has to repeat login and two-factor authentication",
+      "reversible": "yes",
+      "blast_radius": "individual",
+      "borne_by": "Katrin Weber"
+    }
+  },
+  {
+    "id": "katrin-weber-029",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q6",
+    "verbatim": "It might sit a couple of days, but it is not unattended.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "day"
+      },
+      "subject": "the HRIS record",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "katrin-weber-030",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q7",
+    "verbatim": "Missing or unusable documents come back around, obviously.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "Missing or unusable documents",
+      "returned_by": "new starters",
+      "reason": "documents are missing or unusable",
+      "loops_to": "document checking"
+    }
+  },
+  {
+    "id": "katrin-weber-031",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q7",
+    "verbatim": "A corrected ID scan, revised bank details, that sort of thing.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "A corrected ID scan, revised bank details",
+      "format": null,
+      "reformatted": null
+    }
+  },
+  {
+    "id": "katrin-weber-032",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q7",
+    "verbatim": "Sometimes a checklist has to be revisited because something turns out not to match the contract.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "a checklist",
+      "returned_by": null,
+      "reason": "something turns out not to match the contract",
+      "loops_to": "checking the checklist against the contract"
+    }
+  },
+  {
+    "id": "katrin-weber-033",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q7",
+    "verbatim": "I record the manager\u2019s feedback",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Records the manager\u2019s feedback",
+      "performed_by": "Katrin Weber",
+      "frequency": null
+    }
+  },
+  {
+    "id": "katrin-weber-034",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q7",
+    "verbatim": "use the standard probation objectives.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Uses the standard probation objectives",
+      "performed_by": "Katrin Weber",
+      "frequency": null
+    }
+  },
+  {
+    "id": "katrin-weber-035",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q8",
+    "verbatim": "Do not treat \u201cnearly complete\u201d as complete.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "documents are nearly complete",
+      "action": "Do not treat them as complete",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "katrin-weber-036",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q8",
+    "verbatim": "All six documents need to be there, readable, and consistent with the signed contract.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "assessing whether a document set is complete",
+      "action": "Require all six documents to be present, readable, and consistent with the signed contract",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "katrin-weber-037",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q8",
+    "verbatim": "when you enter the HRIS record, use the contract\u2014not somebody\u2019s casual email wording\u2014for the name, date of birth, role, department, and start date.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "entering the HRIS record",
+      "action": "Use the contract rather than casual email wording for the name, date of birth, role, department, and start date",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "katrin-weber-038",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q9",
+    "verbatim": "The contract details go into the HRIS record: personal data, position, department, start date.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "HRIS record",
+      "used_for": "personal data, position, department, and start date from the contract",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "katrin-weber-039",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q9",
+    "verbatim": "Then I attach the scanned signed contract.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Attaches the scanned signed contract",
+      "performed_by": "Katrin Weber",
+      "frequency": null
+    }
+  },
+  {
+    "id": "katrin-weber-040",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q9",
+    "verbatim": "I also take the gaps from incoming emails and put them on the starter checklist",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "putting gaps from incoming emails on the starter checklist",
+      "compensates_for": "relying on memory",
+      "private": null
+    }
+  },
+  {
+    "id": "katrin-weber-041",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q10",
+    "verbatim": "People send photographs that are sideways, dark, cropped, or six attachments with names like \u201cIMG_4829.\u201d",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "photographs that are sideways, dark, cropped, or six attachments with names like \u201cIMG_4829.\u201d",
+      "path_taken": "Katrin needs to make document scans usable",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "katrin-weber-042",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q10",
+    "verbatim": "bank details arrive in an email signature or a screenshot",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "bank details",
+      "format": "an email signature or a screenshot",
+      "reformatted": true
+    }
+  },
+  {
+    "id": "katrin-weber-043",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q10",
+    "verbatim": "I need something I can actually check against the person and use confidently.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "using incoming documents or bank details",
+      "action": "Require something that can be checked against the person and used confidently",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "katrin-weber-044",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q11",
+    "verbatim": "Which six documents are required and what counts as acceptable, although it is written down.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Looks up which six documents are required and what counts as acceptable",
+      "performed_by": "Katrin Weber",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "katrin-weber-045",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q11",
+    "verbatim": "I explain the tax-ID request quite often.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Explains the tax-ID request",
+      "performed_by": "Katrin Weber",
+      "frequency": "quite often"
+    }
+  },
+  {
+    "id": "katrin-weber-046",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q11",
+    "verbatim": "I check the contract against the record every time",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Checks the contract against the record",
+      "performed_by": "Katrin Weber",
+      "frequency": "every time"
+    }
+  },
+  {
+    "id": "katrin-weber-047",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q11",
+    "verbatim": "a wrong department or start date creates unnecessary noise later.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "a wrong department or start date",
+      "if_wrong": "creates unnecessary noise later",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "katrin-weber-048",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q12",
+    "verbatim": "For my own steps, I do not wait for a formal sign-off.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Does not wait for a formal sign-off for her own steps",
+      "performed_by": "Katrin Weber",
+      "frequency": null
+    }
+  },
+  {
+    "id": "katrin-weber-049",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q12",
+    "verbatim": "The signed contract is what lets me register them",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "there is a signed contract",
+      "action": "Register the starter",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "katrin-weber-050",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q12",
+    "verbatim": "If something is incomplete, it comes back to me because I am the one who has to chase it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "something incomplete",
+      "returned_by": null,
+      "reason": "it is incomplete",
+      "loops_to": "Katrin chasing the missing or inadequate item"
+    }
+  },
+  {
+    "id": "katrin-weber-051",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q13",
+    "verbatim": "I keep the starter checklist and my chase notes.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "the starter checklist and my chase notes",
+      "compensates_for": "the HRIS not being useful for seeing the practical trail at a glance",
+      "private": true
+    }
+  },
+  {
+    "id": "katrin-weber-052",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q13",
+    "verbatim": "The HRIS holds the employee record",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "HRIS",
+      "used_for": "the employee record",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "katrin-weber-053",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q13",
+    "verbatim": "it is not useful for seeing, at a glance, that I asked for an ID copy on Tuesday and they sent something unreadable on Thursday.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "the HRIS",
+      "if_wrong": "it does not show the practical trail of a request and unreadable response at a glance",
+      "reversible": "unknown",
+      "blast_radius": "individual",
+      "borne_by": "Katrin Weber"
+    }
+  },
+  {
+    "id": "katrin-weber-054",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q14",
+    "verbatim": "The start date.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "the start date",
+      "batching": null,
+      "driver": "deadline for onboarding work"
+    }
+  },
+  {
+    "id": "katrin-weber-055",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q14",
+    "verbatim": "Everything becomes urgent near it",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "onboarding work near the start date",
+      "if_wrong": "Everything becomes urgent",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "katrin-weber-056",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q14",
+    "verbatim": "New starters send documents late, wards are busy",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "New starters send documents late and wards are busy",
+      "path_taken": "Onboarding becomes urgent near the start date",
+      "pulls_in": [
+        "new starters",
+        "wards"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "katrin-weber-057",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q14",
+    "verbatim": "The first-week check-in is also meant to happen after the first full week",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "after the first full week",
+      "batching": null,
+      "driver": "the first-week check-in"
+    }
+  },
+  {
+    "id": "katrin-weber-058",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q14",
+    "verbatim": "but it slips when the ward is short-staffed.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "the ward is short-staffed",
+      "path_taken": "the first-week check-in slips",
+      "pulls_in": [
+        "the ward"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "katrin-weber-059",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q15",
+    "verbatim": "The worst is a new starter arriving and paperwork still being incomplete",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "a new starter arriving with incomplete paperwork",
+      "if_wrong": "the starter is worried and everyone starts calling HR",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "HR"
+    }
+  },
+  {
+    "id": "katrin-weber-060",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q15",
+    "verbatim": "That is exactly why I am careful.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "onboarding paperwork could remain incomplete at arrival",
+      "action": "Be careful",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "katrin-weber-061",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q15",
+    "verbatim": "A small mismatch can look harmless until it means you are chasing someone at the last minute while they are trying to begin a clinical job.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "a small mismatch",
+      "if_wrong": "someone is chased at the last minute while trying to begin a clinical job",
+      "reversible": "yes",
+      "blast_radius": "customer",
+      "borne_by": "Katrin Weber"
+    }
+  },
+  {
+    "id": "katrin-weber-062",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q16",
+    "verbatim": "The incoming documents and chases would pile up",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "Katrin being absent for two weeks",
+      "if_wrong": "The incoming documents and chases would pile up",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "Katrin Weber"
+    }
+  },
+  {
+    "id": "katrin-weber-063",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q16",
+    "verbatim": "no one would have my notes on which gaps are real versus which have already been queried.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "Katrin's absence",
+      "if_wrong": "no one would have her notes distinguishing real gaps from gaps already queried",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "Katrin Weber"
+    }
+  },
+  {
+    "id": "katrin-weber-064",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q16",
+    "verbatim": "The HRIS registrations would also wait, because I batch those myself.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "Katrin batches HRIS registrations herself",
+      "batching": true,
+      "driver": "Katrin's availability"
+    }
+  },
+  {
+    "id": "katrin-weber-065",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q16",
+    "verbatim": "The check-ins might slip too",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Katrin's availability for check-ins",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "katrin-weber-066",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q16",
+    "verbatim": "the probation goals would not necessarily get recorded properly.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "consequence",
+    "payload": {
+      "subject": "probation goals during Katrin's absence",
+      "if_wrong": "they would not necessarily get recorded properly",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "Petra"
+    }
+  },
+  {
+    "id": "katrin-weber-067",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q17",
+    "verbatim": "Chasing people for information they have technically already sent, just in a photograph I cannot read or an email that does not identify them.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "information technically already sent in an unreadable photograph or unidentified email",
+      "returned_by": "new starters",
+      "reason": "the photograph cannot be read or the email does not identify them",
+      "loops_to": "chasing people for information"
+    }
+  },
+  {
+    "id": "katrin-weber-068",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q17",
+    "verbatim": "It feels pointless because it is the same conversation twice.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "chasing people for unreadable or unidentified information",
+      "affect": "pointless",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "katrin-weber-069",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q17",
+    "verbatim": "I suppose some of the repeated explaining about tax IDs could be clearer upfront",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "repeated explaining about tax IDs",
+      "compensates_for": "tax-ID instructions not being clear enough upfront",
+      "private": null
+    }
+  },
+  {
+    "id": "katrin-weber-070",
+    "respondent_id": "katrin-weber",
+    "session_id": "s-katrin-weber",
+    "captured_at": "2026-09-08T09:57:55Z",
+    "question_id": "q17",
+    "verbatim": "people do not read the instructions either",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "people do not read the instructions",
+      "path_taken": "Katrin repeatedly explains tax IDs",
+      "pulls_in": [
+        "people"
+      ],
+      "recalled_instances": null
+    }
+  }
+]

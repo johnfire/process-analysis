@@ -1,0 +1,1361 @@
+[
+  {
+    "id": "lukas-001",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q1",
+    "verbatim": "I\u2019ve got a few qualified new-account dispositions from Tobias that need their first proper contact.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "first proper contact for qualified new-account dispositions",
+      "owner": "internal",
+      "current": true,
+      "duration": null
+    }
+  },
+  {
+    "id": "lukas-002",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q1",
+    "verbatim": "I\u2019m in my calling block shortly",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "calling block",
+      "batching": true,
+      "driver": null
+    }
+  },
+  {
+    "id": "lukas-003",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q1",
+    "verbatim": "I\u2019ll send the intro mails",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Send intro mails",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-004",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q1",
+    "verbatim": "check the account in SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Check the account in SAP",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-005",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q1",
+    "verbatim": "then follow with a call.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Follow intro mail with a call",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-006",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q2",
+    "verbatim": "The last one had an email address that bounced",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "an email address bounced",
+      "path_taken": "find the right buyer through the company website and ring the switchboard",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "lukas-007",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q2",
+    "verbatim": "I had to find the right buyer through the company website",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Find the right buyer through the company website",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-008",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q2",
+    "verbatim": "ring the switchboard.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Ring the switchboard",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-009",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q2",
+    "verbatim": "it should be ten minutes.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 10,
+        "high": 10,
+        "unit": "minute"
+      },
+      "subject": "handling a bounced email address",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "lukas-010",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q2",
+    "verbatim": "just no response after the intro",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "no response after the intro",
+      "path_taken": "send another mail and call again",
+      "pulls_in": [],
+      "recalled_instances": 1
+    }
+  },
+  {
+    "id": "lukas-011",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q2",
+    "verbatim": "I sent another mail and called again.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "another mail and another call",
+      "returned_by": null,
+      "reason": "no response after the intro",
+      "loops_to": "intro mail and call"
+    }
+  },
+  {
+    "id": "lukas-012",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q2",
+    "verbatim": "People are busy; they let things sit for ages.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "prospect response",
+      "owner": "external",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "lukas-013",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q3",
+    "verbatim": "I chase the prospect, mostly.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Lukas Gehrig",
+      "to": "prospect",
+      "artifact": "follow-up",
+      "mechanism": "email",
+      "chased": true
+    }
+  },
+  {
+    "id": "lukas-014",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q3",
+    "verbatim": "Sometimes Tobias if the disposition is a bit thin and I need to understand why it was qualified.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the disposition is a bit thin and Lukas needs to understand why it was qualified",
+      "action": "chase Tobias",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-015",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q3",
+    "verbatim": "Sabine chases me occasionally because she wants to know whether I actually made contact",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Lukas Gehrig",
+      "to": "Sabine",
+      "artifact": "contact status",
+      "mechanism": "unknown",
+      "chased": true
+    }
+  },
+  {
+    "id": "lukas-016",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q4",
+    "verbatim": "Actual work? Twenty minutes, maybe.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 15,
+        "high": 25,
+        "unit": "minute"
+      },
+      "subject": "new-account contact work",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "lukas-017",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q4",
+    "verbatim": "Read the disposition",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Read the disposition",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-018",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q4",
+    "verbatim": "look at SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Look at SAP",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-019",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q4",
+    "verbatim": "write a decent intro",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Write an intro",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-020",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q4",
+    "verbatim": "call them.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Call the prospect",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-021",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q4",
+    "verbatim": "if I have to dig around for the correct contact person, it can eat up most of a morning across a few accounts.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "touch",
+      "value": {
+        "low": 3,
+        "high": 4,
+        "unit": "hour"
+      },
+      "subject": "finding correct contact people across a few accounts",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "lukas-022",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q5",
+    "verbatim": "Sabine normally sees it quite fast, same day or the next day I\u2019d say.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 0,
+        "high": 1,
+        "unit": "day"
+      },
+      "subject": "Sabine picking up follow-up details",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "lukas-023",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q5",
+    "verbatim": "The shared inbox can be a bit of a black box, though.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "the shared inbox",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "lukas-024",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q5",
+    "verbatim": "You send the follow-up details",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Lukas Gehrig",
+      "to": "shared inbox",
+      "artifact": "follow-up details",
+      "mechanism": "system",
+      "chased": null
+    }
+  },
+  {
+    "id": "lukas-025",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q6",
+    "verbatim": "A day or so.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 1,
+        "high": 2,
+        "unit": "day"
+      },
+      "subject": "new-account work before Lukas starts it",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "lukas-026",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q6",
+    "verbatim": "I do the new-account work in batches on Tuesdays and Thursdays",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "Tuesdays and Thursdays",
+      "batching": true,
+      "driver": "get into the flow"
+    }
+  },
+  {
+    "id": "lukas-027",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q6",
+    "verbatim": "if something comes in after a block, it might wait until the next one",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "the next new-account work block",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "lukas-028",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q6",
+    "verbatim": "that\u2019s only a couple of days.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "queue",
+      "value": {
+        "low": 2,
+        "high": 3,
+        "unit": "day"
+      },
+      "subject": "waiting until the next new-account work block",
+      "basis": "typical"
+    }
+  },
+  {
+    "id": "lukas-029",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q7",
+    "verbatim": "Usually a non-response, if anything.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "non-response",
+      "path_taken": "follow-up loop",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "lukas-030",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q7",
+    "verbatim": "Or a bounced email, a wrong contact, somebody saying they already have a supplier.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "exception",
+    "payload": {
+      "trigger": "a bounced email, a wrong contact, or a prospect saying they already have a supplier",
+      "path_taken": "update SAP and try a different route",
+      "pulls_in": [],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "lukas-031",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q7",
+    "verbatim": "Then I update what I can in SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Update available information in SAP",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-032",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q7",
+    "verbatim": "try a different route.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Try a different route to contact the prospect",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-033",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q7",
+    "verbatim": "Sometimes Sabine asks whether I reached them",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Lukas Gehrig",
+      "to": "Sabine",
+      "artifact": "whether the prospect was reached",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "lukas-034",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q8",
+    "verbatim": "Don\u2019t just fire off the template.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "sending a new-account introduction",
+      "action": "do not just fire off the template",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-035",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q8",
+    "verbatim": "Check the company in SAP first",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "before sending an introduction",
+      "action": "check the company in SAP first",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-036",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q8",
+    "verbatim": "make the intro sound like it\u2019s actually for them",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "writing an introduction",
+      "action": "make the intro sound like it is actually for the recipient",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-037",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q8",
+    "verbatim": "call after the email.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "after sending an introduction email",
+      "action": "call the recipient",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-038",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q8",
+    "verbatim": "Especially with a new account, a human call is what gets it moving.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "a human call for a new account",
+      "if_wrong": "the account does not get moving",
+      "reversible": "unknown",
+      "blast_radius": "customer",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "lukas-039",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q9",
+    "verbatim": "The basic lead details, contact information, company name\u2014between the disposition, Outlook, and SAP.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "basic lead details, contact information, and company name",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "lukas-040",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q9",
+    "verbatim": "The basic lead details, contact information, company name\u2014between the disposition, Outlook, and SAP.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "Outlook",
+      "used_for": "basic lead details, contact information, and company name",
+      "copied_to": "SAP",
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "lukas-041",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q9",
+    "verbatim": "It\u2019s annoying when names are formatted oddly, because then your email greeting looks silly",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "oddly formatted names",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "lukas-042",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q10",
+    "verbatim": "Phone numbers arrive in every possible format",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "Phone numbers",
+      "format": "every possible format",
+      "reformatted": true
+    }
+  },
+  {
+    "id": "lukas-043",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q10",
+    "verbatim": "names can be all caps or combined with titles.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "names",
+      "format": "all caps or combined with titles",
+      "reformatted": true
+    }
+  },
+  {
+    "id": "lukas-044",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q10",
+    "verbatim": "I clean it up enough for the email and the call.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Clean up contact details for the email and call",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-045",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q10",
+    "verbatim": "SAP has its own way of displaying things, of course.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "displaying contact details",
+      "copied_to": null,
+      "wins_conflict": null
+    }
+  },
+  {
+    "id": "lukas-046",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q11",
+    "verbatim": "I check whether we already know the account in SAP",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Check whether the account is already known in SAP",
+      "performed_by": "Lukas Gehrig",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "lukas-047",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q11",
+    "verbatim": "who has dealt with them",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Check who has dealt with the account",
+      "performed_by": "Lukas Gehrig",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "lukas-048",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q11",
+    "verbatim": "I explain who Krauss is and what we cover.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Explain who Krauss is and what it covers",
+      "performed_by": "Lukas Gehrig",
+      "frequency": "every single time"
+    }
+  },
+  {
+    "id": "lukas-049",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q11",
+    "verbatim": "Hydraulic, pneumatic, drives",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "what Krauss covers",
+      "format": "Hydraulic, pneumatic, drives",
+      "reformatted": null
+    }
+  },
+  {
+    "id": "lukas-050",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q11",
+    "verbatim": "you have to make it relevant without turning it into a lecture.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "explaining what Krauss supplies",
+      "action": "make it relevant without turning it into a lecture",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-051",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q12",
+    "verbatim": "I don\u2019t need formal sign-off for the first contact.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "step",
+    "payload": {
+      "description": "Make first contact without formal sign-off",
+      "performed_by": "Lukas Gehrig",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-052",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q12",
+    "verbatim": "Tobias\u2019s qualification disposition is effectively the go-ahead.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "handoff",
+    "payload": {
+      "from": "Tobias",
+      "to": "Lukas Gehrig",
+      "artifact": "qualification disposition",
+      "mechanism": "unknown",
+      "chased": null
+    }
+  },
+  {
+    "id": "lukas-053",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q12",
+    "verbatim": "If it\u2019s unclear, I\u2019ll ask him",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "Tobias's qualification disposition is unclear",
+      "action": "ask Tobias",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-054",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q12",
+    "verbatim": "I can\u2019t think of him sending one back as such.",
+    "hedging": "guessed",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "approval",
+    "payload": {
+      "approver": "Tobias",
+      "what_is_checked": "qualification disposition",
+      "ever_rejected": "cant_recall",
+      "last_rejection": null
+    }
+  },
+  {
+    "id": "lukas-055",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q12",
+    "verbatim": "He might say, \u201cTry this person instead,\u201d or add context from the meeting.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "exception",
+    "payload": {
+      "trigger": "qualification needs clarification",
+      "path_taken": "Tobias suggests another person or adds meeting context",
+      "pulls_in": [
+        "Tobias"
+      ],
+      "recalled_instances": null
+    }
+  },
+  {
+    "id": "lukas-056",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q13",
+    "verbatim": "I keep little Outlook notes for myself",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "workaround",
+    "payload": {
+      "what": "little Outlook notes",
+      "compensates_for": "SAP not being suitable for practical calling notes",
+      "private": true
+    }
+  },
+  {
+    "id": "lukas-057",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q13",
+    "verbatim": "who sounded interested, when to call again, whether the receptionist gave me a useful hint.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "artifact",
+    "payload": {
+      "name": "little Outlook notes",
+      "format": "interest, next call timing, and receptionist hints",
+      "reformatted": null
+    }
+  },
+  {
+    "id": "lukas-058",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q13",
+    "verbatim": "SAP holds the official account stuff",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "system",
+    "payload": {
+      "name": "SAP",
+      "used_for": "official account information",
+      "copied_to": null,
+      "wins_conflict": true
+    }
+  },
+  {
+    "id": "lukas-059",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q13",
+    "verbatim": "you don\u2019t want to bury practical calling notes in there.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "recording practical calling notes",
+      "action": "do not bury them in SAP",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-060",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q13",
+    "verbatim": "It\u2019s not really a spreadsheet system.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "SAP",
+      "affect": "confusing",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "lukas-061",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q14",
+    "verbatim": "Getting the first contact out while the lead is still warm.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "schedule",
+    "payload": {
+      "cadence": "while the lead is still warm",
+      "batching": null,
+      "driver": "the lead can become old news"
+    }
+  },
+  {
+    "id": "lukas-062",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q14",
+    "verbatim": "Tobias has just spoken about it in a meeting",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "step",
+    "payload": {
+      "description": "Speak about the lead in a meeting",
+      "performed_by": "Tobias",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-063",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q14",
+    "verbatim": "you don\u2019t want it to become old news.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "delayed first contact",
+      "if_wrong": "the lead becomes old news",
+      "reversible": "unknown",
+      "blast_radius": "customer",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "lukas-064",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q14",
+    "verbatim": "The calling blocks make it efficient, but occasionally the timing is awkward.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "timing created by calling blocks",
+      "affect": "annoying",
+      "intensity": "passing"
+    }
+  },
+  {
+    "id": "lukas-065",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q15",
+    "verbatim": "The worst is probably contacting the wrong person and then having to recover the conversation",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rework",
+    "payload": {
+      "what": "recover the conversation",
+      "returned_by": "wrong contact",
+      "reason": "contacting the wrong person",
+      "loops_to": "contacting the correct person"
+    }
+  },
+  {
+    "id": "lukas-066",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q15",
+    "verbatim": "you\u2019ve made a poor first impression.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "contacting the wrong person",
+      "if_wrong": "a poor first impression is made",
+      "reversible": "costly",
+      "blast_radius": "customer",
+      "borne_by": "Lukas Gehrig"
+    }
+  },
+  {
+    "id": "lukas-067",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": "q15",
+    "verbatim": "That\u2019s why I check before calling, even if it takes longer than it should.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "before calling a prospect",
+      "action": "check the contact first",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-068",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": null,
+    "verbatim": "There\u2019d be a stack of new qualified contacts waiting",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "wait",
+    "payload": {
+      "waiting_on": "Lukas Gehrig",
+      "owner": "internal",
+      "current": false,
+      "duration": null
+    }
+  },
+  {
+    "id": "lukas-069",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": null,
+    "verbatim": "some follow-ups would cool off.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "follow-ups during Lukas's two-week absence",
+      "if_wrong": "they cool off",
+      "reversible": "costly",
+      "blast_radius": "customer",
+      "borne_by": null
+    }
+  },
+  {
+    "id": "lukas-070",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": null,
+    "verbatim": "Sabine would probably cover what she could",
+    "hedging": "guessed",
+    "polarity": "asserted",
+    "subject_scope": "hearsay",
+    "kind": "step",
+    "payload": {
+      "description": "Cover qualified contacts and follow-ups during Lukas's absence",
+      "performed_by": "Sabine",
+      "frequency": null
+    }
+  },
+  {
+    "id": "lukas-071",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": null,
+    "verbatim": "the personal calls and my notes in Outlook wouldn\u2019t magically happen.",
+    "hedging": "firm",
+    "polarity": "denied",
+    "subject_scope": "self",
+    "kind": "consequence",
+    "payload": {
+      "subject": "Lukas's absence",
+      "if_wrong": "personal calls and Outlook notes do not happen",
+      "reversible": "yes",
+      "blast_radius": "team",
+      "borne_by": "Lukas Gehrig"
+    }
+  },
+  {
+    "id": "lukas-072",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": null,
+    "verbatim": "We\u2019d recover, but it would be messy for a week.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "duration",
+    "payload": {
+      "measure": "elapsed",
+      "value": {
+        "low": 1,
+        "high": 1,
+        "unit": "week"
+      },
+      "subject": "recovery after Lukas's two-week absence",
+      "basis": "guess"
+    }
+  },
+  {
+    "id": "lukas-073",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": null,
+    "verbatim": "Re-entering a contact detail that is already in the email or disposition feels pointless.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "complaint",
+    "payload": {
+      "target": "re-entering a contact detail already in the email or disposition",
+      "affect": "pointless",
+      "intensity": "emphatic"
+    }
+  },
+  {
+    "id": "lukas-074",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": null,
+    "verbatim": "occasionally I send an intro email knowing full well I\u2019ll have to call to get any response.",
+    "hedging": "approximate",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "Lukas expects that an intro email will not get a response on its own",
+      "action": "send an intro email and call",
+      "written_down": null,
+      "exceptions": null
+    }
+  },
+  {
+    "id": "lukas-075",
+    "respondent_id": "lukas",
+    "session_id": "s-lukas",
+    "captured_at": "2026-09-08T10:15:15Z",
+    "question_id": null,
+    "verbatim": "But the email gives the call some context, so I still do it.",
+    "hedging": "firm",
+    "polarity": "asserted",
+    "subject_scope": "self",
+    "kind": "rule",
+    "payload": {
+      "condition": "the intro email gives the follow-up call context",
+      "action": "still send the intro email",
+      "written_down": null,
+      "exceptions": null
+    }
+  }
+]
