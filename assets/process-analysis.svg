@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- The project's own finding, as its mark: work drawn to the same scale as waiting.
+       One bright sliver against a long grey field. -->
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#242b33"/>
+      <stop offset="1" stop-color="#171c22"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#ground)"/>
+
+  <!-- work: the sliver -->
+  <rect x="40" y="86" width="16" height="84" rx="5" fill="#f2b13c"/>
+
+  <!-- waiting on us -->
+  <rect x="66"  y="86" width="26" height="84" rx="5" fill="#5b6875"/>
+  <rect x="98"  y="86" width="26" height="84" rx="5" fill="#4e5a66"/>
+
+  <!-- waiting on others -->
+  <rect x="130" y="86" width="26" height="84" rx="5" fill="#39434e"/>
+  <rect x="162" y="86" width="26" height="84" rx="5" fill="#333c46"/>
+  <rect x="194" y="86" width="22" height="84" rx="5" fill="#2d353e"/>
+
+  <!-- the elapsed span, underscored -->
+  <rect x="40" y="188" width="176" height="6" rx="3" fill="#3d4753"/>
+  <rect x="40" y="188" width="16"  height="6" rx="3" fill="#f2b13c"/>
+</svg>

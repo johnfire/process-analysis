@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Process Analysis
+Comment=Find the steps that shouldn't exist
+Exec=xdg-terminal-exec --app-id=TUI.float -e bash -c "pa; echo; read -n 1 -s -p '[any key]'"
+Terminal=false
+Type=Application
+Icon=process-analysis
+Categories=Development;
+Keywords=process;bottleneck;queue;analysis;refactor;
+StartupNotify=true

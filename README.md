@@ -52,6 +52,19 @@ exec "$REPO/.venv/bin/python" -m analyzer "$@"
 
 Then `pa`, `pa report hospital`, `pa score inbound`.
 
+### Desktop entry
+
+`assets/` holds the app icon and a `.desktop` file. To install on a freedesktop system:
+
+```bash
+install -Dm644 assets/process-analysis.svg  ~/.local/share/icons/hicolor/scalable/apps/process-analysis.svg
+install -Dm644 assets/process-analysis.desktop ~/.local/share/applications/"Process Analysis.desktop"
+gtk-update-icon-cache -f -t ~/.local/share/icons/hicolor
+```
+
+The icon is the project's own finding used as its mark: one bright sliver of work against a long
+grey field of waiting, drawn to the same scale.
+
 `report` runs the pipeline over an already-extracted process and prints what it found: the
 time-scale picture, where the delay actually is, how that ordering differs from who complains
 loudest, and any fractures between accounts. `score` grades the same analysis against the hidden
