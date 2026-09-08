@@ -1,0 +1,25 @@
+[project]
+name = "process-analysis"
+version = "0.1.0"
+description = "AI-native process refactoring: finding the steps that shouldn't exist"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+# corpus/ and schema/ are data and prompts, not importable packages; say so explicitly or
+# setuptools refuses the flat layout.
+[tool.setuptools]
+packages = ["analyzer"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "jsonschema>=4.21",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
