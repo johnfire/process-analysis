@@ -46,14 +46,14 @@ def find_process(reference: str) -> Path:
     raise SystemExit(f"{problem}: {reference!r}\n  available: {names}")
 
 
-def load(process_dir: Path):
+def load(process_dir: Path, claims_dirname: str = "claims"):
     ground_truth = json.loads((process_dir / "ground_truth.json").read_text())
     cast = [
         Person(member["person_id"], member["name"], member["role"])
         for member in ground_truth["cast"]
     ]
     index = build_person_index(cast)
-    claims, names = claims_by_person_from(process_dir)
+    claims, names = claims_by_person_from(process_dir, claims_dirname)
     graph = build_graph(claims, names, index)
     return ground_truth, cast, index, claims, graph
 
@@ -85,8 +85,8 @@ def time_scale_bar(touch: float, internal: float, external: float) -> list[str]:
     ]
 
 
-def report(process_dir: Path) -> int:
-    ground_truth, cast, index, claims, graph = load(process_dir)
+def report(process_dir: Path, claims_dirname: str = "claims") -> int:
+    ground_truth, cast, index, claims, graph = load(process_dir, claims_dirname)
     computed = metrics_module.compute(graph)
     names = {member.person_id: member.name for member in cast}
     organisation = ground_truth["organisation"]
@@ -149,8 +149,8 @@ def report(process_dir: Path) -> int:
     return 0
 
 
-def show_score(process_dir: Path) -> int:
-    ground_truth, _, _, _, graph = load(process_dir)
+def show_score(process_dir: Path, claims_dirname: str = "claims") -> int:
+    ground_truth, _, _, _, graph = load(process_dir, claims_dirname)
     computed = metrics_module.compute(graph)
     criteria = score(computed, ground_truth)
     print(f"\n{process_dir.name}")
@@ -185,6 +185,8 @@ def main() -> int:
     ):
         one = sub.add_parser(name, help=help_text)
         one.add_argument("process", help="path, name, or unambiguous prefix")
+        one.add_argument("--claims", default="claims",
+                         help="which analyzer's claims to read, e.g. claims-codex")
     sub.add_parser("list", help="list available processes")
 
     arguments = parser.parse_args()
@@ -193,8 +195,8 @@ def main() -> int:
     if arguments.command == "list":
         return list_processes()
     if arguments.command == "report":
-        return report(find_process(arguments.process))
-    return show_score(find_process(arguments.process))
+        return report(find_process(arguments.process), arguments.claims)
+    return show_score(find_process(arguments.process), arguments.claims)
 
 
 if __name__ == "__main__":

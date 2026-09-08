@@ -90,6 +90,11 @@ def durations_by_answer(claims: list[dict]) -> dict[str, list[Interval]]:
 
     `question_id` is the association: claims extracted from one answer share it, and one
     answer is one thought about one thing.
+
+    Only unambiguous answers are usable. Where one answer carried several durations there is
+    no way to tell which belongs to the wait, and picking one produced a real error - a
+    21-day equipment queue recorded as 720 minutes because an unrelated figure from the same
+    breath was nearer to hand. A missing number is recoverable; a confident wrong one is not.
     """
     grouped: dict[str, list[Interval]] = {}
     for claim in claims:
@@ -101,7 +106,7 @@ def durations_by_answer(claims: list[dict]) -> dict[str, list[Interval]]:
         interval = to_interval(quantity)
         if interval is not None:
             grouped.setdefault(question, []).append(interval)
-    return grouped
+    return {question: found for question, found in grouped.items() if len(found) == 1}
 
 
 def build_graph(
@@ -194,16 +199,25 @@ def build_graph(
     return graph
 
 
-def claims_by_person_from(process_dir) -> tuple[dict[str, list[dict]], dict[str, str]]:
-    """Load one generated process's claims, keyed by respondent."""
+def claims_by_person_from(
+    process_dir, claims_dirname: str = "claims"
+) -> tuple[dict[str, list[dict]], dict[str, str]]:
+    """Load one generated process's claims, keyed by respondent.
+
+    `claims_dirname` selects which analyzer's output to read, so the same process can be
+    scored twice and the two compared.
+    """
     import json
     from pathlib import Path
 
     process_dir = Path(process_dir)
     ground_truth = json.loads((process_dir / "ground_truth.json").read_text())
     names = {member["person_id"]: member["name"] for member in ground_truth["cast"]}
+    source = process_dir / claims_dirname
+    if not source.exists():
+        raise SystemExit(f"no claims at {source}; run analyzer/extract.py first")
     claims = {
         path.stem: json.loads(path.read_text())
-        for path in sorted((process_dir / "claims").glob("*.json"))
+        for path in sorted(source.glob("*.json"))
     }
     return claims, names

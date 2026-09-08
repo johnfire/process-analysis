@@ -35,6 +35,10 @@ TRANSPORTS = {
     # resulting number is an upper bound, not a score. Adequate for a smoke test, which asks
     # whether extraction works at all rather than how well it does.
     "hermes": ("hermes", "-z"),
+    # An independent analyzer. codex is a different model family from both the corpus
+    # architect (DeepSeek) and from Claude, so a score from this transport is a measurement
+    # rather than an upper bound - see docs/EVAL.md on correlated failure.
+    "codex": ("codex", "exec", "--skip-git-repo-check"),
 }
 DEFAULT_TRANSPORT = "hermes"
 ANALYZER_TIMEOUT_SECONDS = 1800
@@ -153,11 +157,16 @@ def extract_from_transcript(
     return ExtractionResult(valid, ungrounded, invalid)
 
 
+def claims_dirname(transport: str) -> str:
+    """Each analyzer writes its own claims, so two transports can be compared."""
+    return "claims" if transport == DEFAULT_TRANSPORT else f"claims-{transport}"
+
+
 def extract_process(process_dir: Path, transport: str = DEFAULT_TRANSPORT) -> Path:
     """Extract claims for every respondent in one generated process."""
     ground_truth = json.loads((process_dir / "ground_truth.json").read_text())
     cast_by_id = {member["person_id"]: member for member in ground_truth["cast"]}
-    claims_dir = process_dir / "claims"
+    claims_dir = process_dir / claims_dirname(transport)
     claims_dir.mkdir(exist_ok=True)
 
     for transcript_path in sorted((process_dir / "transcripts").glob("*.md")):

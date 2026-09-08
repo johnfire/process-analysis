@@ -1,4 +1,4 @@
-1. What are you waiting on right now?
+1. What are you waiting on right now — and how long has that particular one been sitting?
 2. Walk me through the last one of these that went weird. And the one before that.
 3. Who do you have to chase? Who chases you?
 4. From it landing on you to you being done with it — how much of that is you actually working on it?
