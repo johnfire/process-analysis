@@ -15,6 +15,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 
 from analyzer.resolve import resolve_person
+from analyzer.schedule import ScheduleNode, collect_cadences, match_cadence
 from analyzer.triangulation import aliases_for, named_counterparties
 
 UNIT_MINUTES = {"minute": 1, "hour": 60, "day": 1440, "week": 10080, "month": 43200}
@@ -68,6 +69,7 @@ class HandoffEdge:
 class ProcessGraph:
     nodes: dict[str, PersonNode] = field(default_factory=dict)
     edges: dict[tuple[str, str], HandoffEdge] = field(default_factory=dict)
+    schedules: dict[str, ScheduleNode] = field(default_factory=dict)
     unresolved_mentions: int = 0
 
     def node(self, person_id: str) -> PersonNode:
@@ -111,6 +113,7 @@ def build_graph(
     graph = ProcessGraph()
     for person_id in claims_by_person:
         graph.node(person_id)
+    cadences = collect_cadences(claims_by_person)
 
     for person_id, claims in claims_by_person.items():
         speaker = graph.node(person_id)
@@ -154,6 +157,20 @@ def build_graph(
                 if (resolved := resolve_person(mention, person_index)) and resolved != person_id
             }
             if not targets:
+                if kind == "wait":
+                    matched = match_cadence(payload.get("waiting_on", ""), cadences)
+                    if matched is not None:
+                        node = graph.schedules.setdefault(
+                            matched.text.lower(), ScheduleNode(matched)
+                        )
+                        node.waiters.add(person_id)
+                        stated = to_interval(payload.get("duration"))
+                        node.attributed_queue.extend(
+                            [stated]
+                            if stated is not None
+                            else answer_durations.get(claim.get("question_id") or "", [])
+                        )
+                        continue
                 graph.unresolved_mentions += 1
                 continue
 

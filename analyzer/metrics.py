@@ -45,8 +45,19 @@ class PersonMetrics:
 
 
 @dataclass(frozen=True)
+class ScheduleMetrics:
+    """A cadence that makes work wait, and the people it makes wait."""
+
+    label: str
+    declared_by: str
+    waiters: frozenset[str]
+    attributed_queue: float
+
+
+@dataclass(frozen=True)
 class ProcessMetrics:
     people: list[PersonMetrics]
+    schedules: list[ScheduleMetrics]
     internal_wait_minutes: float
     external_wait_minutes: float
     unresolved_mentions: int
@@ -68,6 +79,17 @@ class ProcessMetrics:
     def external_share(self) -> float:
         """Waiting that no redesign can collapse, as a fraction of all waiting."""
         return self.external_wait_minutes / self.queue_minutes if self.queue_minutes else 0.0
+
+    def ranked_schedules(self) -> list[ScheduleMetrics]:
+        """Cadences ordered by the delay they cause.
+
+        A batch has no opinion, so it can never appear in a person ranking - but it can be
+        the largest single source of waiting in a process, and in a batch-driven process it
+        usually is.
+        """
+        return sorted(
+            self.schedules, key=lambda one: one.attributed_queue, reverse=True
+        )
 
     def ranked_by_delay(self) -> list[PersonMetrics]:
         """Bottleneck ranking: by attributed delay, never by complaint volume."""
@@ -97,8 +119,18 @@ def compute(graph: ProcessGraph) -> ProcessMetrics:
         )
         for person_id, node in sorted(graph.nodes.items())
     ]
+    schedules = [
+        ScheduleMetrics(
+            label=node.cadence.label,
+            declared_by=node.cadence.declared_by,
+            waiters=frozenset(node.waiters),
+            attributed_queue=total(node.attributed_queue),
+        )
+        for node in graph.schedules.values()
+    ]
     return ProcessMetrics(
         people=people,
+        schedules=schedules,
         internal_wait_minutes=sum(total(node.waits_internal) for node in graph.nodes.values()),
         external_wait_minutes=sum(total(node.waits_external) for node in graph.nodes.values()),
         unresolved_mentions=graph.unresolved_mentions,

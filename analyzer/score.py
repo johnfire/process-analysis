@@ -144,7 +144,31 @@ def score(metrics: ProcessMetrics, ground_truth: dict) -> list[Criterion]:
         )
     )
 
-    # 6. The two rankings must differ, or ranking by delay is doing no work.
+    # 6. Batch-caused waiting has no counterparty, so it is invisible to any person-based
+    #    ranking. On both seed corpora it is the majority of all queue time, which means an
+    #    analysis that cannot see it cannot see most of the process.
+    batching_words = (
+        "batch", "weekly", "monday", "tuesday", "wednesday", "thursday", "friday",
+        "morning", "block", "run", "once a", "twice a", "part-time", "only in",
+    )
+    true_batch_minutes = sum(
+        step["queue_before_minutes"]
+        for step in ground_truth["steps"]
+        if any(word in (step.get("queue_cause") or "").lower() for word in batching_words)
+    )
+    ranked_schedules = metrics.ranked_schedules()
+    found_batch_minutes = ranked_schedules[0].attributed_queue if ranked_schedules else 0.0
+    criteria.append(
+        Criterion(
+            "batch_delay_surfaced",
+            true_batch_minutes < 1440 or found_batch_minutes >= 1440,
+            f"largest cadence {found_batch_minutes / 1440:.1f}d "
+            f"({ranked_schedules[0].label if ranked_schedules else 'none'}); "
+            f"true batch-caused queue {true_batch_minutes / 1440:.1f}d",
+        )
+    )
+
+    # 7. The two rankings must differ, or ranking by delay is doing no work.
     criteria.append(
         Criterion(
             "delay_ranking_differs_from_complaints",

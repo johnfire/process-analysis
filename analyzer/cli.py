@@ -114,6 +114,17 @@ def report(process_dir: Path) -> int:
               f" {human(person.attributed_queue):>10} attributed"
               f"   (complaint rank {complaint_rank}){marker}")
 
+    schedules = computed.ranked_schedules()
+    if schedules:
+        print("\nWHAT MAKES WORK WAIT  (cadences, which have no counterparty to blame)")
+        for cadence in schedules[:5]:
+            owner = "several people" if cadence.declared_by == "multiple" else names.get(
+                cadence.declared_by, cadence.declared_by
+            )
+            waiting = ", ".join(sorted(names.get(one, one) for one in cadence.waiters))
+            print(f"  {human(cadence.attributed_queue):>10}  {cadence.label}")
+            print(f"              run by {owner} · holds up {waiting}")
+
     mentions: dict[tuple[str, str], list[dict]] = {}
     for speaker, speaker_claims in claims.items():
         speaker_aliases = aliases_for(speaker, names.get(speaker, speaker))
