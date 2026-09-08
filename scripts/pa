@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# process-analysis launcher. Bootstraps the venv on first run, then delegates.
+set -euo pipefail
+REPO="${PROCESS_ANALYSIS_REPO:-$HOME/ppp2/process-analysis}"
+
+if [[ ! -d "$REPO" ]]; then
+  echo "pa: repo not found at $REPO (set PROCESS_ANALYSIS_REPO to override)" >&2
+  exit 1
+fi
+
+if [[ ! -x "$REPO/.venv/bin/python" ]]; then
+  echo "pa: first run, creating .venv ..." >&2
+  python3 -m venv "$REPO/.venv"
+  "$REPO/.venv/bin/pip" install -q -e "$REPO[dev]"
+fi
+
+cd "$REPO"
+exec "$REPO/.venv/bin/python" -m analyzer "$@"

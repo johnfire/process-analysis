@@ -23,6 +23,29 @@ CORPUS_ROOT = Path(__file__).resolve().parents[1] / "corpus" / "seed"
 BAR_WIDTH = 62
 
 
+def find_process(reference: str) -> Path:
+    """Resolve a process by path, exact name, or unambiguous prefix.
+
+    Typing the full corpus path every time is the friction that stops a tool being used, so
+    `report hospital` resolves to corpus/seed/hospital-onboarding. An ambiguous abbreviation
+    lists the candidates rather than picking one.
+    """
+    candidate = Path(reference)
+    if candidate.exists():
+        return candidate
+    if (CORPUS_ROOT / reference).exists():
+        return CORPUS_ROOT / reference
+    available = sorted(path for path in CORPUS_ROOT.iterdir() if path.is_dir())
+    matches = [path for path in available if path.name.startswith(reference)]
+    if not matches:
+        matches = [path for path in available if reference.lower() in path.name.lower()]
+    if len(matches) == 1:
+        return matches[0]
+    names = ", ".join(path.name for path in (matches or available))
+    problem = "ambiguous" if matches else "no such process"
+    raise SystemExit(f"{problem}: {reference!r}\n  available: {names}")
+
+
 def load(process_dir: Path):
     ground_truth = json.loads((process_dir / "ground_truth.json").read_text())
     cast = [
@@ -144,21 +167,23 @@ def list_processes() -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(prog="python -m analyzer", description=__doc__)
-    sub = parser.add_subparsers(dest="command", required=True)
+    sub = parser.add_subparsers(dest="command", required=False)
     for name, help_text in (
         ("report", "analyse a process and print what was found"),
         ("score", "score the analysis against the hidden ground truth"),
     ):
         one = sub.add_parser(name, help=help_text)
-        one.add_argument("process_dir", type=Path)
+        one.add_argument("process", help="path, name, or unambiguous prefix")
     sub.add_parser("list", help="list available processes")
 
     arguments = parser.parse_args()
+    if arguments.command is None:
+        return list_processes()
     if arguments.command == "list":
         return list_processes()
     if arguments.command == "report":
-        return report(arguments.process_dir)
-    return show_score(arguments.process_dir)
+        return report(find_process(arguments.process))
+    return show_score(find_process(arguments.process))
 
 
 if __name__ == "__main__":

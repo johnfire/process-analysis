@@ -28,10 +28,29 @@ recovers a planted bottleneck from six biased accounts and resists the planted d
 
 ```bash
 python -m venv .venv && .venv/bin/pip install -e ".[dev]"
-.venv/bin/python -m analyzer list
-.venv/bin/python -m analyzer report corpus/seed/hospital-onboarding
-.venv/bin/python -m analyzer score  corpus/seed/hospital-onboarding
+.venv/bin/python -m analyzer report hospital
 ```
+
+Processes resolve by name, prefix or substring, so `hospital` finds
+`corpus/seed/hospital-onboarding`; an ambiguous abbreviation lists the candidates instead of
+guessing. With no arguments the tool lists what it has.
+
+For a launcher that bootstraps the venv on first run and works from any directory, put this on
+your PATH as `pa`:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+REPO="${PROCESS_ANALYSIS_REPO:-$HOME/ppp2/process-analysis}"
+[[ -x "$REPO/.venv/bin/python" ]] || {
+  python3 -m venv "$REPO/.venv"
+  "$REPO/.venv/bin/pip" install -q -e "$REPO[dev]"
+}
+cd "$REPO"
+exec "$REPO/.venv/bin/python" -m analyzer "$@"
+```
+
+Then `pa`, `pa report hospital`, `pa score inbound`.
 
 `report` runs the pipeline over an already-extracted process and prints what it found: the
 time-scale picture, where the delay actually is, how that ordering differs from who complains
