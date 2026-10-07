@@ -8,6 +8,11 @@ on:
 permissions:
   contents: read
 
+# One deploy at a time; a newer push waits rather than racing an in-flight deploy.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   checks:
     name: Lint, types, tests, score ratchet
@@ -21,10 +26,39 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
-      - run: pip install -e ".[dev]"
+      - run: pip install -e ".[web,dev]"
       - run: ruff check .
       - run: mypy
-      - run: pytest -q
+      - run: pytest -q --ignore=tests/integration
+
+  integration:
+    name: Integration tests (real Postgres)
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine@sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24
+        env:
+          POSTGRES_USER: process_analysis
+          POSTGRES_PASSWORD: process_analysis
+          POSTGRES_DB: process_analysis_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgresql+psycopg://process_analysis:process_analysis@127.0.0.1:5432/process_analysis_test
+      REQUIRE_DATABASE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+      - run: pip install -e ".[web,dev]"
+      - run: pytest -q tests/integration
 
   dependencies:
     name: Dependency audit
@@ -34,7 +68,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.14"
-      - run: pip install -e ".[dev]"
+      - run: pip install -e ".[web,dev]"
       - run: pip-audit --skip-editable
 
   secrets:
@@ -47,3 +81,87 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  build-push:
+    name: Build and push image
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [checks, integration, dependencies, secrets]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/johnfire/process-analysis:latest
+            ghcr.io/johnfire/process-analysis:${{ github.sha }}
+          labels: org.opencontainers.image.source=https://github.com/johnfire/process-analysis
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy:
+    name: Deploy to VPS
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build-push
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1
+        env:
+          GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GHCR_USER: ${{ github.actor }}
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          envs: GHCR_TOKEN,GHCR_USER
+          script: |
+            set -euo pipefail
+            cd /opt/process-analysis
+            git pull --ff-only
+            test "$(git rev-parse HEAD)" = "${{ github.sha }}"
+            # Refuse to deploy onto an unbootstrapped or mis-pointed checkout.
+            test -f .env
+            grep -qx 'APP_PORT=8110' .env
+            grep -Eq '^POSTGRES_PASSWORD=.{24,}$' .env
+            export COMPOSE_FILE=docker-compose.prod.yml
+            export IMAGE_TAG=${{ github.sha }}
+            docker compose config --quiet
+            echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GHCR_USER" --password-stdin
+            docker compose pull web worker db db-backup
+            docker compose --profile tools pull migrate
+            docker compose up -d db
+            docker compose --profile tools run --rm migrate
+            docker compose up -d web worker db-backup
+            for attempt in $(seq 1 30); do
+              if curl -fsS http://127.0.0.1:8110/health >/dev/null 2>&1; then
+                break
+              fi
+              sleep 3
+            done
+            curl -fsS http://127.0.0.1:8110/health
+            docker logout ghcr.io
+
+  verify-live:
+    name: Verify live over HTTPS
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -fsS https://process-analysis.christopherrehm.de/health
+          curl -fsS https://process-analysis.christopherrehm.de/ | grep -q "17 minutes"

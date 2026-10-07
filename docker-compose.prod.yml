@@ -1,0 +1,86 @@
+# Production stack on the VPS. CI builds and pushes the image; the VPS only pulls. IMAGE_TAG is the
+# commit SHA set by the deploy job, so a deploy is exact and rollbackable. Only the web port is
+# published, and only on 127.0.0.1: Apache on the host terminates TLS.
+x-app-environment: &app-environment
+  DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-process_analysis}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD required}@db:5432/${POSTGRES_DB:-process_analysis}
+  LOG_LEVEL: ${LOG_LEVEL:-INFO}
+
+x-hardening: &hardening
+  restart: unless-stopped
+  security_opt:
+    - no-new-privileges:true
+  cap_drop:
+    - ALL
+
+services:
+  web:
+    <<: *hardening
+    image: ghcr.io/johnfire/process-analysis:${IMAGE_TAG:-latest}
+    environment: *app-environment
+    ports:
+      - "127.0.0.1:${APP_PORT:-8110}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  worker:
+    <<: *hardening
+    image: ghcr.io/johnfire/process-analysis:${IMAGE_TAG:-latest}
+    command: ["python", "-m", "worker"]
+    environment: *app-environment
+    depends_on:
+      db:
+        condition: service_healthy
+
+  migrate:
+    image: ghcr.io/johnfire/process-analysis:${IMAGE_TAG:-latest}
+    command: ["alembic", "upgrade", "head"]
+    environment: *app-environment
+    profiles: [tools]
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:17-alpine@sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-process_analysis}
+      POSTGRES_USER: ${POSTGRES_USER:-process_analysis}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD required}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-process_analysis} -d ${POSTGRES_DB:-process_analysis}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  db-backup:
+    image: prodrigestivill/postgres-backup-local:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_DB: ${POSTGRES_DB:-process_analysis}
+      POSTGRES_USER: ${POSTGRES_USER:-process_analysis}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD required}
+      POSTGRES_EXTRA_OPTS: --clean --if-exists
+      SCHEDULE: "@daily"
+      BACKUP_KEEP_DAYS: 7
+      BACKUP_KEEP_WEEKS: 4
+      BACKUP_KEEP_MONTHS: 3
+    volumes:
+      - ./backups:/backups
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+    name: process_analysis_pgdata
