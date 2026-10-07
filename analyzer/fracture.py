@@ -76,7 +76,7 @@ def stated_ranges(claims: list[dict]) -> list[tuple[float, float]]:
         quantity = payload.get("value") if one.get("kind") == "duration" else payload.get("duration")
         if not isinstance(quantity, dict):
             continue
-        scale = UNIT_MINUTES.get(quantity.get("unit"))
+        scale = UNIT_MINUTES.get(str(quantity.get("unit")))
         if scale is None:
             continue
         low, high = quantity.get("low"), quantity.get("high")

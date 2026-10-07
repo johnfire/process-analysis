@@ -56,10 +56,10 @@ class TestResolution:
 
 
 class TestAmbiguity:
-    CLASHING = [
+    CLASHING = (
         Person("petra-l", "Petra Lindqvist", "Planner"),
         Person("petra-w", "Petra Weber", "Nurse"),
-    ]
+    )
 
     def test_shared_first_name_is_excluded_not_guessed(self):
         """Merging two people fabricates agreement, which makes a fracture disappear."""

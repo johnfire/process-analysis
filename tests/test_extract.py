@@ -5,7 +5,6 @@ The model call is not tested here. Everything that guards its output is.
 
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 

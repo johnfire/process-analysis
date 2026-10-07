@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import json
 import sys
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
 
 import pytest
 
@@ -89,7 +89,7 @@ class TestAgainstCorpus:
         go to a distribution alias nobody reads - so her account contains no trace of him.
         The silence is the evidence.
         """
-        found, involved = self.planted_fracture(
+        _found, involved = self.planted_fracture(
             REPO_ROOT / "corpus" / "seed" / "inbound-lead-to-qualified-contact"
         )
         assert involved, "planted fracture not detected"

@@ -50,9 +50,9 @@ def named_counterparties(claim: dict, respondent_aliases: frozenset[str]) -> lis
             found.append(candidate.strip())
     for mention in claim.get("entity_refs", []):
         text = mention.get("text", "").strip()
-        if mention.get("type") in {"actor", "team", "external_party"} and text:
-            if text.lower() not in respondent_aliases:
-                found.append(text)
+        is_party = mention.get("type") in {"actor", "team", "external_party"}
+        if is_party and text and text.lower() not in respondent_aliases:
+            found.append(text)
     return sorted(set(found), key=str.lower)
 
 

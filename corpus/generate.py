@@ -47,6 +47,7 @@ def run_model(call: ModelCall, prompt: str) -> str:
         text=True,
         stdin=subprocess.DEVNULL,
         timeout=call.timeout_seconds,
+        check=False,
     )
     if completed.returncode != 0:
         raise RuntimeError(f"{call.label} exited {completed.returncode}: {completed.stderr[-2000:]}")

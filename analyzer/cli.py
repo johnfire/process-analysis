@@ -80,8 +80,8 @@ def time_scale_bar(touch: float, internal: float, external: float) -> list[str]:
     bar = "█" * widths[0] + "▒" * widths[1] + "░" * widths[2]
     return [
         f"  {bar}",
-        f"  █ work {touch / span:6.2%}   ▒ waiting on us {internal / span:6.2%}   "
-        f"░ waiting on others {external / span:6.2%}",
+        (f"  █ work {touch / span:6.2%}   ▒ waiting on us {internal / span:6.2%}   "
+         f"░ waiting on others {external / span:6.2%}"),
     ]
 
 

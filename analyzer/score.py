@@ -56,7 +56,7 @@ def spearman(left: list[float], right: list[float]) -> float:
     mean_left = sum(left_ranks) / len(left_ranks)
     mean_right = sum(right_ranks) / len(right_ranks)
     covariance = sum(
-        (a - mean_left) * (b - mean_right) for a, b in zip(left_ranks, right_ranks)
+        (a - mean_left) * (b - mean_right) for a, b in zip(left_ranks, right_ranks, strict=True)
     )
     spread_left = sum((a - mean_left) ** 2 for a in left_ranks) ** 0.5
     spread_right = sum((b - mean_right) ** 2 for b in right_ranks) ** 0.5

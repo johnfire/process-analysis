@@ -15,7 +15,7 @@ import re
 import subprocess
 import sys
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -108,6 +108,7 @@ def run_analyzer(prompt: str, transport: str = DEFAULT_TRANSPORT) -> str:
         text=True,
         stdin=subprocess.DEVNULL,
         timeout=ANALYZER_TIMEOUT_SECONDS,
+        check=False,
     )
     if completed.returncode != 0:
         raise RuntimeError(f"analyzer exited {completed.returncode}: {completed.stderr[-2000:]}")
@@ -145,7 +146,7 @@ def extract_from_transcript(
             "RESPONDENT_NAME": respondent.name,
             "RESPONDENT_ROLE": respondent.role,
             "SESSION_ID": session_id,
-            "CAPTURED_AT": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "CAPTURED_AT": datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "SCHEMA": CLAIM_SCHEMA.read_text(),
             "TRANSCRIPT": transcript,
         },

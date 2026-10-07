@@ -11,7 +11,6 @@ halves of a number neither can see alone; that is a property of the people, not 
 
 from __future__ import annotations
 
-from collections import defaultdict
 from dataclasses import dataclass, field
 
 from analyzer.resolve import resolve_person
@@ -36,7 +35,7 @@ class Interval:
 def to_interval(quantity: dict | None) -> Interval | None:
     if not isinstance(quantity, dict):
         return None
-    scale = UNIT_MINUTES.get(quantity.get("unit"))
+    scale = UNIT_MINUTES.get(str(quantity.get("unit")))
     low, high = quantity.get("low"), quantity.get("high")
     if scale is None or not isinstance(low, (int, float)) or not isinstance(high, (int, float)):
         return None
