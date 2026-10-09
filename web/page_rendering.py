@@ -8,10 +8,12 @@ from fastapi import Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
+from analyzer.formatting import human
 from web.current_user import SignedInUser
 
 PACKAGE_DIR = Path(__file__).resolve().parent
 templates = Jinja2Templates(directory=PACKAGE_DIR / "templates")
+templates.env.filters["human_minutes"] = human
 
 # Notices travel as a fixed key in the query string and map to fixed text, so no page ever echoes
 # attacker-controlled text.

@@ -33,6 +33,9 @@ class PersonMetrics:
     self_reported_queue: float
     attributed_queue: float
     complaints: int
+    # How many durations colleagues gave for waiting on this person. Zero means "no evidence",
+    # which is different from "waits zero minutes" and must never be drawn as a short bar.
+    attributed_count: int = 0
 
     @property
     def queue_gap(self) -> float:
@@ -52,6 +55,7 @@ class ScheduleMetrics:
     declared_by: str
     waiters: frozenset[str]
     attributed_queue: float
+    attributed_count: int = 0
 
 
 @dataclass(frozen=True)
@@ -116,6 +120,7 @@ def compute(graph: ProcessGraph) -> ProcessMetrics:
             self_reported_queue=total(node.queue_self_reported),
             attributed_queue=total(attributed.get(person_id, [])),
             complaints=node.complaints,
+            attributed_count=len(attributed.get(person_id, [])),
         )
         for person_id, node in sorted(graph.nodes.items())
     ]
@@ -125,6 +130,7 @@ def compute(graph: ProcessGraph) -> ProcessMetrics:
             declared_by=node.cadence.declared_by,
             waiters=frozenset(node.waiters),
             attributed_queue=total(node.attributed_queue),
+            attributed_count=len(node.attributed_queue),
         )
         for node in graph.schedules.values()
     ]

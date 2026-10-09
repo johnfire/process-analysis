@@ -57,7 +57,7 @@ def test_missing_database_url_stops_startup():
 
 
 def test_migrations_have_a_single_head():
-    assert head_revision_of() == "0002"
+    assert head_revision_of() == "0003"
 
 
 def test_landing_page_still_renders_with_a_session_cookie_and_the_database_down(client):
@@ -71,7 +71,9 @@ def test_landing_page_still_renders_with_a_session_cookie_and_the_database_down(
 
 def test_login_with_the_database_down_is_a_clear_503_not_a_crash(client):
     response = client.post(
-        "/login", data={"email": "a@b.de", "password": "whatever it is"}, headers={"Origin": "http://testserver"}
+        "/login",
+        data={"email": "a@b.de", "password": "whatever it is"},
+        headers={"Origin": "http://testserver"},
     )
     assert response.status_code == 503 and "Temporarily unavailable" in response.text
 

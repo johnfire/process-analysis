@@ -5,12 +5,13 @@ from __future__ import annotations
 import logging
 from datetime import timedelta
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.exc import OperationalError
+from starlette.exceptions import HTTPException
 
-from web import account_routes, invite_routes, login_routes, recovery_routes
+from web import account_routes, invite_routes, login_routes, recovery_routes, viewer_routes
 from web.current_user import LoginRequired, load_session_user
 from web.database import create_database_engine
 from web.health import check_health, head_revision_of
@@ -46,7 +47,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.middleware("http")(reject_cross_site_writes)
     app.middleware("http")(add_security_headers)
     app.middleware("http")(attach_correlation_id)
-    for router in (login_routes.router, recovery_routes.router, account_routes.router, invite_routes.router):
+    for router in (
+        login_routes.router,
+        recovery_routes.router,
+        account_routes.router,
+        invite_routes.router,
+        viewer_routes.router,
+    ):
         app.include_router(router)
     register_routes(app)
     register_error_handlers(app)
@@ -124,6 +131,9 @@ def register_error_handlers(app: FastAPI) -> None:
 
     @app.exception_handler(HTTPException)
     def show_http_error(request: Request, error: HTTPException):
-        if error.status_code == 403 and "text/html" in request.headers.get("accept", ""):
+        wants_page = "text/html" in request.headers.get("accept", "")
+        if error.status_code == 403 and wants_page:
             return render_page(request, "forbidden.html", status_code=403)
+        if error.status_code == 404 and wants_page:
+            return render_page(request, "not_found.html", status_code=404)
         return JSONResponse({"detail": error.detail}, status_code=error.status_code)

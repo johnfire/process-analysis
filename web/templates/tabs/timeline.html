@@ -1,0 +1,16 @@
+<h2>Work against waiting, to one scale</h2>
+{% if chart %}
+  <div class="chart-wrap">{{ chart }}</div>
+  <ul class="legend">
+    <li><span class="swatch swatch-work"></span> Work: {{ view.result.time.touch_minutes|human_minutes }}</li>
+    <li><span class="swatch swatch-internal"></span> Waiting on us: {{ view.result.time.internal_wait_minutes|human_minutes }}</li>
+    <li><span class="swatch swatch-external"></span> Waiting on others: {{ view.result.time.external_wait_minutes|human_minutes }}</li>
+  </ul>
+  <p>
+    The work is {{ "%.2f"|format(view.result.time.cycle_efficiency * 100) }}% of the elapsed time. A work share too thin to see
+    is drawn two units wide so it is never invisible. Of all the waiting,
+    {{ "%.0f"|format(view.result.time.external_share * 100) }}% is waiting on people outside the organisation, which no redesign inside it can remove.
+  </p>
+{% else %}
+  <p>No durations were recovered from these interviews, so there is nothing to draw. This is a finding about the interviews, not a zero.</p>
+{% endif %}

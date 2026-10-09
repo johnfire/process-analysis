@@ -1,0 +1,35 @@
+<h2>Every claim, with its quote</h2>
+<form method="get" class="filters">
+  <input type="hidden" name="tab" value="evidence">
+  <input type="hidden" name="claims" value="{{ view.claim_set }}">
+  <label for="filter-person">Person</label>
+  <select id="filter-person" name="person">
+    <option value="">Everyone</option>
+    {% for key in people %}<option value="{{ key }}" {% if key == filter_person %}selected{% endif %}>{{ key }}</option>{% endfor %}
+  </select>
+  <label for="filter-kind">Kind</label>
+  <select id="filter-kind" name="kind">
+    <option value="">All kinds</option>
+    {% for name in kinds %}<option value="{{ name }}" {% if name == filter_kind %}selected{% endif %}>{{ name }}</option>{% endfor %}
+  </select>
+  <button type="submit" class="button button-small">Filter</button>
+</form>
+<p class="hint">{{ claim_total }} claim{{ "" if claim_total == 1 else "s" }}{% if has_next_page or page > 1 %}, page {{ page }}{% endif %}.</p>
+<table class="data-table evidence-table">
+  <thead><tr><th scope="col">Who</th><th scope="col">Kind</th><th scope="col">What was said</th><th scope="col">Basis</th><th scope="col"><span class="visually-hidden">Source</span></th></tr></thead>
+  <tbody>
+  {% for claim in claims %}
+    <tr>
+      <td>{{ claim.person_key }}</td>
+      <td>{{ claim.kind }}</td>
+      <td>{{ claim.verbatim }}</td>
+      <td>{{ claim.subject_scope }}{% if claim.hedging and claim.hedging != "firm" %}, {{ claim.hedging }}{% endif %}{% if claim.polarity == "denied" %}, denied{% endif %}</td>
+      <td>{% if claim.line %}<a href="/processes/{{ view.process.id }}/transcripts/{{ claim.person_key }}#L{{ claim.line }}">transcript</a>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="pager">
+  {% if page > 1 %}<a href="?tab=evidence&amp;claims={{ view.claim_set }}&amp;person={{ filter_person or '' }}&amp;kind={{ filter_kind or '' }}&amp;page={{ page - 1 }}">Previous page</a>{% endif %}
+  {% if has_next_page %}<a href="?tab=evidence&amp;claims={{ view.claim_set }}&amp;person={{ filter_person or '' }}&amp;kind={{ filter_kind or '' }}&amp;page={{ page + 1 }}">Next page</a>{% endif %}
+</p>

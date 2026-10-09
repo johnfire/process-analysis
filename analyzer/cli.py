@@ -13,11 +13,12 @@ import json
 from pathlib import Path
 
 from analyzer import metrics as metrics_module
+from analyzer.analysis import collect_mentions
+from analyzer.formatting import human
 from analyzer.fracture import find_fractures
 from analyzer.graph import build_graph, claims_by_person_from
-from analyzer.resolve import Person, build_person_index, resolve_person
+from analyzer.resolve import Person, build_person_index
 from analyzer.score import score
-from analyzer.triangulation import aliases_for, named_counterparties
 
 CORPUS_ROOT = Path(__file__).resolve().parents[1] / "corpus" / "seed"
 BAR_WIDTH = 62
@@ -56,14 +57,6 @@ def load(process_dir: Path, claims_dirname: str = "claims"):
     claims, names = claims_by_person_from(process_dir, claims_dirname)
     graph = build_graph(claims, names, index)
     return ground_truth, cast, index, claims, graph
-
-
-def human(minutes: float) -> str:
-    if minutes < 90:
-        return f"{minutes:.0f} min"
-    if minutes < 1440:
-        return f"{minutes / 60:.1f} hr"
-    return f"{minutes / 1440:.1f} days"
 
 
 def time_scale_bar(touch: float, internal: float, external: float) -> list[str]:
@@ -125,16 +118,7 @@ def report(process_dir: Path, claims_dirname: str = "claims") -> int:
             print(f"  {human(cadence.attributed_queue):>10}  {cadence.label}")
             print(f"              run by {owner} · holds up {waiting}")
 
-    mentions: dict[tuple[str, str], list[dict]] = {}
-    for speaker, speaker_claims in claims.items():
-        speaker_aliases = aliases_for(speaker, names.get(speaker, speaker))
-        for claim in speaker_claims:
-            for mention in named_counterparties(claim, speaker_aliases):
-                subject = resolve_person(mention, index)
-                if subject and subject != speaker:
-                    mentions.setdefault((speaker, subject), []).append(claim)
-
-    fractures = find_fractures(mentions)
+    fractures = find_fractures(collect_mentions(claims, names, index))
     print(f"\nFRACTURES  ({len(fractures)} found)")
     if not fractures:
         print("  none")

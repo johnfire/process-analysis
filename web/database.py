@@ -13,14 +13,17 @@ from sqlalchemy import (
     DateTime,
     ForeignKey,
     Index,
+    Integer,
     MetaData,
     String,
     Table,
     Text,
+    UniqueConstraint,
     Uuid,
     create_engine,
     text,
 )
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.engine import Engine
 
 metadata = MetaData()
@@ -119,6 +122,69 @@ login_attempts = Table(
     Column("is_success", Boolean, nullable=False),
     Index("ix_login_attempts_email_at", "email_key", "at"),
     Index("ix_login_attempts_ip_at", "ip_address", "at"),
+)
+
+# Owned by a user, or by nobody: a client with no owner is shared with every signed-in user and
+# read-only (the built-in synthetic corpus).
+clients = Table(
+    "clients",
+    metadata,
+    Column("id", Uuid, primary_key=True, server_default=NEW_UUID),
+    Column("owner_user_id", Uuid, ForeignKey("users.id", ondelete=CASCADE), index=True),
+    Column("name", String(200), nullable=False),
+    Column("is_synthetic", Boolean, nullable=False, server_default=text("false")),
+    Column("created_at", DateTime(timezone=True), nullable=False, server_default=NOW),
+)
+
+processes = Table(
+    "processes",
+    metadata,
+    Column("id", Uuid, primary_key=True, server_default=NEW_UUID),
+    Column("client_id", Uuid, ForeignKey("clients.id", ondelete=CASCADE), nullable=False, index=True),
+    Column("slug", String(200)),
+    Column("name", String(200), nullable=False),
+    Column("domain", Text, nullable=False),
+    Column("organisation", JSONB, nullable=False),
+    Column("cast", JSONB, nullable=False),
+    Column("ground_truth", JSONB),
+    Column("status", String(20), nullable=False, server_default="analysed"),
+    Column("created_at", DateTime(timezone=True), nullable=False, server_default=NOW),
+    UniqueConstraint("client_id", "slug", name="uq_processes_client_slug"),
+)
+
+transcripts = Table(
+    "transcripts",
+    metadata,
+    Column("id", Uuid, primary_key=True, server_default=NEW_UUID),
+    Column("process_id", Uuid, ForeignKey("processes.id", ondelete=CASCADE), nullable=False),
+    Column("person_key", String(100), nullable=False),
+    Column("body", Text, nullable=False),
+    UniqueConstraint("process_id", "person_key", name="uq_transcripts_process_person"),
+)
+
+claims = Table(
+    "claims",
+    metadata,
+    Column("id", BigInteger, primary_key=True, autoincrement=True),
+    Column("process_id", Uuid, ForeignKey("processes.id", ondelete=CASCADE), nullable=False),
+    Column("claim_set", String(60), nullable=False),
+    Column("person_key", String(100), nullable=False),
+    Column("position", Integer, nullable=False),
+    Column("body", JSONB, nullable=False),
+    Index("ix_claims_process_set_person", "process_id", "claim_set", "person_key", "position"),
+)
+
+# Append-only: a new analyzer version adds a row, it never overwrites an earlier result.
+results = Table(
+    "results",
+    metadata,
+    Column("id", Uuid, primary_key=True, server_default=NEW_UUID),
+    Column("process_id", Uuid, ForeignKey("processes.id", ondelete=CASCADE), nullable=False, index=True),
+    Column("claim_set", String(60), nullable=False),
+    Column("analyzer_version", String(40), nullable=False),
+    Column("document", JSONB, nullable=False),
+    Column("created_at", DateTime(timezone=True), nullable=False, server_default=NOW),
+    UniqueConstraint("process_id", "claim_set", "analyzer_version", name="uq_results_process_set_version"),
 )
 
 

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ client.name }} · Process Analysis{% endblock %}
+{% block content %}
+<section class="page">
+  <p class="crumbs"><a href="/clients">Clients</a> /</p>
+  <h1 class="page-title">{{ client.name }}</h1>
+  {% if processes %}
+  <ul class="card-list">
+    {% for process in processes %}
+    {% set headline = headlines.get(process.id) %}
+    <li class="card">
+      <h2><a href="/processes/{{ process.id }}">{{ process.name }}</a></h2>
+      <p>{{ process.domain }}</p>
+      {% if headline %}
+      <p class="hint">
+        {{ headline.interviews }} interviews · {{ headline.claims }} claims ·
+        cycle efficiency {{ "%.2f"|format(headline.time.cycle_efficiency * 100) }}%
+      </p>
+      {% else %}
+      <p class="hint">Status: {{ process.status }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No processes in this client yet.</p>
+  {% endif %}
+</section>
+{% endblock %}

@@ -1,7 +1,7 @@
 # Deployment
 
 Push to `main` → CI (lint, types, tests, integration on Postgres, score ratchet, dependency audit,
-secret scan) → image `ghcr.io/johnfire/process-analysis:<sha>` → SSH to the VPS → migrate → `up -d`
+secret scan) → image `ghcr.io/johnfire/process-analysis:<sha>` → SSH to the VPS → migrate → import the synthetic corpus (`python -m web.manage import-seed`, safe to repeat) → `up -d`
 → `/health` on the VPS → `/health` and the landing page over HTTPS. The VPS never builds; it pulls.
 
 Live at `https://process-analysis.christopherrehm.de`. Container port 8000, published only on

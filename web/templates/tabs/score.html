@@ -1,0 +1,17 @@
+<h2>Scored against the hidden answer key</h2>
+<p>This process was invented with a planted bottleneck and planted decoys. These are the checks on whether the analysis found the truth rather than the noise.</p>
+{% set passed = view.result.score|selectattr("passed")|list|length %}
+<p class="score-total">{{ passed }} of {{ view.result.score|length }} criteria pass.</p>
+<table class="data-table">
+  <thead><tr><th scope="col">Result</th><th scope="col">Criterion</th><th scope="col">Detail</th></tr></thead>
+  <tbody>
+  {% for criterion in view.result.score %}
+    <tr>
+      <td><span class="tag {{ 'tag-pass' if criterion.passed else 'tag-fail' }}">{{ "pass" if criterion.passed else "fail" }}</span></td>
+      <td>{{ criterion.name|replace("_", " ") }}</td>
+      <td>{{ criterion.detail }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="hint">Analyzer version {{ view.result.analyzer_version }}, claim set {{ view.result.claim_set }}.</p>

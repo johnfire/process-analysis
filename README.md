@@ -20,9 +20,12 @@ Make every step twice as fast and you have saved eight and a half minutes.
 
 ## Status
 
-Pre-implementation, designed. v0 is a headless analyzer scored against synthetic processes with
-hidden ground truth — no UI, no real respondents, no interview surface. It is done when it
-recovers a planted bottleneck from six biased accounts and resists the planted decoys.
+The headless analyzer works and is scored against two synthetic processes with hidden answer keys.
+A hosted web app wraps it at `https://process-analysis.christopherrehm.de`: invite-only accounts,
+and a viewer for the stored analyses (timeline, delay against complaints, cadences, fractures, every
+claim linked to its transcript line, and the score for synthetic processes). Not built yet:
+uploading your own transcripts and running extraction from the browser (the workbench), and
+interviews. See `docs/plans/2026-10-07-ui-design.md` for the stages.
 
 ## Try it
 

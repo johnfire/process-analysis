@@ -5,7 +5,8 @@
 .pytest_cache
 *.egg-info
 *.zip
-corpus
+corpus/*
+!corpus/seed
 tests
 docs
 assets

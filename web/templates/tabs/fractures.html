@@ -1,0 +1,32 @@
+<h2>Where two accounts do not agree</h2>
+<p>A fracture is the located point where information is lost between two people. <strong>Silence</strong> means one person describes an active dependency and the other never mentions them. <strong>Contradiction</strong> means both describe the work, incompatibly.</p>
+{% for fracture in fractures %}
+<article class="fracture">
+  <h3><span class="tag tag-{{ fracture.kind }}">{{ fracture.kind }}</span> {{ fracture.claimant.name }} / {{ fracture.counterparty.name }}</h3>
+  <p>{{ fracture.summary }}</p>
+  <div class="fracture-sides">
+    <div>
+      <h4>{{ fracture.claimant.name }} said</h4>
+      {% for quote in fracture.claimant_claims %}
+      <blockquote>
+        {{ quote.verbatim }}
+        {% if quote.line %}<a class="source-link" href="/processes/{{ view.process.id }}/transcripts/{{ quote.respondent_id }}#L{{ quote.line }}">in the transcript</a>{% endif %}
+      </blockquote>
+      {% endfor %}
+    </div>
+    <div>
+      <h4>{{ fracture.counterparty.name }} said</h4>
+      {% for quote in fracture.counterparty_claims %}
+      <blockquote>
+        {{ quote.verbatim }}
+        {% if quote.line %}<a class="source-link" href="/processes/{{ view.process.id }}/transcripts/{{ quote.respondent_id }}#L{{ quote.line }}">in the transcript</a>{% endif %}
+      </blockquote>
+      {% else %}
+      <p class="muted">Nothing. {{ fracture.counterparty.name }}'s interview never mentions {{ fracture.claimant.name }}.</p>
+      {% endfor %}
+    </div>
+  </div>
+</article>
+{% else %}
+<p>No fractures found.</p>
+{% endfor %}

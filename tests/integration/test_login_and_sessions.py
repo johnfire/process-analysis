@@ -21,7 +21,7 @@ def test_correct_login_sets_a_hardened_cookie_and_redirects(browser, make_user):
     make_user()
     response = log_in(browser)
     assert response.status_code == 303
-    assert response.headers["location"] == "/account"
+    assert response.headers["location"] == "/clients"
     cookie = response.headers["set-cookie"].lower()
     assert "httponly" in cookie and "samesite=lax" in cookie and "path=/" in cookie
 

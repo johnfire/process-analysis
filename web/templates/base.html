@@ -18,6 +18,7 @@
     </a>
     <nav class="masthead-nav" aria-label="Account">
       {% if user %}
+        <a href="/clients">Clients</a>
         {% if user.is_admin %}<a href="/invites">Invites</a>{% endif %}
         <a href="/account">Account</a>
         <form method="post" action="/logout" class="inline-form">

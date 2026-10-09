@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ speaker }} · Transcript · Process Analysis{% endblock %}
+{% block content %}
+<section class="page transcript">
+  <p class="crumbs"><a href="/clients">Clients</a> / <a href="/processes/{{ process.id }}">{{ process.name }}</a> /</p>
+  <h1 class="page-title">Interview: {{ speaker }}</h1>
+  {% for number, text in lines %}
+    <p id="L{{ number }}" class="transcript-line"><a class="line-number" href="#L{{ number }}" aria-label="Line {{ number }}">{{ number }}</a> {{ text }}</p>
+  {% endfor %}
+</section>
+{% endblock %}

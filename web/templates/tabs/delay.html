@@ -1,0 +1,26 @@
+<h2>Where the delay is, beside who complains</h2>
+<p>The left column ranks people by the waiting colleagues attribute to them. The right ranks them by how often they complain. A person with no colleague-stated duration is shown as having no time evidence; that is different from waiting zero minutes.</p>
+{% if chart %}
+  <div class="chart-wrap">{{ chart }}</div>
+{% endif %}
+<table class="data-table">
+  <thead><tr><th scope="col">Delay rank</th><th scope="col">Person</th><th scope="col">Role</th>
+    <th scope="col">Attributed by others</th><th scope="col">Says about themselves</th><th scope="col">Gap</th><th scope="col">Complaint rank</th></tr></thead>
+  <tbody>
+  {% for person in view.result.people %}
+    <tr>
+      <td>{{ person.delay_rank }}</td>
+      <td>{{ person.name }}</td>
+      <td>{{ person.role }}</td>
+      {% if person.has_time_evidence %}
+        <td>{{ person.attributed_queue|human_minutes }}</td>
+        <td>{{ person.self_reported_queue|human_minutes if person.self_reported_queue else "not stated" }}</td>
+        <td>{{ person.queue_gap|human_minutes if person.self_reported_queue else "n/a" }}</td>
+      {% else %}
+        <td class="muted">no time evidence</td><td class="muted">{{ person.self_reported_queue|human_minutes if person.self_reported_queue else "not stated" }}</td><td class="muted">n/a</td>
+      {% endif %}
+      <td>{{ person.complaint_rank }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

@@ -146,6 +146,7 @@ jobs:
             docker compose --profile tools pull migrate
             docker compose up -d db
             docker compose --profile tools run --rm migrate
+            docker compose --profile tools run --rm migrate python -m web.manage import-seed
             docker compose up -d web worker db-backup
             for attempt in $(seq 1 30); do
               if curl -fsS http://127.0.0.1:8110/health >/dev/null 2>&1; then

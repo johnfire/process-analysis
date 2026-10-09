@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{{ view.process.name }} · Process Analysis{% endblock %}
+{% block content %}
+<section class="page">
+  <p class="crumbs"><a href="/clients">Clients</a> / <a href="/clients/{{ view.process.owning_client_id }}">{{ view.process.client_name }}</a> /</p>
+  <h1 class="page-title">{{ view.process.name }}</h1>
+  <p class="lede-small">{{ view.process.domain }}</p>
+
+  {% if view.result %}
+  <dl class="facts">
+    <div><dt>Interviews</dt><dd>{{ view.result.interviews }}</dd></div>
+    <div><dt>Claims</dt><dd>{{ view.result.claims }}</dd></div>
+    <div><dt>Work</dt><dd>{{ view.result.time.touch_minutes|human_minutes }}</dd></div>
+    <div><dt>Waiting</dt><dd>{{ view.result.time.queue_minutes|human_minutes }}</dd></div>
+    <div><dt>Cycle efficiency</dt><dd>{{ "%.2f"|format(view.result.time.cycle_efficiency * 100) }}%</dd></div>
+  </dl>
+  {% endif %}
+
+  {% if view.claim_sets|length > 1 %}
+  <p class="claim-sets" aria-label="Claim set">
+    Claims extracted by:
+    {% for name in view.claim_sets %}
+      {% if name == view.claim_set %}<strong>{{ name }}</strong>{% else %}
+      <a href="?tab={{ view.tab }}&amp;claims={{ name }}">{{ name }}</a>{% endif %}{{ "," if not loop.last }}
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  <nav class="tabs" aria-label="Findings">
+    {% for key, label in tabs %}
+    <a href="?tab={{ key }}&amp;claims={{ view.claim_set }}"
+       {% if key == view.tab %}aria-current="page"{% endif %}>{{ label }}</a>
+    {% endfor %}
+  </nav>
+
+  <div class="tab-body">
+    {% if not view.result %}
+      <p>This process has not been analysed yet.</p>
+    {% else %}
+      {% include "tabs/" ~ view.tab ~ ".html" %}
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

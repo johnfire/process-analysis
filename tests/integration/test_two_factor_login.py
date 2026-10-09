@@ -78,7 +78,7 @@ def test_a_valid_code_completes_the_login(browser, app, make_user):
     other = new_browser(app)
     log_in(other)
     done = other.post("/login/2fa", data={"code": next_step_code(stored_secret(app))})
-    assert done.status_code == 303 and done.headers["location"] == "/account"
+    assert done.status_code == 303 and done.headers["location"] == "/clients"
     assert other.get("/account").status_code == 200
 
 
@@ -147,7 +147,7 @@ def test_turning_it_off_needs_the_password_and_removes_the_secret_and_codes(brow
         row = connection.execute(text("SELECT totp_secret, is_totp_enabled FROM users")).one()
         assert tuple(row) == (None, False)
         assert connection.execute(text("SELECT count(*) FROM recovery_codes")).scalar_one() == 0
-    assert log_in(new_browser(app)).headers["location"] == "/account"
+    assert log_in(new_browser(app)).headers["location"] == "/clients"
 
 
 def test_new_recovery_codes_replace_the_old_ones(browser, app, make_user):

@@ -16,6 +16,7 @@ COPY web ./web
 COPY worker ./worker
 COPY migrations ./migrations
 COPY schema ./schema
+COPY corpus/seed ./corpus/seed
 RUN pip install -e ".[web]"
 
 USER app

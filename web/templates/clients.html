@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Clients · Process Analysis{% endblock %}
+{% block content %}
+<section class="page">
+  <h1 class="page-title">Clients</h1>
+  {% if clients %}
+  <ul class="card-list">
+    {% for client in clients %}
+    <li class="card">
+      <h2><a href="/clients/{{ client.id }}">{{ client.name }}</a></h2>
+      <p class="hint">
+        {{ client.process_count }} process{{ "" if client.process_count == 1 else "es" }}
+        {% if client.is_synthetic %}· invented processes with a hidden answer key, used to test the method{% endif %}
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No clients yet.</p>
+  {% endif %}
+</section>
+{% endblock %}

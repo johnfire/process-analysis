@@ -36,7 +36,7 @@ router = APIRouter()
 WRONG_CREDENTIALS = "That email and password do not match."
 WRONG_CODE = "That code did not work."
 THROTTLED = "Too many attempts. Wait a few minutes and try again."
-HOME_AFTER_LOGIN = "/account"
+HOME_AFTER_LOGIN = "/clients"
 
 
 def redirect(location: str) -> RedirectResponse:

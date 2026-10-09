@@ -1,0 +1,20 @@
+<h2>What makes work wait</h2>
+<p>Cadences are rhythms such as a weekly batch or a standing meeting. They have no one to blame, so they never appear in a ranking of people, yet in a batch-driven process they can be the largest source of waiting.</p>
+{% if view.result.schedules %}
+<table class="data-table">
+  <thead><tr><th scope="col">Cadence</th><th scope="col">Run by</th><th scope="col">Holds up</th><th scope="col">Waiting attributed</th></tr></thead>
+  <tbody>
+  {% for cadence in view.result.schedules %}
+    <tr>
+      <td>{{ cadence.label }}</td>
+      <td>{{ cadence.run_by }}</td>
+      <td>{{ cadence.waiters|join(", ") }}</td>
+      {% if cadence.has_time_evidence %}<td>{{ cadence.attributed_queue|human_minutes }}</td>
+      {% else %}<td class="muted">no time evidence</td>{% endif %}
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>No cadences were found in these interviews.</p>
+{% endif %}
