@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}New process · Process Analysis{% endblock %}
+{% block content %}
+<section class="page">
+  <p class="crumbs"><a href="/clients">Clients</a> / <a href="/clients/{{ client.id }}">{{ client.name }}</a> /</p>
+  <h1 class="page-title">New process</h1>
+  {% if errors %}
+  <div class="form-error" role="alert"><ul>{% for message in errors %}<li>{{ message }}</li>{% endfor %}</ul></div>
+  {% endif %}
+  <form method="post" action="/clients/{{ client.id }}/processes" enctype="multipart/form-data" class="auth-form wide-form">
+    <label for="process-name">Name of the process</label>
+    <input id="process-name" name="name" type="text" maxlength="200" value="{{ form.get('name', '') }}" required>
+
+    <label for="process-domain">What the process is</label>
+    <input id="process-domain" name="domain" type="text" value="{{ form.get('domain', '') }}"
+           placeholder="e.g. a customer order, from request to delivery" required>
+
+    <label for="process-org">Organisation name</label>
+    <input id="process-org" name="organisation" type="text" value="{{ form.get('organisation', '') }}">
+
+    <label for="process-terms">Other words to hide from the model, one per line</label>
+    <textarea id="process-terms" name="terms" rows="4"
+              placeholder="Product names, project names, people who were mentioned but not interviewed, street names…">{{ form.get('terms', '') }}</textarea>
+    <p class="hint">Interviewees' names, email addresses, telephone numbers and web addresses are hidden automatically. List anything else that identifies a person or the business. You will see exactly what the model would receive before anything is sent.</p>
+
+    <h2>Interviews</h2>
+    <p class="hint">One row per person interviewed. Paste the transcript or upload a text or Markdown file; leave unused rows empty. Each person's name and role are needed so their statements about colleagues can be matched up.</p>
+    {% for row in rows %}
+    <fieldset class="respondent">
+      <legend>Interview {{ row + 1 }}</legend>
+      <div class="respondent-grid">
+        <div>
+          <label for="name-{{ row }}">Name</label>
+          <input id="name-{{ row }}" name="name_{{ row }}" type="text" maxlength="120" value="{{ form.get('name_' ~ row, '') }}">
+        </div>
+        <div>
+          <label for="role-{{ row }}">Role</label>
+          <input id="role-{{ row }}" name="role_{{ row }}" type="text" maxlength="200" value="{{ form.get('role_' ~ row, '') }}">
+        </div>
+      </div>
+      <label for="text-{{ row }}">Transcript</label>
+      <textarea id="text-{{ row }}" name="text_{{ row }}" rows="5">{{ form.get('text_' ~ row, '') }}</textarea>
+      <label for="file-{{ row }}">…or a file</label>
+      <input id="file-{{ row }}" name="file_{{ row }}" type="file" accept=".txt,.md,text/plain,text/markdown">
+    </fieldset>
+    {% endfor %}
+    <div class="form-actions"><button type="submit" class="button">Save process</button><a href="/clients/{{ client.id }}">Cancel</a></div>
+  </form>
+</section>
+{% endblock %}

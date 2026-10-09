@@ -4,6 +4,12 @@
 <section class="page">
   <p class="crumbs"><a href="/clients">Clients</a> /</p>
   <h1 class="page-title">{{ client.name }}</h1>
+  {% if is_owner %}
+  <p class="actions">
+    <a class="button button-small" href="/clients/{{ client.id }}/processes/new">New process</a>
+    <a href="/clients/{{ client.id }}/delete">Delete client…</a>
+  </p>
+  {% endif %}
   {% if processes %}
   <ul class="card-list">
     {% for process in processes %}

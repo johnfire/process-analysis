@@ -162,3 +162,16 @@ def list_jobs(connection: Connection, process_id: UUID) -> list[Row]:
             select(jobs).where(jobs.c.process_id == process_id).order_by(jobs.c.created_at.desc())
         )
     )
+
+
+def claim_set_in_use(connection: Connection, process_id: UUID, claim_set: str) -> bool:
+    """Whether a job for this process already owns this claim-set name, even before it stored any claims."""
+    return (
+        connection.execute(
+            select(jobs.c.id)
+            .where(jobs.c.process_id == process_id)
+            .where(jobs.c.claim_set == claim_set)
+            .limit(1)
+        ).first()
+        is not None
+    )

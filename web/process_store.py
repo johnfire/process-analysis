@@ -52,11 +52,23 @@ def list_processes(connection: Connection, client_id: UUID) -> list[Row]:
 def find_visible_process(connection: Connection, process_id: UUID, user_id: UUID) -> Row | None:
     """The process joined with its client's name, or None when it is missing or not this user's."""
     return connection.execute(
-        select(processes, clients.c.name.label("client_name"), clients.c.id.label("owning_client_id"))
+        select(
+            processes,
+            clients.c.name.label("client_name"),
+            clients.c.id.label("owning_client_id"),
+            clients.c.owner_user_id.label("client_owner"),
+            clients.c.sensitivity.label("sensitivity"),
+        )
         .join_from(processes, clients, processes.c.client_id == clients.c.id)
         .where(processes.c.id == process_id)
         .where(is_visible_to(user_id))
     ).first()
+
+
+def find_owned_process(connection: Connection, process_id: UUID, user_id: UUID) -> Row | None:
+    """A process in a client this user owns: the only kind that may be changed or run."""
+    row = find_visible_process(connection, process_id, user_id)
+    return row if row is not None and row.client_owner == user_id else None
 
 
 def claim_sets_of(connection: Connection, process_id: UUID) -> list[str]:

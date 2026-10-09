@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Extraction run · Process Analysis{% endblock %}
+{% block content %}
+<section class="page" id="job" data-status-url="/jobs/{{ job.id }}/status">
+  <p class="crumbs"><a href="/clients">Clients</a> / <a href="/processes/{{ job.owning_process_id }}">{{ job.process_name }}</a> /</p>
+  <h1 class="page-title">Extraction run</h1>
+  <p class="lede-small">{{ job.provider }} · {{ job.model }}</p>
+
+  <p class="job-status" role="status" aria-live="polite">
+    Status: <strong data-field="status">{{ state.status|replace("_", " ") }}</strong>
+    {% if state.is_cancel_requested and not state.is_finished %}<span data-field="cancelling">(cancelling after the current interview)</span>{% endif %}
+  </p>
+  <p>Tokens used: <span data-field="tokens">{{ "{:,}".format(state.tokens_in + state.tokens_out) }}</span> of a cap of {{ "{:,}".format(state.max_tokens) }}.</p>
+  <p class="form-error" data-field="error" {% if not state.error %}hidden{% endif %}>{{ state.error or "" }}</p>
+
+  <table class="data-table">
+    <thead><tr><th scope="col">Interview</th><th scope="col">State</th><th scope="col">Claims kept</th><th scope="col">Dropped</th></tr></thead>
+    <tbody data-field="progress">
+    {% for entry in state.progress %}
+      <tr>
+        <td>{{ entry.name }}</td>
+        <td>{{ entry.state }}{% if entry.error %}: {{ entry.error }}{% endif %}</td>
+        <td>{{ entry.claims if entry.claims is defined else "" }}</td>
+        <td>{% if entry.ungrounded is defined %}{{ entry.ungrounded }} not quoted exactly, {{ entry.invalid }} invalid{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="form-actions" data-field="actions">
+    {% if not state.is_finished and is_owner %}
+      <form method="post" action="/jobs/{{ job.id }}/cancel"><button type="submit" class="button button-secondary">Cancel run</button></form>
+    {% endif %}
+    <a data-field="results-link" href="/processes/{{ job.owning_process_id }}?claims={{ job.claim_set }}" {% if not state.is_finished %}hidden{% endif %}>See the results</a>
+  </div>
+  <noscript><p class="hint">Reload this page to see progress.</p></noscript>
+</section>
+{% endblock %}

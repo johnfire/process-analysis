@@ -11,7 +11,7 @@ from fastapi.responses import HTMLResponse
 from markupsafe import Markup, escape
 from sqlalchemy.engine import Connection, Row
 
-from web import process_store
+from web import job_store, process_store
 from web.current_user import SignedInUser, require_user
 from web.page_rendering import render_page
 from web.process_charts import contrast_svg, timeline_svg
@@ -79,7 +79,13 @@ def client_page(request: Request, client_id: str, user: SignedInUser = Depends(r
         listing = process_store.list_processes(connection, client.id)
         headlines = process_store.latest_headlines(connection, [p.id for p in listing])
     return render_page(
-        request, "client.html", user=user, client=client, processes=listing, headlines=headlines
+        request,
+        "client.html",
+        user=user,
+        client=client,
+        processes=listing,
+        headlines=headlines,
+        is_owner=client.owner_user_id == user.user_id,
     )
 
 
@@ -160,8 +166,18 @@ def process_page(request: Request, process_id: str, user: SignedInUser = Depends
             connection, process, request.query_params.get("claims"), request.query_params.get("tab")
         )
         context = tab_context(connection, view, request)
+        jobs = job_store.list_jobs(connection, process.id)
+        transcript_people = sorted(process_store.transcript_bodies(connection, process.id))
     return render_page(
-        request, "process.html", user=user, view=view, tabs=available_tabs(view.result), **context
+        request,
+        "process.html",
+        user=user,
+        view=view,
+        tabs=available_tabs(view.result),
+        is_owner=process.client_owner == user.user_id,
+        jobs=jobs,
+        transcript_people=transcript_people,
+        **context,
     )
 
 

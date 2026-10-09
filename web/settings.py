@@ -10,6 +10,8 @@ import os
 from collections.abc import Mapping
 from dataclasses import dataclass
 
+from web.provider_policy import parse_provider_list
+
 
 @dataclass(frozen=True)
 class MailSettings:
@@ -29,6 +31,10 @@ class Settings:
     public_base_url: str = "https://process-analysis.christopherrehm.de"
     is_cookie_secure: bool = True
     mail: MailSettings | None = None
+    # Which model providers the forms offer (names only: API keys live in the worker's environment,
+    # never in the web container), and which of them the operator has approved for sensitive data.
+    enabled_providers: tuple[str, ...] = ()
+    sensitive_ok_providers: tuple[str, ...] = ()
 
 
 def mail_settings_from(source: Mapping[str, str]) -> MailSettings | None:
@@ -58,4 +64,6 @@ def settings_from_environment(environment: dict[str, str] | None = None) -> Sett
         public_base_url=source.get("PUBLIC_BASE_URL", Settings.public_base_url).rstrip("/"),
         is_cookie_secure=source.get("COOKIE_SECURE", "1") == "1",
         mail=mail_settings_from(source),
+        enabled_providers=parse_provider_list(source.get("PROVIDERS_ENABLED", "")),
+        sensitive_ok_providers=parse_provider_list(source.get("SENSITIVE_OK_PROVIDERS", "")),
     )

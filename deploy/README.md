@@ -48,6 +48,21 @@ Locked out? `python -m web.manage set-password you@example.com` (same way) sets 
 signs out every session. Without `MAIL_*` in `.env` the emailed links cannot be sent: the Invites
 page shows the invitation link on screen instead, and a forgotten password needs `set-password`.
 
+## Model providers
+
+Extraction calls a provider's API from the worker. In `/opt/process-analysis/.env`:
+
+```
+PROVIDERS_ENABLED=openrouter,deepseek         # which providers the forms offer
+SENSITIVE_OK_PROVIDERS=openrouter             # the subset YOU have approved for sensitive clients
+OPENROUTER_API_KEY=...                        # keys reach the worker only, never the web container
+```
+
+Then `docker compose -f docker-compose.prod.yml up -d web worker`. Leaving `SENSITIVE_OK_PROVIDERS`
+empty means sensitive clients can use no provider at all, which is the safe default. Approving a
+provider is your statement that you have read its data-handling terms; the software cannot check.
+Read `docs/PRIVACY.md` first.
+
 ## Operating
 
 - Health: `curl -s http://127.0.0.1:8110/health` on the VPS; reports database, migrations, worker.

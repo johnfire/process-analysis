@@ -126,6 +126,10 @@ def summarise(result: PrivateExtraction) -> dict[str, Any]:
     }
 
 
+def failure_entry(message: str) -> dict[str, Any]:
+    return {"state": "failed", "error": message[:ERROR_CHARACTERS]}
+
+
 def extract_one(
     engine: Engine,
     context: JobContext,
@@ -160,13 +164,10 @@ def extract_one(
             )
         outcome, entry = "ok", summarise(result)
     except (ProviderError, ValueError, json.JSONDecodeError) as error:
-        outcome, entry = "error", {"state": "failed", "error": str(error)[:ERROR_CHARACTERS]}
+        outcome, entry = "error", failure_entry(str(error))
     except Exception:
         log.exception("unexpected failure extracting %s", person_key)
-        outcome, entry = (
-            "error",
-            {"state": "failed", "error": "An internal error occurred; see the server log."},
-        )
+        outcome, entry = "error", failure_entry("An internal error occurred; see the server log.")
     audit_model_call(engine, context, person_key, outcome)
     return entry
 

@@ -21,11 +21,13 @@ Make every step twice as fast and you have saved eight and a half minutes.
 ## Status
 
 The headless analyzer works and is scored against two synthetic processes with hidden answer keys.
-A hosted web app wraps it at `https://process-analysis.christopherrehm.de`: invite-only accounts,
-and a viewer for the stored analyses (timeline, delay against complaints, cadences, fractures, every
-claim linked to its transcript line, and the score for synthetic processes). Not built yet:
-uploading your own transcripts and running extraction from the browser (the workbench), and
-interviews. See `docs/plans/2026-10-07-ui-design.md` for the stages.
+A hosted web app wraps it at `https://process-analysis.christopherrehm.de`: invite-only accounts; a
+viewer for stored analyses (timeline, delay against complaints, cadences, fractures, every claim
+linked to its transcript line, and the score for synthetic processes); and a workbench to create a
+client, upload interview transcripts, and run claim extraction through OpenRouter, DeepSeek,
+Anthropic or OpenAI. Names are hidden from the provider first; see `docs/PRIVACY.md` for what that
+does and does not protect. Not built yet: browser-driven interviews. See
+`docs/plans/2026-10-07-ui-design.md` for the stages.
 
 ## Try it
 

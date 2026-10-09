@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}New client · Process Analysis{% endblock %}
+{% block content %}
+<section class="panel">
+  <p class="crumbs"><a href="/clients">Clients</a> /</p>
+  <h1 class="page-title">New client</h1>
+  {% if error %}<p class="form-error" role="alert">{{ error }}</p>{% endif %}
+  <form method="post" action="/clients" class="auth-form">
+    <label for="client-name">Client name</label>
+    <input id="client-name" name="name" type="text" maxlength="200" required autofocus>
+
+    <fieldset class="choice">
+      <legend>How sensitive is their data?</legend>
+      {% for level in levels %}
+      <label class="choice-row">
+        <input type="radio" name="sensitivity" value="{{ level }}" {% if level == chosen %}checked{% endif %}>
+        <span>
+          <strong>{{ level|capitalize }}</strong>
+          {% if level == "sensitive" %}
+            Real people's interviews. Only model providers you have approved for sensitive data may be used.
+          {% else %}
+            Low-risk material. Any switched-on provider may be used.
+          {% endif %}
+        </span>
+      </label>
+      {% endfor %}
+    </fieldset>
+    <p class="hint">Names, emails and phone numbers are hidden from every provider in both cases. This label decides which providers are offered at all.</p>
+    <div class="form-actions"><button type="submit" class="button">Create client</button><a href="/clients">Cancel</a></div>
+  </form>
+</section>
+{% endblock %}

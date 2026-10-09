@@ -376,3 +376,20 @@ def test_the_loop_claims_runs_and_then_reports_idle(engine, world, monkeypatch):
     assert work_once(engine, ENVIRONMENT, current) is True
     assert job_row(engine, job).status == "done" and current.get() is None
     assert work_once(engine, ENVIRONMENT, current) is False
+
+
+def test_an_unexpected_error_inside_one_transcript_shows_a_generic_message_not_internals(engine, world):
+    class Exploding(FakeProvider):
+        def __call__(self, request):
+            if "PERSON_2" in json.loads(request.content)["messages"][0]["content"].split("**name:**")[1][:12]:
+                raise RuntimeError("secret internal detail /srv/app/path")
+            return super().__call__(request)
+
+    _, job, _ = world()
+    run(engine, job, Exploding())
+    row = job_row(engine, job)
+    assert row.status == "partial" and row.progress[1]["state"] == "failed"
+    assert (
+        "secret internal detail" not in json.dumps(row.progress) and "server log" in row.progress[1]["error"]
+    )
+    assert [e["state"] for e in row.progress] == ["done", "failed", "done"]

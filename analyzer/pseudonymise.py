@@ -27,7 +27,7 @@ _URL = r"(?:https?://|www\.)[^\s<>\"')]+"
 _PHONE = r"\+?\d[\d ()/.-]{6,}\d"
 _TITLES = ("dr.", "dr", "prof.", "prof", "herr", "frau", "mr.", "mrs.", "ms.", "mr", "mrs", "ms")
 _ONE_FOR_ONE = str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"', "—": "-", "–": "-"})
-_CAPITALISED_WORD = re.compile(r"(?<![.!?]\s)(?<!^)(?<!\n)\b([A-ZÄÖÜ][a-zäöüß]{2,})\b")
+_WORD = re.compile(r"[^\W\d_]{3,}")
 _COMMON_CAPITALISED = frozenset(
     {
         *("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"),
@@ -139,11 +139,19 @@ def numbered_token(
 
 
 def find_leftovers(text: str, limit: int = 40) -> list[tuple[str, int]]:
-    """Capitalised words that are still present: possible names nobody listed. A heuristic."""
+    """Capitalised words that are still present and never appear in lower case: possible names.
+
+    A word that shows up in lower case somewhere ("the", "batch") is an ordinary word that happens
+    to start a sentence; one that is only ever capitalised ("Brigitte") might be a name nobody
+    listed. German nouns are always capitalised, so this over-reports there. It is a prompt for a
+    human to look, not a guarantee.
+    """
+    words = _WORD.findall(text)
+    lower_case_forms = {word for word in words if word.islower()}
     counts: dict[str, int] = {}
-    for match in _CAPITALISED_WORD.finditer(text):
-        word = match.group(1)
-        if word not in _COMMON_CAPITALISED and not TOKEN_PATTERN.fullmatch(word):
+    for word in words:
+        is_capitalised = word[0].isupper() and word[1:].islower()
+        if is_capitalised and word.lower() not in lower_case_forms and word not in _COMMON_CAPITALISED:
             counts[word] = counts.get(word, 0) + 1
     return sorted(counts.items(), key=lambda item: (-item[1], item[0]))[:limit]
 

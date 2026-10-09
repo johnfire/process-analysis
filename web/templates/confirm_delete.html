@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Delete · Process Analysis{% endblock %}
+{% block content %}
+<section class="panel">
+  <h1 class="page-title">Delete permanently</h1>
+  <p>This removes the {{ what }}. It cannot be undone.</p>
+  {% if error %}<p class="form-error" role="alert">{{ error }}</p>{% endif %}
+  <form method="post" action="{{ action }}" class="auth-form">
+    <label for="delete-password">Your password</label>
+    <input id="delete-password" name="password" type="password" autocomplete="current-password" required>
+    <label for="delete-confirmation">Type {{ phrase }} to confirm</label>
+    <input id="delete-confirmation" name="confirmation" type="text" autocomplete="off" required>
+    <div class="form-actions">
+      <button type="submit" class="button button-danger">Delete permanently</button>
+      <a href="{{ back }}">Cancel</a>
+    </div>
+  </form>
+</section>
+{% endblock %}

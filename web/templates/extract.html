@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Run extraction · Process Analysis{% endblock %}
+{% block head_extra %}<script src="/static/extract.js" defer></script>{% endblock %}
+{% block content %}
+<section class="page">
+  <p class="crumbs"><a href="/clients">Clients</a> / <a href="/clients/{{ process.owning_client_id }}">{{ process.client_name }}</a> / <a href="/processes/{{ process.id }}">{{ process.name }}</a> /</p>
+  <h1 class="page-title">Run extraction</h1>
+  <p class="lede-small">A model reads each interview and writes down what each person says about how the work happens. Every claim must quote words that were really said, or it is thrown away.</p>
+  {% if error %}<p class="form-error" role="alert">{{ error }}</p>{% endif %}
+
+  <h2>What the provider will receive</h2>
+  {% if preview %}
+    <p>{{ preview.replacement_count }} names, addresses and listed terms are replaced before anything leaves this server. This is the start of the first interview as the model would see it:</p>
+    <pre class="sample" aria-label="Sample of the text a provider receives">{{ preview.sample }}</pre>
+    {% if preview.leftovers %}
+    <div class="callout">
+      <h3>Look before you send</h3>
+      <p>These capitalised words are still in the text. If any is a person, a company or a place that identifies someone, add it to the process's list of words to hide. Everyday German nouns appear here too; this check is a prompt for you, not a guarantee.</p>
+      <p class="leftovers">{% for word, count in preview.leftovers %}<code>{{ word }}</code>{% if count > 1 %}×{{ count }}{% endif %} {% endfor %}</p>
+    </div>
+    {% else %}
+    <p class="hint">No other capitalised words were left in the text.</p>
+    {% endif %}
+    <p class="hint">Rough size: about {{ "{:,}".format(preview.estimated_tokens_in) }} tokens in and up to {{ "{:,}".format(preview.estimated_tokens_out) }} out, across all interviews. Only a guide.</p>
+  {% else %}
+    <p>This process has no transcripts.</p>
+  {% endif %}
+
+  <h2>Provider and model</h2>
+  <p>This client is <strong>{{ process.sensitivity }}</strong>.</p>
+  {% if has_active_job %}
+    <p class="form-error">A run is already queued or in progress for this process. Wait for it to finish, or cancel it from its page.</p>
+  {% endif %}
+  <form method="post" action="/processes/{{ process.id }}/extract" class="auth-form wide-form">
+    <fieldset class="choice">
+      <legend>Provider</legend>
+      {% for choice in providers %}
+      <label class="choice-row {% if choice.reason %}choice-off{% endif %}">
+        <input type="radio" name="provider" value="{{ choice.name }}" data-model="{{ choice.model }}"
+               {% if choice.reason %}disabled{% endif %} {% if loop.first and not choice.reason %}checked{% endif %}>
+        <span><strong>{{ choice.label }}</strong>{% if choice.reason %} — {{ choice.reason }}{% endif %}</span>
+      </label>
+      {% endfor %}
+    </fieldset>
+    <label for="model">Model, as the provider spells it</label>
+    <input id="model" name="model" type="text" maxlength="120" required value="{{ providers|selectattr('reason', 'none')|map(attribute='model')|first|default('') }}">
+    <label for="max-tokens">Stop after this many tokens (input and output together)</label>
+    <input id="max-tokens" name="max_tokens" type="number" min="1000" max="5000000" step="1000" value="{{ default_cap }}" required>
+    <p class="hint">The cap is checked between interviews, so one interview can run past it. Finished work is always kept.</p>
+    <div class="form-actions">
+      <button type="submit" class="button" {% if has_active_job or not preview %}disabled{% endif %}>Start extraction</button>
+      <a href="/processes/{{ process.id }}">Cancel</a>
+    </div>
+  </form>
+</section>
+{% endblock %}

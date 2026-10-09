@@ -12,6 +12,10 @@ x-app-environment: &app-environment
   MAIL_PASSWORD: ${MAIL_PASSWORD:-}
   MAIL_FROM: ${MAIL_FROM:-}
   MAIL_STARTTLS: ${MAIL_STARTTLS:-1}
+  # Which model providers the app offers, and which of those you have personally approved for
+  # sensitive clients' data. Names only: the API keys are given to the worker alone, below.
+  PROVIDERS_ENABLED: ${PROVIDERS_ENABLED:-}
+  SENSITIVE_OK_PROVIDERS: ${SENSITIVE_OK_PROVIDERS:-}
 
 x-hardening: &hardening
   restart: unless-stopped
@@ -41,7 +45,12 @@ services:
     <<: *hardening
     image: ghcr.io/johnfire/process-analysis:${IMAGE_TAG:-latest}
     command: ["python", "-m", "worker"]
-    environment: *app-environment
+    environment:
+      <<: *app-environment
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
     depends_on:
       db:
         condition: service_healthy

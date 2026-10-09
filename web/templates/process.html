@@ -6,6 +6,30 @@
   <h1 class="page-title">{{ view.process.name }}</h1>
   <p class="lede-small">{{ view.process.domain }}</p>
 
+  {% if is_owner %}
+  <div class="owner-panel">
+    <p>
+      Status: <strong>{{ view.process.status }}</strong>
+      · {{ transcript_people|length }} interview{{ "" if transcript_people|length == 1 else "s" }}
+      · privacy label: {{ view.process.sensitivity }}
+    </p>
+    <p class="actions">
+      <a class="button button-small" href="/processes/{{ view.process.id }}/extract">{{ "Run extraction again" if view.result else "Run extraction" }}</a>
+      <a href="/processes/{{ view.process.id }}/delete">Delete process…</a>
+    </p>
+    {% if jobs %}
+    <p class="hint">Runs:
+      {% for job in jobs %}<a href="/jobs/{{ job.id }}">{{ job.provider }}/{{ job.model }} ({{ job.status|replace("_", " ") }})</a>{{ ", " if not loop.last }}{% endfor %}
+    </p>
+    {% endif %}
+    {% if transcript_people %}
+    <p class="hint">Transcripts:
+      {% for key in transcript_people %}<a href="/processes/{{ view.process.id }}/transcripts/{{ key }}">{{ key }}</a>{{ ", " if not loop.last }}{% endfor %}
+    </p>
+    {% endif %}
+  </div>
+  {% endif %}
+
   {% if view.result %}
   <dl class="facts">
     <div><dt>Interviews</dt><dd>{{ view.result.interviews }}</dd></div>

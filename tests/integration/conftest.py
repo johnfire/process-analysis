@@ -68,7 +68,13 @@ def app(migrated_database_url):
     from web.app import create_app
     from web.settings import Settings
 
-    settings = Settings(database_url=migrated_database_url, is_cookie_secure=False, public_base_url=SITE)
+    settings = Settings(
+        database_url=migrated_database_url,
+        is_cookie_secure=False,
+        public_base_url=SITE,
+        enabled_providers=("openrouter", "deepseek"),
+        sensitive_ok_providers=("openrouter",),
+    )
     application = create_app(settings)
     yield application
     application.state.engine.dispose()

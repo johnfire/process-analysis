@@ -11,7 +11,15 @@ from fastapi.staticfiles import StaticFiles
 from sqlalchemy.exc import OperationalError
 from starlette.exceptions import HTTPException
 
-from web import account_routes, invite_routes, login_routes, recovery_routes, viewer_routes
+from web import (
+    account_routes,
+    extraction_routes,
+    invite_routes,
+    login_routes,
+    recovery_routes,
+    viewer_routes,
+    workbench_routes,
+)
 from web.current_user import LoginRequired, load_session_user
 from web.database import create_database_engine
 from web.health import check_health, head_revision_of
@@ -52,6 +60,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         recovery_routes.router,
         account_routes.router,
         invite_routes.router,
+        workbench_routes.router,  # before the viewer: /clients/new must win over /clients/{id}
+        extraction_routes.router,
         viewer_routes.router,
     ):
         app.include_router(router)

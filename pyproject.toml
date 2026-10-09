@@ -29,6 +29,8 @@ web = [
     "pyotp>=2.9",
     "python-multipart>=0.0.12",
     "segno>=1.6",
+    "httpx>=0.27",
+    "jsonschema>=4.21",
 ]
 dev = [
     "httpx>=0.27",
