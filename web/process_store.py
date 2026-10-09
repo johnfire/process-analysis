@@ -10,7 +10,7 @@ from __future__ import annotations
 from typing import Any
 from uuid import UUID
 
-from sqlalchemy import and_, func, insert, or_, select
+from sqlalchemy import and_, delete, func, insert, or_, select, update
 from sqlalchemy.engine import Connection, Row
 
 from web.database import claims, clients, processes, results, transcripts
@@ -60,13 +60,22 @@ def find_visible_process(connection: Connection, process_id: UUID, user_id: UUID
 
 
 def claim_sets_of(connection: Connection, process_id: UUID) -> list[str]:
-    rows = connection.execute(
-        select(claims.c.claim_set)
-        .where(claims.c.process_id == process_id)
-        .distinct()
-        .order_by(claims.c.claim_set)
+    """Claim sets, newest analysis first; sets that have no result yet follow alphabetically."""
+    stored = connection.execute(
+        select(claims.c.claim_set).where(claims.c.process_id == process_id).distinct()
     )
-    return [row[0] for row in rows]
+    newest = {
+        row.claim_set: row.latest
+        for row in connection.execute(
+            select(results.c.claim_set, func.max(results.c.created_at).label("latest"))
+            .where(results.c.process_id == process_id)
+            .group_by(results.c.claim_set)
+        )
+    }
+    return sorted(
+        (row[0] for row in stored),
+        key=lambda name: (name not in newest, -(newest[name].timestamp() if name in newest else 0), name),
+    )
 
 
 def latest_result(connection: Connection, process_id: UUID, claim_set: str) -> dict[str, Any] | None:
@@ -165,12 +174,58 @@ def find_synthetic_client(connection: Connection, name: str) -> UUID | None:
     ).scalar()
 
 
-def create_client(connection: Connection, name: str, owner_user_id: UUID | None, is_synthetic: bool) -> UUID:
+def create_client(
+    connection: Connection,
+    name: str,
+    owner_user_id: UUID | None,
+    is_synthetic: bool,
+    sensitivity: str = "sensitive",
+) -> UUID:
     return connection.execute(
         insert(clients)
-        .values(name=name, owner_user_id=owner_user_id, is_synthetic=is_synthetic)
+        .values(name=name, owner_user_id=owner_user_id, is_synthetic=is_synthetic, sensitivity=sensitivity)
         .returning(clients.c.id)
     ).scalar_one()
+
+
+def find_owned_client(connection: Connection, client_id: UUID, user_id: UUID) -> Row | None:
+    """A client this user owns. The shared synthetic corpus is nobody's to change."""
+    return connection.execute(
+        select(clients).where(clients.c.id == client_id).where(clients.c.owner_user_id == user_id)
+    ).first()
+
+
+def delete_client(connection: Connection, client_id: UUID) -> None:
+    connection.execute(delete(clients).where(clients.c.id == client_id))
+
+
+def delete_process(connection: Connection, process_id: UUID) -> None:
+    connection.execute(delete(processes).where(processes.c.id == process_id))
+
+
+def set_process_status(connection: Connection, process_id: UUID, status: str) -> None:
+    connection.execute(update(processes).where(processes.c.id == process_id).values(status=status))
+
+
+def replace_person_claims(
+    connection: Connection,
+    process_id: UUID,
+    claim_set: str,
+    person_key: str,
+    person_claims: list[dict[str, Any]],
+) -> None:
+    """Store one respondent's claims for a claim set, replacing any earlier attempt for that respondent."""
+    connection.execute(
+        delete(claims)
+        .where(claims.c.process_id == process_id)
+        .where(claims.c.claim_set == claim_set)
+        .where(claims.c.person_key == person_key)
+    )
+    add_claims(connection, process_id, claim_set, {person_key: person_claims})
+
+
+def claim_set_taken(connection: Connection, process_id: UUID, claim_set: str) -> bool:
+    return has_claim_set(connection, process_id, claim_set)
 
 
 def find_process_by_slug(connection: Connection, client_id: UUID, slug: str) -> UUID | None:

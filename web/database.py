@@ -133,6 +133,7 @@ clients = Table(
     Column("owner_user_id", Uuid, ForeignKey("users.id", ondelete=CASCADE), index=True),
     Column("name", String(200), nullable=False),
     Column("is_synthetic", Boolean, nullable=False, server_default=text("false")),
+    Column("sensitivity", String(20), nullable=False, server_default="sensitive"),
     Column("created_at", DateTime(timezone=True), nullable=False, server_default=NOW),
 )
 
@@ -148,6 +149,7 @@ processes = Table(
     Column("cast", JSONB, nullable=False),
     Column("ground_truth", JSONB),
     Column("status", String(20), nullable=False, server_default="analysed"),
+    Column("private_terms", JSONB, nullable=False, server_default=text("'[]'::jsonb")),
     Column("created_at", DateTime(timezone=True), nullable=False, server_default=NOW),
     UniqueConstraint("client_id", "slug", name="uq_processes_client_slug"),
 )
@@ -185,6 +187,31 @@ results = Table(
     Column("document", JSONB, nullable=False),
     Column("created_at", DateTime(timezone=True), nullable=False, server_default=NOW),
     UniqueConstraint("process_id", "claim_set", "analyzer_version", name="uq_results_process_set_version"),
+)
+
+# Long work, claimed by the worker one at a time. `progress` holds one entry per transcript.
+jobs = Table(
+    "jobs",
+    metadata,
+    Column("id", Uuid, primary_key=True, server_default=NEW_UUID),
+    Column("process_id", Uuid, ForeignKey("processes.id", ondelete=CASCADE), nullable=False, index=True),
+    Column("created_by", Uuid, ForeignKey("users.id", ondelete="SET NULL")),
+    Column("status", String(30), nullable=False),
+    Column("provider", String(40), nullable=False),
+    Column("model", String(120), nullable=False),
+    Column("claim_set", String(60), nullable=False),
+    Column("max_tokens", Integer, nullable=False),
+    Column("tokens_in", Integer, nullable=False, server_default=text("0")),
+    Column("tokens_out", Integer, nullable=False, server_default=text("0")),
+    Column("progress", JSONB, nullable=False, server_default=text("'[]'::jsonb")),
+    Column("error", Text),
+    Column("is_cancel_requested", Boolean, nullable=False, server_default=text("false")),
+    Column("correlation_id", String(64)),
+    Column("created_at", DateTime(timezone=True), nullable=False, server_default=NOW),
+    Column("started_at", DateTime(timezone=True)),
+    Column("finished_at", DateTime(timezone=True)),
+    Column("heartbeat_at", DateTime(timezone=True)),
+    Index("ix_jobs_status_created", "status", "created_at"),
 )
 
 

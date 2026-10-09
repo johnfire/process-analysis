@@ -57,7 +57,7 @@ def test_missing_database_url_stops_startup():
 
 
 def test_migrations_have_a_single_head():
-    assert head_revision_of() == "0003"
+    assert head_revision_of() == "0004"
 
 
 def test_landing_page_still_renders_with_a_session_cookie_and_the_database_down(client):
