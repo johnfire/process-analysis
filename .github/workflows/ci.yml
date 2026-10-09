@@ -162,6 +162,10 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
+      # Retry on any error, TLS handshakes included: right after a deploy the web container may
+      # still be starting, and on the first deploy the certificate may not be in place yet.
       - run: |
-          curl -fsS https://process-analysis.christopherrehm.de/health
-          curl -fsS https://process-analysis.christopherrehm.de/ | grep -q "17 minutes"
+          retry="--retry 8 --retry-delay 10 --retry-all-errors --max-time 20"
+          curl -fsS $retry https://process-analysis.christopherrehm.de/health
+          curl -fsS $retry -o landing.html https://process-analysis.christopherrehm.de/
+          grep -q "17 minutes" landing.html
