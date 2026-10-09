@@ -4,20 +4,31 @@ from __future__ import annotations
 
 import logging
 from datetime import timedelta
-from pathlib import Path
 
-from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
+from sqlalchemy.exc import OperationalError
 
+from web import account_routes, invite_routes, login_routes, recovery_routes
+from web.current_user import LoginRequired, load_session_user
 from web.database import create_database_engine
 from web.health import check_health, head_revision_of
+from web.page_rendering import PACKAGE_DIR, render_page
+from web.request_origin import host_of, is_same_origin, needs_origin_check
 from web.settings import Settings, settings_from_environment
 from web.structured_logging import configure_logging, correlation_id, new_correlation_id
 
-PACKAGE_DIR = Path(__file__).resolve().parent
 CORRELATION_HEADER = "X-Request-ID"
+SECURITY_HEADERS = {
+    "Content-Security-Policy": (
+        "default-src 'self'; img-src 'self' data:; form-action 'self'; "
+        "frame-ancestors 'none'; base-uri 'none'"
+    ),
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "same-origin",
+    "X-Frame-Options": "DENY",
+}
 
 log = logging.getLogger(__name__)
 
@@ -31,10 +42,14 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.state.engine = create_database_engine(active_settings.database_url)
     app.state.head_revision = head_revision_of()
     app.mount("/static", StaticFiles(directory=PACKAGE_DIR / "static"), name="static")
-    templates = Jinja2Templates(directory=PACKAGE_DIR / "templates")
 
+    app.middleware("http")(reject_cross_site_writes)
+    app.middleware("http")(add_security_headers)
     app.middleware("http")(attach_correlation_id)
-    register_routes(app, templates)
+    for router in (login_routes.router, recovery_routes.router, account_routes.router, invite_routes.router):
+        app.include_router(router)
+    register_routes(app)
+    register_error_handlers(app)
     return app
 
 
@@ -51,10 +66,29 @@ async def attach_correlation_id(request: Request, call_next):
         correlation_id.reset(token)
 
 
-def register_routes(app: FastAPI, templates: Jinja2Templates) -> None:
+async def add_security_headers(request: Request, call_next):
+    response = await call_next(request)
+    for name, value in SECURITY_HEADERS.items():
+        response.headers.setdefault(name, value)
+    return response
+
+
+async def reject_cross_site_writes(request: Request, call_next):
+    if needs_origin_check(request.method):
+        own_hosts = {
+            request.headers.get("host", "").lower(),
+            host_of(request.app.state.settings.public_base_url),
+        }
+        if not is_same_origin(request.headers.get("origin"), request.headers.get("referer"), own_hosts):
+            log.warning("refused cross-site %s %s", request.method, request.url.path)
+            return JSONResponse({"detail": "Cross-site request refused"}, status_code=403)
+    return await call_next(request)
+
+
+def register_routes(app: FastAPI) -> None:
     @app.get("/", response_class=HTMLResponse)
     def landing(request: Request):
-        return templates.TemplateResponse(request, "landing.html")
+        return render_page(request, "landing.html", user=load_session_user_safely(request))
 
     @app.get("/health")
     def health():
@@ -63,5 +97,33 @@ def register_routes(app: FastAPI, templates: Jinja2Templates) -> None:
         if not report.is_healthy:
             log.warning("unhealthy: %s", report.checks)
         status = "ok" if report.is_healthy else "degraded"
-        return JSONResponse({"status": status, "checks": report.checks},
-                            status_code=200 if report.is_healthy else 503)
+        return JSONResponse(
+            {"status": status, "checks": report.checks}, status_code=200 if report.is_healthy else 503
+        )
+
+
+def load_session_user_safely(request: Request):
+    """The landing page must render even with the database down, so a failed lookup means 'anonymous'."""
+    try:
+        user = load_session_user(request)
+    except OperationalError:
+        log.exception("session lookup failed; serving the landing page anonymously")
+        return None
+    return user if user and user.is_mfa_verified else None
+
+
+def register_error_handlers(app: FastAPI) -> None:
+    @app.exception_handler(LoginRequired)
+    def send_to_login(request: Request, _: LoginRequired):
+        return RedirectResponse("/login", status_code=303)
+
+    @app.exception_handler(OperationalError)
+    def database_unavailable(request: Request, error: OperationalError):
+        log.error("database unavailable while serving %s", request.url.path)
+        return render_page(request, "unavailable.html", status_code=503)
+
+    @app.exception_handler(HTTPException)
+    def show_http_error(request: Request, error: HTTPException):
+        if error.status_code == 403 and "text/html" in request.headers.get("accept", ""):
+            return render_page(request, "forbidden.html", status_code=403)
+        return JSONResponse({"detail": error.detail}, status_code=error.status_code)

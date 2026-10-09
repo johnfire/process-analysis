@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Process Analysis{% endblock %}</title>
+  <meta name="description" content="Find the steps in a business process that should not exist at all.">
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/site.css">
+  <script src="/static/auth.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="masthead">
+    <a class="wordmark" href="/">
+      <img src="/static/icon.svg" alt="" width="28" height="28">
+      <span>Process Analysis</span>
+    </a>
+    <nav class="masthead-nav" aria-label="Account">
+      {% if user %}
+        {% if user.is_admin %}<a href="/invites">Invites</a>{% endif %}
+        <a href="/account">Account</a>
+        <form method="post" action="/logout" class="inline-form">
+          <button type="submit" class="link-button">Log out</button>
+        </form>
+      {% else %}
+        <span class="masthead-note">Invitation only</span>
+        <a class="button button-small" href="/login" data-open-login>Log in</a>
+      {% endif %}
+    </nav>
+  </header>
+
+  <main id="content">
+    {% if notice %}<p class="notice" role="status">{{ notice }}</p>{% endif %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <span>Process Analysis · Christopher Rehm</span>
+    <a href="https://christopherrehm.de/impressum.html">Impressum &amp; Datenschutz</a>
+  </footer>
+  {% block after_footer %}{% endblock %}
+</body>
+</html>

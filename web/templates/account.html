@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Account · Process Analysis{% endblock %}
+{% block content %}
+<section class="panel panel-wide">
+  <h1 class="page-title">Account</h1>
+  <p>Signed in as <strong>{{ user.email }}</strong>{% if user.is_admin %} (administrator){% endif %}.</p>
+
+  {% if new_recovery_codes %}
+  <div class="callout" role="status">
+    <h2>Save your recovery codes</h2>
+    <p>Each code works once if you lose your authenticator. They are shown only now.</p>
+    <ul class="code-list">{% for code in new_recovery_codes %}<li><code>{{ code }}</code></li>{% endfor %}</ul>
+  </div>
+  {% endif %}
+
+  <h2>Password</h2>
+  {% if password_error %}<p class="form-error" role="alert">{{ password_error }}</p>{% endif %}
+  <form method="post" action="/account/password" class="auth-form">
+    <label for="current-password">Current password</label>
+    <input id="current-password" name="current_password" type="password" autocomplete="current-password" required>
+    {% set password_field = 'new_password' %}
+    {% include "partials/new_password_fields.html" %}
+    <div class="form-actions"><button type="submit" class="button">Change password</button></div>
+  </form>
+
+  <h2>Two-factor authentication</h2>
+  {% if two_factor_error %}<p class="form-error" role="alert">{{ two_factor_error }}</p>{% endif %}
+  {% if user.is_totp_enabled %}
+    <p>On. You have {{ unused_codes }} unused recovery code{{ "" if unused_codes == 1 else "s" }}.</p>
+    <form method="post" action="/account/2fa/recovery-codes" class="auth-form">
+      <label for="codes-password">Password</label>
+      <input id="codes-password" name="password" type="password" autocomplete="current-password" required>
+      <div class="form-actions"><button type="submit" class="button button-secondary">Issue new recovery codes</button></div>
+    </form>
+    <form method="post" action="/account/2fa/disable" class="auth-form">
+      <label for="disable-password">Password</label>
+      <input id="disable-password" name="password" type="password" autocomplete="current-password" required>
+      <div class="form-actions"><button type="submit" class="button button-secondary">Turn off two-factor</button></div>
+    </form>
+  {% elif setup_secret %}
+    <p>Scan this code with an authenticator app, or enter the key by hand, then type the 6-digit code it shows.</p>
+    <div class="qr" role="img" aria-label="QR code for the authenticator app">{{ setup_qr|safe }}</div>
+    <p>Key: <code>{{ setup_secret }}</code></p>
+    {% if setup_error %}<p class="form-error" role="alert">{{ setup_error }}</p>{% endif %}
+    <form method="post" action="/account/2fa/enable" class="auth-form">
+      <label for="setup-code">6-digit code</label>
+      <input id="setup-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code"
+             pattern="[0-9 ]*" required>
+      <div class="form-actions"><button type="submit" class="button">Turn on two-factor</button></div>
+    </form>
+  {% else %}
+    <p>Off. Adds a code from your phone to every login.</p>
+    <form method="post" action="/account/2fa/start">
+      <button type="submit" class="button button-secondary">Set up two-factor</button>
+    </form>
+  {% endif %}
+
+  <h2>Your data</h2>
+  <p><a href="/account/export">Download my data (JSON)</a></p>
+
+  <h2>Delete account</h2>
+  <p><a href="/account/delete">Delete my account…</a></p>
+</section>
+{% endblock %}

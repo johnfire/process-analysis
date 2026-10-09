@@ -4,6 +4,14 @@
 x-app-environment: &app-environment
   DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-process_analysis}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD required}@db:5432/${POSTGRES_DB:-process_analysis}
   LOG_LEVEL: ${LOG_LEVEL:-INFO}
+  PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-https://process-analysis.christopherrehm.de}
+  # Mail is optional: with MAIL_HOST empty the app shows invitation links on screen instead.
+  MAIL_HOST: ${MAIL_HOST:-}
+  MAIL_PORT: ${MAIL_PORT:-587}
+  MAIL_USERNAME: ${MAIL_USERNAME:-}
+  MAIL_PASSWORD: ${MAIL_PASSWORD:-}
+  MAIL_FROM: ${MAIL_FROM:-}
+  MAIL_STARTTLS: ${MAIL_STARTTLS:-1}
 
 x-hardening: &hardening
   restart: unless-stopped

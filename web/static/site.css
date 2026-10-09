@@ -208,3 +208,78 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   .scale-wait, .scale-work { animation: none; }
 }
+
+/* ---- Accounts ---------------------------------------------------------------------------- */
+
+.skip-link { position: absolute; left: -9999px; top: 0; padding: 8px 12px; background: var(--work); color: #111; z-index: 10; }
+.skip-link:focus { left: 8px; top: 8px; }
+
+.masthead-nav { display: flex; align-items: center; gap: 22px; font: 500 0.95rem/1 var(--display); letter-spacing: 0.12em; text-transform: uppercase; }
+.masthead-nav a { text-decoration: none; }
+
+.inline-form { display: inline; margin: 0; }
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 1px solid var(--work);
+  border-radius: 4px;
+  background: var(--work);
+  color: #1a1306;
+  font: 600 1rem/1 var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover { background: #ffc65c; color: #1a1306; }
+.button-small { padding: 9px 16px; font-size: 0.9rem; }
+.button-secondary { background: transparent; color: var(--ink); border-color: var(--wait-internal); }
+.button-secondary:hover { background: var(--ground-raised); color: var(--ink); }
+.button-danger { background: #c4503a; border-color: #c4503a; color: #fff; }
+.button-danger:hover { background: #d9634c; color: #fff; }
+
+.link-button { padding: 0; border: 0; background: none; color: var(--ink); font: inherit; letter-spacing: inherit; text-transform: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.link-button:hover { color: var(--work); }
+
+.notice { margin: 0; padding: 14px var(--gutter); background: var(--ground-raised); border-bottom: 1px solid var(--rule); color: var(--ink); }
+
+.panel { width: min(100%, 460px); margin: 0 auto; padding: clamp(32px, 6vh, 72px) var(--gutter) 64px; box-sizing: content-box; }
+.panel-wide { width: min(100%, 720px); }
+.panel h2 { margin: 40px 0 14px; font-size: 1.6rem; }
+.page-title { max-width: none; margin: 0 0 24px; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.05; }
+
+.auth-form { display: flex; flex-direction: column; gap: 6px; margin: 0 0 8px; }
+.auth-form label { margin-top: 12px; font: 600 0.85rem/1 var(--display); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-muted); }
+.auth-form input[type=email], .auth-form input[type=password], .auth-form input[type=text],
+.copy-field {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--wait-internal);
+  border-radius: 4px;
+  background: var(--ground-raised);
+  color: var(--ink);
+  font: inherit;
+}
+.auth-form input:focus-visible, .copy-field:focus-visible { outline: 2px solid var(--work); outline-offset: 1px; }
+.password-field { display: flex; align-items: center; gap: 12px; }
+.password-field input { flex: 1; }
+.form-actions { display: flex; align-items: center; gap: 20px; margin-top: 18px; }
+.form-links { display: flex; flex-direction: column; gap: 6px; margin: 14px 0 0; font-size: 0.92rem; color: var(--ink-muted); }
+.form-error { margin: 0 0 16px; padding: 12px 14px; border-left: 3px solid #e07a63; background: var(--ground-raised); }
+.hint { margin: 2px 0 0; font-size: 0.9rem; color: var(--ink-muted); }
+
+.callout { margin: 0 0 28px; padding: 18px 20px; border: 1px solid var(--work); border-radius: 4px; background: var(--ground-raised); }
+.callout h2 { margin: 0 0 8px; }
+.code-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 24px; margin: 12px 0 0; padding: 0; list-style: none; }
+.code-list code, .panel code { font-family: ui-monospace, "DejaVu Sans Mono", monospace; letter-spacing: 0.05em; }
+.qr { width: 200px; margin: 12px 0; background: #fff; padding: 4px; }
+.qr svg { display: block; width: 100%; height: auto; }
+
+.data-table { width: 100%; border-collapse: collapse; }
+.data-table th, .data-table td { padding: 10px 12px 10px 0; text-align: left; border-bottom: 1px solid var(--rule); }
+.data-table th { font: 600 0.85rem/1 var(--display); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-muted); }
+
+dialog { width: min(92vw, 420px); padding: 28px; border: 1px solid var(--wait-internal); border-radius: 6px; background: var(--ground); color: var(--ink); }
+dialog::backdrop { background: rgba(8, 10, 13, 0.7); }
+dialog h2 { margin: 0 0 8px; }

@@ -53,7 +53,51 @@ def engine(migrated_database_url):
 
 def table_names(database_engine) -> set[str]:
     with database_engine.connect() as connection:
-        rows = connection.execute(text(
-            "SELECT tablename FROM pg_tables WHERE schemaname = 'public'"
-        ))
+        rows = connection.execute(text("SELECT tablename FROM pg_tables WHERE schemaname = 'public'"))
         return {row[0] for row in rows}
+
+
+# ---- Account-flow fixtures ---------------------------------------------------------------------
+
+SITE = "http://testserver"
+DEFAULT_PASSWORD = "walnut river lantern mosaic"
+
+
+@pytest.fixture
+def app(migrated_database_url):
+    from web.app import create_app
+    from web.settings import Settings
+
+    settings = Settings(database_url=migrated_database_url, is_cookie_secure=False, public_base_url=SITE)
+    application = create_app(settings)
+    yield application
+    application.state.engine.dispose()
+
+
+def new_browser(application):
+    """A fresh cookie jar that sends same-site Origin headers like a real browser does."""
+    from fastapi.testclient import TestClient
+
+    return TestClient(application, base_url=SITE, headers={"Origin": SITE}, follow_redirects=False)
+
+
+@pytest.fixture
+def browser(app):
+    with new_browser(app) as client:
+        yield client
+
+
+@pytest.fixture
+def make_user(app):
+    from web.passwords import hash_password
+    from web.user_store import create_user
+
+    def create(email="chris@example.com", password=DEFAULT_PASSWORD, is_admin=False):
+        with app.state.engine.begin() as connection:
+            return create_user(connection, email, hash_password(password), is_admin=is_admin)
+
+    return create
+
+
+def log_in(client, email="chris@example.com", password=DEFAULT_PASSWORD):
+    return client.post("/login", data={"email": email, "password": password})

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Accept invitation · Process Analysis{% endblock %}
+{% block content %}
+<section class="panel">
+  <h1 class="page-title">Welcome</h1>
+  <p>Choose a password for <strong>{{ invited_email }}</strong>.</p>
+  {% if error %}<p class="form-error" role="alert">{{ error }}</p>{% endif %}
+  <form method="post" action="/invite/{{ token }}" class="auth-form">
+    {% set password_field = 'password' %}
+    {% include "partials/new_password_fields.html" %}
+    <div class="form-actions"><button type="submit" class="button">Create account</button></div>
+  </form>
+</section>
+{% endblock %}

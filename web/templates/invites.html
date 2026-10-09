@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Invitations · Process Analysis{% endblock %}
+{% block content %}
+<section class="panel panel-wide">
+  <h1 class="page-title">Invitations</h1>
+  {% if error %}<p class="form-error" role="alert">{{ error }}</p>{% endif %}
+  {% if manual_link %}
+    <div class="callout" role="status">
+      <p>No mail was sent. Give <strong>{{ manual_link_email }}</strong> this link yourself. It works once, for 7 days, and is not shown again:</p>
+      <p><input class="copy-field" type="text" readonly value="{{ manual_link }}" aria-label="Invitation link"></p>
+    </div>
+  {% endif %}
+  <form method="post" action="/invites" class="auth-form">
+    <label for="invite-email">Email address to invite</label>
+    <input id="invite-email" name="email" type="email" required>
+    <div class="form-actions"><button type="submit" class="button">Invite</button></div>
+  </form>
+
+  <h2>Sent</h2>
+  {% if invites %}
+  <table class="data-table">
+    <thead><tr><th scope="col">Email</th><th scope="col">Sent</th><th scope="col">Status</th></tr></thead>
+    <tbody>
+    {% for invite in invites %}
+      <tr>
+        <td>{{ invite.email }}</td>
+        <td>{{ invite.created_at.strftime("%Y-%m-%d %H:%M") }} UTC</td>
+        <td>{% if invite.accepted_at %}Accepted{% elif invite.expires_at < now %}Expired{% else %}Pending{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}<p class="hint">No invitations yet.</p>{% endif %}
+</section>
+{% endblock %}

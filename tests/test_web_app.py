@@ -57,4 +57,29 @@ def test_missing_database_url_stops_startup():
 
 
 def test_migrations_have_a_single_head():
-    assert head_revision_of() == "0001"
+    assert head_revision_of() == "0002"
+
+
+def test_landing_page_still_renders_with_a_session_cookie_and_the_database_down(client):
+    client.cookies.set("pa_session", "some-token-from-before-the-outage")
+    try:
+        response = client.get("/")
+    finally:
+        client.cookies.clear()
+    assert response.status_code == 200 and "17 minutes" in response.text
+
+
+def test_login_with_the_database_down_is_a_clear_503_not_a_crash(client):
+    response = client.post(
+        "/login", data={"email": "a@b.de", "password": "whatever it is"}, headers={"Origin": "http://testserver"}
+    )
+    assert response.status_code == 503 and "Temporarily unavailable" in response.text
+
+
+def test_pages_that_need_a_session_redirect_to_login_when_the_database_is_down(client):
+    response = client.get("/account", follow_redirects=False)
+    assert response.status_code == 303 and response.headers["location"] == "/login"
+
+
+def test_login_page_renders_without_a_database(client):
+    assert client.get("/login").status_code == 200

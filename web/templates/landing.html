@@ -1,23 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Process Analysis</title>
-  <meta name="description" content="Find the steps in a business process that should not exist at all.">
-  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/static/site.css">
-</head>
-<body>
-  <header class="masthead">
-    <a class="wordmark" href="/">
-      <img src="/static/icon.svg" alt="" width="28" height="28">
-      <span>Process Analysis</span>
-    </a>
-    <span class="masthead-note">Invitation only</span>
-  </header>
+{% extends "base.html" %}
+{% block content %}
 
-  <main>
     <section class="hero" aria-labelledby="hero-title">
       <p class="kicker">Hammer, 1990 · an insurance application</p>
       <h1 id="hero-title">
@@ -78,11 +61,19 @@
         </li>
       </ol>
     </section>
-  </main>
+  {% endblock %}
 
-  <footer class="footer">
-    <span>Process Analysis · Christopher Rehm</span>
-    <a href="https://christopherrehm.de/impressum.html">Impressum &amp; Datenschutz</a>
-  </footer>
-</body>
-</html>
+{% block after_footer %}
+{% if not user %}
+  <dialog id="login-dialog" aria-labelledby="login-dialog-title">
+    <form method="post" action="/login" class="auth-form">
+      <h2 id="login-dialog-title">Log in</h2>
+      {% include "partials/login_fields.html" %}
+      <div class="form-actions">
+        <button type="submit" class="button">Log in</button>
+        <button type="button" class="link-button" data-close-login>Cancel</button>
+      </div>
+    </form>
+  </dialog>
+{% endif %}
+{% endblock %}

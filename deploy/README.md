@@ -33,6 +33,21 @@ Done once, by hand. After it, every push to `main` deploys.
    ```
 5. Push to `main` (or re-run the workflow) and watch the `verify-live` job go green.
 
+## First user
+
+Signup is invitation-only, so the first administrator is created on the server. Everyone after that
+is invited from the **Invites** page. `-t` is needed because the command asks for the password
+without echoing it:
+
+```bash
+ssh -t claude@82.165.32.162 'cd /opt/process-analysis && \
+  docker compose -f docker-compose.prod.yml exec web python -m web.manage create-user you@example.com'
+```
+
+Locked out? `python -m web.manage set-password you@example.com` (same way) sets a new password and
+signs out every session. Without `MAIL_*` in `.env` the emailed links cannot be sent: the Invites
+page shows the invitation link on screen instead, and a forgotten password needs `set-password`.
+
 ## Operating
 
 - Health: `curl -s http://127.0.0.1:8110/health` on the VPS; reports database, migrations, worker.

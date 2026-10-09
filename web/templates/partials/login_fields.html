@@ -1,0 +1,15 @@
+<label for="{{ field_prefix|default('login') }}-email">Email</label>
+<input id="{{ field_prefix|default('login') }}-email" name="email" type="email" autocomplete="username"
+       value="{{ email|default('') }}" required>
+
+<label for="{{ field_prefix|default('login') }}-password">Password</label>
+<div class="password-field">
+  <input id="{{ field_prefix|default('login') }}-password" name="password" type="password"
+         autocomplete="current-password" required>
+  <button type="button" class="link-button" data-toggle-password aria-pressed="false">Show</button>
+</div>
+
+<p class="form-links">
+  <a href="/forgot">Forgot password?</a>
+  <span>No account? Access is by invitation. <a href="mailto:christopher.rehm.63@protonmail.com?subject=Process%20Analysis%20invitation">Ask for one</a>.</span>
+</p>

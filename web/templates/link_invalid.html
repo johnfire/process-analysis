@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Link not valid · Process Analysis{% endblock %}
+{% block content %}
+<section class="panel">
+  <h1 class="page-title">Link not valid</h1>
+  <p>{{ message }}</p>
+  <p><a href="/forgot">Request a new reset link</a> · <a href="/login">Log in</a></p>
+</section>
+{% endblock %}

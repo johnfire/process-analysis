@@ -46,3 +46,19 @@ def test_health_flags_a_worker_that_never_started(migrated_database_url):
     response = client.get("/health")
     assert response.status_code == 503
     assert response.json()["checks"]["worker"] == "never seen"
+
+
+def test_account_tables_exist_and_downgrade_removes_them(engine, migrated_database_url):
+    account_tables = {
+        "users",
+        "sessions",
+        "invites",
+        "password_resets",
+        "recovery_codes",
+        "audit_log",
+        "login_attempts",
+    }
+    assert account_tables <= table_names(engine)
+    command.downgrade(alembic_config(migrated_database_url), "0001")
+    assert not account_tables & table_names(engine)
+    assert "worker_heartbeats" in table_names(engine)
