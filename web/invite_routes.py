@@ -9,6 +9,7 @@ from sqlalchemy.engine import Connection
 from web import clock
 from web.audit_trail import record_audit
 from web.current_user import SignedInUser, client_address, require_admin
+from web.email_addresses import is_plausible_email
 from web.link_token_store import create_invite, list_invites
 from web.login_throttle import email_key
 from web.mailer import invite_email, send_mail
@@ -20,11 +21,6 @@ router = APIRouter(prefix="/invites")
 
 INVALID_EMAIL = "Enter a valid email address."
 ALREADY_REGISTERED = "That address already has an account."
-
-
-def is_plausible_email(address: str) -> bool:
-    local, _, domain = address.partition("@")
-    return bool(local) and "." in domain and " " not in address and len(address) <= 320
 
 
 @router.get("", response_class=HTMLResponse)

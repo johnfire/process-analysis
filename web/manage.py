@@ -16,6 +16,7 @@ import sys
 from web import clock
 from web.audit_trail import record_audit
 from web.database import create_database_engine
+from web.email_addresses import is_plausible_email
 from web.login_throttle import email_key
 from web.passwords import hash_password, password_problem
 from web.seed_import import import_seed_processes
@@ -37,8 +38,10 @@ def read_new_password(email: str) -> str:
 
 
 def create_administrator(email: str, is_admin: bool) -> None:
-    engine = create_database_engine(settings_from_environment().database_url)
     address = email_key(email)
+    if not is_plausible_email(address):
+        sys.exit(f"{email!r} is not an email address. Nothing was created.")
+    engine = create_database_engine(settings_from_environment().database_url)
     password_hash = hash_password(read_new_password(address))
     with engine.begin() as connection:
         user_id = create_user(connection, address, password_hash, is_admin=is_admin)
